@@ -1,0 +1,13 @@
+C:\Users\Admin\source\repos\PBL\PBL\bin\Debug\PBL.exe.config
+C:\Users\Admin\source\repos\PBL\PBL\bin\Debug\PBL.exe
+C:\Users\Admin\source\repos\PBL\PBL\bin\Debug\PBL.pdb
+C:\Users\Admin\source\repos\PBL\PBL\obj\Debug\PBL.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\PBL\PBL\obj\Debug\PBL.Form1.resources
+C:\Users\Admin\source\repos\PBL\PBL\obj\Debug\PBL.Properties.Resources.resources
+C:\Users\Admin\source\repos\PBL\PBL\obj\Debug\PBL.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\PBL\PBL\obj\Debug\PBL.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\PBL\PBL\obj\Debug\PBL.exe
+C:\Users\Admin\source\repos\PBL\PBL\obj\Debug\PBL.pdb
+C:\Users\Admin\source\repos\PBL\PBL\obj\Debug\PBL.Form2.resources
+C:\Users\Admin\source\repos\PBL\PBL\obj\Debug\PBL.Form3.resources
+C:\Users\Admin\source\repos\PBL\PBL\obj\Debug\PBL.Form4.resources
