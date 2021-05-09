@@ -8,13 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PBL
+namespace PBL.View
 {
-    public partial class Form3 : Form
+    public partial class FormDuLieuNhanVien : Form
     {
-        public delegate void MyDel(int id, string ms);
-        public MyDel d { get; set; }
-        public Form3(string ms)
+        public FormDuLieuNhanVien()
         {
             InitializeComponent();
         }

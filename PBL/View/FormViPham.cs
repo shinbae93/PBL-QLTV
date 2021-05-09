@@ -8,15 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PBL
+namespace PBL.View
 {
-    public partial class Form4 : Form
+    public partial class FormViPham : Form
     {
-        public delegate void MyDel(int id, string ms);
-        public MyDel d { get; set; }
-        public Form4(string ms)
+        public FormViPham()
         {
             InitializeComponent();
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Show();
         }
     }
 }

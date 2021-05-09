@@ -107,43 +107,73 @@
     <Compile Include="DAL\TaiLieuCT.cs">
       <DependentUpon>QLTV.tt</DependentUpon>
     </Compile>
-    <Compile Include="View\Form1.cs">
+    <Compile Include="View\FormDuLieuDocGia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="View\FormDuLieuDocGia.Designer.cs">
+      <DependentUpon>FormDuLieuDocGia.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Form2.cs">
+    <Compile Include="View\FormDuLieuNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="View\FormDuLieuNhanVien.Designer.cs">
+      <DependentUpon>FormDuLieuNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Form3.cs">
+    <Compile Include="View\FormDuLieuPhieuMuon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="View\FormDuLieuPhieuMuon.Designer.cs">
+      <DependentUpon>FormDuLieuPhieuMuon.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Form4.cs">
+    <Compile Include="View\FormDuLieuSach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="View\FormDuLieuSach.Designer.cs">
+      <DependentUpon>FormDuLieuSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormNhanVien.Designer.cs">
+      <DependentUpon>FormNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="View\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="View\FormQuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormQuanLy.Designer.cs">
+      <DependentUpon>FormQuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormViPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormViPham.Designer.cs">
+      <DependentUpon>FormViPham.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\FormDuLieuDocGia.resx">
+      <DependentUpon>FormDuLieuDocGia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="View\FormDuLieuNhanVien.resx">
+      <DependentUpon>FormDuLieuNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="View\FormDuLieuPhieuMuon.resx">
+      <DependentUpon>FormDuLieuPhieuMuon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="View\FormDuLieuSach.resx">
+      <DependentUpon>FormDuLieuSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormNhanVien.resx">
+      <DependentUpon>FormNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -154,6 +184,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\FormQuanLy.resx">
+      <DependentUpon>FormQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormViPham.resx">
+      <DependentUpon>FormViPham.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

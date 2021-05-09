@@ -1,7 +1,7 @@
 ﻿
-namespace PBL
+namespace PBL.View
 {
-    partial class Form4
+    partial class FormDuLieuPhieuMuon
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace PBL
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDuLieuPhieuMuon));
             this.label1 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -42,14 +42,17 @@ namespace PBL
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(39, 72);
+            this.label1.Location = new System.Drawing.Point(40, 91);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(147, 22);
             this.label1.TabIndex = 1;
@@ -59,7 +62,7 @@ namespace PBL
             // 
             this.button7.BackColor = System.Drawing.Color.Gainsboro;
             this.button7.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(131, 192);
+            this.button7.Location = new System.Drawing.Point(166, 321);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 26);
             this.button7.TabIndex = 22;
@@ -70,7 +73,7 @@ namespace PBL
             // 
             this.button1.BackColor = System.Drawing.Color.Gainsboro;
             this.button1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(367, 192);
+            this.button1.Location = new System.Drawing.Point(546, 321);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 26);
             this.button1.TabIndex = 23;
@@ -80,9 +83,9 @@ namespace PBL
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(39, 107);
+            this.label2.Location = new System.Drawing.Point(40, 131);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 22);
             this.label2.TabIndex = 1;
@@ -91,9 +94,9 @@ namespace PBL
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(363, 73);
+            this.label3.Location = new System.Drawing.Point(405, 91);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 22);
             this.label3.TabIndex = 1;
@@ -102,9 +105,9 @@ namespace PBL
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(363, 107);
+            this.label4.Location = new System.Drawing.Point(405, 131);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 22);
             this.label4.TabIndex = 1;
@@ -113,9 +116,9 @@ namespace PBL
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(363, 140);
+            this.label5.Location = new System.Drawing.Point(405, 172);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 22);
             this.label5.TabIndex = 1;
@@ -123,61 +126,84 @@ namespace PBL
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(192, 73);
+            this.textBox1.Location = new System.Drawing.Point(204, 95);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(142, 20);
             this.textBox1.TabIndex = 24;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(192, 107);
+            this.textBox2.Location = new System.Drawing.Point(204, 135);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(142, 20);
             this.textBox2.TabIndex = 24;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(478, 75);
+            this.dateTimePicker1.Location = new System.Drawing.Point(525, 91);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 25;
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(478, 104);
+            this.dateTimePicker2.Location = new System.Drawing.Point(525, 131);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker2.TabIndex = 25;
             // 
             // dateTimePicker3
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(478, 140);
+            this.dateTimePicker3.Location = new System.Drawing.Point(525, 174);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker3.TabIndex = 25;
             // 
-            // Form4
+            // panel1
+            // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.dateTimePicker3);
+            this.panel1.Controls.Add(this.dateTimePicker2);
+            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(21, 24);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(796, 279);
+            this.panel1.TabIndex = 26;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Cambria", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label10.Location = new System.Drawing.Point(41, 14);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(222, 43);
+            this.label10.TabIndex = 34;
+            this.label10.Text = "Phiếu Mượn";
+            // 
+            // FormDuLieuPhieuMuon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(706, 284);
-            this.Controls.Add(this.dateTimePicker3);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.ClientSize = new System.Drawing.Size(829, 371);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button7);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Name = "Form4";
+            this.Controls.Add(this.button1);
+            this.Name = "FormDuLieuPhieuMuon";
             this.Text = "DuLieuPhieuMuon";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -195,5 +221,7 @@ namespace PBL
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label10;
     }
 }
