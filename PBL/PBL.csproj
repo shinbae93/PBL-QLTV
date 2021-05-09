@@ -57,55 +57,56 @@
   <ItemGroup>
     <Compile Include="BLL\QLDG_BLL.cs" />
     <Compile Include="BLL\QLNV_BLL.cs" />
+    <Compile Include="BLL\QLPM_BLL.cs" />
     <Compile Include="BLL\QLTL_BLL.cs" />
     <Compile Include="BLL\QLVP_BLL.cs" />
     <Compile Include="DAL\CuonTaiLieu.cs">
-      <DependentUpon>QLTV.tt</DependentUpon>
+      <DependentUpon>DHP07.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DHP07.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DHP07.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DHP07.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DHP07.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DHP07.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DHP07.edmx</DependentUpon>
     </Compile>
     <Compile Include="DAL\DocGia.cs">
-      <DependentUpon>QLTV.tt</DependentUpon>
+      <DependentUpon>DHP07.tt</DependentUpon>
     </Compile>
     <Compile Include="DAL\LoaiTaiLieu.cs">
-      <DependentUpon>QLTV.tt</DependentUpon>
+      <DependentUpon>DHP07.tt</DependentUpon>
     </Compile>
     <Compile Include="DAL\Lop.cs">
-      <DependentUpon>QLTV.tt</DependentUpon>
+      <DependentUpon>DHP07.tt</DependentUpon>
     </Compile>
     <Compile Include="DAL\NgonNgu.cs">
-      <DependentUpon>QLTV.tt</DependentUpon>
+      <DependentUpon>DHP07.tt</DependentUpon>
     </Compile>
     <Compile Include="DAL\NguoiDung.cs">
-      <DependentUpon>QLTV.tt</DependentUpon>
+      <DependentUpon>DHP07.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\NhaXuatBan.cs">
+      <DependentUpon>DHP07.tt</DependentUpon>
     </Compile>
     <Compile Include="DAL\PhieuMuon.cs">
-      <DependentUpon>QLTV.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAL\QLTV.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLTV.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAL\QLTV.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLTV.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAL\QLTV.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QLTV.edmx</DependentUpon>
+      <DependentUpon>DHP07.tt</DependentUpon>
     </Compile>
     <Compile Include="DAL\QuyenHan.cs">
-      <DependentUpon>QLTV.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DAL\TacGia.cs">
-      <DependentUpon>QLTV.tt</DependentUpon>
+      <DependentUpon>DHP07.tt</DependentUpon>
     </Compile>
     <Compile Include="DAL\TaiLieu.cs">
-      <DependentUpon>QLTV.tt</DependentUpon>
+      <DependentUpon>DHP07.tt</DependentUpon>
     </Compile>
     <Compile Include="DAL\TaiLieuCT.cs">
-      <DependentUpon>QLTV.tt</DependentUpon>
+      <DependentUpon>DHP07.tt</DependentUpon>
     </Compile>
     <Compile Include="View\FormDuLieuDocGia.cs">
       <SubType>Form</SubType>
@@ -190,6 +191,13 @@
     <EmbeddedResource Include="View\FormViPham.resx">
       <DependentUpon>FormViPham.cs</DependentUpon>
     </EmbeddedResource>
+    <EntityDeploy Include="DAL\DHP07.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DHP07.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DAL\DHP07.edmx.diagram">
+      <DependentUpon>DHP07.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -200,28 +208,20 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EntityDeploy Include="DAL\QLTV.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>QLTV.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="DAL\QLTV.edmx.diagram">
-      <DependentUpon>QLTV.edmx</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="DAL\QLTV.Context.tt">
+    <Content Include="DAL\DHP07.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>QLTV.Context.cs</LastGenOutput>
-      <DependentUpon>QLTV.edmx</DependentUpon>
+      <DependentUpon>DHP07.edmx</DependentUpon>
+      <LastGenOutput>DHP07.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="DAL\QLTV.tt">
+    <Content Include="DAL\DHP07.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QLTV.edmx</DependentUpon>
-      <LastGenOutput>QLTV.cs</LastGenOutput>
+      <DependentUpon>DHP07.edmx</DependentUpon>
+      <LastGenOutput>DHP07.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

@@ -16,7 +16,8 @@ namespace PBL.View
         {
             InitializeComponent();
         }
-        private void button1_Click(object sender, EventArgs e)
+
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == "quanly")
             {

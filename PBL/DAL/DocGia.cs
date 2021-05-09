@@ -21,7 +21,7 @@ namespace PBL.DAL
         }
     
         public string MaDocGia { get; set; }
-        public string CMND { get; set; }
+        public string MSSV { get; set; }
         public string HoTen { get; set; }
         public Nullable<System.DateTime> NgaySinh { get; set; }
         public Nullable<bool> GioiTinh { get; set; }

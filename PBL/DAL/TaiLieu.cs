@@ -18,24 +18,22 @@ namespace PBL.DAL
         public TaiLieu()
         {
             this.CuonTaiLieux = new HashSet<CuonTaiLieu>();
-            this.LoaiTaiLieux = new HashSet<LoaiTaiLieu>();
-            this.TaiLieuCTs = new HashSet<TaiLieuCT>();
         }
     
         public string MaTL { get; set; }
         public string TenTL { get; set; }
+        public string MaLTL { get; set; }
         public string MaNgonNgu { get; set; }
-        public string MaTacGia { get; set; }
+        public string MaNXB { get; set; }
         public System.DateTime NamXuatBan { get; set; }
+        public Nullable<int> SoLuong { get; set; }
+        public string TacGia { get; set; }
         public System.DateTime NgayCN { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CuonTaiLieu> CuonTaiLieux { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<LoaiTaiLieu> LoaiTaiLieux { get; set; }
+        public virtual LoaiTaiLieu LoaiTaiLieu { get; set; }
         public virtual NgonNgu NgonNgu { get; set; }
-        public virtual TacGia TacGia { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TaiLieuCT> TaiLieuCTs { get; set; }
+        public virtual NhaXuatBan NhaXuatBan { get; set; }
     }
 }

@@ -14,11 +14,16 @@ namespace PBL.DAL
     
     public partial class LoaiTaiLieu
     {
-        public string MaLTT { get; set; }
-        public string MaTL { get; set; }
-        public string TenLoai { get; set; }
-        public Nullable<int> SoLuong { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public LoaiTaiLieu()
+        {
+            this.TaiLieux = new HashSet<TaiLieu>();
+        }
     
-        public virtual TaiLieu TaiLieu { get; set; }
+        public string MaLTL { get; set; }
+        public string TenLoai { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TaiLieu> TaiLieux { get; set; }
     }
 }

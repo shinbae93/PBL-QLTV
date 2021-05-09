@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DHP_07Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CuonTaiLieu">
+    <Key>
+      <PropertyRef Name="MaVach" />
+    </Key>
+    <Property Name="MaVach" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaTL" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DocGia">
+    <Key>
+      <PropertyRef Name="MaDocGia" />
+    </Key>
+    <Property Name="MaDocGia" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MSSV" Type="char" MaxLength="9" Nullable="false" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="NgaySinh" Type="date" />
+    <Property Name="GioiTinh" Type="bit" />
+    <Property Name="MaLop" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="NgayDK" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LoaiTaiLieu">
+    <Key>
+      <PropertyRef Name="MaLTL" />
+    </Key>
+    <Property Name="MaLTL" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TenLoai" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Lop">
+    <Key>
+      <PropertyRef Name="MaLop" />
+    </Key>
+    <Property Name="MaLop" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TenLop" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NgonNgu">
+    <Key>
+      <PropertyRef Name="MaNgonNgu" />
+    </Key>
+    <Property Name="MaNgonNgu" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TenNgonNgu" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NguoiDung">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="NgaySinh" Type="date" />
+    <Property Name="GioiTinh" Type="bit" />
+    <Property Name="ChucDanh" Type="nvarchar" MaxLength="50" />
+    <Property Name="DienThoai" Type="char" MaxLength="10" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="ID_QuyenHan" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NhaXuatBan">
+    <Key>
+      <PropertyRef Name="MaNXB" />
+    </Key>
+    <Property Name="MaNXB" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TenNXB" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PhieuMuon">
+    <Key>
+      <PropertyRef Name="MaPhieuMuon" />
+    </Key>
+    <Property Name="MaPhieuMuon" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaDocGia" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="NgayMuon" Type="date" Nullable="false" />
+    <Property Name="HanTra" Type="date" Nullable="false" />
+    <Property Name="NgayTra" Type="date" />
+    <Property Name="ViPham" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="QuyenHan">
+    <Key>
+      <PropertyRef Name="ID_QuyenHan" />
+    </Key>
+    <Property Name="ID_QuyenHan" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TenQuyenHan" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TaiLieu">
+    <Key>
+      <PropertyRef Name="MaTL" />
+    </Key>
+    <Property Name="MaTL" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="TenTL" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="MaLTL" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaNgonNgu" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaNXB" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="NamXuatBan" Type="date" Nullable="false" />
+    <Property Name="SoLuong" Type="int" />
+    <Property Name="TacGia" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NgayCN" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TaiLieuCT">
+    <Key>
+      <PropertyRef Name="MaPhieuMuon" />
+      <PropertyRef Name="MaVach" />
+    </Key>
+    <Property Name="MaPhieuMuon" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaVach" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="NgayCN" Type="date" />
+    <Property Name="TinhTrang" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="fk_cuontl_matl">
+    <End Role="TaiLieu" Type="Self.TaiLieu" Multiplicity="1" />
+    <End Role="CuonTaiLieu" Type="Self.CuonTaiLieu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TaiLieu">
+        <PropertyRef Name="MaTL" />
+      </Principal>
+      <Dependent Role="CuonTaiLieu">
+        <PropertyRef Name="MaTL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_docgia_malop">
+    <End Role="Lop" Type="Self.Lop" Multiplicity="1" />
+    <End Role="DocGia" Type="Self.DocGia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Lop">
+        <PropertyRef Name="MaLop" />
+      </Principal>
+      <Dependent Role="DocGia">
+        <PropertyRef Name="MaLop" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_nguoidung_idquyenhan">
+    <End Role="QuyenHan" Type="Self.QuyenHan" Multiplicity="1" />
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="QuyenHan">
+        <PropertyRef Name="ID_QuyenHan" />
+      </Principal>
+      <Dependent Role="NguoiDung">
+        <PropertyRef Name="ID_QuyenHan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_phieumuon_id">
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="1" />
+    <End Role="PhieuMuon" Type="Self.PhieuMuon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PhieuMuon">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_phieumuon_madocia">
+    <End Role="DocGia" Type="Self.DocGia" Multiplicity="1" />
+    <End Role="PhieuMuon" Type="Self.PhieuMuon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DocGia">
+        <PropertyRef Name="MaDocGia" />
+      </Principal>
+      <Dependent Role="PhieuMuon">
+        <PropertyRef Name="MaDocGia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TaiLieu_LoaiTaiLieu">
+    <End Role="LoaiTaiLieu" Type="Self.LoaiTaiLieu" Multiplicity="1" />
+    <End Role="TaiLieu" Type="Self.TaiLieu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoaiTaiLieu">
+        <PropertyRef Name="MaLTL" />
+      </Principal>
+      <Dependent Role="TaiLieu">
+        <PropertyRef Name="MaLTL" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TaiLieuCT_CuonTaiLieu">
+    <End Role="CuonTaiLieu" Type="Self.CuonTaiLieu" Multiplicity="1" />
+    <End Role="TaiLieuCT" Type="Self.TaiLieuCT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CuonTaiLieu">
+        <PropertyRef Name="MaVach" />
+      </Principal>
+      <Dependent Role="TaiLieuCT">
+        <PropertyRef Name="MaVach" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tl_mangonngu">
+    <End Role="NgonNgu" Type="Self.NgonNgu" Multiplicity="1" />
+    <End Role="TaiLieu" Type="Self.TaiLieu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NgonNgu">
+        <PropertyRef Name="MaNgonNgu" />
+      </Principal>
+      <Dependent Role="TaiLieu">
+        <PropertyRef Name="MaNgonNgu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tl_matacgia">
+    <End Role="NhaXuatBan" Type="Self.NhaXuatBan" Multiplicity="1" />
+    <End Role="TaiLieu" Type="Self.TaiLieu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhaXuatBan">
+        <PropertyRef Name="MaNXB" />
+      </Principal>
+      <Dependent Role="TaiLieu">
+        <PropertyRef Name="MaNXB" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tlct_maphieumuon">
+    <End Role="PhieuMuon" Type="Self.PhieuMuon" Multiplicity="1" />
+    <End Role="TaiLieuCT" Type="Self.TaiLieuCT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PhieuMuon">
+        <PropertyRef Name="MaPhieuMuon" />
+      </Principal>
+      <Dependent Role="TaiLieuCT">
+        <PropertyRef Name="MaPhieuMuon" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DHP_07ModelStoreContainer">
+    <EntitySet Name="CuonTaiLieu" EntityType="Self.CuonTaiLieu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DocGia" EntityType="Self.DocGia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LoaiTaiLieu" EntityType="Self.LoaiTaiLieu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Lop" EntityType="Self.Lop" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NgonNgu" EntityType="Self.NgonNgu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NguoiDung" EntityType="Self.NguoiDung" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NhaXuatBan" EntityType="Self.NhaXuatBan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PhieuMuon" EntityType="Self.PhieuMuon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QuyenHan" EntityType="Self.QuyenHan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TaiLieu" EntityType="Self.TaiLieu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TaiLieuCT" EntityType="Self.TaiLieuCT" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_cuontl_matl" Association="Self.fk_cuontl_matl">
+      <End Role="TaiLieu" EntitySet="TaiLieu" />
+      <End Role="CuonTaiLieu" EntitySet="CuonTaiLieu" />
+    </AssociationSet>
+    <AssociationSet Name="fk_docgia_malop" Association="Self.fk_docgia_malop">
+      <End Role="Lop" EntitySet="Lop" />
+      <End Role="DocGia" EntitySet="DocGia" />
+    </AssociationSet>
+    <AssociationSet Name="fk_nguoidung_idquyenhan" Association="Self.fk_nguoidung_idquyenhan">
+      <End Role="QuyenHan" EntitySet="QuyenHan" />
+      <End Role="NguoiDung" EntitySet="NguoiDung" />
+    </AssociationSet>
+    <AssociationSet Name="fk_phieumuon_id" Association="Self.fk_phieumuon_id">
+      <End Role="NguoiDung" EntitySet="NguoiDung" />
+      <End Role="PhieuMuon" EntitySet="PhieuMuon" />
+    </AssociationSet>
+    <AssociationSet Name="fk_phieumuon_madocia" Association="Self.fk_phieumuon_madocia">
+      <End Role="DocGia" EntitySet="DocGia" />
+      <End Role="PhieuMuon" EntitySet="PhieuMuon" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TaiLieu_LoaiTaiLieu" Association="Self.FK_TaiLieu_LoaiTaiLieu">
+      <End Role="LoaiTaiLieu" EntitySet="LoaiTaiLieu" />
+      <End Role="TaiLieu" EntitySet="TaiLieu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TaiLieuCT_CuonTaiLieu" Association="Self.FK_TaiLieuCT_CuonTaiLieu">
+      <End Role="CuonTaiLieu" EntitySet="CuonTaiLieu" />
+      <End Role="TaiLieuCT" EntitySet="TaiLieuCT" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tl_mangonngu" Association="Self.fk_tl_mangonngu">
+      <End Role="NgonNgu" EntitySet="NgonNgu" />
+      <End Role="TaiLieu" EntitySet="TaiLieu" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tl_matacgia" Association="Self.fk_tl_matacgia">
+      <End Role="NhaXuatBan" EntitySet="NhaXuatBan" />
+      <End Role="TaiLieu" EntitySet="TaiLieu" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tlct_maphieumuon" Association="Self.fk_tlct_maphieumuon">
+      <End Role="PhieuMuon" EntitySet="PhieuMuon" />
+      <End Role="TaiLieuCT" EntitySet="TaiLieuCT" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

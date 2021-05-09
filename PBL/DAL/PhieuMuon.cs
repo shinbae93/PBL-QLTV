@@ -20,7 +20,7 @@ namespace PBL.DAL
             this.TaiLieuCTs = new HashSet<TaiLieuCT>();
         }
     
-        public int MaPhieuMuon { get; set; }
+        public string MaPhieuMuon { get; set; }
         public string ID { get; set; }
         public string MaDocGia { get; set; }
         public System.DateTime NgayMuon { get; set; }

@@ -14,12 +14,12 @@ namespace PBL.DAL
     
     public partial class TaiLieuCT
     {
-        public int MaPhieuMuon { get; set; }
-        public string MaTL { get; set; }
+        public string MaPhieuMuon { get; set; }
+        public string MaVach { get; set; }
         public Nullable<System.DateTime> NgayCN { get; set; }
         public string TinhTrang { get; set; }
     
+        public virtual CuonTaiLieu CuonTaiLieu { get; set; }
         public virtual PhieuMuon PhieuMuon { get; set; }
-        public virtual TaiLieu TaiLieu { get; set; }
     }
 }

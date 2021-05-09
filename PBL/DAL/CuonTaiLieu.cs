@@ -14,9 +14,17 @@ namespace PBL.DAL
     
     public partial class CuonTaiLieu
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public CuonTaiLieu()
+        {
+            this.TaiLieuCTs = new HashSet<TaiLieuCT>();
+        }
+    
         public string MaVach { get; set; }
         public string MaTL { get; set; }
     
         public virtual TaiLieu TaiLieu { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TaiLieuCT> TaiLieuCTs { get; set; }
     }
 }
