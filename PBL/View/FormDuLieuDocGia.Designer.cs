@@ -35,21 +35,19 @@ namespace PBL.View
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -61,9 +59,9 @@ namespace PBL.View
             this.label1.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(23, 86);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 22);
+            this.label1.Size = new System.Drawing.Size(58, 22);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Số Thẻ";
+            this.label1.Text = "MSSV";
             // 
             // label2
             // 
@@ -83,16 +81,16 @@ namespace PBL.View
             this.label3.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(22, 157);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 22);
+            this.label3.Size = new System.Drawing.Size(94, 22);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Năm Sinh";
+            this.label3.Text = "Ngày Sinh";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(23, 218);
+            this.label4.Location = new System.Drawing.Point(22, 217);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 22);
             this.label4.TabIndex = 0;
@@ -109,27 +107,16 @@ namespace PBL.View
             this.label5.TabIndex = 0;
             this.label5.Text = "Mã Lớp";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(422, 122);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(93, 22);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Người CN";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(422, 157);
+            this.label7.Location = new System.Drawing.Point(422, 126);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 22);
+            this.label7.Size = new System.Drawing.Size(82, 22);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Ngày CN";
+            this.label7.Text = "Ngày DK";
             // 
             // button7
             // 
@@ -157,22 +144,15 @@ namespace PBL.View
             // 
             this.textBox1.Location = new System.Drawing.Point(130, 86);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(139, 20);
+            this.textBox1.Size = new System.Drawing.Size(200, 20);
             this.textBox1.TabIndex = 23;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(130, 126);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(139, 20);
+            this.textBox2.Size = new System.Drawing.Size(200, 20);
             this.textBox2.TabIndex = 24;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(130, 161);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(139, 20);
-            this.textBox3.TabIndex = 25;
             // 
             // textBox5
             // 
@@ -181,16 +161,9 @@ namespace PBL.View
             this.textBox5.Size = new System.Drawing.Size(200, 20);
             this.textBox5.TabIndex = 27;
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(550, 122);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(200, 20);
-            this.textBox6.TabIndex = 28;
-            // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(550, 161);
+            this.dateTimePicker1.Location = new System.Drawing.Point(130, 159);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 29;
@@ -233,17 +206,15 @@ namespace PBL.View
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Controls.Add(this.dateTimePicker2);
             this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.textBox6);
             this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label1);
             this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -264,11 +235,20 @@ namespace PBL.View
             this.label10.TabIndex = 33;
             this.label10.Text = "Độc Giả";
             // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(550, 128);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker2.TabIndex = 29;
+            // 
             // FormDuLieuDocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(829, 371);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button7);
@@ -290,20 +270,18 @@ namespace PBL.View
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
     }
 }

@@ -33,6 +33,12 @@ namespace PBL.View
             {
                 MessageBox.Show("Sai thong tin");
             }
+
+        }
+        private void label3_Click(object sender, EventArgs e)
+        {
+            FormForgotPW f = new FormForgotPW();
+            f.ShowDialog();
         }
     }
 }

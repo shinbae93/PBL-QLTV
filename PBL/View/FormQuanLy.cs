@@ -72,5 +72,10 @@ namespace PBL.View
         {
             
         }
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            FormLogOut f = new FormLogOut();
+            f.ShowDialog();
+        }
     }
 }

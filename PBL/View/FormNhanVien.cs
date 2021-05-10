@@ -38,5 +38,10 @@ namespace PBL
             //f.d = new Form2.MyDel(this.Show);
             f.ShowDialog();
         }
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            FormLogOut f = new FormLogOut();
+            f.ShowDialog();
+        }
     }
 }

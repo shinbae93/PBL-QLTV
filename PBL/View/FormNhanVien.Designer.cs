@@ -150,12 +150,13 @@ namespace PBL
             // 
             this.button5.BackColor = System.Drawing.Color.Gainsboro;
             this.button5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(794, 579);
+            this.button5.Location = new System.Drawing.Point(755, 579);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 26);
+            this.button5.Size = new System.Drawing.Size(114, 26);
             this.button5.TabIndex = 12;
-            this.button5.Text = "EXIT";
+            this.button5.Text = "LOG OUT";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // button18
             // 
@@ -402,12 +403,13 @@ namespace PBL
             // 
             this.button1.BackColor = System.Drawing.Color.Gainsboro;
             this.button1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(794, 579);
+            this.button1.Location = new System.Drawing.Point(768, 579);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 26);
+            this.button1.Size = new System.Drawing.Size(101, 26);
             this.button1.TabIndex = 9;
-            this.button1.Text = "EXIT";
+            this.button1.Text = "LOG OUT";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // comboBox2
             // 
@@ -601,12 +603,13 @@ namespace PBL
             // 
             this.button14.BackColor = System.Drawing.Color.Gainsboro;
             this.button14.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(794, 579);
+            this.button14.Location = new System.Drawing.Point(770, 579);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 26);
+            this.button14.Size = new System.Drawing.Size(99, 26);
             this.button14.TabIndex = 11;
-            this.button14.Text = "EXIT";
+            this.button14.Text = "LOG OUT";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // button13
             // 

@@ -96,7 +96,6 @@ namespace PBL.View
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnSearchNV = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
@@ -119,6 +118,7 @@ namespace PBL.View
             this.label21 = new System.Windows.Forms.Label();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.label13 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -161,6 +161,7 @@ namespace PBL.View
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Transparent;
             this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
+            this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage1.Controls.Add(this.btnDelSach);
             this.tabPage1.Controls.Add(this.btnExitSach);
             this.tabPage1.Controls.Add(this.btnSortSach);
@@ -193,12 +194,13 @@ namespace PBL.View
             // 
             this.btnExitSach.BackColor = System.Drawing.Color.Gainsboro;
             this.btnExitSach.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExitSach.Location = new System.Drawing.Point(794, 579);
+            this.btnExitSach.Location = new System.Drawing.Point(771, 579);
             this.btnExitSach.Name = "btnExitSach";
-            this.btnExitSach.Size = new System.Drawing.Size(75, 26);
+            this.btnExitSach.Size = new System.Drawing.Size(98, 26);
             this.btnExitSach.TabIndex = 12;
-            this.btnExitSach.Text = "EXIT";
+            this.btnExitSach.Text = "LOG OUT";
             this.btnExitSach.UseVisualStyleBackColor = false;
+            this.btnExitSach.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnSortSach
             // 
@@ -413,6 +415,7 @@ namespace PBL.View
             // tabPage2
             // 
             this.tabPage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage2.BackgroundImage")));
+            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage2.Controls.Add(this.btnDellDocGia);
             this.tabPage2.Controls.Add(this.btnExitDocGia);
             this.tabPage2.Controls.Add(this.comboBox2);
@@ -446,12 +449,13 @@ namespace PBL.View
             // 
             this.btnExitDocGia.BackColor = System.Drawing.Color.Gainsboro;
             this.btnExitDocGia.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExitDocGia.Location = new System.Drawing.Point(794, 579);
+            this.btnExitDocGia.Location = new System.Drawing.Point(773, 579);
             this.btnExitDocGia.Name = "btnExitDocGia";
-            this.btnExitDocGia.Size = new System.Drawing.Size(75, 26);
+            this.btnExitDocGia.Size = new System.Drawing.Size(96, 26);
             this.btnExitDocGia.TabIndex = 9;
-            this.btnExitDocGia.Text = "EXIT";
+            this.btnExitDocGia.Text = "LOG OUT";
             this.btnExitDocGia.UseVisualStyleBackColor = false;
+            this.btnExitDocGia.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // comboBox2
             // 
@@ -523,6 +527,7 @@ namespace PBL.View
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.btnSearchDocGia);
             this.panel2.Controls.Add(this.textBox9);
             this.panel2.Controls.Add(this.textBox10);
@@ -538,7 +543,7 @@ namespace PBL.View
             // 
             this.btnSearchDocGia.BackColor = System.Drawing.Color.Gainsboro;
             this.btnSearchDocGia.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchDocGia.Location = new System.Drawing.Point(680, 93);
+            this.btnSearchDocGia.Location = new System.Drawing.Point(688, 96);
             this.btnSearchDocGia.Name = "btnSearchDocGia";
             this.btnSearchDocGia.Size = new System.Drawing.Size(75, 26);
             this.btnSearchDocGia.TabIndex = 6;
@@ -607,6 +612,7 @@ namespace PBL.View
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Transparent;
             this.tabPage3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage3.BackgroundImage")));
+            this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage3.Controls.Add(this.btnDelPhieuMuon);
             this.tabPage3.Controls.Add(this.comboBox3);
             this.tabPage3.Controls.Add(this.btnExitPhieuMuon);
@@ -715,6 +721,7 @@ namespace PBL.View
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.textBox6);
             this.panel3.Controls.Add(this.textBox7);
@@ -798,6 +805,7 @@ namespace PBL.View
             // tabPage4
             // 
             this.tabPage4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage4.BackgroundImage")));
+            this.tabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage4.Controls.Add(this.comboBox4);
             this.tabPage4.Controls.Add(this.btnExitNV);
             this.tabPage4.Controls.Add(this.btnSortNV);
@@ -828,10 +836,11 @@ namespace PBL.View
             this.btnExitNV.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExitNV.Location = new System.Drawing.Point(780, 575);
             this.btnExitNV.Name = "btnExitNV";
-            this.btnExitNV.Size = new System.Drawing.Size(75, 26);
+            this.btnExitNV.Size = new System.Drawing.Size(86, 26);
             this.btnExitNV.TabIndex = 28;
-            this.btnExitNV.Text = "EXIT";
+            this.btnExitNV.Text = "LOG OUT";
             this.btnExitNV.UseVisualStyleBackColor = false;
+            this.btnExitNV.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnSortNV
             // 
@@ -893,16 +902,17 @@ namespace PBL.View
             // 
             this.dataGridView4.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(25, 347);
+            this.dataGridView4.Location = new System.Drawing.Point(25, 291);
             this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(830, 212);
+            this.dataGridView4.Size = new System.Drawing.Size(841, 268);
             this.dataGridView4.TabIndex = 27;
             // 
             // panel4
             // 
             this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
-            this.panel4.Controls.Add(this.btnSearchNV);
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Controls.Add(this.label13);
+            this.panel4.Controls.Add(this.btnSearchNV);
             this.panel4.Controls.Add(this.textBox12);
             this.panel4.Controls.Add(this.textBox15);
             this.panel4.Controls.Add(this.textBox16);
@@ -911,7 +921,7 @@ namespace PBL.View
             this.panel4.Controls.Add(this.label20);
             this.panel4.Location = new System.Drawing.Point(25, 28);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(830, 279);
+            this.panel4.Size = new System.Drawing.Size(841, 237);
             this.panel4.TabIndex = 26;
             // 
             // btnSearchNV
@@ -925,18 +935,6 @@ namespace PBL.View
             this.btnSearchNV.Text = "Search";
             this.btnSearchNV.UseVisualStyleBackColor = false;
             this.btnSearchNV.Click += new System.EventHandler(this.btnSearchNV_Click);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Cambria", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label13.Location = new System.Drawing.Point(55, 22);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(188, 43);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "Nhân Viên";
             // 
             // textBox12
             // 
@@ -995,6 +993,7 @@ namespace PBL.View
             // tabPage5
             // 
             this.tabPage5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage5.BackgroundImage")));
+            this.tabPage5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage5.Controls.Add(this.panel5);
             this.tabPage5.Controls.Add(this.btnSearchTKVP);
             this.tabPage5.Controls.Add(this.textBox8);
@@ -1161,6 +1160,21 @@ namespace PBL.View
             this.dataGridView5.Size = new System.Drawing.Size(390, 348);
             this.dataGridView5.TabIndex = 0;
             // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Maroon;
+            this.label13.Location = new System.Drawing.Point(58, 5);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(655, 87);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "Quản Lý Nhân Viên";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FormQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1258,7 +1272,6 @@ namespace PBL.View
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnSearchNV;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.TextBox textBox16;
@@ -1289,6 +1302,7 @@ namespace PBL.View
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label13;
     }
 }
 
