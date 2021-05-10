@@ -95,6 +95,7 @@ namespace PBL.View
             this.btnShowNV = new System.Windows.Forms.Button();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
             this.btnSearchNV = new System.Windows.Forms.Button();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
@@ -118,7 +119,10 @@ namespace PBL.View
             this.label21 = new System.Windows.Forms.Label();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
-            this.label13 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -724,7 +728,11 @@ namespace PBL.View
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.textBox6);
+            this.panel3.Controls.Add(this.textBox13);
+            this.panel3.Controls.Add(this.textBox11);
             this.panel3.Controls.Add(this.textBox7);
+            this.panel3.Controls.Add(this.label23);
+            this.panel3.Controls.Add(this.label22);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.label11);
@@ -923,6 +931,21 @@ namespace PBL.View
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(841, 237);
             this.panel4.TabIndex = 26;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Maroon;
+            this.label13.Location = new System.Drawing.Point(58, 5);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(655, 87);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "Quản Lý Nhân Viên";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnSearchNV
             // 
@@ -1160,20 +1183,47 @@ namespace PBL.View
             this.dataGridView5.Size = new System.Drawing.Size(390, 348);
             this.dataGridView5.TabIndex = 0;
             // 
-            // label13
+            // label22
             // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.DarkRed;
+            this.label22.Location = new System.Drawing.Point(44, 138);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(107, 22);
+            this.label22.TabIndex = 2;
+            this.label22.Text = "Tên độc giả";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.DarkRed;
+            this.label23.Location = new System.Drawing.Point(408, 138);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(106, 22);
+            this.label23.TabIndex = 2;
+            this.label23.Text = "Tên tài liệu";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Maroon;
-            this.label13.Location = new System.Drawing.Point(58, 5);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(655, 87);
-            this.label13.TabIndex = 23;
-            this.label13.Text = "Quản Lý Nhân Viên";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.textBox11.Location = new System.Drawing.Point(197, 138);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(127, 26);
+            this.textBox11.TabIndex = 3;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox13.Location = new System.Drawing.Point(524, 138);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(127, 26);
+            this.textBox13.TabIndex = 3;
             // 
             // FormQuanLy
             // 
@@ -1303,6 +1353,10 @@ namespace PBL.View
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
     }
 }
 
