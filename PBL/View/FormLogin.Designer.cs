@@ -88,9 +88,9 @@ namespace PBL.View
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(37, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 22);
+            this.label2.Size = new System.Drawing.Size(96, 22);
             this.label2.TabIndex = 2;
-            this.label2.Text = "PassWord";
+            this.label2.Text = "Password";
             // 
             // label1
             // 
