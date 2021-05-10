@@ -132,11 +132,35 @@
     <Compile Include="View\FormDuLieuSach.Designer.cs">
       <DependentUpon>FormDuLieuSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormForgotPW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormForgotPW.Designer.cs">
+      <DependentUpon>FormForgotPW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormForgotPW2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormForgotPW2.Designer.cs">
+      <DependentUpon>FormForgotPW2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormForgotPW3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormForgotPW3.Designer.cs">
+      <DependentUpon>FormForgotPW3.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FormLogout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormLogout.Designer.cs">
+      <DependentUpon>FormLogout.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FormNhanVien.cs">
       <SubType>Form</SubType>
@@ -169,6 +193,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormDuLieuSach.resx">
       <DependentUpon>FormDuLieuSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormForgotPW.resx">
+      <DependentUpon>FormForgotPW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormForgotPW2.resx">
+      <DependentUpon>FormForgotPW2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormForgotPW3.resx">
+      <DependentUpon>FormForgotPW3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
