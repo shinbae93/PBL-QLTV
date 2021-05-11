@@ -73,6 +73,7 @@ namespace PBL
             this.btnDelPM = new System.Windows.Forms.Button();
             this.cbbSortPM = new System.Windows.Forms.ComboBox();
             this.btnLogOutPM = new System.Windows.Forms.Button();
+            this.btnReturnPM = new System.Windows.Forms.Button();
             this.btnSortPM = new System.Windows.Forms.Button();
             this.btnEditPM = new System.Windows.Forms.Button();
             this.btnAddPM = new System.Windows.Forms.Button();
@@ -80,16 +81,15 @@ namespace PBL
             this.dataGridViewPM = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnSearchPM = new System.Windows.Forms.Button();
+            this.txtTenTaiLieuPM = new System.Windows.Forms.TextBox();
             this.txtSoThePM = new System.Windows.Forms.TextBox();
+            this.txtTenDocGiaPM = new System.Windows.Forms.TextBox();
             this.txtMaPhieuMuonPM = new System.Windows.Forms.TextBox();
+            this.lbTenDocGiaPM = new System.Windows.Forms.Label();
             this.lbMaPhieuMuonPM = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.lbSoThePM = new System.Windows.Forms.Label();
-            this.lbTenDocGiaPM = new System.Windows.Forms.Label();
             this.lbTenTaiLieuPM = new System.Windows.Forms.Label();
-            this.txtTenDocGiaPM = new System.Windows.Forms.TextBox();
-            this.txtTenTaiLieuPM = new System.Windows.Forms.TextBox();
-            this.btnRenderPM = new System.Windows.Forms.Button();
+            this.lbSoThePM = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSach)).BeginInit();
@@ -571,7 +571,7 @@ namespace PBL
             this.tabPage3.Controls.Add(this.btnDelPM);
             this.tabPage3.Controls.Add(this.cbbSortPM);
             this.tabPage3.Controls.Add(this.btnLogOutPM);
-            this.tabPage3.Controls.Add(this.btnRenderPM);
+            this.tabPage3.Controls.Add(this.btnReturnPM);
             this.tabPage3.Controls.Add(this.btnSortPM);
             this.tabPage3.Controls.Add(this.btnEditPM);
             this.tabPage3.Controls.Add(this.btnAddPM);
@@ -616,6 +616,18 @@ namespace PBL
             this.btnLogOutPM.Text = "LOG OUT";
             this.btnLogOutPM.UseVisualStyleBackColor = false;
             this.btnLogOutPM.Click += new System.EventHandler(this.btnLogOut_Click);
+            // 
+            // btnReturnPM
+            // 
+            this.btnReturnPM.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnReturnPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturnPM.Location = new System.Drawing.Point(665, 579);
+            this.btnReturnPM.Name = "btnReturnPM";
+            this.btnReturnPM.Size = new System.Drawing.Size(75, 26);
+            this.btnReturnPM.TabIndex = 10;
+            this.btnReturnPM.Text = "Return";
+            this.btnReturnPM.UseVisualStyleBackColor = false;
+            this.btnReturnPM.Click += new System.EventHandler(this.btnReturnPM_Click);
             // 
             // btnSortPM
             // 
@@ -705,6 +717,16 @@ namespace PBL
             this.btnSearchPM.Text = "Search";
             this.btnSearchPM.UseVisualStyleBackColor = false;
             // 
+            // txtTenTaiLieuPM
+            // 
+            this.txtTenTaiLieuPM.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTenTaiLieuPM.Location = new System.Drawing.Point(531, 137);
+            this.txtTenTaiLieuPM.Name = "txtTenTaiLieuPM";
+            this.txtTenTaiLieuPM.Size = new System.Drawing.Size(163, 26);
+            this.txtTenTaiLieuPM.TabIndex = 3;
+            // 
             // txtSoThePM
             // 
             this.txtSoThePM.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -715,6 +737,16 @@ namespace PBL
             this.txtSoThePM.Size = new System.Drawing.Size(163, 26);
             this.txtSoThePM.TabIndex = 3;
             // 
+            // txtTenDocGiaPM
+            // 
+            this.txtTenDocGiaPM.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTenDocGiaPM.Location = new System.Drawing.Point(197, 137);
+            this.txtTenDocGiaPM.Name = "txtTenDocGiaPM";
+            this.txtTenDocGiaPM.Size = new System.Drawing.Size(159, 26);
+            this.txtTenDocGiaPM.TabIndex = 3;
+            // 
             // txtMaPhieuMuonPM
             // 
             this.txtMaPhieuMuonPM.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -724,6 +756,17 @@ namespace PBL
             this.txtMaPhieuMuonPM.Name = "txtMaPhieuMuonPM";
             this.txtMaPhieuMuonPM.Size = new System.Drawing.Size(159, 26);
             this.txtMaPhieuMuonPM.TabIndex = 3;
+            // 
+            // lbTenDocGiaPM
+            // 
+            this.lbTenDocGiaPM.AutoSize = true;
+            this.lbTenDocGiaPM.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTenDocGiaPM.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbTenDocGiaPM.Location = new System.Drawing.Point(44, 137);
+            this.lbTenDocGiaPM.Name = "lbTenDocGiaPM";
+            this.lbTenDocGiaPM.Size = new System.Drawing.Size(111, 22);
+            this.lbTenDocGiaPM.TabIndex = 2;
+            this.lbTenDocGiaPM.Text = "Tên Độc Giả";
             // 
             // lbMaPhieuMuonPM
             // 
@@ -751,28 +794,6 @@ namespace PBL
             this.label10.Text = "Quản Lý Phiếu Mượn";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbSoThePM
-            // 
-            this.lbSoThePM.AutoSize = true;
-            this.lbSoThePM.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSoThePM.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbSoThePM.Location = new System.Drawing.Point(408, 97);
-            this.lbSoThePM.Name = "lbSoThePM";
-            this.lbSoThePM.Size = new System.Drawing.Size(68, 22);
-            this.lbSoThePM.TabIndex = 2;
-            this.lbSoThePM.Text = "Số Thẻ";
-            // 
-            // lbTenDocGiaPM
-            // 
-            this.lbTenDocGiaPM.AutoSize = true;
-            this.lbTenDocGiaPM.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTenDocGiaPM.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbTenDocGiaPM.Location = new System.Drawing.Point(44, 137);
-            this.lbTenDocGiaPM.Name = "lbTenDocGiaPM";
-            this.lbTenDocGiaPM.Size = new System.Drawing.Size(111, 22);
-            this.lbTenDocGiaPM.TabIndex = 2;
-            this.lbTenDocGiaPM.Text = "Tên Độc Giả";
-            // 
             // lbTenTaiLieuPM
             // 
             this.lbTenTaiLieuPM.AutoSize = true;
@@ -784,37 +805,16 @@ namespace PBL
             this.lbTenTaiLieuPM.TabIndex = 2;
             this.lbTenTaiLieuPM.Text = "Tên Tài Liệu";
             // 
-            // txtTenDocGiaPM
+            // lbSoThePM
             // 
-            this.txtTenDocGiaPM.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTenDocGiaPM.Location = new System.Drawing.Point(197, 137);
-            this.txtTenDocGiaPM.Name = "txtTenDocGiaPM";
-            this.txtTenDocGiaPM.Size = new System.Drawing.Size(159, 26);
-            this.txtTenDocGiaPM.TabIndex = 3;
-            // 
-            // txtTenTaiLieuPM
-            // 
-            this.txtTenTaiLieuPM.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTenTaiLieuPM.Location = new System.Drawing.Point(531, 137);
-            this.txtTenTaiLieuPM.Name = "txtTenTaiLieuPM";
-            this.txtTenTaiLieuPM.Size = new System.Drawing.Size(163, 26);
-            this.txtTenTaiLieuPM.TabIndex = 3;
-            // 
-            // btnRenderPM
-            // 
-            this.btnRenderPM.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnRenderPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRenderPM.Location = new System.Drawing.Point(665, 579);
-            this.btnRenderPM.Name = "btnRenderPM";
-            this.btnRenderPM.Size = new System.Drawing.Size(75, 26);
-            this.btnRenderPM.TabIndex = 10;
-            this.btnRenderPM.Text = "Render";
-            this.btnRenderPM.UseVisualStyleBackColor = false;
-            this.btnRenderPM.Click += new System.EventHandler(this.btnRenderPM_Click);
+            this.lbSoThePM.AutoSize = true;
+            this.lbSoThePM.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoThePM.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbSoThePM.Location = new System.Drawing.Point(408, 97);
+            this.lbSoThePM.Name = "lbSoThePM";
+            this.lbSoThePM.Size = new System.Drawing.Size(68, 22);
+            this.lbSoThePM.TabIndex = 2;
+            this.lbSoThePM.Text = "Số Thẻ";
             // 
             // FormNhanVien
             // 
@@ -904,7 +904,7 @@ namespace PBL
         private System.Windows.Forms.Label lbTenTaiLieuPM;
         private System.Windows.Forms.TextBox txtTenDocGiaPM;
         private System.Windows.Forms.TextBox txtTenTaiLieuPM;
-        private System.Windows.Forms.Button btnRenderPM;
+        private System.Windows.Forms.Button btnReturnPM;
     }
 }
 

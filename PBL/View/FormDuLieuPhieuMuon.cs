@@ -15,6 +15,7 @@ namespace PBL.View
         public FormDuLieuPhieuMuon(object p)
         {
             InitializeComponent();
+            txtMaPhieuMuon.Enabled = false;
         }
     }
 }

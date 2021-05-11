@@ -73,6 +73,7 @@ namespace PBL.View
             this.btnDelPM = new System.Windows.Forms.Button();
             this.cbbSortPM = new System.Windows.Forms.ComboBox();
             this.btnExitPM = new System.Windows.Forms.Button();
+            this.btnReturnPM = new System.Windows.Forms.Button();
             this.btnSortPM = new System.Windows.Forms.Button();
             this.btnEditPM = new System.Windows.Forms.Button();
             this.btnAddPM = new System.Windows.Forms.Button();
@@ -123,7 +124,6 @@ namespace PBL.View
             this.lbTongSoLuongTK = new System.Windows.Forms.Label();
             this.dataGridViewTKVP = new System.Windows.Forms.DataGridView();
             this.dataGridViewTKMS = new System.Windows.Forms.DataGridView();
-            this.btnRenderPM = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQLSach)).BeginInit();
@@ -621,7 +621,7 @@ namespace PBL.View
             this.tabPage3.Controls.Add(this.btnDelPM);
             this.tabPage3.Controls.Add(this.cbbSortPM);
             this.tabPage3.Controls.Add(this.btnExitPM);
-            this.tabPage3.Controls.Add(this.btnRenderPM);
+            this.tabPage3.Controls.Add(this.btnReturnPM);
             this.tabPage3.Controls.Add(this.btnSortPM);
             this.tabPage3.Controls.Add(this.btnEditPM);
             this.tabPage3.Controls.Add(this.btnAddPM);
@@ -664,6 +664,18 @@ namespace PBL.View
             this.btnExitPM.TabIndex = 11;
             this.btnExitPM.Text = "LOG OUT";
             this.btnExitPM.UseVisualStyleBackColor = false;
+            // 
+            // btnReturnPM
+            // 
+            this.btnReturnPM.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnReturnPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturnPM.Location = new System.Drawing.Point(682, 579);
+            this.btnReturnPM.Name = "btnReturnPM";
+            this.btnReturnPM.Size = new System.Drawing.Size(75, 26);
+            this.btnReturnPM.TabIndex = 10;
+            this.btnReturnPM.Text = "Return";
+            this.btnReturnPM.UseVisualStyleBackColor = false;
+            this.btnReturnPM.Click += new System.EventHandler(this.btnReturnPM_Click);
             // 
             // btnSortPM
             // 
@@ -1227,18 +1239,6 @@ namespace PBL.View
             this.dataGridViewTKMS.Size = new System.Drawing.Size(390, 348);
             this.dataGridViewTKMS.TabIndex = 0;
             // 
-            // btnRenderPM
-            // 
-            this.btnRenderPM.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnRenderPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRenderPM.Location = new System.Drawing.Point(682, 579);
-            this.btnRenderPM.Name = "btnRenderPM";
-            this.btnRenderPM.Size = new System.Drawing.Size(75, 26);
-            this.btnRenderPM.TabIndex = 10;
-            this.btnRenderPM.Text = "Render";
-            this.btnRenderPM.UseVisualStyleBackColor = false;
-            this.btnRenderPM.Click += new System.EventHandler(this.btnRenderPM_Click);
-            // 
             // FormQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1371,7 +1371,7 @@ namespace PBL.View
         private System.Windows.Forms.TextBox txtTenDocGiaPM;
         private System.Windows.Forms.Label lbTenTaiLieuPM;
         private System.Windows.Forms.Label lbTenDocGiaPM;
-        private System.Windows.Forms.Button btnRenderPM;
+        private System.Windows.Forms.Button btnReturnPM;
     }
 }
 

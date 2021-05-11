@@ -44,7 +44,7 @@ namespace PBL
             f.ShowDialog();
         }
 
-        private void btnRenderPM_Click(object sender, EventArgs e)
+        private void btnReturnPM_Click(object sender, EventArgs e)
         {
             FormTraDuLieuPhieuMuon f = new FormTraDuLieuPhieuMuon();
             f.ShowDialog();
