@@ -30,74 +30,74 @@ namespace PBL.View
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormForgotPW3));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.lbMatKhauMoi = new System.Windows.Forms.Label();
+            this.lbXacNhanLaiMatKhau = new System.Windows.Forms.Label();
+            this.txtMatKhauMoi = new System.Windows.Forms.TextBox();
+            this.txtXacNhanLaiMatKhau = new System.Windows.Forms.TextBox();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lbMatKhauMoi
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(52, 52);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Mật khẩu mới";
+            this.lbMatKhauMoi.AutoSize = true;
+            this.lbMatKhauMoi.BackColor = System.Drawing.Color.Transparent;
+            this.lbMatKhauMoi.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMatKhauMoi.Location = new System.Drawing.Point(52, 52);
+            this.lbMatKhauMoi.Name = "lbMatKhauMoi";
+            this.lbMatKhauMoi.Size = new System.Drawing.Size(130, 22);
+            this.lbMatKhauMoi.TabIndex = 0;
+            this.lbMatKhauMoi.Text = "Mật khẩu mới";
             // 
-            // label2
+            // lbXacNhanLaiMatKhau
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(52, 88);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(199, 22);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Xác nhận lại mật khẩu";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lbXacNhanLaiMatKhau.AutoSize = true;
+            this.lbXacNhanLaiMatKhau.BackColor = System.Drawing.Color.Transparent;
+            this.lbXacNhanLaiMatKhau.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbXacNhanLaiMatKhau.Location = new System.Drawing.Point(52, 88);
+            this.lbXacNhanLaiMatKhau.Name = "lbXacNhanLaiMatKhau";
+            this.lbXacNhanLaiMatKhau.Size = new System.Drawing.Size(199, 22);
+            this.lbXacNhanLaiMatKhau.TabIndex = 1;
+            this.lbXacNhanLaiMatKhau.Text = "Xác nhận lại mật khẩu";
+            this.lbXacNhanLaiMatKhau.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox1
+            // txtMatKhauMoi
             // 
-            this.textBox1.Location = new System.Drawing.Point(287, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(192, 20);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.UseSystemPasswordChar = true;
+            this.txtMatKhauMoi.Location = new System.Drawing.Point(287, 52);
+            this.txtMatKhauMoi.Name = "txtMatKhauMoi";
+            this.txtMatKhauMoi.Size = new System.Drawing.Size(192, 20);
+            this.txtMatKhauMoi.TabIndex = 2;
+            this.txtMatKhauMoi.UseSystemPasswordChar = true;
             // 
-            // textBox2
+            // txtXacNhanLaiMatKhau
             // 
-            this.textBox2.Location = new System.Drawing.Point(287, 88);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(192, 20);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.txtXacNhanLaiMatKhau.Location = new System.Drawing.Point(287, 88);
+            this.txtXacNhanLaiMatKhau.Name = "txtXacNhanLaiMatKhau";
+            this.txtXacNhanLaiMatKhau.Size = new System.Drawing.Size(192, 20);
+            this.txtXacNhanLaiMatKhau.TabIndex = 2;
+            this.txtXacNhanLaiMatKhau.UseSystemPasswordChar = true;
             // 
-            // button1
+            // btnOK
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(97, 137);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 30);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "OK";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnOK.BackColor = System.Drawing.Color.White;
+            this.btnOK.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOK.Location = new System.Drawing.Point(97, 137);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(75, 30);
+            this.btnOK.TabIndex = 3;
+            this.btnOK.Text = "OK";
+            this.btnOK.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnCancel
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(309, 137);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 30);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "CANCEL";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnCancel.BackColor = System.Drawing.Color.White;
+            this.btnCancel.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(309, 137);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(88, 30);
+            this.btnCancel.TabIndex = 3;
+            this.btnCancel.Text = "CANCEL";
+            this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // FormForgotPW3
             // 
@@ -106,12 +106,12 @@ namespace PBL.View
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(548, 230);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnOK);
+            this.Controls.Add(this.txtXacNhanLaiMatKhau);
+            this.Controls.Add(this.txtMatKhauMoi);
+            this.Controls.Add(this.lbXacNhanLaiMatKhau);
+            this.Controls.Add(this.lbMatKhauMoi);
             this.Name = "FormForgotPW3";
             this.Text = "FormForgotPW3";
             this.ResumeLayout(false);
@@ -121,11 +121,11 @@ namespace PBL.View
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lbMatKhauMoi;
+        private System.Windows.Forms.Label lbXacNhanLaiMatKhau;
+        private System.Windows.Forms.TextBox txtMatKhauMoi;
+        private System.Windows.Forms.TextBox txtXacNhanLaiMatKhau;
+        private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.Button btnCancel;
     }
 }

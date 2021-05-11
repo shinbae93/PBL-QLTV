@@ -19,12 +19,12 @@ namespace PBL.View
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "quanly")
+            if (txtUser.Text == "quanly")
             {
                 FormQuanLy f = new FormQuanLy();
                 f.ShowDialog();
             }
-            else if (textBox1.Text == "nhanvien")
+            else if (txtUser.Text == "nhanvien")
             {
                 FormNhanVien f = new FormNhanVien();
                 f.ShowDialog();

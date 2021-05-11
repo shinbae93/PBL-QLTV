@@ -31,29 +31,29 @@ namespace PBL.View
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDuLieuNhanVien));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.rbtnNam = new System.Windows.Forms.RadioButton();
+            this.rbtnNu = new System.Windows.Forms.RadioButton();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtID_QuyenHan = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtDienThoai = new System.Windows.Forms.TextBox();
+            this.txtChucDanh = new System.Windows.Forms.TextBox();
+            this.txtNamSinh = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtHoTen = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.lbID_QuyenHan = new System.Windows.Forms.Label();
+            this.lbEmail = new System.Windows.Forms.Label();
+            this.lbDienThoai = new System.Windows.Forms.Label();
+            this.lbChucDanh = new System.Windows.Forms.Label();
+            this.lbGioiTinh = new System.Windows.Forms.Label();
+            this.lbNamSinh = new System.Windows.Forms.Label();
+            this.lbHoTen = new System.Windows.Forms.Label();
+            this.lbPassword = new System.Windows.Forms.Label();
+            this.lbUser = new System.Windows.Forms.Label();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -64,27 +64,60 @@ namespace PBL.View
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.textBox10);
-            this.panel1.Controls.Add(this.textBox9);
-            this.panel1.Controls.Add(this.textBox8);
-            this.panel1.Controls.Add(this.textBox7);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.txtID_QuyenHan);
+            this.panel1.Controls.Add(this.txtEmail);
+            this.panel1.Controls.Add(this.txtDienThoai);
+            this.panel1.Controls.Add(this.txtChucDanh);
+            this.panel1.Controls.Add(this.txtNamSinh);
+            this.panel1.Controls.Add(this.txtPassword);
+            this.panel1.Controls.Add(this.txtHoTen);
+            this.panel1.Controls.Add(this.txtUser);
+            this.panel1.Controls.Add(this.lbID_QuyenHan);
+            this.panel1.Controls.Add(this.lbEmail);
+            this.panel1.Controls.Add(this.lbDienThoai);
+            this.panel1.Controls.Add(this.lbChucDanh);
+            this.panel1.Controls.Add(this.lbGioiTinh);
+            this.panel1.Controls.Add(this.lbNamSinh);
+            this.panel1.Controls.Add(this.lbHoTen);
+            this.panel1.Controls.Add(this.lbPassword);
+            this.panel1.Controls.Add(this.lbUser);
             this.panel1.Location = new System.Drawing.Point(21, 24);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(796, 279);
             this.panel1.TabIndex = 23;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.rbtnNam);
+            this.groupBox1.Controls.Add(this.rbtnNu);
+            this.groupBox1.Location = new System.Drawing.Point(142, 197);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(184, 50);
+            this.groupBox1.TabIndex = 33;
+            this.groupBox1.TabStop = false;
+            // 
+            // rbtnNam
+            // 
+            this.rbtnNam.AutoSize = true;
+            this.rbtnNam.Location = new System.Drawing.Point(18, 19);
+            this.rbtnNam.Name = "rbtnNam";
+            this.rbtnNam.Size = new System.Drawing.Size(47, 17);
+            this.rbtnNam.TabIndex = 31;
+            this.rbtnNam.TabStop = true;
+            this.rbtnNam.Text = "Nam";
+            this.rbtnNam.UseVisualStyleBackColor = true;
+            // 
+            // rbtnNu
+            // 
+            this.rbtnNu.AutoSize = true;
+            this.rbtnNu.Location = new System.Drawing.Point(100, 19);
+            this.rbtnNu.Name = "rbtnNu";
+            this.rbtnNu.Size = new System.Drawing.Size(39, 17);
+            this.rbtnNu.TabIndex = 30;
+            this.rbtnNu.TabStop = true;
+            this.rbtnNu.Text = "Nữ";
+            this.rbtnNu.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
@@ -98,241 +131,208 @@ namespace PBL.View
             this.label11.TabIndex = 20;
             this.label11.Text = "Nhân Viên";
             // 
-            // textBox10
+            // txtID_QuyenHan
             // 
-            this.textBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox10.Location = new System.Drawing.Point(518, 171);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(167, 20);
-            this.textBox10.TabIndex = 19;
+            this.txtID_QuyenHan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtID_QuyenHan.Location = new System.Drawing.Point(518, 171);
+            this.txtID_QuyenHan.Name = "txtID_QuyenHan";
+            this.txtID_QuyenHan.Size = new System.Drawing.Size(167, 20);
+            this.txtID_QuyenHan.TabIndex = 19;
             // 
-            // textBox9
+            // txtEmail
             // 
-            this.textBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox9.Location = new System.Drawing.Point(518, 136);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(167, 20);
-            this.textBox9.TabIndex = 18;
+            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEmail.Location = new System.Drawing.Point(518, 136);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(167, 20);
+            this.txtEmail.TabIndex = 18;
             // 
-            // textBox8
+            // txtDienThoai
             // 
-            this.textBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox8.Location = new System.Drawing.Point(518, 104);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(167, 20);
-            this.textBox8.TabIndex = 17;
+            this.txtDienThoai.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDienThoai.Location = new System.Drawing.Point(518, 104);
+            this.txtDienThoai.Name = "txtDienThoai";
+            this.txtDienThoai.Size = new System.Drawing.Size(167, 20);
+            this.txtDienThoai.TabIndex = 17;
             // 
-            // textBox7
+            // txtChucDanh
             // 
-            this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox7.Location = new System.Drawing.Point(518, 73);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(167, 20);
-            this.textBox7.TabIndex = 16;
+            this.txtChucDanh.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtChucDanh.Location = new System.Drawing.Point(518, 73);
+            this.txtChucDanh.Name = "txtChucDanh";
+            this.txtChucDanh.Size = new System.Drawing.Size(167, 20);
+            this.txtChucDanh.TabIndex = 16;
             // 
-            // textBox5
+            // txtNamSinh
             // 
-            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox5.Location = new System.Drawing.Point(152, 171);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(134, 20);
-            this.textBox5.TabIndex = 14;
+            this.txtNamSinh.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtNamSinh.Location = new System.Drawing.Point(152, 171);
+            this.txtNamSinh.Name = "txtNamSinh";
+            this.txtNamSinh.Size = new System.Drawing.Size(134, 20);
+            this.txtNamSinh.TabIndex = 14;
             // 
-            // textBox4
+            // txtPassword
             // 
-            this.textBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox4.Location = new System.Drawing.Point(152, 104);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(134, 20);
-            this.textBox4.TabIndex = 13;
+            this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPassword.Location = new System.Drawing.Point(152, 104);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(134, 20);
+            this.txtPassword.TabIndex = 13;
             // 
-            // textBox2
+            // txtHoTen
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Location = new System.Drawing.Point(152, 138);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(134, 20);
-            this.textBox2.TabIndex = 11;
+            this.txtHoTen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtHoTen.Location = new System.Drawing.Point(152, 138);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.Size = new System.Drawing.Size(134, 20);
+            this.txtHoTen.TabIndex = 11;
             // 
-            // textBox1
+            // txtUser
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(152, 73);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(134, 20);
-            this.textBox1.TabIndex = 10;
+            this.txtUser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtUser.Location = new System.Drawing.Point(152, 73);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(134, 20);
+            this.txtUser.TabIndex = 10;
             // 
-            // label9
+            // lbID_QuyenHan
             // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Maroon;
-            this.label9.Location = new System.Drawing.Point(383, 169);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(129, 22);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "ID_Quyền Hạn";
+            this.lbID_QuyenHan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbID_QuyenHan.AutoSize = true;
+            this.lbID_QuyenHan.BackColor = System.Drawing.Color.Transparent;
+            this.lbID_QuyenHan.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbID_QuyenHan.ForeColor = System.Drawing.Color.Maroon;
+            this.lbID_QuyenHan.Location = new System.Drawing.Point(383, 169);
+            this.lbID_QuyenHan.Name = "lbID_QuyenHan";
+            this.lbID_QuyenHan.Size = new System.Drawing.Size(129, 22);
+            this.lbID_QuyenHan.TabIndex = 8;
+            this.lbID_QuyenHan.Text = "ID_Quyền Hạn";
             // 
-            // label8
+            // lbEmail
             // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Maroon;
-            this.label8.Location = new System.Drawing.Point(383, 136);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 22);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Email";
+            this.lbEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbEmail.AutoSize = true;
+            this.lbEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lbEmail.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEmail.ForeColor = System.Drawing.Color.Maroon;
+            this.lbEmail.Location = new System.Drawing.Point(383, 136);
+            this.lbEmail.Name = "lbEmail";
+            this.lbEmail.Size = new System.Drawing.Size(60, 22);
+            this.lbEmail.TabIndex = 7;
+            this.lbEmail.Text = "Email";
             // 
-            // label7
+            // lbDienThoai
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Maroon;
-            this.label7.Location = new System.Drawing.Point(383, 104);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 22);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Điện Thoại";
+            this.lbDienThoai.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbDienThoai.AutoSize = true;
+            this.lbDienThoai.BackColor = System.Drawing.Color.Transparent;
+            this.lbDienThoai.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDienThoai.ForeColor = System.Drawing.Color.Maroon;
+            this.lbDienThoai.Location = new System.Drawing.Point(383, 104);
+            this.lbDienThoai.Name = "lbDienThoai";
+            this.lbDienThoai.Size = new System.Drawing.Size(104, 22);
+            this.lbDienThoai.TabIndex = 6;
+            this.lbDienThoai.Text = "Điện Thoại";
             // 
-            // label6
+            // lbChucDanh
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Maroon;
-            this.label6.Location = new System.Drawing.Point(383, 73);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 22);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Chức Danh";
+            this.lbChucDanh.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbChucDanh.AutoSize = true;
+            this.lbChucDanh.BackColor = System.Drawing.Color.Transparent;
+            this.lbChucDanh.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbChucDanh.ForeColor = System.Drawing.Color.Maroon;
+            this.lbChucDanh.Location = new System.Drawing.Point(383, 73);
+            this.lbChucDanh.Name = "lbChucDanh";
+            this.lbChucDanh.Size = new System.Drawing.Size(103, 22);
+            this.lbChucDanh.TabIndex = 5;
+            this.lbChucDanh.Text = "Chức Danh";
             // 
-            // label5
+            // lbGioiTinh
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Maroon;
-            this.label5.Location = new System.Drawing.Point(20, 211);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 22);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Giới Tính";
+            this.lbGioiTinh.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbGioiTinh.AutoSize = true;
+            this.lbGioiTinh.BackColor = System.Drawing.Color.Transparent;
+            this.lbGioiTinh.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGioiTinh.ForeColor = System.Drawing.Color.Maroon;
+            this.lbGioiTinh.Location = new System.Drawing.Point(20, 211);
+            this.lbGioiTinh.Name = "lbGioiTinh";
+            this.lbGioiTinh.Size = new System.Drawing.Size(91, 22);
+            this.lbGioiTinh.TabIndex = 4;
+            this.lbGioiTinh.Text = "Giới Tính";
             // 
-            // label4
+            // lbNamSinh
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(15, 169);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 22);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Năm Sinh";
+            this.lbNamSinh.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbNamSinh.AutoSize = true;
+            this.lbNamSinh.BackColor = System.Drawing.Color.Transparent;
+            this.lbNamSinh.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNamSinh.ForeColor = System.Drawing.Color.Maroon;
+            this.lbNamSinh.Location = new System.Drawing.Point(15, 169);
+            this.lbNamSinh.Name = "lbNamSinh";
+            this.lbNamSinh.Size = new System.Drawing.Size(92, 22);
+            this.lbNamSinh.TabIndex = 3;
+            this.lbNamSinh.Text = "Năm Sinh";
             // 
-            // label3
+            // lbHoTen
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Maroon;
-            this.label3.Location = new System.Drawing.Point(15, 136);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 22);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Họ Tên";
+            this.lbHoTen.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbHoTen.AutoSize = true;
+            this.lbHoTen.BackColor = System.Drawing.Color.Transparent;
+            this.lbHoTen.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHoTen.ForeColor = System.Drawing.Color.Maroon;
+            this.lbHoTen.Location = new System.Drawing.Point(15, 136);
+            this.lbHoTen.Name = "lbHoTen";
+            this.lbHoTen.Size = new System.Drawing.Size(71, 22);
+            this.lbHoTen.TabIndex = 2;
+            this.lbHoTen.Text = "Họ Tên";
             // 
-            // label2
+            // lbPassword
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Maroon;
-            this.label2.Location = new System.Drawing.Point(15, 104);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 22);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Password";
+            this.lbPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbPassword.AutoSize = true;
+            this.lbPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lbPassword.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPassword.ForeColor = System.Drawing.Color.Maroon;
+            this.lbPassword.Location = new System.Drawing.Point(15, 104);
+            this.lbPassword.Name = "lbPassword";
+            this.lbPassword.Size = new System.Drawing.Size(96, 22);
+            this.lbPassword.TabIndex = 1;
+            this.lbPassword.Text = "Password";
             // 
-            // label1
+            // lbUser
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(15, 73);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 22);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "User";
+            this.lbUser.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbUser.AutoSize = true;
+            this.lbUser.BackColor = System.Drawing.Color.Transparent;
+            this.lbUser.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUser.ForeColor = System.Drawing.Color.Maroon;
+            this.lbUser.Location = new System.Drawing.Point(15, 73);
+            this.lbUser.Name = "lbUser";
+            this.lbUser.Size = new System.Drawing.Size(51, 22);
+            this.lbUser.TabIndex = 0;
+            this.lbUser.Text = "User";
             // 
-            // groupBox1
+            // btnOK
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(142, 197);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(184, 50);
-            this.groupBox1.TabIndex = 33;
-            this.groupBox1.TabStop = false;
+            this.btnOK.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnOK.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOK.Location = new System.Drawing.Point(163, 322);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(75, 26);
+            this.btnOK.TabIndex = 24;
+            this.btnOK.Text = "OK";
+            this.btnOK.UseVisualStyleBackColor = false;
             // 
-            // radioButton2
+            // btnCancel
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(18, 19);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(47, 17);
-            this.radioButton2.TabIndex = 31;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Nam";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(100, 19);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(39, 17);
-            this.radioButton1.TabIndex = 30;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Nữ";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.Gainsboro;
-            this.button7.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(163, 322);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 26);
-            this.button7.TabIndex = 24;
-            this.button7.Text = "OK";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Gainsboro;
-            this.button1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(516, 322);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 26);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "CANCEL";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCancel.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnCancel.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(516, 322);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 26);
+            this.btnCancel.TabIndex = 25;
+            this.btnCancel.Text = "CANCEL";
+            this.btnCancel.UseVisualStyleBackColor = false;
             // 
             // FormDuLieuNhanVien
             // 
@@ -340,8 +340,8 @@ namespace PBL.View
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(829, 371);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnOK);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.panel1);
             this.Name = "FormDuLieuNhanVien";
             this.Text = "FormDuLieuNhanVien";
@@ -357,27 +357,27 @@ namespace PBL.View
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtID_QuyenHan;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtDienThoai;
+        private System.Windows.Forms.TextBox txtChucDanh;
+        private System.Windows.Forms.TextBox txtNamSinh;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtHoTen;
+        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.Label lbID_QuyenHan;
+        private System.Windows.Forms.Label lbEmail;
+        private System.Windows.Forms.Label lbDienThoai;
+        private System.Windows.Forms.Label lbChucDanh;
+        private System.Windows.Forms.Label lbGioiTinh;
+        private System.Windows.Forms.Label lbNamSinh;
+        private System.Windows.Forms.Label lbHoTen;
+        private System.Windows.Forms.Label lbPassword;
+        private System.Windows.Forms.Label lbUser;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton rbtnNam;
+        private System.Windows.Forms.RadioButton rbtnNu;
+        private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.Button btnCancel;
     }
 }

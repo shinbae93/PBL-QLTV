@@ -32,6 +32,12 @@ namespace PBL.View
 
         private void btnAddPhieuMuon_Click(object sender, EventArgs e)
         {
+            FormAddDuLieuPhieuMuon f = new FormAddDuLieuPhieuMuon();
+            //f.d = new Form2.MyDel(this.Show);
+            f.ShowDialog();
+        }
+        private void btnEditPhieuMuon_Click(object sender, EventArgs e)
+        {
             FormDuLieuPhieuMuon f = new FormDuLieuPhieuMuon(null);
             //f.d = new Form2.MyDel(this.Show);
             f.ShowDialog();
@@ -75,6 +81,12 @@ namespace PBL.View
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             FormLogOut f = new FormLogOut();
+            f.ShowDialog();
+        }
+
+        private void btnRenderPM_Click(object sender, EventArgs e)
+        {
+            FormTraDuLieuPhieuMuon f = new FormTraDuLieuPhieuMuon();
             f.ShowDialog();
         }
     }

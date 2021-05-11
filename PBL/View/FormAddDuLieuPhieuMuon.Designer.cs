@@ -1,7 +1,7 @@
 ﻿
 namespace PBL.View
 {
-    partial class FormDuLieuPhieuMuon
+    partial class FormAddDuLieuPhieuMuon
     {
         /// <summary>
         /// Required designer variable.
@@ -29,23 +29,19 @@ namespace PBL.View
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDuLieuPhieuMuon));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddDuLieuPhieuMuon));
             this.lbMaPhieuMuon = new System.Windows.Forms.Label();
             this.btnOK = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.lbSoThe = new System.Windows.Forms.Label();
             this.lbNgayMuon = new System.Windows.Forms.Label();
-            this.lbNgayTra = new System.Windows.Forms.Label();
             this.lbHanTra = new System.Windows.Forms.Label();
             this.txtMaPhieuMuon = new System.Windows.Forms.TextBox();
             this.txtSoThe = new System.Windows.Forms.TextBox();
             this.dtpNgayMuon = new System.Windows.Forms.DateTimePicker();
-            this.dtpNgayTra = new System.Windows.Forms.DateTimePicker();
             this.dtpHanTra = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtViPham = new System.Windows.Forms.TextBox();
-            this.lbViPham = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,23 +100,12 @@ namespace PBL.View
             this.lbNgayMuon.TabIndex = 1;
             this.lbNgayMuon.Text = "Ngày Mượn";
             // 
-            // lbNgayTra
-            // 
-            this.lbNgayTra.AutoSize = true;
-            this.lbNgayTra.BackColor = System.Drawing.Color.Transparent;
-            this.lbNgayTra.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNgayTra.Location = new System.Drawing.Point(405, 131);
-            this.lbNgayTra.Name = "lbNgayTra";
-            this.lbNgayTra.Size = new System.Drawing.Size(86, 22);
-            this.lbNgayTra.TabIndex = 1;
-            this.lbNgayTra.Text = "Ngày Trả";
-            // 
             // lbHanTra
             // 
             this.lbHanTra.AutoSize = true;
             this.lbHanTra.BackColor = System.Drawing.Color.Transparent;
             this.lbHanTra.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHanTra.Location = new System.Drawing.Point(405, 172);
+            this.lbHanTra.Location = new System.Drawing.Point(405, 135);
             this.lbHanTra.Name = "lbHanTra";
             this.lbHanTra.Size = new System.Drawing.Size(79, 22);
             this.lbHanTra.TabIndex = 1;
@@ -147,16 +132,9 @@ namespace PBL.View
             this.dtpNgayMuon.Size = new System.Drawing.Size(200, 20);
             this.dtpNgayMuon.TabIndex = 25;
             // 
-            // dtpNgayTra
-            // 
-            this.dtpNgayTra.Location = new System.Drawing.Point(525, 131);
-            this.dtpNgayTra.Name = "dtpNgayTra";
-            this.dtpNgayTra.Size = new System.Drawing.Size(200, 20);
-            this.dtpNgayTra.TabIndex = 25;
-            // 
             // dtpHanTra
             // 
-            this.dtpHanTra.Location = new System.Drawing.Point(525, 174);
+            this.dtpHanTra.Location = new System.Drawing.Point(525, 137);
             this.dtpHanTra.Name = "dtpHanTra";
             this.dtpHanTra.Size = new System.Drawing.Size(200, 20);
             this.dtpHanTra.TabIndex = 25;
@@ -166,15 +144,11 @@ namespace PBL.View
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.dtpHanTra);
-            this.panel1.Controls.Add(this.dtpNgayTra);
             this.panel1.Controls.Add(this.dtpNgayMuon);
-            this.panel1.Controls.Add(this.txtViPham);
             this.panel1.Controls.Add(this.txtSoThe);
             this.panel1.Controls.Add(this.txtMaPhieuMuon);
             this.panel1.Controls.Add(this.lbHanTra);
-            this.panel1.Controls.Add(this.lbNgayTra);
             this.panel1.Controls.Add(this.lbNgayMuon);
-            this.panel1.Controls.Add(this.lbViPham);
             this.panel1.Controls.Add(this.lbSoThe);
             this.panel1.Controls.Add(this.lbMaPhieuMuon);
             this.panel1.Location = new System.Drawing.Point(21, 24);
@@ -194,25 +168,7 @@ namespace PBL.View
             this.label10.TabIndex = 34;
             this.label10.Text = "Phiếu Mượn";
             // 
-            // txtViPham
-            // 
-            this.txtViPham.Location = new System.Drawing.Point(204, 172);
-            this.txtViPham.Name = "txtViPham";
-            this.txtViPham.Size = new System.Drawing.Size(142, 20);
-            this.txtViPham.TabIndex = 24;
-            // 
-            // lbViPham
-            // 
-            this.lbViPham.AutoSize = true;
-            this.lbViPham.BackColor = System.Drawing.Color.Transparent;
-            this.lbViPham.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbViPham.Location = new System.Drawing.Point(40, 172);
-            this.lbViPham.Name = "lbViPham";
-            this.lbViPham.Size = new System.Drawing.Size(82, 22);
-            this.lbViPham.TabIndex = 1;
-            this.lbViPham.Text = "Vi Phạm";
-            // 
-            // FormDuLieuPhieuMuon
+            // FormAddDuLieuPhieuMuon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -223,7 +179,7 @@ namespace PBL.View
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
-            this.Name = "FormDuLieuPhieuMuon";
+            this.Name = "FormAddDuLieuPhieuMuon";
             this.Text = "DuLieuPhieuMuon";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -238,16 +194,12 @@ namespace PBL.View
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label lbSoThe;
         private System.Windows.Forms.Label lbNgayMuon;
-        private System.Windows.Forms.Label lbNgayTra;
         private System.Windows.Forms.Label lbHanTra;
         private System.Windows.Forms.TextBox txtMaPhieuMuon;
         private System.Windows.Forms.TextBox txtSoThe;
         private System.Windows.Forms.DateTimePicker dtpNgayMuon;
-        private System.Windows.Forms.DateTimePicker dtpNgayTra;
         private System.Windows.Forms.DateTimePicker dtpHanTra;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtViPham;
-        private System.Windows.Forms.Label lbViPham;
     }
 }

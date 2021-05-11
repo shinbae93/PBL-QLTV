@@ -108,6 +108,12 @@
     <Compile Include="DAL\TaiLieuCT.cs">
       <DependentUpon>DHP07.tt</DependentUpon>
     </Compile>
+    <Compile Include="View\FormAddDuLieuPhieuMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormAddDuLieuPhieuMuon.Designer.cs">
+      <DependentUpon>FormAddDuLieuPhieuMuon.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormDuLieuDocGia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,12 +182,21 @@
     <Compile Include="View\FormQuanLy.Designer.cs">
       <DependentUpon>FormQuanLy.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormTraDuLieuPhieuMuon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormTraDuLieuPhieuMuon.Designer.cs">
+      <DependentUpon>FormTraDuLieuPhieuMuon.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormViPham.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\FormViPham.Designer.cs">
       <DependentUpon>FormViPham.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\FormAddDuLieuPhieuMuon.resx">
+      <DependentUpon>FormAddDuLieuPhieuMuon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormDuLieuDocGia.resx">
       <DependentUpon>FormDuLieuDocGia.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,6 +221,9 @@
     <EmbeddedResource Include="View\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\FormLogout.resx">
+      <DependentUpon>FormLogout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\FormNhanVien.resx">
       <DependentUpon>FormNhanVien.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +238,9 @@
     </Compile>
     <EmbeddedResource Include="View\FormQuanLy.resx">
       <DependentUpon>FormQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormTraDuLieuPhieuMuon.resx">
+      <DependentUpon>FormTraDuLieuPhieuMuon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormViPham.resx">
       <DependentUpon>FormViPham.cs</DependentUpon>

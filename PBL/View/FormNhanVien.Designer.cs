@@ -32,68 +32,73 @@ namespace PBL
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNhanVien));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.btnAddSach = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnDelS = new System.Windows.Forms.Button();
+            this.btnLogOutS = new System.Windows.Forms.Button();
+            this.btnSortS = new System.Windows.Forms.Button();
+            this.btnEditS = new System.Windows.Forms.Button();
+            this.btnAddS = new System.Windows.Forms.Button();
+            this.btnShowS = new System.Windows.Forms.Button();
+            this.cbbSortS = new System.Windows.Forms.ComboBox();
+            this.dataGridViewSach = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnSearchS = new System.Windows.Forms.Button();
+            this.txtViTriCotS = new System.Windows.Forms.TextBox();
+            this.txtViTriHangS = new System.Windows.Forms.TextBox();
+            this.txtMaKeSachS = new System.Windows.Forms.TextBox();
+            this.txtTenTaiLieuS = new System.Windows.Forms.TextBox();
+            this.txtMaTaiLieuS = new System.Windows.Forms.TextBox();
+            this.lbMaKeSachS = new System.Windows.Forms.Label();
+            this.lbMaTaiLieuS = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbViTriCotS = new System.Windows.Forms.Label();
+            this.lbViTriHangS = new System.Windows.Forms.Label();
+            this.lbTenTaiLieuS = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.btnAddDocGia = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.btnDelDG = new System.Windows.Forms.Button();
+            this.btnLogOutDG = new System.Windows.Forms.Button();
+            this.cbbSortDG = new System.Windows.Forms.ComboBox();
+            this.btnSortDG = new System.Windows.Forms.Button();
+            this.btnEditDG = new System.Windows.Forms.Button();
+            this.btnAddDG = new System.Windows.Forms.Button();
+            this.btnShowDG = new System.Windows.Forms.Button();
+            this.dataGridViewDG = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.btnSearchDG = new System.Windows.Forms.Button();
+            this.txtHoTenDG = new System.Windows.Forms.TextBox();
+            this.txtSoTheDG = new System.Windows.Forms.TextBox();
+            this.lbSoTheDG = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lbHoTenDG = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button21 = new System.Windows.Forms.Button();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.btnEditPhieuMuon = new System.Windows.Forms.Button();
-            this.btnAddPhieuMuon = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.btnDelPM = new System.Windows.Forms.Button();
+            this.cbbSortPM = new System.Windows.Forms.ComboBox();
+            this.btnLogOutPM = new System.Windows.Forms.Button();
+            this.btnSortPM = new System.Windows.Forms.Button();
+            this.btnEditPM = new System.Windows.Forms.Button();
+            this.btnAddPM = new System.Windows.Forms.Button();
+            this.btnShowPM = new System.Windows.Forms.Button();
+            this.dataGridViewPM = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.btnSearchPM = new System.Windows.Forms.Button();
+            this.txtSoThePM = new System.Windows.Forms.TextBox();
+            this.txtMaPhieuMuonPM = new System.Windows.Forms.TextBox();
+            this.lbMaPhieuMuonPM = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lbSoThePM = new System.Windows.Forms.Label();
+            this.lbTenDocGiaPM = new System.Windows.Forms.Label();
+            this.lbTenTaiLieuPM = new System.Windows.Forms.Label();
+            this.txtTenDocGiaPM = new System.Windows.Forms.TextBox();
+            this.txtTenTaiLieuPM = new System.Windows.Forms.TextBox();
+            this.btnRenderPM = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSach)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDG)).BeginInit();
             this.panel2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPM)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,14 +123,14 @@ namespace PBL
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Transparent;
             this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
-            this.tabPage1.Controls.Add(this.button20);
-            this.tabPage1.Controls.Add(this.button5);
-            this.tabPage1.Controls.Add(this.button18);
-            this.tabPage1.Controls.Add(this.button17);
-            this.tabPage1.Controls.Add(this.btnAddSach);
-            this.tabPage1.Controls.Add(this.button15);
-            this.tabPage1.Controls.Add(this.comboBox1);
-            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Controls.Add(this.btnDelS);
+            this.tabPage1.Controls.Add(this.btnLogOutS);
+            this.tabPage1.Controls.Add(this.btnSortS);
+            this.tabPage1.Controls.Add(this.btnEditS);
+            this.tabPage1.Controls.Add(this.btnAddS);
+            this.tabPage1.Controls.Add(this.btnShowS);
+            this.tabPage1.Controls.Add(this.cbbSortS);
+            this.tabPage1.Controls.Add(this.dataGridViewSach);
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(29, 4);
@@ -135,91 +140,91 @@ namespace PBL
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Quản lý sách";
             // 
-            // button20
+            // btnDelS
             // 
-            this.button20.BackColor = System.Drawing.Color.Gainsboro;
-            this.button20.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.Location = new System.Drawing.Point(331, 579);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(75, 26);
-            this.button20.TabIndex = 13;
-            this.button20.Text = "Del";
-            this.button20.UseVisualStyleBackColor = false;
+            this.btnDelS.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnDelS.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelS.Location = new System.Drawing.Point(331, 579);
+            this.btnDelS.Name = "btnDelS";
+            this.btnDelS.Size = new System.Drawing.Size(75, 26);
+            this.btnDelS.TabIndex = 13;
+            this.btnDelS.Text = "Del";
+            this.btnDelS.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnLogOutS
             // 
-            this.button5.BackColor = System.Drawing.Color.Gainsboro;
-            this.button5.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(755, 579);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(114, 26);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "LOG OUT";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.btnLogOut_Click);
+            this.btnLogOutS.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnLogOutS.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOutS.Location = new System.Drawing.Point(755, 579);
+            this.btnLogOutS.Name = "btnLogOutS";
+            this.btnLogOutS.Size = new System.Drawing.Size(114, 26);
+            this.btnLogOutS.TabIndex = 12;
+            this.btnLogOutS.Text = "LOG OUT";
+            this.btnLogOutS.UseVisualStyleBackColor = false;
+            this.btnLogOutS.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
-            // button18
+            // btnSortS
             // 
-            this.button18.BackColor = System.Drawing.Color.Gainsboro;
-            this.button18.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.Location = new System.Drawing.Point(429, 579);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(75, 26);
-            this.button18.TabIndex = 11;
-            this.button18.Text = "Sort";
-            this.button18.UseVisualStyleBackColor = false;
+            this.btnSortS.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSortS.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSortS.Location = new System.Drawing.Point(429, 579);
+            this.btnSortS.Name = "btnSortS";
+            this.btnSortS.Size = new System.Drawing.Size(75, 26);
+            this.btnSortS.TabIndex = 11;
+            this.btnSortS.Text = "Sort";
+            this.btnSortS.UseVisualStyleBackColor = false;
             // 
-            // button17
+            // btnEditS
             // 
-            this.button17.BackColor = System.Drawing.Color.Gainsboro;
-            this.button17.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Location = new System.Drawing.Point(229, 579);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(75, 26);
-            this.button17.TabIndex = 10;
-            this.button17.Text = "Edit";
-            this.button17.UseVisualStyleBackColor = false;
-            this.button17.Click += new System.EventHandler(this.btnAddSach_Click);
+            this.btnEditS.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnEditS.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditS.Location = new System.Drawing.Point(229, 579);
+            this.btnEditS.Name = "btnEditS";
+            this.btnEditS.Size = new System.Drawing.Size(75, 26);
+            this.btnEditS.TabIndex = 10;
+            this.btnEditS.Text = "Edit";
+            this.btnEditS.UseVisualStyleBackColor = false;
+            this.btnEditS.Click += new System.EventHandler(this.btnAddSach_Click);
             // 
-            // btnAddSach
+            // btnAddS
             // 
-            this.btnAddSach.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddSach.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddSach.Location = new System.Drawing.Point(128, 579);
-            this.btnAddSach.Name = "btnAddSach";
-            this.btnAddSach.Size = new System.Drawing.Size(75, 26);
-            this.btnAddSach.TabIndex = 9;
-            this.btnAddSach.Text = "Add";
-            this.btnAddSach.UseVisualStyleBackColor = false;
-            this.btnAddSach.Click += new System.EventHandler(this.btnAddSach_Click);
+            this.btnAddS.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAddS.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddS.Location = new System.Drawing.Point(128, 579);
+            this.btnAddS.Name = "btnAddS";
+            this.btnAddS.Size = new System.Drawing.Size(75, 26);
+            this.btnAddS.TabIndex = 9;
+            this.btnAddS.Text = "Add";
+            this.btnAddS.UseVisualStyleBackColor = false;
+            this.btnAddS.Click += new System.EventHandler(this.btnAddSach_Click);
             // 
-            // button15
+            // btnShowS
             // 
-            this.button15.BackColor = System.Drawing.Color.Gainsboro;
-            this.button15.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.Location = new System.Drawing.Point(25, 579);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(75, 26);
-            this.button15.TabIndex = 8;
-            this.button15.Text = "Show";
-            this.button15.UseVisualStyleBackColor = false;
+            this.btnShowS.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnShowS.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowS.Location = new System.Drawing.Point(25, 579);
+            this.btnShowS.Name = "btnShowS";
+            this.btnShowS.Size = new System.Drawing.Size(75, 26);
+            this.btnShowS.TabIndex = 8;
+            this.btnShowS.Text = "Show";
+            this.btnShowS.UseVisualStyleBackColor = false;
             // 
-            // comboBox1
+            // cbbSortS
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(510, 578);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 27);
-            this.comboBox1.TabIndex = 5;
+            this.cbbSortS.FormattingEnabled = true;
+            this.cbbSortS.Location = new System.Drawing.Point(510, 578);
+            this.cbbSortS.Name = "cbbSortS";
+            this.cbbSortS.Size = new System.Drawing.Size(121, 27);
+            this.cbbSortS.TabIndex = 5;
             // 
-            // dataGridView1
+            // dataGridViewSach
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 279);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(844, 283);
-            this.dataGridView1.TabIndex = 4;
+            this.dataGridViewSach.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridViewSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSach.Location = new System.Drawing.Point(25, 279);
+            this.dataGridViewSach.Name = "dataGridViewSach";
+            this.dataGridViewSach.Size = new System.Drawing.Size(844, 283);
+            this.dataGridViewSach.TabIndex = 4;
             // 
             // panel1
             // 
@@ -228,96 +233,96 @@ namespace PBL
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.btnSearchS);
+            this.panel1.Controls.Add(this.txtViTriCotS);
+            this.panel1.Controls.Add(this.txtViTriHangS);
+            this.panel1.Controls.Add(this.txtMaKeSachS);
+            this.panel1.Controls.Add(this.txtTenTaiLieuS);
+            this.panel1.Controls.Add(this.txtMaTaiLieuS);
+            this.panel1.Controls.Add(this.lbMaKeSachS);
+            this.panel1.Controls.Add(this.lbMaTaiLieuS);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.lbViTriCotS);
+            this.panel1.Controls.Add(this.lbViTriHangS);
+            this.panel1.Controls.Add(this.lbTenTaiLieuS);
             this.panel1.Location = new System.Drawing.Point(25, 28);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(838, 236);
             this.panel1.TabIndex = 3;
             // 
-            // button6
+            // btnSearchS
             // 
-            this.button6.BackColor = System.Drawing.Color.Gainsboro;
-            this.button6.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(708, 137);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 26);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Search";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnSearchS.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSearchS.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchS.Location = new System.Drawing.Point(708, 137);
+            this.btnSearchS.Name = "btnSearchS";
+            this.btnSearchS.Size = new System.Drawing.Size(75, 26);
+            this.btnSearchS.TabIndex = 6;
+            this.btnSearchS.Text = "Search";
+            this.btnSearchS.UseVisualStyleBackColor = false;
             // 
-            // textBox4
+            // txtViTriCotS
             // 
-            this.textBox4.Location = new System.Drawing.Point(695, 97);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(88, 26);
-            this.textBox4.TabIndex = 4;
+            this.txtViTriCotS.Location = new System.Drawing.Point(695, 97);
+            this.txtViTriCotS.Name = "txtViTriCotS";
+            this.txtViTriCotS.Size = new System.Drawing.Size(88, 26);
+            this.txtViTriCotS.TabIndex = 4;
             // 
-            // textBox3
+            // txtViTriHangS
             // 
-            this.textBox3.Location = new System.Drawing.Point(493, 97);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(88, 26);
-            this.textBox3.TabIndex = 4;
+            this.txtViTriHangS.Location = new System.Drawing.Point(493, 97);
+            this.txtViTriHangS.Name = "txtViTriHangS";
+            this.txtViTriHangS.Size = new System.Drawing.Size(88, 26);
+            this.txtViTriHangS.TabIndex = 4;
             // 
-            // textBox5
+            // txtMaKeSachS
             // 
-            this.textBox5.Location = new System.Drawing.Point(493, 140);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(169, 26);
-            this.textBox5.TabIndex = 3;
+            this.txtMaKeSachS.Location = new System.Drawing.Point(493, 140);
+            this.txtMaKeSachS.Name = "txtMaKeSachS";
+            this.txtMaKeSachS.Size = new System.Drawing.Size(169, 26);
+            this.txtMaKeSachS.TabIndex = 3;
             // 
-            // textBox2
+            // txtTenTaiLieuS
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtTenTaiLieuS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(158, 138);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(163, 26);
-            this.textBox2.TabIndex = 3;
+            this.txtTenTaiLieuS.Location = new System.Drawing.Point(158, 138);
+            this.txtTenTaiLieuS.Name = "txtTenTaiLieuS";
+            this.txtTenTaiLieuS.Size = new System.Drawing.Size(163, 26);
+            this.txtTenTaiLieuS.TabIndex = 3;
             // 
-            // textBox1
+            // txtMaTaiLieuS
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtMaTaiLieuS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(158, 97);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(163, 26);
-            this.textBox1.TabIndex = 3;
+            this.txtMaTaiLieuS.Location = new System.Drawing.Point(158, 97);
+            this.txtMaTaiLieuS.Name = "txtMaTaiLieuS";
+            this.txtMaTaiLieuS.Size = new System.Drawing.Size(163, 26);
+            this.txtMaTaiLieuS.TabIndex = 3;
             // 
-            // label6
+            // lbMaKeSachS
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DarkRed;
-            this.label6.Location = new System.Drawing.Point(380, 138);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 22);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Mã Kệ Sách";
+            this.lbMaKeSachS.AutoSize = true;
+            this.lbMaKeSachS.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMaKeSachS.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbMaKeSachS.Location = new System.Drawing.Point(380, 138);
+            this.lbMaKeSachS.Name = "lbMaKeSachS";
+            this.lbMaKeSachS.Size = new System.Drawing.Size(107, 22);
+            this.lbMaKeSachS.TabIndex = 2;
+            this.lbMaKeSachS.Text = "Mã Kệ Sách";
             // 
-            // label3
+            // lbMaTaiLieuS
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkRed;
-            this.label3.Location = new System.Drawing.Point(44, 97);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 22);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Mã Tài Liệu";
+            this.lbMaTaiLieuS.AutoSize = true;
+            this.lbMaTaiLieuS.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMaTaiLieuS.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbMaTaiLieuS.Location = new System.Drawing.Point(44, 97);
+            this.lbMaTaiLieuS.Name = "lbMaTaiLieuS";
+            this.lbMaTaiLieuS.Size = new System.Drawing.Size(108, 22);
+            this.lbMaTaiLieuS.TabIndex = 2;
+            this.lbMaTaiLieuS.Text = "Mã Tài Liệu";
             // 
             // label1
             // 
@@ -334,50 +339,50 @@ namespace PBL
             this.label1.Text = "Quản Lý Sách";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // lbViTriCotS
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(598, 97);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 22);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Vị Trí Cột";
+            this.lbViTriCotS.AutoSize = true;
+            this.lbViTriCotS.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbViTriCotS.ForeColor = System.Drawing.Color.Maroon;
+            this.lbViTriCotS.Location = new System.Drawing.Point(598, 97);
+            this.lbViTriCotS.Name = "lbViTriCotS";
+            this.lbViTriCotS.Size = new System.Drawing.Size(91, 22);
+            this.lbViTriCotS.TabIndex = 2;
+            this.lbViTriCotS.Text = "Vị Trí Cột";
             // 
-            // label5
+            // lbViTriHangS
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkRed;
-            this.label5.Location = new System.Drawing.Point(380, 95);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 22);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Vị Trí Hàng";
+            this.lbViTriHangS.AutoSize = true;
+            this.lbViTriHangS.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbViTriHangS.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbViTriHangS.Location = new System.Drawing.Point(380, 95);
+            this.lbViTriHangS.Name = "lbViTriHangS";
+            this.lbViTriHangS.Size = new System.Drawing.Size(107, 22);
+            this.lbViTriHangS.TabIndex = 2;
+            this.lbViTriHangS.Text = "Vị Trí Hàng";
             // 
-            // label2
+            // lbTenTaiLieuS
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkRed;
-            this.label2.Location = new System.Drawing.Point(44, 136);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 22);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Tên Tài Liệu";
+            this.lbTenTaiLieuS.AutoSize = true;
+            this.lbTenTaiLieuS.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTenTaiLieuS.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbTenTaiLieuS.Location = new System.Drawing.Point(44, 136);
+            this.lbTenTaiLieuS.Name = "lbTenTaiLieuS";
+            this.lbTenTaiLieuS.Size = new System.Drawing.Size(114, 22);
+            this.lbTenTaiLieuS.TabIndex = 2;
+            this.lbTenTaiLieuS.Text = "Tên Tài Liệu";
             // 
             // tabPage2
             // 
             this.tabPage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage2.BackgroundImage")));
-            this.tabPage2.Controls.Add(this.button19);
-            this.tabPage2.Controls.Add(this.button1);
-            this.tabPage2.Controls.Add(this.comboBox2);
-            this.tabPage2.Controls.Add(this.button11);
-            this.tabPage2.Controls.Add(this.button10);
-            this.tabPage2.Controls.Add(this.btnAddDocGia);
-            this.tabPage2.Controls.Add(this.button8);
-            this.tabPage2.Controls.Add(this.dataGridView2);
+            this.tabPage2.Controls.Add(this.btnDelDG);
+            this.tabPage2.Controls.Add(this.btnLogOutDG);
+            this.tabPage2.Controls.Add(this.cbbSortDG);
+            this.tabPage2.Controls.Add(this.btnSortDG);
+            this.tabPage2.Controls.Add(this.btnEditDG);
+            this.tabPage2.Controls.Add(this.btnAddDG);
+            this.tabPage2.Controls.Add(this.btnShowDG);
+            this.tabPage2.Controls.Add(this.dataGridViewDG);
             this.tabPage2.Controls.Add(this.panel2);
             this.tabPage2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage2.Location = new System.Drawing.Point(29, 4);
@@ -388,91 +393,91 @@ namespace PBL
             this.tabPage2.Text = "Quản lý Độc Giả";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button19
+            // btnDelDG
             // 
-            this.button19.BackColor = System.Drawing.Color.Gainsboro;
-            this.button19.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.Location = new System.Drawing.Point(331, 579);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(75, 26);
-            this.button19.TabIndex = 10;
-            this.button19.Text = "Del";
-            this.button19.UseVisualStyleBackColor = false;
+            this.btnDelDG.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnDelDG.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelDG.Location = new System.Drawing.Point(331, 579);
+            this.btnDelDG.Name = "btnDelDG";
+            this.btnDelDG.Size = new System.Drawing.Size(75, 26);
+            this.btnDelDG.TabIndex = 10;
+            this.btnDelDG.Text = "Del";
+            this.btnDelDG.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnLogOutDG
             // 
-            this.button1.BackColor = System.Drawing.Color.Gainsboro;
-            this.button1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(768, 579);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 26);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "LOG OUT";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btnLogOut_Click);
+            this.btnLogOutDG.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnLogOutDG.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOutDG.Location = new System.Drawing.Point(768, 579);
+            this.btnLogOutDG.Name = "btnLogOutDG";
+            this.btnLogOutDG.Size = new System.Drawing.Size(101, 26);
+            this.btnLogOutDG.TabIndex = 9;
+            this.btnLogOutDG.Text = "LOG OUT";
+            this.btnLogOutDG.UseVisualStyleBackColor = false;
+            this.btnLogOutDG.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
-            // comboBox2
+            // cbbSortDG
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(510, 579);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 27);
-            this.comboBox2.TabIndex = 8;
+            this.cbbSortDG.FormattingEnabled = true;
+            this.cbbSortDG.Location = new System.Drawing.Point(510, 579);
+            this.cbbSortDG.Name = "cbbSortDG";
+            this.cbbSortDG.Size = new System.Drawing.Size(121, 27);
+            this.cbbSortDG.TabIndex = 8;
             // 
-            // button11
+            // btnSortDG
             // 
-            this.button11.BackColor = System.Drawing.Color.Gainsboro;
-            this.button11.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(429, 579);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 26);
-            this.button11.TabIndex = 7;
-            this.button11.Text = "Sort";
-            this.button11.UseVisualStyleBackColor = false;
+            this.btnSortDG.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSortDG.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSortDG.Location = new System.Drawing.Point(429, 579);
+            this.btnSortDG.Name = "btnSortDG";
+            this.btnSortDG.Size = new System.Drawing.Size(75, 26);
+            this.btnSortDG.TabIndex = 7;
+            this.btnSortDG.Text = "Sort";
+            this.btnSortDG.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // btnEditDG
             // 
-            this.button10.BackColor = System.Drawing.Color.Gainsboro;
-            this.button10.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(229, 579);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 26);
-            this.button10.TabIndex = 7;
-            this.button10.Text = "Edit";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.btnAddDocGia_Click);
+            this.btnEditDG.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnEditDG.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditDG.Location = new System.Drawing.Point(229, 579);
+            this.btnEditDG.Name = "btnEditDG";
+            this.btnEditDG.Size = new System.Drawing.Size(75, 26);
+            this.btnEditDG.TabIndex = 7;
+            this.btnEditDG.Text = "Edit";
+            this.btnEditDG.UseVisualStyleBackColor = false;
+            this.btnEditDG.Click += new System.EventHandler(this.btnAddDocGia_Click);
             // 
-            // btnAddDocGia
+            // btnAddDG
             // 
-            this.btnAddDocGia.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddDocGia.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddDocGia.Location = new System.Drawing.Point(128, 579);
-            this.btnAddDocGia.Name = "btnAddDocGia";
-            this.btnAddDocGia.Size = new System.Drawing.Size(75, 26);
-            this.btnAddDocGia.TabIndex = 7;
-            this.btnAddDocGia.Text = "Add";
-            this.btnAddDocGia.UseVisualStyleBackColor = false;
-            this.btnAddDocGia.Click += new System.EventHandler(this.btnAddDocGia_Click);
+            this.btnAddDG.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAddDG.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddDG.Location = new System.Drawing.Point(128, 579);
+            this.btnAddDG.Name = "btnAddDG";
+            this.btnAddDG.Size = new System.Drawing.Size(75, 26);
+            this.btnAddDG.TabIndex = 7;
+            this.btnAddDG.Text = "Add";
+            this.btnAddDG.UseVisualStyleBackColor = false;
+            this.btnAddDG.Click += new System.EventHandler(this.btnAddDocGia_Click);
             // 
-            // button8
+            // btnShowDG
             // 
-            this.button8.BackColor = System.Drawing.Color.Gainsboro;
-            this.button8.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(25, 579);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 26);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Show";
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnShowDG.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnShowDG.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowDG.Location = new System.Drawing.Point(25, 579);
+            this.btnShowDG.Name = "btnShowDG";
+            this.btnShowDG.Size = new System.Drawing.Size(75, 26);
+            this.btnShowDG.TabIndex = 7;
+            this.btnShowDG.Text = "Show";
+            this.btnShowDG.UseVisualStyleBackColor = false;
             // 
-            // dataGridView2
+            // dataGridViewDG
             // 
-            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(25, 279);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(844, 283);
-            this.dataGridView2.TabIndex = 5;
+            this.dataGridViewDG.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridViewDG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDG.Location = new System.Drawing.Point(25, 279);
+            this.dataGridViewDG.Name = "dataGridViewDG";
+            this.dataGridViewDG.Size = new System.Drawing.Size(844, 283);
+            this.dataGridViewDG.TabIndex = 5;
             // 
             // panel2
             // 
@@ -481,58 +486,58 @@ namespace PBL
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.textBox9);
-            this.panel2.Controls.Add(this.textBox10);
-            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.btnSearchDG);
+            this.panel2.Controls.Add(this.txtHoTenDG);
+            this.panel2.Controls.Add(this.txtSoTheDG);
+            this.panel2.Controls.Add(this.lbSoTheDG);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.lbHoTenDG);
             this.panel2.Location = new System.Drawing.Point(25, 28);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(838, 236);
             this.panel2.TabIndex = 4;
             // 
-            // button7
+            // btnSearchDG
             // 
-            this.button7.BackColor = System.Drawing.Color.Gainsboro;
-            this.button7.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(680, 93);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 26);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Search";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnSearchDG.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSearchDG.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchDG.Location = new System.Drawing.Point(680, 93);
+            this.btnSearchDG.Name = "btnSearchDG";
+            this.btnSearchDG.Size = new System.Drawing.Size(75, 26);
+            this.btnSearchDG.TabIndex = 6;
+            this.btnSearchDG.Text = "Search";
+            this.btnSearchDG.UseVisualStyleBackColor = false;
             // 
-            // textBox9
+            // txtHoTenDG
             // 
-            this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtHoTenDG.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox9.Location = new System.Drawing.Point(485, 97);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(163, 26);
-            this.textBox9.TabIndex = 3;
+            this.txtHoTenDG.Location = new System.Drawing.Point(485, 97);
+            this.txtHoTenDG.Name = "txtHoTenDG";
+            this.txtHoTenDG.Size = new System.Drawing.Size(163, 26);
+            this.txtHoTenDG.TabIndex = 3;
             // 
-            // textBox10
+            // txtSoTheDG
             // 
-            this.textBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtSoTheDG.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox10.Location = new System.Drawing.Point(158, 97);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(163, 26);
-            this.textBox10.TabIndex = 3;
+            this.txtSoTheDG.Location = new System.Drawing.Point(158, 97);
+            this.txtSoTheDG.Name = "txtSoTheDG";
+            this.txtSoTheDG.Size = new System.Drawing.Size(163, 26);
+            this.txtSoTheDG.TabIndex = 3;
             // 
-            // label8
+            // lbSoTheDG
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DarkRed;
-            this.label8.Location = new System.Drawing.Point(44, 97);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 22);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "Số Thẻ";
+            this.lbSoTheDG.AutoSize = true;
+            this.lbSoTheDG.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoTheDG.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbSoTheDG.Location = new System.Drawing.Point(44, 97);
+            this.lbSoTheDG.Name = "lbSoTheDG";
+            this.lbSoTheDG.Size = new System.Drawing.Size(68, 22);
+            this.lbSoTheDG.TabIndex = 2;
+            this.lbSoTheDG.Text = "Số Thẻ";
             // 
             // label9
             // 
@@ -549,28 +554,29 @@ namespace PBL
             this.label9.Text = "Quản Lý Độc Giả";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label12
+            // lbHoTenDG
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.DarkRed;
-            this.label12.Location = new System.Drawing.Point(408, 97);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(71, 22);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "Họ Tên";
+            this.lbHoTenDG.AutoSize = true;
+            this.lbHoTenDG.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHoTenDG.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbHoTenDG.Location = new System.Drawing.Point(408, 97);
+            this.lbHoTenDG.Name = "lbHoTenDG";
+            this.lbHoTenDG.Size = new System.Drawing.Size(71, 22);
+            this.lbHoTenDG.TabIndex = 2;
+            this.lbHoTenDG.Text = "Họ Tên";
             // 
             // tabPage3
             // 
             this.tabPage3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage3.BackgroundImage")));
-            this.tabPage3.Controls.Add(this.button21);
-            this.tabPage3.Controls.Add(this.comboBox3);
-            this.tabPage3.Controls.Add(this.button14);
-            this.tabPage3.Controls.Add(this.button13);
-            this.tabPage3.Controls.Add(this.btnEditPhieuMuon);
-            this.tabPage3.Controls.Add(this.btnAddPhieuMuon);
-            this.tabPage3.Controls.Add(this.button3);
-            this.tabPage3.Controls.Add(this.dataGridView3);
+            this.tabPage3.Controls.Add(this.btnDelPM);
+            this.tabPage3.Controls.Add(this.cbbSortPM);
+            this.tabPage3.Controls.Add(this.btnLogOutPM);
+            this.tabPage3.Controls.Add(this.btnRenderPM);
+            this.tabPage3.Controls.Add(this.btnSortPM);
+            this.tabPage3.Controls.Add(this.btnEditPM);
+            this.tabPage3.Controls.Add(this.btnAddPM);
+            this.tabPage3.Controls.Add(this.btnShowPM);
+            this.tabPage3.Controls.Add(this.dataGridViewPM);
             this.tabPage3.Controls.Add(this.panel3);
             this.tabPage3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage3.Location = new System.Drawing.Point(29, 4);
@@ -580,91 +586,91 @@ namespace PBL
             this.tabPage3.Text = "Quản Lý Phiếu Mượn";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // button21
+            // btnDelPM
             // 
-            this.button21.BackColor = System.Drawing.Color.Gainsboro;
-            this.button21.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.Location = new System.Drawing.Point(331, 579);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(75, 26);
-            this.button21.TabIndex = 13;
-            this.button21.Text = "Del";
-            this.button21.UseVisualStyleBackColor = false;
+            this.btnDelPM.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnDelPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelPM.Location = new System.Drawing.Point(331, 579);
+            this.btnDelPM.Name = "btnDelPM";
+            this.btnDelPM.Size = new System.Drawing.Size(75, 26);
+            this.btnDelPM.TabIndex = 13;
+            this.btnDelPM.Text = "Del";
+            this.btnDelPM.UseVisualStyleBackColor = false;
             // 
-            // comboBox3
+            // cbbSortPM
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(510, 578);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 27);
-            this.comboBox3.TabIndex = 12;
+            this.cbbSortPM.FormattingEnabled = true;
+            this.cbbSortPM.Location = new System.Drawing.Point(510, 578);
+            this.cbbSortPM.Name = "cbbSortPM";
+            this.cbbSortPM.Size = new System.Drawing.Size(121, 27);
+            this.cbbSortPM.TabIndex = 12;
             // 
-            // button14
+            // btnLogOutPM
             // 
-            this.button14.BackColor = System.Drawing.Color.Gainsboro;
-            this.button14.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button14.Location = new System.Drawing.Point(770, 579);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(99, 26);
-            this.button14.TabIndex = 11;
-            this.button14.Text = "LOG OUT";
-            this.button14.UseVisualStyleBackColor = false;
-            this.button14.Click += new System.EventHandler(this.btnLogOut_Click);
+            this.btnLogOutPM.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnLogOutPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOutPM.Location = new System.Drawing.Point(770, 579);
+            this.btnLogOutPM.Name = "btnLogOutPM";
+            this.btnLogOutPM.Size = new System.Drawing.Size(99, 26);
+            this.btnLogOutPM.TabIndex = 11;
+            this.btnLogOutPM.Text = "LOG OUT";
+            this.btnLogOutPM.UseVisualStyleBackColor = false;
+            this.btnLogOutPM.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
-            // button13
+            // btnSortPM
             // 
-            this.button13.BackColor = System.Drawing.Color.Gainsboro;
-            this.button13.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button13.Location = new System.Drawing.Point(429, 579);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(75, 26);
-            this.button13.TabIndex = 10;
-            this.button13.Text = "Sort";
-            this.button13.UseVisualStyleBackColor = false;
+            this.btnSortPM.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSortPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSortPM.Location = new System.Drawing.Point(429, 579);
+            this.btnSortPM.Name = "btnSortPM";
+            this.btnSortPM.Size = new System.Drawing.Size(75, 26);
+            this.btnSortPM.TabIndex = 10;
+            this.btnSortPM.Text = "Sort";
+            this.btnSortPM.UseVisualStyleBackColor = false;
             // 
-            // btnEditPhieuMuon
+            // btnEditPM
             // 
-            this.btnEditPhieuMuon.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnEditPhieuMuon.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditPhieuMuon.Location = new System.Drawing.Point(229, 579);
-            this.btnEditPhieuMuon.Name = "btnEditPhieuMuon";
-            this.btnEditPhieuMuon.Size = new System.Drawing.Size(75, 26);
-            this.btnEditPhieuMuon.TabIndex = 9;
-            this.btnEditPhieuMuon.Text = "Edit";
-            this.btnEditPhieuMuon.UseVisualStyleBackColor = false;
-            this.btnEditPhieuMuon.Click += new System.EventHandler(this.btnAddPhieuMuon_Click);
+            this.btnEditPM.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnEditPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditPM.Location = new System.Drawing.Point(229, 579);
+            this.btnEditPM.Name = "btnEditPM";
+            this.btnEditPM.Size = new System.Drawing.Size(75, 26);
+            this.btnEditPM.TabIndex = 9;
+            this.btnEditPM.Text = "Edit";
+            this.btnEditPM.UseVisualStyleBackColor = false;
+            this.btnEditPM.Click += new System.EventHandler(this.btnEditPM_Click);
             // 
-            // btnAddPhieuMuon
+            // btnAddPM
             // 
-            this.btnAddPhieuMuon.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddPhieuMuon.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddPhieuMuon.Location = new System.Drawing.Point(128, 579);
-            this.btnAddPhieuMuon.Name = "btnAddPhieuMuon";
-            this.btnAddPhieuMuon.Size = new System.Drawing.Size(75, 26);
-            this.btnAddPhieuMuon.TabIndex = 8;
-            this.btnAddPhieuMuon.Text = "Add";
-            this.btnAddPhieuMuon.UseVisualStyleBackColor = false;
-            this.btnAddPhieuMuon.Click += new System.EventHandler(this.btnAddPhieuMuon_Click);
+            this.btnAddPM.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAddPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddPM.Location = new System.Drawing.Point(128, 579);
+            this.btnAddPM.Name = "btnAddPM";
+            this.btnAddPM.Size = new System.Drawing.Size(75, 26);
+            this.btnAddPM.TabIndex = 8;
+            this.btnAddPM.Text = "Add";
+            this.btnAddPM.UseVisualStyleBackColor = false;
+            this.btnAddPM.Click += new System.EventHandler(this.btnAddPM_Click);
             // 
-            // button3
+            // btnShowPM
             // 
-            this.button3.BackColor = System.Drawing.Color.Gainsboro;
-            this.button3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(25, 579);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 26);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Show";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnShowPM.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnShowPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowPM.Location = new System.Drawing.Point(25, 579);
+            this.btnShowPM.Name = "btnShowPM";
+            this.btnShowPM.Size = new System.Drawing.Size(75, 26);
+            this.btnShowPM.TabIndex = 7;
+            this.btnShowPM.Text = "Show";
+            this.btnShowPM.UseVisualStyleBackColor = false;
             // 
-            // dataGridView3
+            // dataGridViewPM
             // 
-            this.dataGridView3.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(25, 279);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(844, 283);
-            this.dataGridView3.TabIndex = 6;
+            this.dataGridViewPM.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridViewPM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPM.Location = new System.Drawing.Point(25, 279);
+            this.dataGridViewPM.Name = "dataGridViewPM";
+            this.dataGridViewPM.Size = new System.Drawing.Size(844, 283);
+            this.dataGridViewPM.TabIndex = 6;
             // 
             // panel3
             // 
@@ -673,58 +679,62 @@ namespace PBL
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.textBox6);
-            this.panel3.Controls.Add(this.textBox7);
-            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.btnSearchPM);
+            this.panel3.Controls.Add(this.txtTenTaiLieuPM);
+            this.panel3.Controls.Add(this.txtSoThePM);
+            this.panel3.Controls.Add(this.txtTenDocGiaPM);
+            this.panel3.Controls.Add(this.txtMaPhieuMuonPM);
+            this.panel3.Controls.Add(this.lbTenDocGiaPM);
+            this.panel3.Controls.Add(this.lbMaPhieuMuonPM);
             this.panel3.Controls.Add(this.label10);
-            this.panel3.Controls.Add(this.label11);
+            this.panel3.Controls.Add(this.lbTenTaiLieuPM);
+            this.panel3.Controls.Add(this.lbSoThePM);
             this.panel3.Location = new System.Drawing.Point(25, 28);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(838, 236);
             this.panel3.TabIndex = 5;
             // 
-            // button2
+            // btnSearchPM
             // 
-            this.button2.BackColor = System.Drawing.Color.Gainsboro;
-            this.button2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(680, 93);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 26);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Search";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnSearchPM.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSearchPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchPM.Location = new System.Drawing.Point(721, 93);
+            this.btnSearchPM.Name = "btnSearchPM";
+            this.btnSearchPM.Size = new System.Drawing.Size(75, 26);
+            this.btnSearchPM.TabIndex = 6;
+            this.btnSearchPM.Text = "Search";
+            this.btnSearchPM.UseVisualStyleBackColor = false;
             // 
-            // textBox6
+            // txtSoThePM
             // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtSoThePM.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.Location = new System.Drawing.Point(485, 97);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(163, 26);
-            this.textBox6.TabIndex = 3;
+            this.txtSoThePM.Location = new System.Drawing.Point(531, 97);
+            this.txtSoThePM.Name = "txtSoThePM";
+            this.txtSoThePM.Size = new System.Drawing.Size(163, 26);
+            this.txtSoThePM.TabIndex = 3;
             // 
-            // textBox7
+            // txtMaPhieuMuonPM
             // 
-            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.txtMaPhieuMuonPM.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox7.Location = new System.Drawing.Point(197, 97);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(124, 26);
-            this.textBox7.TabIndex = 3;
+            this.txtMaPhieuMuonPM.Location = new System.Drawing.Point(197, 97);
+            this.txtMaPhieuMuonPM.Name = "txtMaPhieuMuonPM";
+            this.txtMaPhieuMuonPM.Size = new System.Drawing.Size(159, 26);
+            this.txtMaPhieuMuonPM.TabIndex = 3;
             // 
-            // label7
+            // lbMaPhieuMuonPM
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.DarkRed;
-            this.label7.Location = new System.Drawing.Point(44, 97);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(147, 22);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "Mã Phiếu Mượn";
+            this.lbMaPhieuMuonPM.AutoSize = true;
+            this.lbMaPhieuMuonPM.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMaPhieuMuonPM.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbMaPhieuMuonPM.Location = new System.Drawing.Point(44, 97);
+            this.lbMaPhieuMuonPM.Name = "lbMaPhieuMuonPM";
+            this.lbMaPhieuMuonPM.Size = new System.Drawing.Size(147, 22);
+            this.lbMaPhieuMuonPM.TabIndex = 2;
+            this.lbMaPhieuMuonPM.Text = "Mã Phiếu Mượn";
             // 
             // label10
             // 
@@ -741,16 +751,70 @@ namespace PBL
             this.label10.Text = "Quản Lý Phiếu Mượn";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label11
+            // lbSoThePM
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.DarkRed;
-            this.label11.Location = new System.Drawing.Point(408, 97);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(68, 22);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Số Thẻ";
+            this.lbSoThePM.AutoSize = true;
+            this.lbSoThePM.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoThePM.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbSoThePM.Location = new System.Drawing.Point(408, 97);
+            this.lbSoThePM.Name = "lbSoThePM";
+            this.lbSoThePM.Size = new System.Drawing.Size(68, 22);
+            this.lbSoThePM.TabIndex = 2;
+            this.lbSoThePM.Text = "Số Thẻ";
+            // 
+            // lbTenDocGiaPM
+            // 
+            this.lbTenDocGiaPM.AutoSize = true;
+            this.lbTenDocGiaPM.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTenDocGiaPM.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbTenDocGiaPM.Location = new System.Drawing.Point(44, 137);
+            this.lbTenDocGiaPM.Name = "lbTenDocGiaPM";
+            this.lbTenDocGiaPM.Size = new System.Drawing.Size(111, 22);
+            this.lbTenDocGiaPM.TabIndex = 2;
+            this.lbTenDocGiaPM.Text = "Tên Độc Giả";
+            // 
+            // lbTenTaiLieuPM
+            // 
+            this.lbTenTaiLieuPM.AutoSize = true;
+            this.lbTenTaiLieuPM.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTenTaiLieuPM.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbTenTaiLieuPM.Location = new System.Drawing.Point(411, 137);
+            this.lbTenTaiLieuPM.Name = "lbTenTaiLieuPM";
+            this.lbTenTaiLieuPM.Size = new System.Drawing.Size(114, 22);
+            this.lbTenTaiLieuPM.TabIndex = 2;
+            this.lbTenTaiLieuPM.Text = "Tên Tài Liệu";
+            // 
+            // txtTenDocGiaPM
+            // 
+            this.txtTenDocGiaPM.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTenDocGiaPM.Location = new System.Drawing.Point(197, 137);
+            this.txtTenDocGiaPM.Name = "txtTenDocGiaPM";
+            this.txtTenDocGiaPM.Size = new System.Drawing.Size(159, 26);
+            this.txtTenDocGiaPM.TabIndex = 3;
+            // 
+            // txtTenTaiLieuPM
+            // 
+            this.txtTenTaiLieuPM.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTenTaiLieuPM.Location = new System.Drawing.Point(531, 137);
+            this.txtTenTaiLieuPM.Name = "txtTenTaiLieuPM";
+            this.txtTenTaiLieuPM.Size = new System.Drawing.Size(163, 26);
+            this.txtTenTaiLieuPM.TabIndex = 3;
+            // 
+            // btnRenderPM
+            // 
+            this.btnRenderPM.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnRenderPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRenderPM.Location = new System.Drawing.Point(665, 579);
+            this.btnRenderPM.Name = "btnRenderPM";
+            this.btnRenderPM.Size = new System.Drawing.Size(75, 26);
+            this.btnRenderPM.TabIndex = 10;
+            this.btnRenderPM.Text = "Render";
+            this.btnRenderPM.UseVisualStyleBackColor = false;
+            this.btnRenderPM.Click += new System.EventHandler(this.btnRenderPM_Click);
             // 
             // FormNhanVien
             // 
@@ -764,15 +828,15 @@ namespace PBL
             this.Text = "FormNhanVIen";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSach)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDG)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPM)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -785,57 +849,62 @@ namespace PBL
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbTenTaiLieuS;
+        private System.Windows.Forms.Label lbMaTaiLieuS;
+        private System.Windows.Forms.Label lbViTriHangS;
+        private System.Windows.Forms.Label lbViTriCotS;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox txtMaTaiLieuS;
+        private System.Windows.Forms.TextBox txtViTriHangS;
+        private System.Windows.Forms.TextBox txtTenTaiLieuS;
+        private System.Windows.Forms.TextBox txtViTriCotS;
+        private System.Windows.Forms.Label lbMaKeSachS;
+        private System.Windows.Forms.TextBox txtMaKeSachS;
+        private System.Windows.Forms.ComboBox cbbSortS;
+        private System.Windows.Forms.DataGridView dataGridViewSach;
+        private System.Windows.Forms.Button btnSearchS;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnSearchDG;
+        private System.Windows.Forms.TextBox txtHoTenDG;
+        private System.Windows.Forms.TextBox txtSoTheDG;
+        private System.Windows.Forms.Label lbSoTheDG;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button btnAddDocGia;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lbHoTenDG;
+        private System.Windows.Forms.DataGridView dataGridViewDG;
+        private System.Windows.Forms.ComboBox cbbSortDG;
+        private System.Windows.Forms.Button btnSortDG;
+        private System.Windows.Forms.Button btnEditDG;
+        private System.Windows.Forms.Button btnAddDG;
+        private System.Windows.Forms.Button btnShowDG;
+        private System.Windows.Forms.Button btnLogOutDG;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnSearchPM;
+        private System.Windows.Forms.TextBox txtSoThePM;
+        private System.Windows.Forms.TextBox txtMaPhieuMuonPM;
+        private System.Windows.Forms.Label lbMaPhieuMuonPM;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.Button btnAddPhieuMuon;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button btnEditPhieuMuon;
-        private System.Windows.Forms.Button btnAddSach;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Label lbSoThePM;
+        private System.Windows.Forms.DataGridView dataGridViewPM;
+        private System.Windows.Forms.Button btnAddPM;
+        private System.Windows.Forms.Button btnShowPM;
+        private System.Windows.Forms.ComboBox cbbSortPM;
+        private System.Windows.Forms.Button btnLogOutPM;
+        private System.Windows.Forms.Button btnSortPM;
+        private System.Windows.Forms.Button btnEditPM;
+        private System.Windows.Forms.Button btnAddS;
+        private System.Windows.Forms.Button btnShowS;
+        private System.Windows.Forms.Button btnSortS;
+        private System.Windows.Forms.Button btnEditS;
+        private System.Windows.Forms.Button btnLogOutS;
+        private System.Windows.Forms.Button btnDelS;
+        private System.Windows.Forms.Button btnDelDG;
+        private System.Windows.Forms.Button btnDelPM;
+        private System.Windows.Forms.Label lbTenDocGiaPM;
+        private System.Windows.Forms.Label lbTenTaiLieuPM;
+        private System.Windows.Forms.TextBox txtTenDocGiaPM;
+        private System.Windows.Forms.TextBox txtTenTaiLieuPM;
+        private System.Windows.Forms.Button btnRenderPM;
     }
 }
 

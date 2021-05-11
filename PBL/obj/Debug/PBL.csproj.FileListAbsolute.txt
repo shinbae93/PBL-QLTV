@@ -80,3 +80,6 @@ C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.csproj.CoreCompileInputs.c
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.csproj.CopyComplete
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.exe
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.pdb
+C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormAddDuLieuPhieuMuon.resources
+C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormTraDuLieuPhieuMuon.resources
+C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormLogOut.resources

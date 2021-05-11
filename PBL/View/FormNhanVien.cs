@@ -32,15 +32,27 @@ namespace PBL
             f.ShowDialog();
         }
 
-        private void btnAddPhieuMuon_Click(object sender, EventArgs e)
+        private void btnAddPM_Click(object sender, EventArgs e)
         {
-            FormDuLieuPhieuMuon f = new FormDuLieuPhieuMuon(null);
+            FormAddDuLieuPhieuMuon f = new FormAddDuLieuPhieuMuon();
             //f.d = new Form2.MyDel(this.Show);
             f.ShowDialog();
         }
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             FormLogOut f = new FormLogOut();
+            f.ShowDialog();
+        }
+
+        private void btnRenderPM_Click(object sender, EventArgs e)
+        {
+            FormTraDuLieuPhieuMuon f = new FormTraDuLieuPhieuMuon();
+            f.ShowDialog();
+        }
+
+        private void btnEditPM_Click(object sender, EventArgs e)
+        {
+            FormDuLieuPhieuMuon f = new FormDuLieuPhieuMuon(null);
             f.ShowDialog();
         }
     }
