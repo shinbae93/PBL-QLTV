@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PBL.DAL;
 
 namespace PBL.View
 {
@@ -15,7 +16,36 @@ namespace PBL.View
         public FormQuanLy()
         {
             InitializeComponent();
+            SetCBB();
         }
+
+        private void SetCBB()
+        {
+            DHP07Entities db = new DHP07Entities();
+            cbbLoaiTL.Items.Add(new CBBItem { Value = null, Text = "ALL" });
+            cbbLoaiTL.Text = "ALL";
+            foreach (LoaiTaiLieu i in db.LoaiTaiLieux)
+            {
+                cbbLoaiTL.Items.Add(new CBBItem { Value = i.MaLTL, Text = i.TenLoai });
+            }
+        }
+
+        private void ShowSach()
+        {
+        }
+
+        private void ShowPM()
+        {
+        }
+
+        private void ShowDG()
+        {
+        }
+
+        private void ShowNV()
+        {
+        }
+
         private void btnAddSach_Click(object sender, EventArgs e)
         {
             FormDuLieuSach f = new FormDuLieuSach(null);
@@ -36,14 +66,13 @@ namespace PBL.View
             //f.d = new Form2.MyDel(this.Show);
             f.ShowDialog();
         }
+
         private void btnEditPhieuMuon_Click(object sender, EventArgs e)
         {
             FormDuLieuPhieuMuon f = new FormDuLieuPhieuMuon(null);
             //f.d = new Form2.MyDel(this.Show);
             f.ShowDialog();
         }
-
-
 
         private void btnSearchTKVP_Click(object sender, EventArgs e)
         {
@@ -56,28 +85,15 @@ namespace PBL.View
             FormDuLieuNhanVien f = new FormDuLieuNhanVien();
             f.ShowDialog();
         }
-        private void button6_Click(object sender, EventArgs e)
-        {
-            
-        }
-        private void button7_Click(object sender, EventArgs e)
-        {
-            
-        }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-           
-        }
         private void btnSearchNV_Click(object sender, EventArgs e)
         {
-            
         }
 
         private void btnTKVP_Click(object sender, EventArgs e)
         {
-            
         }
+
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             FormLogOut f = new FormLogOut();
@@ -88,6 +104,38 @@ namespace PBL.View
         {
             FormTraDuLieuPhieuMuon f = new FormTraDuLieuPhieuMuon();
             f.ShowDialog();
+        }
+
+        private void btnSearchS_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnShowS_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnDelS_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnSortS_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnSearchPM_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnShowPM_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnDelPM_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnSortPM_Click(object sender, EventArgs e)
+        {
         }
     }
 }

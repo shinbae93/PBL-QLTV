@@ -15,6 +15,7 @@ namespace PBL.View
         public FormDuLieuSach(object p)
         {
             InitializeComponent();
+            txtMaTaiLieu.Enabled = false;
         }
     }
 }

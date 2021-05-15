@@ -83,3 +83,9 @@ C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.pdb
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormAddDuLieuPhieuMuon.resources
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormTraDuLieuPhieuMuon.resources
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormLogOut.resources
+C:\Users\nguoi\OneDrive\Desktop\PBL-QLTV\PBL\obj\Debug\PBL.View.FormAddDuLieuPhieuMuon.resources
+C:\Users\nguoi\OneDrive\Desktop\PBL-QLTV\PBL\obj\Debug\PBL.View.FormForgotPW.resources
+C:\Users\nguoi\OneDrive\Desktop\PBL-QLTV\PBL\obj\Debug\PBL.View.FormForgotPW2.resources
+C:\Users\nguoi\OneDrive\Desktop\PBL-QLTV\PBL\obj\Debug\PBL.View.FormForgotPW3.resources
+C:\Users\nguoi\OneDrive\Desktop\PBL-QLTV\PBL\obj\Debug\PBL.View.FormLogOut.resources
+C:\Users\nguoi\OneDrive\Desktop\PBL-QLTV\PBL\obj\Debug\PBL.View.FormTraDuLieuPhieuMuon.resources

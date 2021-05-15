@@ -60,6 +60,7 @@
     <Compile Include="BLL\QLPM_BLL.cs" />
     <Compile Include="BLL\QLTL_BLL.cs" />
     <Compile Include="BLL\QLVP_BLL.cs" />
+    <Compile Include="DAL\CBBItem.cs" />
     <Compile Include="DAL\CuonTaiLieu.cs">
       <DependentUpon>DHP07.tt</DependentUpon>
     </Compile>
