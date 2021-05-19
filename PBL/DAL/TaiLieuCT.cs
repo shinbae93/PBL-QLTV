@@ -14,9 +14,8 @@ namespace PBL.DAL
     
     public partial class TaiLieuCT
     {
-        public string MaPhieuMuon { get; set; }
-        public string MaVach { get; set; }
-        public Nullable<System.DateTime> NgayCN { get; set; }
+        public int MaPhieuMuon { get; set; }
+        public int MaVach { get; set; }
         public string TinhTrang { get; set; }
     
         public virtual CuonTaiLieu CuonTaiLieu { get; set; }

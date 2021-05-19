@@ -20,7 +20,7 @@ namespace PBL.DAL
             this.DocGias = new HashSet<DocGia>();
         }
     
-        public string MaLop { get; set; }
+        public int MaLop { get; set; }
         public string TenLop { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

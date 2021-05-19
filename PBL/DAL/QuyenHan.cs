@@ -20,7 +20,7 @@ namespace PBL.DAL
             this.NguoiDungs = new HashSet<NguoiDung>();
         }
     
-        public string ID_QuyenHan { get; set; }
+        public int ID_QuyenHan { get; set; }
         public string TenQuyenHan { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

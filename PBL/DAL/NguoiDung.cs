@@ -20,16 +20,15 @@ namespace PBL.DAL
             this.PhieuMuons = new HashSet<PhieuMuon>();
         }
     
-        public string ID { get; set; }
+        public int ID { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
         public string HoTen { get; set; }
         public Nullable<System.DateTime> NgaySinh { get; set; }
         public Nullable<bool> GioiTinh { get; set; }
-        public string ChucDanh { get; set; }
         public string DienThoai { get; set; }
         public string Email { get; set; }
-        public string ID_QuyenHan { get; set; }
+        public int ID_QuyenHan { get; set; }
     
         public virtual QuyenHan QuyenHan { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -20,7 +20,7 @@ namespace PBL.DAL
             this.TaiLieux = new HashSet<TaiLieu>();
         }
     
-        public string MaLTL { get; set; }
+        public int MaLTL { get; set; }
         public string TenLoai { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -13,10 +13,10 @@ namespace PBL.DAL
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DHP07Entities : DbContext
+    public partial class DHP_07Entities : DbContext
     {
-        public DHP07Entities()
-            : base("name=DHP07Entities")
+        public DHP_07Entities()
+            : base("name=DHP_07Entities")
         {
         }
     

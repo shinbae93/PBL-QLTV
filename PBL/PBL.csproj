@@ -268,6 +268,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="DAL\DHP07.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DHP07.edmx</DependentUpon>
@@ -278,9 +281,6 @@
       <DependentUpon>DHP07.edmx</DependentUpon>
       <LastGenOutput>DHP07.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

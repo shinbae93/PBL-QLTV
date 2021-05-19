@@ -20,7 +20,7 @@ namespace PBL.DAL
             this.TaiLieuCTs = new HashSet<TaiLieuCT>();
         }
     
-        public string MaVach { get; set; }
+        public int MaVach { get; set; }
         public string MaTL { get; set; }
     
         public virtual TaiLieu TaiLieu { get; set; }

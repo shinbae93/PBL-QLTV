@@ -4,76 +4,75 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DHP_07Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="CuonTaiLieu">
           <Key>
             <PropertyRef Name="MaVach" />
           </Key>
-          <Property Name="MaVach" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="MaVach" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="MaTL" Type="varchar" MaxLength="20" Nullable="false" />
         </EntityType>
         <EntityType Name="DocGia">
           <Key>
             <PropertyRef Name="MaDocGia" />
           </Key>
-          <Property Name="MaDocGia" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="MaDocGia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="MSSV" Type="char" MaxLength="9" Nullable="false" />
           <Property Name="HoTen" Type="nvarchar" MaxLength="40" Nullable="false" />
           <Property Name="NgaySinh" Type="date" />
           <Property Name="GioiTinh" Type="bit" />
-          <Property Name="MaLop" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="MaLop" Type="int" Nullable="false" />
           <Property Name="NgayDK" Type="date" Nullable="false" />
         </EntityType>
         <EntityType Name="LoaiTaiLieu">
           <Key>
             <PropertyRef Name="MaLTL" />
           </Key>
-          <Property Name="MaLTL" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="MaLTL" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TenLoai" Type="nvarchar" MaxLength="30" Nullable="false" />
         </EntityType>
         <EntityType Name="Lop">
           <Key>
             <PropertyRef Name="MaLop" />
           </Key>
-          <Property Name="MaLop" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="MaLop" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TenLop" Type="nvarchar" MaxLength="30" Nullable="false" />
         </EntityType>
         <EntityType Name="NgonNgu">
           <Key>
             <PropertyRef Name="MaNgonNgu" />
           </Key>
-          <Property Name="MaNgonNgu" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="MaNgonNgu" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TenNgonNgu" Type="nvarchar" MaxLength="30" Nullable="false" />
         </EntityType>
         <EntityType Name="NguoiDung">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Username" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="Password" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="HoTen" Type="nvarchar" MaxLength="40" Nullable="false" />
           <Property Name="NgaySinh" Type="date" />
           <Property Name="GioiTinh" Type="bit" />
-          <Property Name="ChucDanh" Type="nvarchar" MaxLength="50" />
           <Property Name="DienThoai" Type="char" MaxLength="10" />
           <Property Name="Email" Type="varchar" MaxLength="100" />
-          <Property Name="ID_QuyenHan" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="ID_QuyenHan" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="NhaXuatBan">
           <Key>
             <PropertyRef Name="MaNXB" />
           </Key>
-          <Property Name="MaNXB" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="MaNXB" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TenNXB" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="PhieuMuon">
           <Key>
             <PropertyRef Name="MaPhieuMuon" />
           </Key>
-          <Property Name="MaPhieuMuon" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="ID" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="MaDocGia" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="MaPhieuMuon" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="MaDocGia" Type="int" Nullable="false" />
           <Property Name="NgayMuon" Type="date" Nullable="false" />
           <Property Name="HanTra" Type="date" Nullable="false" />
           <Property Name="NgayTra" Type="date" />
@@ -83,7 +82,7 @@
           <Key>
             <PropertyRef Name="ID_QuyenHan" />
           </Key>
-          <Property Name="ID_QuyenHan" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="ID_QuyenHan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TenQuyenHan" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="TaiLieu">
@@ -92,22 +91,20 @@
           </Key>
           <Property Name="MaTL" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="TenTL" Type="nvarchar" MaxLength="100" Nullable="false" />
-          <Property Name="MaLTL" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="MaNgonNgu" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="MaNXB" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="MaLTL" Type="int" Nullable="false" />
+          <Property Name="MaNgonNgu" Type="int" Nullable="false" />
+          <Property Name="MaNXB" Type="int" Nullable="false" />
           <Property Name="NamXuatBan" Type="date" Nullable="false" />
           <Property Name="SoLuong" Type="int" />
           <Property Name="TacGia" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="NgayCN" Type="date" Nullable="false" />
         </EntityType>
         <EntityType Name="TaiLieuCT">
           <Key>
             <PropertyRef Name="MaPhieuMuon" />
             <PropertyRef Name="MaVach" />
           </Key>
-          <Property Name="MaPhieuMuon" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="MaVach" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="NgayCN" Type="date" />
+          <Property Name="MaPhieuMuon" Type="int" Nullable="false" />
+          <Property Name="MaVach" Type="int" Nullable="false" />
           <Property Name="TinhTrang" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <Association Name="fk_cuontl_matl">
@@ -230,7 +227,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="DHP_07ModelStoreContainer">
+        <EntityContainer Name="ModelStoreContainer">
           <EntitySet Name="CuonTaiLieu" EntityType="Self.CuonTaiLieu" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="DocGia" EntityType="Self.DocGia" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="LoaiTaiLieu" EntityType="Self.LoaiTaiLieu" Schema="dbo" store:Type="Tables" />
@@ -287,12 +284,12 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="DHP_07Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="CuonTaiLieu">
           <Key>
             <PropertyRef Name="MaVach" />
           </Key>
-          <Property Name="MaVach" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MaVach" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="MaTL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="TaiLieu" Relationship="Self.fk_cuontl_matl" FromRole="CuonTaiLieu" ToRole="TaiLieu" />
           <NavigationProperty Name="TaiLieuCTs" Relationship="Self.FK_TaiLieuCT_CuonTaiLieu" FromRole="CuonTaiLieu" ToRole="TaiLieuCT" />
@@ -301,12 +298,12 @@
           <Key>
             <PropertyRef Name="MaDocGia" />
           </Key>
-          <Property Name="MaDocGia" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MaDocGia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="MSSV" Type="String" MaxLength="9" FixedLength="true" Unicode="false" Nullable="false" />
           <Property Name="HoTen" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="NgaySinh" Type="DateTime" Precision="0" />
           <Property Name="GioiTinh" Type="Boolean" />
-          <Property Name="MaLop" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MaLop" Type="Int32" Nullable="false" />
           <Property Name="NgayDK" Type="DateTime" Nullable="false" Precision="0" />
           <NavigationProperty Name="Lop" Relationship="Self.fk_docgia_malop" FromRole="DocGia" ToRole="Lop" />
           <NavigationProperty Name="PhieuMuons" Relationship="Self.fk_phieumuon_madocia" FromRole="DocGia" ToRole="PhieuMuon" />
@@ -315,7 +312,7 @@
           <Key>
             <PropertyRef Name="MaLTL" />
           </Key>
-          <Property Name="MaLTL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MaLTL" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TenLoai" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="TaiLieux" Relationship="Self.FK_TaiLieu_LoaiTaiLieu" FromRole="LoaiTaiLieu" ToRole="TaiLieu" />
         </EntityType>
@@ -323,7 +320,7 @@
           <Key>
             <PropertyRef Name="MaLop" />
           </Key>
-          <Property Name="MaLop" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MaLop" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TenLop" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="DocGias" Relationship="Self.fk_docgia_malop" FromRole="Lop" ToRole="DocGia" />
         </EntityType>
@@ -331,7 +328,7 @@
           <Key>
             <PropertyRef Name="MaNgonNgu" />
           </Key>
-          <Property Name="MaNgonNgu" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MaNgonNgu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TenNgonNgu" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="TaiLieux" Relationship="Self.fk_tl_mangonngu" FromRole="NgonNgu" ToRole="TaiLieu" />
         </EntityType>
@@ -339,16 +336,15 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Username" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="HoTen" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="NgaySinh" Type="DateTime" Precision="0" />
           <Property Name="GioiTinh" Type="Boolean" />
-          <Property Name="ChucDanh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="DienThoai" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
           <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="ID_QuyenHan" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ID_QuyenHan" Type="Int32" Nullable="false" />
           <NavigationProperty Name="QuyenHan" Relationship="Self.fk_nguoidung_idquyenhan" FromRole="NguoiDung" ToRole="QuyenHan" />
           <NavigationProperty Name="PhieuMuons" Relationship="Self.fk_phieumuon_id" FromRole="NguoiDung" ToRole="PhieuMuon" />
         </EntityType>
@@ -356,7 +352,7 @@
           <Key>
             <PropertyRef Name="MaNXB" />
           </Key>
-          <Property Name="MaNXB" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MaNXB" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TenNXB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="TaiLieux" Relationship="Self.fk_tl_matacgia" FromRole="NhaXuatBan" ToRole="TaiLieu" />
         </EntityType>
@@ -364,9 +360,9 @@
           <Key>
             <PropertyRef Name="MaPhieuMuon" />
           </Key>
-          <Property Name="MaPhieuMuon" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="MaDocGia" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MaPhieuMuon" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="MaDocGia" Type="Int32" Nullable="false" />
           <Property Name="NgayMuon" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="HanTra" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="NgayTra" Type="DateTime" Precision="0" />
@@ -379,7 +375,7 @@
           <Key>
             <PropertyRef Name="ID_QuyenHan" />
           </Key>
-          <Property Name="ID_QuyenHan" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ID_QuyenHan" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TenQuyenHan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="NguoiDungs" Relationship="Self.fk_nguoidung_idquyenhan" FromRole="QuyenHan" ToRole="NguoiDung" />
         </EntityType>
@@ -389,13 +385,12 @@
           </Key>
           <Property Name="MaTL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="TenTL" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="MaLTL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="MaNgonNgu" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="MaNXB" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MaLTL" Type="Int32" Nullable="false" />
+          <Property Name="MaNgonNgu" Type="Int32" Nullable="false" />
+          <Property Name="MaNXB" Type="Int32" Nullable="false" />
           <Property Name="NamXuatBan" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="SoLuong" Type="Int32" />
           <Property Name="TacGia" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="NgayCN" Type="DateTime" Nullable="false" Precision="0" />
           <NavigationProperty Name="CuonTaiLieux" Relationship="Self.fk_cuontl_matl" FromRole="TaiLieu" ToRole="CuonTaiLieu" />
           <NavigationProperty Name="LoaiTaiLieu" Relationship="Self.FK_TaiLieu_LoaiTaiLieu" FromRole="TaiLieu" ToRole="LoaiTaiLieu" />
           <NavigationProperty Name="NgonNgu" Relationship="Self.fk_tl_mangonngu" FromRole="TaiLieu" ToRole="NgonNgu" />
@@ -406,9 +401,8 @@
             <PropertyRef Name="MaPhieuMuon" />
             <PropertyRef Name="MaVach" />
           </Key>
-          <Property Name="MaPhieuMuon" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="MaVach" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="NgayCN" Type="DateTime" Precision="0" />
+          <Property Name="MaPhieuMuon" Type="Int32" Nullable="false" />
+          <Property Name="MaVach" Type="Int32" Nullable="false" />
           <Property Name="TinhTrang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="CuonTaiLieu" Relationship="Self.FK_TaiLieuCT_CuonTaiLieu" FromRole="TaiLieuCT" ToRole="CuonTaiLieu" />
           <NavigationProperty Name="PhieuMuon" Relationship="Self.fk_tlct_maphieumuon" FromRole="TaiLieuCT" ToRole="PhieuMuon" />
@@ -533,7 +527,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="DHP07Entities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="DHP_07Entities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="CuonTaiLieux" EntityType="Self.CuonTaiLieu" />
           <EntitySet Name="DocGias" EntityType="Self.DocGia" />
           <EntitySet Name="LoaiTaiLieux" EntityType="Self.LoaiTaiLieu" />
@@ -591,9 +585,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="DHP_07ModelStoreContainer" CdmEntityContainer="DHP07Entities">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="DHP_07Entities">
           <EntitySetMapping Name="CuonTaiLieux">
-            <EntityTypeMapping TypeName="DHP_07Model.CuonTaiLieu">
+            <EntityTypeMapping TypeName="Model.CuonTaiLieu">
               <MappingFragment StoreEntitySet="CuonTaiLieu">
                 <ScalarProperty Name="MaVach" ColumnName="MaVach" />
                 <ScalarProperty Name="MaTL" ColumnName="MaTL" />
@@ -601,7 +595,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DocGias">
-            <EntityTypeMapping TypeName="DHP_07Model.DocGia">
+            <EntityTypeMapping TypeName="Model.DocGia">
               <MappingFragment StoreEntitySet="DocGia">
                 <ScalarProperty Name="MaDocGia" ColumnName="MaDocGia" />
                 <ScalarProperty Name="MSSV" ColumnName="MSSV" />
@@ -614,7 +608,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="LoaiTaiLieux">
-            <EntityTypeMapping TypeName="DHP_07Model.LoaiTaiLieu">
+            <EntityTypeMapping TypeName="Model.LoaiTaiLieu">
               <MappingFragment StoreEntitySet="LoaiTaiLieu">
                 <ScalarProperty Name="MaLTL" ColumnName="MaLTL" />
                 <ScalarProperty Name="TenLoai" ColumnName="TenLoai" />
@@ -622,7 +616,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Lops">
-            <EntityTypeMapping TypeName="DHP_07Model.Lop">
+            <EntityTypeMapping TypeName="Model.Lop">
               <MappingFragment StoreEntitySet="Lop">
                 <ScalarProperty Name="MaLop" ColumnName="MaLop" />
                 <ScalarProperty Name="TenLop" ColumnName="TenLop" />
@@ -630,7 +624,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="NgonNgus">
-            <EntityTypeMapping TypeName="DHP_07Model.NgonNgu">
+            <EntityTypeMapping TypeName="Model.NgonNgu">
               <MappingFragment StoreEntitySet="NgonNgu">
                 <ScalarProperty Name="MaNgonNgu" ColumnName="MaNgonNgu" />
                 <ScalarProperty Name="TenNgonNgu" ColumnName="TenNgonNgu" />
@@ -638,7 +632,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="NguoiDungs">
-            <EntityTypeMapping TypeName="DHP_07Model.NguoiDung">
+            <EntityTypeMapping TypeName="Model.NguoiDung">
               <MappingFragment StoreEntitySet="NguoiDung">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Username" ColumnName="Username" />
@@ -646,7 +640,6 @@
                 <ScalarProperty Name="HoTen" ColumnName="HoTen" />
                 <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
                 <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
-                <ScalarProperty Name="ChucDanh" ColumnName="ChucDanh" />
                 <ScalarProperty Name="DienThoai" ColumnName="DienThoai" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="ID_QuyenHan" ColumnName="ID_QuyenHan" />
@@ -654,7 +647,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="NhaXuatBans">
-            <EntityTypeMapping TypeName="DHP_07Model.NhaXuatBan">
+            <EntityTypeMapping TypeName="Model.NhaXuatBan">
               <MappingFragment StoreEntitySet="NhaXuatBan">
                 <ScalarProperty Name="MaNXB" ColumnName="MaNXB" />
                 <ScalarProperty Name="TenNXB" ColumnName="TenNXB" />
@@ -662,7 +655,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PhieuMuons">
-            <EntityTypeMapping TypeName="DHP_07Model.PhieuMuon">
+            <EntityTypeMapping TypeName="Model.PhieuMuon">
               <MappingFragment StoreEntitySet="PhieuMuon">
                 <ScalarProperty Name="MaPhieuMuon" ColumnName="MaPhieuMuon" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
@@ -675,7 +668,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="QuyenHans">
-            <EntityTypeMapping TypeName="DHP_07Model.QuyenHan">
+            <EntityTypeMapping TypeName="Model.QuyenHan">
               <MappingFragment StoreEntitySet="QuyenHan">
                 <ScalarProperty Name="ID_QuyenHan" ColumnName="ID_QuyenHan" />
                 <ScalarProperty Name="TenQuyenHan" ColumnName="TenQuyenHan" />
@@ -683,7 +676,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TaiLieux">
-            <EntityTypeMapping TypeName="DHP_07Model.TaiLieu">
+            <EntityTypeMapping TypeName="Model.TaiLieu">
               <MappingFragment StoreEntitySet="TaiLieu">
                 <ScalarProperty Name="MaTL" ColumnName="MaTL" />
                 <ScalarProperty Name="TenTL" ColumnName="TenTL" />
@@ -693,16 +686,14 @@
                 <ScalarProperty Name="NamXuatBan" ColumnName="NamXuatBan" />
                 <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
                 <ScalarProperty Name="TacGia" ColumnName="TacGia" />
-                <ScalarProperty Name="NgayCN" ColumnName="NgayCN" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TaiLieuCTs">
-            <EntityTypeMapping TypeName="DHP_07Model.TaiLieuCT">
+            <EntityTypeMapping TypeName="Model.TaiLieuCT">
               <MappingFragment StoreEntitySet="TaiLieuCT">
                 <ScalarProperty Name="MaPhieuMuon" ColumnName="MaPhieuMuon" />
                 <ScalarProperty Name="MaVach" ColumnName="MaVach" />
-                <ScalarProperty Name="NgayCN" ColumnName="NgayCN" />
                 <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
               </MappingFragment>
             </EntityTypeMapping>

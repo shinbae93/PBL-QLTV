@@ -22,13 +22,12 @@ namespace PBL.DAL
     
         public string MaTL { get; set; }
         public string TenTL { get; set; }
-        public string MaLTL { get; set; }
-        public string MaNgonNgu { get; set; }
-        public string MaNXB { get; set; }
+        public int MaLTL { get; set; }
+        public int MaNgonNgu { get; set; }
+        public int MaNXB { get; set; }
         public System.DateTime NamXuatBan { get; set; }
         public Nullable<int> SoLuong { get; set; }
         public string TacGia { get; set; }
-        public System.DateTime NgayCN { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CuonTaiLieu> CuonTaiLieux { get; set; }
