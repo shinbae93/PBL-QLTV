@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PBL.BLL;
 using PBL.DAL;
 
 namespace PBL.View
@@ -16,20 +17,28 @@ namespace PBL.View
         public FormQuanLy()
         {
             InitializeComponent();
+            ShowNV("", "", "", 0);
             SetCBB();
         }
 
         private void SetCBB()
         {
-            DHP07Entities db = new DHP07Entities();
-            cbbLoaiTL.Items.Add(new CBBItem { Value = null, Text = "ALL" });
+            DHP_07Entities db = new DHP_07Entities();
+            cbbLoaiTL.Items.Add(new CBBItem { Value = 0, Text = "ALL" });
             cbbLoaiTL.Text = "ALL";
             foreach (LoaiTaiLieu i in db.LoaiTaiLieux)
             {
                 cbbLoaiTL.Items.Add(new CBBItem { Value = i.MaLTL, Text = i.TenLoai });
             }
-        }
 
+            cbbQuyenHan.Items.Add(new CBBItem { Value = 0, Text = "ALL" });
+            cbbQuyenHan.SelectedIndex = 0;
+            foreach (QuyenHan i in db.QuyenHans)
+            {
+                cbbQuyenHan.Items.Add(new CBBItem { Value = i.ID_QuyenHan, Text = i.TenQuyenHan });
+            }
+        }
+        #region 
         private void ShowSach()
         {
         }
@@ -42,9 +51,6 @@ namespace PBL.View
         {
         }
 
-        private void ShowNV()
-        {
-        }
 
         private void btnAddSach_Click(object sender, EventArgs e)
         {
@@ -80,15 +86,6 @@ namespace PBL.View
             f.ShowDialog();
         }
 
-        private void btnAddNV_Click(object sender, EventArgs e)
-        {
-            FormDuLieuNhanVien f = new FormDuLieuNhanVien();
-            f.ShowDialog();
-        }
-
-        private void btnSearchNV_Click(object sender, EventArgs e)
-        {
-        }
 
         private void btnTKVP_Click(object sender, EventArgs e)
         {
@@ -137,5 +134,68 @@ namespace PBL.View
         private void btnSortPM_Click(object sender, EventArgs e)
         {
         }
+        #endregion
+        #region MethodNV
+        public void ShowNV(string HoTen, string Email, string SDT, int ID_QuyenHan)
+        {
+            DHP_07Entities db = new DHP_07Entities();
+            dataGridViewNhanVien.DataSource = QLNV_BLL.Instance.GetListNV(HoTen, Email, SDT, ID_QuyenHan);
+            
+        }
+        public void DeleteNV()
+        {
+            if (dataGridViewNhanVien.SelectedRows.Count > 0)
+            {
+                int ID_NguoiDung = Convert.ToInt32(dataGridViewNhanVien.SelectedRows[0].Cells[0].Value);
+                QLNV_BLL.Instance.DeleteNV(ID_NguoiDung);
+            }
+        }
+        public void SortNV()
+        {
+
+        }
+        #endregion
+
+        #region EventNV
+        private void btnShowNV_Click(object sender, EventArgs e)
+        {
+            ShowNV("", "", "", 0);
+        }
+        private void btnSearchNV_Click(object sender, EventArgs e)
+        {
+            ShowNV(txtHoTenNV.Text, txtEmailNV.Text, txtDienThoaiNV.Text, cbbQuyenHan.SelectedIndex);
+        }
+        private void btnAddNV_Click(object sender, EventArgs e)
+        {
+            FormDuLieuNhanVien f = new FormDuLieuNhanVien(0);
+            f.d += new FormDuLieuNhanVien.MyDel(ShowNV);
+            f.Show();
+        }
+        private void btnEditNV_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewNhanVien.SelectedRows.Count == 1)
+            {
+                int ID = Convert.ToInt32(dataGridViewNhanVien.SelectedRows[0].Cells[0].Value);
+                FormDuLieuNhanVien f = new FormDuLieuNhanVien(ID);
+                f.d += new FormDuLieuNhanVien.MyDel(ShowNV);
+                f.Show();
+            }
+            else
+            {
+                MessageBox.Show("Hay chon 1 Row!!");
+            }
+        }
+
+        private void btnDelNV_Click(object sender, EventArgs e)
+        {
+            DeleteNV();
+            ShowNV("", "", "", 0);
+        }
+
+        private void btnSortNV_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
     }
 }
