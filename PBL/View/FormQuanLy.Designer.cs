@@ -157,12 +157,11 @@ namespace PBL.View
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(16, 15);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1231, 777);
+            this.tabControl1.Size = new System.Drawing.Size(923, 631);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -180,11 +179,10 @@ namespace PBL.View
             this.tabPage1.Controls.Add(this.dataGridViewQLSach);
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.Location = new System.Drawing.Point(29, 4);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage1.Location = new System.Drawing.Point(26, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage1.Size = new System.Drawing.Size(1198, 769);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(893, 623);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Quản lý sách";
             // 
@@ -192,10 +190,9 @@ namespace PBL.View
             // 
             this.btnDelS.BackColor = System.Drawing.Color.Gainsboro;
             this.btnDelS.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelS.Location = new System.Drawing.Point(441, 713);
-            this.btnDelS.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDelS.Location = new System.Drawing.Point(331, 579);
             this.btnDelS.Name = "btnDelS";
-            this.btnDelS.Size = new System.Drawing.Size(100, 32);
+            this.btnDelS.Size = new System.Drawing.Size(75, 26);
             this.btnDelS.TabIndex = 13;
             this.btnDelS.Text = "Del";
             this.btnDelS.UseVisualStyleBackColor = false;
@@ -205,10 +202,9 @@ namespace PBL.View
             // 
             this.btnExitS.BackColor = System.Drawing.Color.Gainsboro;
             this.btnExitS.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExitS.Location = new System.Drawing.Point(1028, 713);
-            this.btnExitS.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExitS.Location = new System.Drawing.Point(771, 579);
             this.btnExitS.Name = "btnExitS";
-            this.btnExitS.Size = new System.Drawing.Size(131, 32);
+            this.btnExitS.Size = new System.Drawing.Size(98, 26);
             this.btnExitS.TabIndex = 12;
             this.btnExitS.Text = "LOG OUT";
             this.btnExitS.UseVisualStyleBackColor = false;
@@ -218,10 +214,9 @@ namespace PBL.View
             // 
             this.btnSortS.BackColor = System.Drawing.Color.Gainsboro;
             this.btnSortS.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSortS.Location = new System.Drawing.Point(572, 713);
-            this.btnSortS.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSortS.Location = new System.Drawing.Point(429, 579);
             this.btnSortS.Name = "btnSortS";
-            this.btnSortS.Size = new System.Drawing.Size(100, 32);
+            this.btnSortS.Size = new System.Drawing.Size(75, 26);
             this.btnSortS.TabIndex = 11;
             this.btnSortS.Text = "Sort";
             this.btnSortS.UseVisualStyleBackColor = false;
@@ -231,10 +226,9 @@ namespace PBL.View
             // 
             this.btnEditS.BackColor = System.Drawing.Color.Gainsboro;
             this.btnEditS.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditS.Location = new System.Drawing.Point(305, 713);
-            this.btnEditS.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditS.Location = new System.Drawing.Point(229, 579);
             this.btnEditS.Name = "btnEditS";
-            this.btnEditS.Size = new System.Drawing.Size(100, 32);
+            this.btnEditS.Size = new System.Drawing.Size(75, 26);
             this.btnEditS.TabIndex = 10;
             this.btnEditS.Text = "Edit";
             this.btnEditS.UseVisualStyleBackColor = false;
@@ -244,10 +238,9 @@ namespace PBL.View
             // 
             this.btnAddS.BackColor = System.Drawing.Color.Gainsboro;
             this.btnAddS.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddS.Location = new System.Drawing.Point(171, 713);
-            this.btnAddS.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddS.Location = new System.Drawing.Point(128, 579);
             this.btnAddS.Name = "btnAddS";
-            this.btnAddS.Size = new System.Drawing.Size(100, 32);
+            this.btnAddS.Size = new System.Drawing.Size(75, 26);
             this.btnAddS.TabIndex = 9;
             this.btnAddS.Text = "Add";
             this.btnAddS.UseVisualStyleBackColor = false;
@@ -257,10 +250,9 @@ namespace PBL.View
             // 
             this.btnShowS.BackColor = System.Drawing.Color.Gainsboro;
             this.btnShowS.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowS.Location = new System.Drawing.Point(33, 713);
-            this.btnShowS.Margin = new System.Windows.Forms.Padding(4);
+            this.btnShowS.Location = new System.Drawing.Point(25, 579);
             this.btnShowS.Name = "btnShowS";
-            this.btnShowS.Size = new System.Drawing.Size(100, 32);
+            this.btnShowS.Size = new System.Drawing.Size(75, 26);
             this.btnShowS.TabIndex = 8;
             this.btnShowS.Text = "Show";
             this.btnShowS.UseVisualStyleBackColor = false;
@@ -269,21 +261,19 @@ namespace PBL.View
             // cbbSortS
             // 
             this.cbbSortS.FormattingEnabled = true;
-            this.cbbSortS.Location = new System.Drawing.Point(680, 711);
-            this.cbbSortS.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbSortS.Location = new System.Drawing.Point(510, 578);
             this.cbbSortS.Name = "cbbSortS";
-            this.cbbSortS.Size = new System.Drawing.Size(160, 31);
+            this.cbbSortS.Size = new System.Drawing.Size(121, 27);
             this.cbbSortS.TabIndex = 5;
             // 
             // dataGridViewQLSach
             // 
             this.dataGridViewQLSach.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridViewQLSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewQLSach.Location = new System.Drawing.Point(33, 343);
-            this.dataGridViewQLSach.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewQLSach.Location = new System.Drawing.Point(25, 279);
             this.dataGridViewQLSach.Name = "dataGridViewQLSach";
             this.dataGridViewQLSach.RowHeadersWidth = 51;
-            this.dataGridViewQLSach.Size = new System.Drawing.Size(1125, 348);
+            this.dataGridViewQLSach.Size = new System.Drawing.Size(844, 283);
             this.dataGridViewQLSach.TabIndex = 4;
             // 
             // panel1
@@ -308,28 +298,27 @@ namespace PBL.View
             this.panel1.Controls.Add(this.lbViTriCotS);
             this.panel1.Controls.Add(this.lbViTriHangS);
             this.panel1.Controls.Add(this.lbTenTaiLieuS);
-            this.panel1.Location = new System.Drawing.Point(33, 34);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(25, 28);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1146, 290);
+            this.panel1.Size = new System.Drawing.Size(860, 236);
             this.panel1.TabIndex = 3;
             // 
             // cbbLoaiTL
             // 
             this.cbbLoaiTL.FormattingEnabled = true;
-            this.cbbLoaiTL.Location = new System.Drawing.Point(957, 172);
+            this.cbbLoaiTL.Location = new System.Drawing.Point(718, 140);
+            this.cbbLoaiTL.Margin = new System.Windows.Forms.Padding(2);
             this.cbbLoaiTL.Name = "cbbLoaiTL";
-            this.cbbLoaiTL.Size = new System.Drawing.Size(121, 31);
+            this.cbbLoaiTL.Size = new System.Drawing.Size(92, 27);
             this.cbbLoaiTL.TabIndex = 7;
             // 
             // btnSearchS
             // 
             this.btnSearchS.BackColor = System.Drawing.Color.Gainsboro;
             this.btnSearchS.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchS.Location = new System.Drawing.Point(527, 228);
-            this.btnSearchS.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSearchS.Location = new System.Drawing.Point(395, 185);
             this.btnSearchS.Name = "btnSearchS";
-            this.btnSearchS.Size = new System.Drawing.Size(100, 32);
+            this.btnSearchS.Size = new System.Drawing.Size(75, 26);
             this.btnSearchS.TabIndex = 6;
             this.btnSearchS.Text = "Search";
             this.btnSearchS.UseVisualStyleBackColor = false;
@@ -337,26 +326,23 @@ namespace PBL.View
             // 
             // txtViTriCotS
             // 
-            this.txtViTriCotS.Location = new System.Drawing.Point(957, 119);
-            this.txtViTriCotS.Margin = new System.Windows.Forms.Padding(4);
+            this.txtViTriCotS.Location = new System.Drawing.Point(718, 97);
             this.txtViTriCotS.Name = "txtViTriCotS";
-            this.txtViTriCotS.Size = new System.Drawing.Size(121, 31);
+            this.txtViTriCotS.Size = new System.Drawing.Size(92, 26);
             this.txtViTriCotS.TabIndex = 4;
             // 
             // txtViTriHangS
             // 
-            this.txtViTriHangS.Location = new System.Drawing.Point(657, 119);
-            this.txtViTriHangS.Margin = new System.Windows.Forms.Padding(4);
+            this.txtViTriHangS.Location = new System.Drawing.Point(493, 97);
             this.txtViTriHangS.Name = "txtViTriHangS";
-            this.txtViTriHangS.Size = new System.Drawing.Size(116, 31);
+            this.txtViTriHangS.Size = new System.Drawing.Size(88, 26);
             this.txtViTriHangS.TabIndex = 4;
             // 
             // txtMaKeSachS
             // 
-            this.txtMaKeSachS.Location = new System.Drawing.Point(657, 172);
-            this.txtMaKeSachS.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaKeSachS.Location = new System.Drawing.Point(493, 140);
             this.txtMaKeSachS.Name = "txtMaKeSachS";
-            this.txtMaKeSachS.Size = new System.Drawing.Size(116, 31);
+            this.txtMaKeSachS.Size = new System.Drawing.Size(88, 26);
             this.txtMaKeSachS.TabIndex = 3;
             // 
             // txtTenTaiLieuS
@@ -364,10 +350,9 @@ namespace PBL.View
             this.txtTenTaiLieuS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTenTaiLieuS.Location = new System.Drawing.Point(211, 170);
-            this.txtTenTaiLieuS.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenTaiLieuS.Location = new System.Drawing.Point(158, 138);
             this.txtTenTaiLieuS.Name = "txtTenTaiLieuS";
-            this.txtTenTaiLieuS.Size = new System.Drawing.Size(245, 31);
+            this.txtTenTaiLieuS.Size = new System.Drawing.Size(185, 26);
             this.txtTenTaiLieuS.TabIndex = 3;
             // 
             // txtMaTaiLieuS
@@ -375,10 +360,9 @@ namespace PBL.View
             this.txtMaTaiLieuS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMaTaiLieuS.Location = new System.Drawing.Point(211, 119);
-            this.txtMaTaiLieuS.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaTaiLieuS.Location = new System.Drawing.Point(158, 97);
             this.txtMaTaiLieuS.Name = "txtMaTaiLieuS";
-            this.txtMaTaiLieuS.Size = new System.Drawing.Size(245, 31);
+            this.txtMaTaiLieuS.Size = new System.Drawing.Size(185, 26);
             this.txtMaTaiLieuS.TabIndex = 3;
             // 
             // lbLoaiTL
@@ -386,10 +370,9 @@ namespace PBL.View
             this.lbLoaiTL.AutoSize = true;
             this.lbLoaiTL.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLoaiTL.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbLoaiTL.Location = new System.Drawing.Point(797, 169);
-            this.lbLoaiTL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbLoaiTL.Location = new System.Drawing.Point(598, 137);
             this.lbLoaiTL.Name = "lbLoaiTL";
-            this.lbLoaiTL.Size = new System.Drawing.Size(153, 28);
+            this.lbLoaiTL.Size = new System.Drawing.Size(119, 22);
             this.lbLoaiTL.TabIndex = 2;
             this.lbLoaiTL.Text = "Loại Tài Liệu";
             // 
@@ -398,10 +381,9 @@ namespace PBL.View
             this.lbMaKeSachS.AutoSize = true;
             this.lbMaKeSachS.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMaKeSachS.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbMaKeSachS.Location = new System.Drawing.Point(507, 170);
-            this.lbMaKeSachS.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbMaKeSachS.Location = new System.Drawing.Point(380, 138);
             this.lbMaKeSachS.Name = "lbMaKeSachS";
-            this.lbMaKeSachS.Size = new System.Drawing.Size(134, 28);
+            this.lbMaKeSachS.Size = new System.Drawing.Size(107, 22);
             this.lbMaKeSachS.TabIndex = 2;
             this.lbMaKeSachS.Text = "Mã Kệ Sách";
             // 
@@ -410,10 +392,9 @@ namespace PBL.View
             this.lbMaTaiLieuS.AutoSize = true;
             this.lbMaTaiLieuS.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMaTaiLieuS.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbMaTaiLieuS.Location = new System.Drawing.Point(59, 119);
-            this.lbMaTaiLieuS.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbMaTaiLieuS.Location = new System.Drawing.Point(44, 97);
             this.lbMaTaiLieuS.Name = "lbMaTaiLieuS";
-            this.lbMaTaiLieuS.Size = new System.Drawing.Size(138, 28);
+            this.lbMaTaiLieuS.Size = new System.Drawing.Size(108, 22);
             this.lbMaTaiLieuS.TabIndex = 2;
             this.lbMaTaiLieuS.Text = "Mã Tài Liệu";
             // 
@@ -425,10 +406,9 @@ namespace PBL.View
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(99, 12);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(74, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(884, 107);
+            this.label1.Size = new System.Drawing.Size(663, 87);
             this.label1.TabIndex = 1;
             this.label1.Text = "Quản Lý Sách";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -438,10 +418,9 @@ namespace PBL.View
             this.lbViTriCotS.AutoSize = true;
             this.lbViTriCotS.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbViTriCotS.ForeColor = System.Drawing.Color.Maroon;
-            this.lbViTriCotS.Location = new System.Drawing.Point(797, 119);
-            this.lbViTriCotS.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbViTriCotS.Location = new System.Drawing.Point(598, 97);
             this.lbViTriCotS.Name = "lbViTriCotS";
-            this.lbViTriCotS.Size = new System.Drawing.Size(115, 28);
+            this.lbViTriCotS.Size = new System.Drawing.Size(91, 22);
             this.lbViTriCotS.TabIndex = 2;
             this.lbViTriCotS.Text = "Vị Trí Cột";
             // 
@@ -450,10 +429,9 @@ namespace PBL.View
             this.lbViTriHangS.AutoSize = true;
             this.lbViTriHangS.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbViTriHangS.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbViTriHangS.Location = new System.Drawing.Point(507, 117);
-            this.lbViTriHangS.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbViTriHangS.Location = new System.Drawing.Point(380, 95);
             this.lbViTriHangS.Name = "lbViTriHangS";
-            this.lbViTriHangS.Size = new System.Drawing.Size(134, 28);
+            this.lbViTriHangS.Size = new System.Drawing.Size(107, 22);
             this.lbViTriHangS.TabIndex = 2;
             this.lbViTriHangS.Text = "Vị Trí Hàng";
             // 
@@ -462,10 +440,9 @@ namespace PBL.View
             this.lbTenTaiLieuS.AutoSize = true;
             this.lbTenTaiLieuS.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTenTaiLieuS.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbTenTaiLieuS.Location = new System.Drawing.Point(59, 167);
-            this.lbTenTaiLieuS.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTenTaiLieuS.Location = new System.Drawing.Point(44, 136);
             this.lbTenTaiLieuS.Name = "lbTenTaiLieuS";
-            this.lbTenTaiLieuS.Size = new System.Drawing.Size(146, 28);
+            this.lbTenTaiLieuS.Size = new System.Drawing.Size(114, 22);
             this.lbTenTaiLieuS.TabIndex = 2;
             this.lbTenTaiLieuS.Text = "Tên Tài Liệu";
             // 
@@ -483,11 +460,10 @@ namespace PBL.View
             this.tabPage2.Controls.Add(this.dataGridViewDocGia);
             this.tabPage2.Controls.Add(this.panel2);
             this.tabPage2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(29, 4);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage2.Location = new System.Drawing.Point(26, 4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(1198, 769);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(893, 623);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Quản lý Độc Giả";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -496,22 +472,21 @@ namespace PBL.View
             // 
             this.btnDelDG.BackColor = System.Drawing.Color.Gainsboro;
             this.btnDelDG.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelDG.Location = new System.Drawing.Point(441, 713);
-            this.btnDelDG.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDelDG.Location = new System.Drawing.Point(331, 579);
             this.btnDelDG.Name = "btnDelDG";
-            this.btnDelDG.Size = new System.Drawing.Size(100, 32);
+            this.btnDelDG.Size = new System.Drawing.Size(75, 26);
             this.btnDelDG.TabIndex = 10;
             this.btnDelDG.Text = "Del";
             this.btnDelDG.UseVisualStyleBackColor = false;
+            this.btnDelDG.Click += new System.EventHandler(this.btnDelDG_Click);
             // 
             // btnExitDG
             // 
             this.btnExitDG.BackColor = System.Drawing.Color.Gainsboro;
             this.btnExitDG.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExitDG.Location = new System.Drawing.Point(1031, 713);
-            this.btnExitDG.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExitDG.Location = new System.Drawing.Point(773, 579);
             this.btnExitDG.Name = "btnExitDG";
-            this.btnExitDG.Size = new System.Drawing.Size(128, 32);
+            this.btnExitDG.Size = new System.Drawing.Size(96, 26);
             this.btnExitDG.TabIndex = 9;
             this.btnExitDG.Text = "LOG OUT";
             this.btnExitDG.UseVisualStyleBackColor = false;
@@ -520,45 +495,42 @@ namespace PBL.View
             // cbbSortDG
             // 
             this.cbbSortDG.FormattingEnabled = true;
-            this.cbbSortDG.Location = new System.Drawing.Point(680, 713);
-            this.cbbSortDG.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbSortDG.Location = new System.Drawing.Point(510, 579);
             this.cbbSortDG.Name = "cbbSortDG";
-            this.cbbSortDG.Size = new System.Drawing.Size(160, 31);
+            this.cbbSortDG.Size = new System.Drawing.Size(121, 27);
             this.cbbSortDG.TabIndex = 8;
             // 
             // btnSortDG
             // 
             this.btnSortDG.BackColor = System.Drawing.Color.Gainsboro;
             this.btnSortDG.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSortDG.Location = new System.Drawing.Point(572, 713);
-            this.btnSortDG.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSortDG.Location = new System.Drawing.Point(429, 579);
             this.btnSortDG.Name = "btnSortDG";
-            this.btnSortDG.Size = new System.Drawing.Size(100, 32);
+            this.btnSortDG.Size = new System.Drawing.Size(75, 26);
             this.btnSortDG.TabIndex = 7;
             this.btnSortDG.Text = "Sort";
             this.btnSortDG.UseVisualStyleBackColor = false;
+            this.btnSortDG.Click += new System.EventHandler(this.btnSortDG_Click);
             // 
             // btnEditDG
             // 
             this.btnEditDG.BackColor = System.Drawing.Color.Gainsboro;
             this.btnEditDG.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditDG.Location = new System.Drawing.Point(305, 713);
-            this.btnEditDG.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditDG.Location = new System.Drawing.Point(229, 579);
             this.btnEditDG.Name = "btnEditDG";
-            this.btnEditDG.Size = new System.Drawing.Size(100, 32);
+            this.btnEditDG.Size = new System.Drawing.Size(75, 26);
             this.btnEditDG.TabIndex = 7;
             this.btnEditDG.Text = "Edit";
             this.btnEditDG.UseVisualStyleBackColor = false;
-            this.btnEditDG.Click += new System.EventHandler(this.btnAddDocGia_Click);
+            this.btnEditDG.Click += new System.EventHandler(this.btnEditDocGia_Click);
             // 
             // btnAddDG
             // 
             this.btnAddDG.BackColor = System.Drawing.Color.Gainsboro;
             this.btnAddDG.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddDG.Location = new System.Drawing.Point(171, 713);
-            this.btnAddDG.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddDG.Location = new System.Drawing.Point(128, 579);
             this.btnAddDG.Name = "btnAddDG";
-            this.btnAddDG.Size = new System.Drawing.Size(100, 32);
+            this.btnAddDG.Size = new System.Drawing.Size(75, 26);
             this.btnAddDG.TabIndex = 7;
             this.btnAddDG.Text = "Add";
             this.btnAddDG.UseVisualStyleBackColor = false;
@@ -568,23 +540,22 @@ namespace PBL.View
             // 
             this.btnShowDG.BackColor = System.Drawing.Color.Gainsboro;
             this.btnShowDG.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowDG.Location = new System.Drawing.Point(33, 713);
-            this.btnShowDG.Margin = new System.Windows.Forms.Padding(4);
+            this.btnShowDG.Location = new System.Drawing.Point(25, 579);
             this.btnShowDG.Name = "btnShowDG";
-            this.btnShowDG.Size = new System.Drawing.Size(100, 32);
+            this.btnShowDG.Size = new System.Drawing.Size(75, 26);
             this.btnShowDG.TabIndex = 7;
             this.btnShowDG.Text = "Show";
             this.btnShowDG.UseVisualStyleBackColor = false;
+            this.btnShowDG.Click += new System.EventHandler(this.btnShowDG_Click);
             // 
             // dataGridViewDocGia
             // 
             this.dataGridViewDocGia.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridViewDocGia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDocGia.Location = new System.Drawing.Point(33, 343);
-            this.dataGridViewDocGia.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewDocGia.Location = new System.Drawing.Point(25, 279);
             this.dataGridViewDocGia.Name = "dataGridViewDocGia";
             this.dataGridViewDocGia.RowHeadersWidth = 51;
-            this.dataGridViewDocGia.Size = new System.Drawing.Size(1125, 348);
+            this.dataGridViewDocGia.Size = new System.Drawing.Size(844, 283);
             this.dataGridViewDocGia.TabIndex = 5;
             // 
             // panel2
@@ -601,33 +572,31 @@ namespace PBL.View
             this.panel2.Controls.Add(this.lbSoTheDG);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.lbHoTenDG);
-            this.panel2.Location = new System.Drawing.Point(33, 34);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(25, 28);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1146, 290);
+            this.panel2.Size = new System.Drawing.Size(860, 236);
             this.panel2.TabIndex = 4;
             // 
             // btnSearchDG
             // 
             this.btnSearchDG.BackColor = System.Drawing.Color.Gainsboro;
             this.btnSearchDG.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchDG.Location = new System.Drawing.Point(499, 202);
-            this.btnSearchDG.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSearchDG.Location = new System.Drawing.Point(374, 164);
             this.btnSearchDG.Name = "btnSearchDG";
-            this.btnSearchDG.Size = new System.Drawing.Size(100, 32);
+            this.btnSearchDG.Size = new System.Drawing.Size(75, 26);
             this.btnSearchDG.TabIndex = 6;
             this.btnSearchDG.Text = "Search";
             this.btnSearchDG.UseVisualStyleBackColor = false;
+            this.btnSearchDG.Click += new System.EventHandler(this.btnSearchDG_Click);
             // 
             // txtHoTenDG
             // 
             this.txtHoTenDG.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtHoTenDG.Location = new System.Drawing.Point(647, 119);
-            this.txtHoTenDG.Margin = new System.Windows.Forms.Padding(4);
+            this.txtHoTenDG.Location = new System.Drawing.Point(485, 97);
             this.txtHoTenDG.Name = "txtHoTenDG";
-            this.txtHoTenDG.Size = new System.Drawing.Size(245, 31);
+            this.txtHoTenDG.Size = new System.Drawing.Size(185, 26);
             this.txtHoTenDG.TabIndex = 3;
             // 
             // txtSoTheDG
@@ -635,10 +604,9 @@ namespace PBL.View
             this.txtSoTheDG.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSoTheDG.Location = new System.Drawing.Point(211, 119);
-            this.txtSoTheDG.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSoTheDG.Location = new System.Drawing.Point(158, 97);
             this.txtSoTheDG.Name = "txtSoTheDG";
-            this.txtSoTheDG.Size = new System.Drawing.Size(245, 31);
+            this.txtSoTheDG.Size = new System.Drawing.Size(185, 26);
             this.txtSoTheDG.TabIndex = 3;
             // 
             // lbSoTheDG
@@ -646,12 +614,11 @@ namespace PBL.View
             this.lbSoTheDG.AutoSize = true;
             this.lbSoTheDG.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSoTheDG.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbSoTheDG.Location = new System.Drawing.Point(59, 119);
-            this.lbSoTheDG.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbSoTheDG.Location = new System.Drawing.Point(44, 97);
             this.lbSoTheDG.Name = "lbSoTheDG";
-            this.lbSoTheDG.Size = new System.Drawing.Size(85, 28);
+            this.lbSoTheDG.Size = new System.Drawing.Size(58, 22);
             this.lbSoTheDG.TabIndex = 2;
-            this.lbSoTheDG.Text = "Số Thẻ";
+            this.lbSoTheDG.Text = "MSSV";
             // 
             // label9
             // 
@@ -661,10 +628,9 @@ namespace PBL.View
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Maroon;
-            this.label9.Location = new System.Drawing.Point(99, 12);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(74, 10);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(884, 107);
+            this.label9.Size = new System.Drawing.Size(663, 87);
             this.label9.TabIndex = 1;
             this.label9.Text = "Quản Lý Độc Giả";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -674,10 +640,9 @@ namespace PBL.View
             this.lbHoTenDG.AutoSize = true;
             this.lbHoTenDG.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHoTenDG.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbHoTenDG.Location = new System.Drawing.Point(544, 119);
-            this.lbHoTenDG.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbHoTenDG.Location = new System.Drawing.Point(408, 97);
             this.lbHoTenDG.Name = "lbHoTenDG";
-            this.lbHoTenDG.Size = new System.Drawing.Size(89, 28);
+            this.lbHoTenDG.Size = new System.Drawing.Size(71, 22);
             this.lbHoTenDG.TabIndex = 2;
             this.lbHoTenDG.Text = "Họ Tên";
             // 
@@ -697,10 +662,9 @@ namespace PBL.View
             this.tabPage3.Controls.Add(this.dataGridViewPhieuMuon);
             this.tabPage3.Controls.Add(this.panel3);
             this.tabPage3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage3.Location = new System.Drawing.Point(29, 4);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage3.Location = new System.Drawing.Point(26, 4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1198, 769);
+            this.tabPage3.Size = new System.Drawing.Size(893, 623);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Quản Lý Phiếu Mượn";
             // 
@@ -708,10 +672,9 @@ namespace PBL.View
             // 
             this.btnDelPM.BackColor = System.Drawing.Color.Gainsboro;
             this.btnDelPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelPM.Location = new System.Drawing.Point(441, 713);
-            this.btnDelPM.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDelPM.Location = new System.Drawing.Point(331, 579);
             this.btnDelPM.Name = "btnDelPM";
-            this.btnDelPM.Size = new System.Drawing.Size(100, 32);
+            this.btnDelPM.Size = new System.Drawing.Size(75, 26);
             this.btnDelPM.TabIndex = 13;
             this.btnDelPM.Text = "Del";
             this.btnDelPM.UseVisualStyleBackColor = false;
@@ -720,20 +683,18 @@ namespace PBL.View
             // cbbSortPM
             // 
             this.cbbSortPM.FormattingEnabled = true;
-            this.cbbSortPM.Location = new System.Drawing.Point(680, 711);
-            this.cbbSortPM.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbSortPM.Location = new System.Drawing.Point(510, 578);
             this.cbbSortPM.Name = "cbbSortPM";
-            this.cbbSortPM.Size = new System.Drawing.Size(160, 31);
+            this.cbbSortPM.Size = new System.Drawing.Size(121, 27);
             this.cbbSortPM.TabIndex = 12;
             // 
             // btnExitPM
             // 
             this.btnExitPM.BackColor = System.Drawing.Color.Gainsboro;
             this.btnExitPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExitPM.Location = new System.Drawing.Point(1036, 713);
-            this.btnExitPM.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExitPM.Location = new System.Drawing.Point(777, 579);
             this.btnExitPM.Name = "btnExitPM";
-            this.btnExitPM.Size = new System.Drawing.Size(123, 32);
+            this.btnExitPM.Size = new System.Drawing.Size(92, 26);
             this.btnExitPM.TabIndex = 11;
             this.btnExitPM.Text = "LOG OUT";
             this.btnExitPM.UseVisualStyleBackColor = false;
@@ -742,10 +703,9 @@ namespace PBL.View
             // 
             this.btnReturnPM.BackColor = System.Drawing.Color.Gainsboro;
             this.btnReturnPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReturnPM.Location = new System.Drawing.Point(909, 713);
-            this.btnReturnPM.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReturnPM.Location = new System.Drawing.Point(682, 579);
             this.btnReturnPM.Name = "btnReturnPM";
-            this.btnReturnPM.Size = new System.Drawing.Size(100, 32);
+            this.btnReturnPM.Size = new System.Drawing.Size(75, 26);
             this.btnReturnPM.TabIndex = 10;
             this.btnReturnPM.Text = "Return";
             this.btnReturnPM.UseVisualStyleBackColor = false;
@@ -755,10 +715,9 @@ namespace PBL.View
             // 
             this.btnSortPM.BackColor = System.Drawing.Color.Gainsboro;
             this.btnSortPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSortPM.Location = new System.Drawing.Point(572, 713);
-            this.btnSortPM.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSortPM.Location = new System.Drawing.Point(429, 579);
             this.btnSortPM.Name = "btnSortPM";
-            this.btnSortPM.Size = new System.Drawing.Size(100, 32);
+            this.btnSortPM.Size = new System.Drawing.Size(75, 26);
             this.btnSortPM.TabIndex = 10;
             this.btnSortPM.Text = "Sort";
             this.btnSortPM.UseVisualStyleBackColor = false;
@@ -768,10 +727,9 @@ namespace PBL.View
             // 
             this.btnEditPM.BackColor = System.Drawing.Color.Gainsboro;
             this.btnEditPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditPM.Location = new System.Drawing.Point(305, 713);
-            this.btnEditPM.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditPM.Location = new System.Drawing.Point(229, 579);
             this.btnEditPM.Name = "btnEditPM";
-            this.btnEditPM.Size = new System.Drawing.Size(100, 32);
+            this.btnEditPM.Size = new System.Drawing.Size(75, 26);
             this.btnEditPM.TabIndex = 9;
             this.btnEditPM.Text = "Edit";
             this.btnEditPM.UseVisualStyleBackColor = false;
@@ -781,10 +739,9 @@ namespace PBL.View
             // 
             this.btnAddPM.BackColor = System.Drawing.Color.Gainsboro;
             this.btnAddPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddPM.Location = new System.Drawing.Point(171, 713);
-            this.btnAddPM.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddPM.Location = new System.Drawing.Point(128, 579);
             this.btnAddPM.Name = "btnAddPM";
-            this.btnAddPM.Size = new System.Drawing.Size(100, 32);
+            this.btnAddPM.Size = new System.Drawing.Size(75, 26);
             this.btnAddPM.TabIndex = 8;
             this.btnAddPM.Text = "Add";
             this.btnAddPM.UseVisualStyleBackColor = false;
@@ -794,10 +751,9 @@ namespace PBL.View
             // 
             this.btnShowPM.BackColor = System.Drawing.Color.Gainsboro;
             this.btnShowPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowPM.Location = new System.Drawing.Point(33, 713);
-            this.btnShowPM.Margin = new System.Windows.Forms.Padding(4);
+            this.btnShowPM.Location = new System.Drawing.Point(25, 579);
             this.btnShowPM.Name = "btnShowPM";
-            this.btnShowPM.Size = new System.Drawing.Size(100, 32);
+            this.btnShowPM.Size = new System.Drawing.Size(75, 26);
             this.btnShowPM.TabIndex = 7;
             this.btnShowPM.Text = "Show";
             this.btnShowPM.UseVisualStyleBackColor = false;
@@ -807,11 +763,10 @@ namespace PBL.View
             // 
             this.dataGridViewPhieuMuon.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridViewPhieuMuon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPhieuMuon.Location = new System.Drawing.Point(33, 343);
-            this.dataGridViewPhieuMuon.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewPhieuMuon.Location = new System.Drawing.Point(25, 279);
             this.dataGridViewPhieuMuon.Name = "dataGridViewPhieuMuon";
             this.dataGridViewPhieuMuon.RowHeadersWidth = 51;
-            this.dataGridViewPhieuMuon.Size = new System.Drawing.Size(1125, 348);
+            this.dataGridViewPhieuMuon.Size = new System.Drawing.Size(844, 283);
             this.dataGridViewPhieuMuon.TabIndex = 6;
             // 
             // panel3
@@ -832,20 +787,18 @@ namespace PBL.View
             this.panel3.Controls.Add(this.lbMaPhieuMuonPM);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.lbSoThePM);
-            this.panel3.Location = new System.Drawing.Point(33, 34);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Location = new System.Drawing.Point(25, 28);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1146, 290);
+            this.panel3.Size = new System.Drawing.Size(860, 236);
             this.panel3.TabIndex = 5;
             // 
             // btnSearchPM
             // 
             this.btnSearchPM.BackColor = System.Drawing.Color.Gainsboro;
             this.btnSearchPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchPM.Location = new System.Drawing.Point(494, 227);
-            this.btnSearchPM.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSearchPM.Location = new System.Drawing.Point(370, 184);
             this.btnSearchPM.Name = "btnSearchPM";
-            this.btnSearchPM.Size = new System.Drawing.Size(100, 32);
+            this.btnSearchPM.Size = new System.Drawing.Size(75, 26);
             this.btnSearchPM.TabIndex = 6;
             this.btnSearchPM.Text = "Search";
             this.btnSearchPM.UseVisualStyleBackColor = false;
@@ -856,10 +809,9 @@ namespace PBL.View
             this.txtSoThePM.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSoThePM.Location = new System.Drawing.Point(647, 119);
-            this.txtSoThePM.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSoThePM.Location = new System.Drawing.Point(485, 97);
             this.txtSoThePM.Name = "txtSoThePM";
-            this.txtSoThePM.Size = new System.Drawing.Size(245, 31);
+            this.txtSoThePM.Size = new System.Drawing.Size(185, 26);
             this.txtSoThePM.TabIndex = 3;
             // 
             // txtTenTaiLieuPM
@@ -867,10 +819,9 @@ namespace PBL.View
             this.txtTenTaiLieuPM.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTenTaiLieuPM.Location = new System.Drawing.Point(699, 170);
-            this.txtTenTaiLieuPM.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenTaiLieuPM.Location = new System.Drawing.Point(524, 138);
             this.txtTenTaiLieuPM.Name = "txtTenTaiLieuPM";
-            this.txtTenTaiLieuPM.Size = new System.Drawing.Size(193, 31);
+            this.txtTenTaiLieuPM.Size = new System.Drawing.Size(146, 26);
             this.txtTenTaiLieuPM.TabIndex = 3;
             // 
             // txtTenDocGiaPM
@@ -878,10 +829,9 @@ namespace PBL.View
             this.txtTenDocGiaPM.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTenDocGiaPM.Location = new System.Drawing.Point(263, 170);
-            this.txtTenDocGiaPM.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenDocGiaPM.Location = new System.Drawing.Point(197, 138);
             this.txtTenDocGiaPM.Name = "txtTenDocGiaPM";
-            this.txtTenDocGiaPM.Size = new System.Drawing.Size(193, 31);
+            this.txtTenDocGiaPM.Size = new System.Drawing.Size(146, 26);
             this.txtTenDocGiaPM.TabIndex = 3;
             // 
             // txtMaPhieuMuonPM
@@ -889,10 +839,9 @@ namespace PBL.View
             this.txtMaPhieuMuonPM.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMaPhieuMuonPM.Location = new System.Drawing.Point(263, 119);
-            this.txtMaPhieuMuonPM.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaPhieuMuonPM.Location = new System.Drawing.Point(197, 97);
             this.txtMaPhieuMuonPM.Name = "txtMaPhieuMuonPM";
-            this.txtMaPhieuMuonPM.Size = new System.Drawing.Size(193, 31);
+            this.txtMaPhieuMuonPM.Size = new System.Drawing.Size(146, 26);
             this.txtMaPhieuMuonPM.TabIndex = 3;
             // 
             // lbTenTaiLieuPM
@@ -900,10 +849,9 @@ namespace PBL.View
             this.lbTenTaiLieuPM.AutoSize = true;
             this.lbTenTaiLieuPM.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTenTaiLieuPM.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbTenTaiLieuPM.Location = new System.Drawing.Point(544, 170);
-            this.lbTenTaiLieuPM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTenTaiLieuPM.Location = new System.Drawing.Point(408, 138);
             this.lbTenTaiLieuPM.Name = "lbTenTaiLieuPM";
-            this.lbTenTaiLieuPM.Size = new System.Drawing.Size(135, 28);
+            this.lbTenTaiLieuPM.Size = new System.Drawing.Size(106, 22);
             this.lbTenTaiLieuPM.TabIndex = 2;
             this.lbTenTaiLieuPM.Text = "Tên tài liệu";
             // 
@@ -912,10 +860,9 @@ namespace PBL.View
             this.lbTenDocGiaPM.AutoSize = true;
             this.lbTenDocGiaPM.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTenDocGiaPM.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbTenDocGiaPM.Location = new System.Drawing.Point(59, 170);
-            this.lbTenDocGiaPM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTenDocGiaPM.Location = new System.Drawing.Point(44, 138);
             this.lbTenDocGiaPM.Name = "lbTenDocGiaPM";
-            this.lbTenDocGiaPM.Size = new System.Drawing.Size(135, 28);
+            this.lbTenDocGiaPM.Size = new System.Drawing.Size(107, 22);
             this.lbTenDocGiaPM.TabIndex = 2;
             this.lbTenDocGiaPM.Text = "Tên độc giả";
             // 
@@ -924,10 +871,9 @@ namespace PBL.View
             this.lbMaPhieuMuonPM.AutoSize = true;
             this.lbMaPhieuMuonPM.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMaPhieuMuonPM.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbMaPhieuMuonPM.Location = new System.Drawing.Point(59, 119);
-            this.lbMaPhieuMuonPM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbMaPhieuMuonPM.Location = new System.Drawing.Point(44, 97);
             this.lbMaPhieuMuonPM.Name = "lbMaPhieuMuonPM";
-            this.lbMaPhieuMuonPM.Size = new System.Drawing.Size(186, 28);
+            this.lbMaPhieuMuonPM.Size = new System.Drawing.Size(147, 22);
             this.lbMaPhieuMuonPM.TabIndex = 2;
             this.lbMaPhieuMuonPM.Text = "Mã Phiếu Mượn";
             // 
@@ -939,10 +885,9 @@ namespace PBL.View
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Maroon;
-            this.label10.Location = new System.Drawing.Point(99, 12);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(74, 10);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(884, 107);
+            this.label10.Size = new System.Drawing.Size(663, 87);
             this.label10.TabIndex = 1;
             this.label10.Text = "Quản Lý Phiếu Mượn";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -952,10 +897,9 @@ namespace PBL.View
             this.lbSoThePM.AutoSize = true;
             this.lbSoThePM.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSoThePM.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbSoThePM.Location = new System.Drawing.Point(544, 119);
-            this.lbSoThePM.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbSoThePM.Location = new System.Drawing.Point(408, 97);
             this.lbSoThePM.Name = "lbSoThePM";
-            this.lbSoThePM.Size = new System.Drawing.Size(85, 28);
+            this.lbSoThePM.Size = new System.Drawing.Size(68, 22);
             this.lbSoThePM.TabIndex = 2;
             this.lbSoThePM.Text = "Số Thẻ";
             // 
@@ -972,10 +916,9 @@ namespace PBL.View
             this.tabPage4.Controls.Add(this.btnShowNV);
             this.tabPage4.Controls.Add(this.dataGridViewNhanVien);
             this.tabPage4.Controls.Add(this.panel4);
-            this.tabPage4.Location = new System.Drawing.Point(29, 4);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage4.Location = new System.Drawing.Point(26, 4);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1198, 769);
+            this.tabPage4.Size = new System.Drawing.Size(893, 623);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Quản Lý Nhân Viên";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -983,20 +926,18 @@ namespace PBL.View
             // cbbSortNV
             // 
             this.cbbSortNV.FormattingEnabled = true;
-            this.cbbSortNV.Location = new System.Drawing.Point(660, 708);
-            this.cbbSortNV.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbSortNV.Location = new System.Drawing.Point(495, 575);
             this.cbbSortNV.Name = "cbbSortNV";
-            this.cbbSortNV.Size = new System.Drawing.Size(160, 27);
+            this.cbbSortNV.Size = new System.Drawing.Size(121, 23);
             this.cbbSortNV.TabIndex = 34;
             // 
             // btnExitNV
             // 
             this.btnExitNV.BackColor = System.Drawing.Color.Gainsboro;
             this.btnExitNV.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExitNV.Location = new System.Drawing.Point(1040, 708);
-            this.btnExitNV.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExitNV.Location = new System.Drawing.Point(780, 575);
             this.btnExitNV.Name = "btnExitNV";
-            this.btnExitNV.Size = new System.Drawing.Size(115, 32);
+            this.btnExitNV.Size = new System.Drawing.Size(86, 26);
             this.btnExitNV.TabIndex = 28;
             this.btnExitNV.Text = "LOG OUT";
             this.btnExitNV.UseVisualStyleBackColor = false;
@@ -1006,10 +947,9 @@ namespace PBL.View
             // 
             this.btnSortNV.BackColor = System.Drawing.Color.Gainsboro;
             this.btnSortNV.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSortNV.Location = new System.Drawing.Point(547, 708);
-            this.btnSortNV.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSortNV.Location = new System.Drawing.Point(410, 575);
             this.btnSortNV.Name = "btnSortNV";
-            this.btnSortNV.Size = new System.Drawing.Size(100, 32);
+            this.btnSortNV.Size = new System.Drawing.Size(75, 26);
             this.btnSortNV.TabIndex = 29;
             this.btnSortNV.Text = "Sort";
             this.btnSortNV.UseVisualStyleBackColor = false;
@@ -1018,10 +958,9 @@ namespace PBL.View
             // 
             this.btnDelNV.BackColor = System.Drawing.Color.Gainsboro;
             this.btnDelNV.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelNV.Location = new System.Drawing.Point(415, 708);
-            this.btnDelNV.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDelNV.Location = new System.Drawing.Point(311, 575);
             this.btnDelNV.Name = "btnDelNV";
-            this.btnDelNV.Size = new System.Drawing.Size(100, 32);
+            this.btnDelNV.Size = new System.Drawing.Size(75, 26);
             this.btnDelNV.TabIndex = 30;
             this.btnDelNV.Text = "Del";
             this.btnDelNV.UseVisualStyleBackColor = false;
@@ -1030,10 +969,9 @@ namespace PBL.View
             // 
             this.btnEditNV.BackColor = System.Drawing.Color.Gainsboro;
             this.btnEditNV.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditNV.Location = new System.Drawing.Point(281, 708);
-            this.btnEditNV.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditNV.Location = new System.Drawing.Point(211, 575);
             this.btnEditNV.Name = "btnEditNV";
-            this.btnEditNV.Size = new System.Drawing.Size(100, 32);
+            this.btnEditNV.Size = new System.Drawing.Size(75, 26);
             this.btnEditNV.TabIndex = 31;
             this.btnEditNV.Text = "Edit";
             this.btnEditNV.UseVisualStyleBackColor = false;
@@ -1042,10 +980,9 @@ namespace PBL.View
             // 
             this.btnAddNV.BackColor = System.Drawing.Color.Gainsboro;
             this.btnAddNV.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddNV.Location = new System.Drawing.Point(152, 708);
-            this.btnAddNV.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAddNV.Location = new System.Drawing.Point(114, 575);
             this.btnAddNV.Name = "btnAddNV";
-            this.btnAddNV.Size = new System.Drawing.Size(100, 32);
+            this.btnAddNV.Size = new System.Drawing.Size(75, 26);
             this.btnAddNV.TabIndex = 32;
             this.btnAddNV.Text = "Add";
             this.btnAddNV.UseVisualStyleBackColor = false;
@@ -1055,10 +992,9 @@ namespace PBL.View
             // 
             this.btnShowNV.BackColor = System.Drawing.Color.Gainsboro;
             this.btnShowNV.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowNV.Location = new System.Drawing.Point(33, 708);
-            this.btnShowNV.Margin = new System.Windows.Forms.Padding(4);
+            this.btnShowNV.Location = new System.Drawing.Point(25, 575);
             this.btnShowNV.Name = "btnShowNV";
-            this.btnShowNV.Size = new System.Drawing.Size(100, 32);
+            this.btnShowNV.Size = new System.Drawing.Size(75, 26);
             this.btnShowNV.TabIndex = 33;
             this.btnShowNV.Text = "Show";
             this.btnShowNV.UseVisualStyleBackColor = false;
@@ -1067,11 +1003,10 @@ namespace PBL.View
             // 
             this.dataGridViewNhanVien.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridViewNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewNhanVien.Location = new System.Drawing.Point(33, 358);
-            this.dataGridViewNhanVien.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewNhanVien.Location = new System.Drawing.Point(25, 291);
             this.dataGridViewNhanVien.Name = "dataGridViewNhanVien";
             this.dataGridViewNhanVien.RowHeadersWidth = 51;
-            this.dataGridViewNhanVien.Size = new System.Drawing.Size(1121, 330);
+            this.dataGridViewNhanVien.Size = new System.Drawing.Size(841, 268);
             this.dataGridViewNhanVien.TabIndex = 27;
             // 
             // panel4
@@ -1086,10 +1021,9 @@ namespace PBL.View
             this.panel4.Controls.Add(this.lbHoTenNV);
             this.panel4.Controls.Add(this.lbEmailNV);
             this.panel4.Controls.Add(this.lbDienThoaiNV);
-            this.panel4.Location = new System.Drawing.Point(33, 34);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Location = new System.Drawing.Point(25, 28);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1121, 292);
+            this.panel4.Size = new System.Drawing.Size(841, 237);
             this.panel4.TabIndex = 26;
             // 
             // label13
@@ -1100,10 +1034,9 @@ namespace PBL.View
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Maroon;
-            this.label13.Location = new System.Drawing.Point(77, 6);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(58, 5);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(873, 107);
+            this.label13.Size = new System.Drawing.Size(655, 87);
             this.label13.TabIndex = 23;
             this.label13.Text = "Quản Lý Nhân Viên";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1112,10 +1045,9 @@ namespace PBL.View
             // 
             this.btnSearchNV.BackColor = System.Drawing.Color.Gainsboro;
             this.btnSearchNV.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchNV.Location = new System.Drawing.Point(476, 211);
-            this.btnSearchNV.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSearchNV.Location = new System.Drawing.Point(357, 171);
             this.btnSearchNV.Name = "btnSearchNV";
-            this.btnSearchNV.Size = new System.Drawing.Size(100, 32);
+            this.btnSearchNV.Size = new System.Drawing.Size(75, 26);
             this.btnSearchNV.TabIndex = 22;
             this.btnSearchNV.Text = "Search";
             this.btnSearchNV.UseVisualStyleBackColor = false;
@@ -1123,26 +1055,23 @@ namespace PBL.View
             // 
             // txtHoTenNV
             // 
-            this.txtHoTenNV.Location = new System.Drawing.Point(157, 117);
-            this.txtHoTenNV.Margin = new System.Windows.Forms.Padding(4);
+            this.txtHoTenNV.Location = new System.Drawing.Point(118, 95);
             this.txtHoTenNV.Name = "txtHoTenNV";
-            this.txtHoTenNV.Size = new System.Drawing.Size(244, 27);
+            this.txtHoTenNV.Size = new System.Drawing.Size(184, 23);
             this.txtHoTenNV.TabIndex = 1;
             // 
             // txtDienThoaiNV
             // 
-            this.txtDienThoaiNV.Location = new System.Drawing.Point(736, 117);
-            this.txtDienThoaiNV.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDienThoaiNV.Location = new System.Drawing.Point(552, 95);
             this.txtDienThoaiNV.Name = "txtDienThoaiNV";
-            this.txtDienThoaiNV.Size = new System.Drawing.Size(244, 27);
+            this.txtDienThoaiNV.Size = new System.Drawing.Size(184, 23);
             this.txtDienThoaiNV.TabIndex = 1;
             // 
             // txtEmailNV
             // 
-            this.txtEmailNV.Location = new System.Drawing.Point(157, 167);
-            this.txtEmailNV.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmailNV.Location = new System.Drawing.Point(118, 136);
             this.txtEmailNV.Name = "txtEmailNV";
-            this.txtEmailNV.Size = new System.Drawing.Size(244, 27);
+            this.txtEmailNV.Size = new System.Drawing.Size(184, 23);
             this.txtEmailNV.TabIndex = 1;
             // 
             // lbHoTenNV
@@ -1150,10 +1079,9 @@ namespace PBL.View
             this.lbHoTenNV.AutoSize = true;
             this.lbHoTenNV.BackColor = System.Drawing.Color.Transparent;
             this.lbHoTenNV.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHoTenNV.Location = new System.Drawing.Point(35, 118);
-            this.lbHoTenNV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbHoTenNV.Location = new System.Drawing.Point(26, 96);
             this.lbHoTenNV.Name = "lbHoTenNV";
-            this.lbHoTenNV.Size = new System.Drawing.Size(89, 28);
+            this.lbHoTenNV.Size = new System.Drawing.Size(71, 22);
             this.lbHoTenNV.TabIndex = 0;
             this.lbHoTenNV.Text = "Họ Tên";
             // 
@@ -1162,10 +1090,9 @@ namespace PBL.View
             this.lbEmailNV.AutoSize = true;
             this.lbEmailNV.BackColor = System.Drawing.Color.Transparent;
             this.lbEmailNV.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEmailNV.Location = new System.Drawing.Point(35, 169);
-            this.lbEmailNV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbEmailNV.Location = new System.Drawing.Point(26, 137);
             this.lbEmailNV.Name = "lbEmailNV";
-            this.lbEmailNV.Size = new System.Drawing.Size(75, 28);
+            this.lbEmailNV.Size = new System.Drawing.Size(60, 22);
             this.lbEmailNV.TabIndex = 0;
             this.lbEmailNV.Text = "Email";
             // 
@@ -1174,10 +1101,9 @@ namespace PBL.View
             this.lbDienThoaiNV.AutoSize = true;
             this.lbDienThoaiNV.BackColor = System.Drawing.Color.Transparent;
             this.lbDienThoaiNV.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDienThoaiNV.Location = new System.Drawing.Point(581, 118);
-            this.lbDienThoaiNV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbDienThoaiNV.Location = new System.Drawing.Point(436, 96);
             this.lbDienThoaiNV.Name = "lbDienThoaiNV";
-            this.lbDienThoaiNV.Size = new System.Drawing.Size(133, 28);
+            this.lbDienThoaiNV.Size = new System.Drawing.Size(104, 22);
             this.lbDienThoaiNV.TabIndex = 0;
             this.lbDienThoaiNV.Text = "Điện Thoại";
             // 
@@ -1191,10 +1117,9 @@ namespace PBL.View
             this.tabPage5.Controls.Add(this.lbTongSoLuongTK);
             this.tabPage5.Controls.Add(this.dataGridViewTKVP);
             this.tabPage5.Controls.Add(this.dataGridViewTKMS);
-            this.tabPage5.Location = new System.Drawing.Point(29, 4);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage5.Location = new System.Drawing.Point(26, 4);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1198, 769);
+            this.tabPage5.Size = new System.Drawing.Size(893, 623);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Báo Cáo Thống Kê";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -1210,28 +1135,25 @@ namespace PBL.View
             this.panel5.Controls.Add(this.lbThangTK);
             this.panel5.Controls.Add(this.label15);
             this.panel5.Controls.Add(this.label14);
-            this.panel5.Location = new System.Drawing.Point(27, 27);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Location = new System.Drawing.Point(20, 22);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1133, 175);
+            this.panel5.Size = new System.Drawing.Size(850, 142);
             this.panel5.TabIndex = 12;
             // 
             // dtpTK
             // 
-            this.dtpTK.Location = new System.Drawing.Point(627, 78);
-            this.dtpTK.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpTK.Location = new System.Drawing.Point(470, 63);
             this.dtpTK.Name = "dtpTK";
-            this.dtpTK.Size = new System.Drawing.Size(321, 27);
+            this.dtpTK.Size = new System.Drawing.Size(242, 23);
             this.dtpTK.TabIndex = 8;
             // 
             // btnShowTKVP
             // 
             this.btnShowTKVP.BackColor = System.Drawing.Color.Gainsboro;
             this.btnShowTKVP.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowTKVP.Location = new System.Drawing.Point(1008, 78);
-            this.btnShowTKVP.Margin = new System.Windows.Forms.Padding(4);
+            this.btnShowTKVP.Location = new System.Drawing.Point(756, 63);
             this.btnShowTKVP.Name = "btnShowTKVP";
-            this.btnShowTKVP.Size = new System.Drawing.Size(100, 32);
+            this.btnShowTKVP.Size = new System.Drawing.Size(75, 26);
             this.btnShowTKVP.TabIndex = 7;
             this.btnShowTKVP.Text = "Show";
             this.btnShowTKVP.UseVisualStyleBackColor = false;
@@ -1241,10 +1163,9 @@ namespace PBL.View
             // 
             this.btnShowTKMS.BackColor = System.Drawing.Color.Gainsboro;
             this.btnShowTKMS.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowTKMS.Location = new System.Drawing.Point(420, 82);
-            this.btnShowTKMS.Margin = new System.Windows.Forms.Padding(4);
+            this.btnShowTKMS.Location = new System.Drawing.Point(315, 67);
             this.btnShowTKMS.Name = "btnShowTKMS";
-            this.btnShowTKMS.Size = new System.Drawing.Size(100, 32);
+            this.btnShowTKMS.Size = new System.Drawing.Size(75, 26);
             this.btnShowTKMS.TabIndex = 7;
             this.btnShowTKMS.Text = "Show";
             this.btnShowTKMS.UseVisualStyleBackColor = false;
@@ -1252,29 +1173,26 @@ namespace PBL.View
             // cbbNamTK
             // 
             this.cbbNamTK.FormattingEnabled = true;
-            this.cbbNamTK.Location = new System.Drawing.Point(288, 82);
-            this.cbbNamTK.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbNamTK.Location = new System.Drawing.Point(216, 67);
             this.cbbNamTK.Name = "cbbNamTK";
-            this.cbbNamTK.Size = new System.Drawing.Size(92, 27);
+            this.cbbNamTK.Size = new System.Drawing.Size(70, 23);
             this.cbbNamTK.TabIndex = 5;
             // 
             // cbbThangTK
             // 
             this.cbbThangTK.FormattingEnabled = true;
-            this.cbbThangTK.Location = new System.Drawing.Point(101, 82);
-            this.cbbThangTK.Margin = new System.Windows.Forms.Padding(4);
+            this.cbbThangTK.Location = new System.Drawing.Point(76, 67);
             this.cbbThangTK.Name = "cbbThangTK";
-            this.cbbThangTK.Size = new System.Drawing.Size(89, 27);
+            this.cbbThangTK.Size = new System.Drawing.Size(68, 23);
             this.cbbThangTK.TabIndex = 4;
             // 
             // lbNamTK
             // 
             this.lbNamTK.AutoSize = true;
             this.lbNamTK.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNamTK.Location = new System.Drawing.Point(213, 82);
-            this.lbNamTK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbNamTK.Location = new System.Drawing.Point(160, 67);
             this.lbNamTK.Name = "lbNamTK";
-            this.lbNamTK.Size = new System.Drawing.Size(62, 28);
+            this.lbNamTK.Size = new System.Drawing.Size(50, 22);
             this.lbNamTK.TabIndex = 3;
             this.lbNamTK.Text = "Năm";
             // 
@@ -1282,10 +1200,9 @@ namespace PBL.View
             // 
             this.lbThangTK.AutoSize = true;
             this.lbThangTK.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbThangTK.Location = new System.Drawing.Point(8, 82);
-            this.lbThangTK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbThangTK.Location = new System.Drawing.Point(6, 67);
             this.lbThangTK.Name = "lbThangTK";
-            this.lbThangTK.Size = new System.Drawing.Size(80, 28);
+            this.lbThangTK.Size = new System.Drawing.Size(64, 22);
             this.lbThangTK.TabIndex = 3;
             this.lbThangTK.Text = "Tháng";
             // 
@@ -1295,10 +1212,9 @@ namespace PBL.View
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Firebrick;
-            this.label15.Location = new System.Drawing.Point(708, 10);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(531, 8);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(292, 40);
+            this.label15.Size = new System.Drawing.Size(232, 32);
             this.label15.TabIndex = 2;
             this.label15.Text = "Thống kê vi phạm";
             // 
@@ -1308,10 +1224,9 @@ namespace PBL.View
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Firebrick;
-            this.label14.Location = new System.Drawing.Point(87, 10);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Location = new System.Drawing.Point(65, 8);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(343, 40);
+            this.label14.Size = new System.Drawing.Size(272, 32);
             this.label14.TabIndex = 2;
             this.label14.Text = "Thống kê mượn sách";
             // 
@@ -1319,10 +1234,9 @@ namespace PBL.View
             // 
             this.btnSearchTKVP.BackColor = System.Drawing.Color.Gainsboro;
             this.btnSearchTKVP.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchTKVP.Location = new System.Drawing.Point(863, 695);
-            this.btnSearchTKVP.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSearchTKVP.Location = new System.Drawing.Point(647, 565);
             this.btnSearchTKVP.Name = "btnSearchTKVP";
-            this.btnSearchTKVP.Size = new System.Drawing.Size(100, 32);
+            this.btnSearchTKVP.Size = new System.Drawing.Size(75, 26);
             this.btnSearchTKVP.TabIndex = 11;
             this.btnSearchTKVP.Text = "Search";
             this.btnSearchTKVP.UseVisualStyleBackColor = false;
@@ -1330,20 +1244,18 @@ namespace PBL.View
             // 
             // txtTongSoLuongTK
             // 
-            this.txtTongSoLuongTK.Location = new System.Drawing.Point(316, 700);
-            this.txtTongSoLuongTK.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTongSoLuongTK.Location = new System.Drawing.Point(237, 569);
             this.txtTongSoLuongTK.Name = "txtTongSoLuongTK";
-            this.txtTongSoLuongTK.Size = new System.Drawing.Size(132, 27);
+            this.txtTongSoLuongTK.Size = new System.Drawing.Size(100, 23);
             this.txtTongSoLuongTK.TabIndex = 10;
             // 
             // lbTongSoLuongTK
             // 
             this.lbTongSoLuongTK.AutoSize = true;
             this.lbTongSoLuongTK.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTongSoLuongTK.Location = new System.Drawing.Point(109, 700);
-            this.lbTongSoLuongTK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTongSoLuongTK.Location = new System.Drawing.Point(82, 569);
             this.lbTongSoLuongTK.Name = "lbTongSoLuongTK";
-            this.lbTongSoLuongTK.Size = new System.Drawing.Size(172, 28);
+            this.lbTongSoLuongTK.Size = new System.Drawing.Size(138, 22);
             this.lbTongSoLuongTK.TabIndex = 9;
             this.lbTongSoLuongTK.Text = "Tổng số lượng ";
             // 
@@ -1351,33 +1263,30 @@ namespace PBL.View
             // 
             this.dataGridViewTKVP.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridViewTKVP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewTKVP.Location = new System.Drawing.Point(640, 231);
-            this.dataGridViewTKVP.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewTKVP.Location = new System.Drawing.Point(480, 188);
             this.dataGridViewTKVP.Name = "dataGridViewTKVP";
             this.dataGridViewTKVP.RowHeadersWidth = 51;
-            this.dataGridViewTKVP.Size = new System.Drawing.Size(520, 428);
+            this.dataGridViewTKVP.Size = new System.Drawing.Size(390, 348);
             this.dataGridViewTKVP.TabIndex = 1;
             // 
             // dataGridViewTKMS
             // 
             this.dataGridViewTKMS.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridViewTKMS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewTKMS.Location = new System.Drawing.Point(27, 231);
-            this.dataGridViewTKMS.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewTKMS.Location = new System.Drawing.Point(20, 188);
             this.dataGridViewTKMS.Name = "dataGridViewTKMS";
             this.dataGridViewTKMS.RowHeadersWidth = 51;
-            this.dataGridViewTKMS.Size = new System.Drawing.Size(520, 428);
+            this.dataGridViewTKMS.Size = new System.Drawing.Size(390, 348);
             this.dataGridViewTKMS.TabIndex = 0;
             // 
             // FormQuanLy
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumTurquoise;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1263, 806);
+            this.ClientSize = new System.Drawing.Size(947, 609);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormQuanLy";
             this.Text = "FormQuanLy";
             this.tabControl1.ResumeLayout(false);

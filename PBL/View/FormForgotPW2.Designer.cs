@@ -84,7 +84,7 @@ namespace PBL.View
             this.btnOK.TabIndex = 2;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = false;
-            this.btnOK.Click += new System.EventHandler(this.button1_Click);
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnBack
             // 
@@ -96,6 +96,7 @@ namespace PBL.View
             this.btnBack.TabIndex = 3;
             this.btnBack.Text = "BACK";
             this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // FormForgotPW2
             // 
@@ -112,7 +113,6 @@ namespace PBL.View
             this.Controls.Add(this.lbEmail);
             this.Name = "FormForgotPW2";
             this.Text = "FormForgotPW2";
-            this.Load += new System.EventHandler(this.FormForgotPW2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

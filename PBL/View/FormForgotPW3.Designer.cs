@@ -59,7 +59,6 @@ namespace PBL.View
             this.lbXacNhanLaiMatKhau.Size = new System.Drawing.Size(199, 22);
             this.lbXacNhanLaiMatKhau.TabIndex = 1;
             this.lbXacNhanLaiMatKhau.Text = "Xác nhận lại mật khẩu";
-            this.lbXacNhanLaiMatKhau.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtMatKhauMoi
             // 
@@ -87,6 +86,7 @@ namespace PBL.View
             this.btnOK.TabIndex = 3;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = false;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel
             // 
@@ -98,6 +98,7 @@ namespace PBL.View
             this.btnCancel.TabIndex = 3;
             this.btnCancel.Text = "CANCEL";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // FormForgotPW3
             // 

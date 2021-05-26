@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PBL.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,12 +13,32 @@ namespace PBL.View
 {
     public partial class FormForgotPW3 : Form
     {
-        public FormForgotPW3()
+        public NguoiDung nd { get; set; }
+        public FormForgotPW3(NguoiDung nd_PW2)
         {
             InitializeComponent();
+            nd = nd_PW2;
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+            
+            if (txtMatKhauMoi.Text == txtXacNhanLaiMatKhau.Text) {                
+                using (DHP_07Entities db = new DHP_07Entities())
+                {
+                    var l1 = db.NguoiDungs
+                        .Single(p => p.ID == nd.ID);
+                    l1.Password = txtXacNhanLaiMatKhau.Text;
+                    db.SaveChanges();
+                } 
+            }
+            else
+            {
+                MessageBox.Show("Wrong Password");
+            }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
         {
 
         }
