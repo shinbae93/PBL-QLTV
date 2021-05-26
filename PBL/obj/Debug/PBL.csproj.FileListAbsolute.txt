@@ -89,3 +89,31 @@ C:\Users\nguoi\OneDrive\Desktop\PBL-QLTV\PBL\obj\Debug\PBL.View.FormForgotPW2.re
 C:\Users\nguoi\OneDrive\Desktop\PBL-QLTV\PBL\obj\Debug\PBL.View.FormForgotPW3.resources
 C:\Users\nguoi\OneDrive\Desktop\PBL-QLTV\PBL\obj\Debug\PBL.View.FormLogOut.resources
 C:\Users\nguoi\OneDrive\Desktop\PBL-QLTV\PBL\obj\Debug\PBL.View.FormTraDuLieuPhieuMuon.resources
+D:\Bai tap\PBL3\PBL-QLTV\PBL\bin\Debug\PBL.exe.config
+D:\Bai tap\PBL3\PBL-QLTV\PBL\bin\Debug\PBL.exe
+D:\Bai tap\PBL3\PBL-QLTV\PBL\bin\Debug\PBL.pdb
+D:\Bai tap\PBL3\PBL-QLTV\PBL\bin\Debug\EntityFramework.dll
+D:\Bai tap\PBL3\PBL-QLTV\PBL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Bai tap\PBL3\PBL-QLTV\PBL\bin\Debug\EntityFramework.xml
+D:\Bai tap\PBL3\PBL-QLTV\PBL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.csprojAssemblyReference.cache
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormAddDuLieuPhieuMuon.resources
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuDocGia.resources
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuNhanVien.resources
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuPhieuMuon.resources
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuSach.resources
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormForgotPW.resources
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormForgotPW2.resources
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormForgotPW3.resources
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormLogin.resources
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormLogOut.resources
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.FormNhanVien.resources
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.Properties.Resources.resources
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormQuanLy.resources
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormTraDuLieuPhieuMuon.resources
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormViPham.resources
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.csproj.GenerateResource.cache
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.csproj.CoreCompileInputs.cache
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.csproj.CopyComplete
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.exe
+D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.pdb

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="DHP_07Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="CuonTaiLieu">
     <Key>
       <PropertyRef Name="MaVach" />
     </Key>
-    <Property Name="MaVach" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaVach" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="MaTL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <NavigationProperty Name="TaiLieu" Relationship="Self.fk_cuontl_matl" FromRole="CuonTaiLieu" ToRole="TaiLieu" />
     <NavigationProperty Name="TaiLieuCTs" Relationship="Self.FK_TaiLieuCT_CuonTaiLieu" FromRole="CuonTaiLieu" ToRole="TaiLieuCT" />
@@ -13,12 +13,12 @@
     <Key>
       <PropertyRef Name="MaDocGia" />
     </Key>
-    <Property Name="MaDocGia" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaDocGia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="MSSV" Type="String" MaxLength="9" FixedLength="true" Unicode="false" Nullable="false" />
     <Property Name="HoTen" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="NgaySinh" Type="DateTime" Precision="0" />
     <Property Name="GioiTinh" Type="Boolean" />
-    <Property Name="MaLop" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaLop" Type="Int32" Nullable="false" />
     <Property Name="NgayDK" Type="DateTime" Nullable="false" Precision="0" />
     <NavigationProperty Name="Lop" Relationship="Self.fk_docgia_malop" FromRole="DocGia" ToRole="Lop" />
     <NavigationProperty Name="PhieuMuons" Relationship="Self.fk_phieumuon_madocia" FromRole="DocGia" ToRole="PhieuMuon" />
@@ -27,7 +27,7 @@
     <Key>
       <PropertyRef Name="MaLTL" />
     </Key>
-    <Property Name="MaLTL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaLTL" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="TenLoai" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="TaiLieux" Relationship="Self.FK_TaiLieu_LoaiTaiLieu" FromRole="LoaiTaiLieu" ToRole="TaiLieu" />
   </EntityType>
@@ -35,7 +35,7 @@
     <Key>
       <PropertyRef Name="MaLop" />
     </Key>
-    <Property Name="MaLop" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaLop" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="TenLop" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="DocGias" Relationship="Self.fk_docgia_malop" FromRole="Lop" ToRole="DocGia" />
   </EntityType>
@@ -43,7 +43,7 @@
     <Key>
       <PropertyRef Name="MaNgonNgu" />
     </Key>
-    <Property Name="MaNgonNgu" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaNgonNgu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="TenNgonNgu" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="TaiLieux" Relationship="Self.fk_tl_mangonngu" FromRole="NgonNgu" ToRole="TaiLieu" />
   </EntityType>
@@ -51,16 +51,15 @@
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Username" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="HoTen" Type="String" MaxLength="40" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="NgaySinh" Type="DateTime" Precision="0" />
     <Property Name="GioiTinh" Type="Boolean" />
-    <Property Name="ChucDanh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="DienThoai" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
     <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="ID_QuyenHan" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_QuyenHan" Type="Int32" Nullable="false" />
     <NavigationProperty Name="QuyenHan" Relationship="Self.fk_nguoidung_idquyenhan" FromRole="NguoiDung" ToRole="QuyenHan" />
     <NavigationProperty Name="PhieuMuons" Relationship="Self.fk_phieumuon_id" FromRole="NguoiDung" ToRole="PhieuMuon" />
   </EntityType>
@@ -68,7 +67,7 @@
     <Key>
       <PropertyRef Name="MaNXB" />
     </Key>
-    <Property Name="MaNXB" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaNXB" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="TenNXB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="TaiLieux" Relationship="Self.fk_tl_matacgia" FromRole="NhaXuatBan" ToRole="TaiLieu" />
   </EntityType>
@@ -76,9 +75,9 @@
     <Key>
       <PropertyRef Name="MaPhieuMuon" />
     </Key>
-    <Property Name="MaPhieuMuon" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="ID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="MaDocGia" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaPhieuMuon" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="MaDocGia" Type="Int32" Nullable="false" />
     <Property Name="NgayMuon" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="HanTra" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="NgayTra" Type="DateTime" Precision="0" />
@@ -91,7 +90,7 @@
     <Key>
       <PropertyRef Name="ID_QuyenHan" />
     </Key>
-    <Property Name="ID_QuyenHan" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ID_QuyenHan" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="TenQuyenHan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="NguoiDungs" Relationship="Self.fk_nguoidung_idquyenhan" FromRole="QuyenHan" ToRole="NguoiDung" />
   </EntityType>
@@ -101,13 +100,12 @@
     </Key>
     <Property Name="MaTL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="TenTL" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="MaLTL" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="MaNgonNgu" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="MaNXB" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaLTL" Type="Int32" Nullable="false" />
+    <Property Name="MaNgonNgu" Type="Int32" Nullable="false" />
+    <Property Name="MaNXB" Type="Int32" Nullable="false" />
     <Property Name="NamXuatBan" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="SoLuong" Type="Int32" />
     <Property Name="TacGia" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="NgayCN" Type="DateTime" Nullable="false" Precision="0" />
     <NavigationProperty Name="CuonTaiLieux" Relationship="Self.fk_cuontl_matl" FromRole="TaiLieu" ToRole="CuonTaiLieu" />
     <NavigationProperty Name="LoaiTaiLieu" Relationship="Self.FK_TaiLieu_LoaiTaiLieu" FromRole="TaiLieu" ToRole="LoaiTaiLieu" />
     <NavigationProperty Name="NgonNgu" Relationship="Self.fk_tl_mangonngu" FromRole="TaiLieu" ToRole="NgonNgu" />
@@ -118,9 +116,8 @@
       <PropertyRef Name="MaPhieuMuon" />
       <PropertyRef Name="MaVach" />
     </Key>
-    <Property Name="MaPhieuMuon" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="MaVach" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="NgayCN" Type="DateTime" Precision="0" />
+    <Property Name="MaPhieuMuon" Type="Int32" Nullable="false" />
+    <Property Name="MaVach" Type="Int32" Nullable="false" />
     <Property Name="TinhTrang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="CuonTaiLieu" Relationship="Self.FK_TaiLieuCT_CuonTaiLieu" FromRole="TaiLieuCT" ToRole="CuonTaiLieu" />
     <NavigationProperty Name="PhieuMuon" Relationship="Self.fk_tlct_maphieumuon" FromRole="TaiLieuCT" ToRole="PhieuMuon" />
@@ -245,7 +242,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="DHP07Entities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="DHP_07Entities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="CuonTaiLieux" EntityType="Self.CuonTaiLieu" />
     <EntitySet Name="DocGias" EntityType="Self.DocGia" />
     <EntitySet Name="LoaiTaiLieux" EntityType="Self.LoaiTaiLieu" />

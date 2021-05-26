@@ -1,74 +1,73 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="DHP_07Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="CuonTaiLieu">
     <Key>
       <PropertyRef Name="MaVach" />
     </Key>
-    <Property Name="MaVach" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaVach" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="MaTL" Type="varchar" MaxLength="20" Nullable="false" />
   </EntityType>
   <EntityType Name="DocGia">
     <Key>
       <PropertyRef Name="MaDocGia" />
     </Key>
-    <Property Name="MaDocGia" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaDocGia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="MSSV" Type="char" MaxLength="9" Nullable="false" />
     <Property Name="HoTen" Type="nvarchar" MaxLength="40" Nullable="false" />
     <Property Name="NgaySinh" Type="date" />
     <Property Name="GioiTinh" Type="bit" />
-    <Property Name="MaLop" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaLop" Type="int" Nullable="false" />
     <Property Name="NgayDK" Type="date" Nullable="false" />
   </EntityType>
   <EntityType Name="LoaiTaiLieu">
     <Key>
       <PropertyRef Name="MaLTL" />
     </Key>
-    <Property Name="MaLTL" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaLTL" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="TenLoai" Type="nvarchar" MaxLength="30" Nullable="false" />
   </EntityType>
   <EntityType Name="Lop">
     <Key>
       <PropertyRef Name="MaLop" />
     </Key>
-    <Property Name="MaLop" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaLop" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="TenLop" Type="nvarchar" MaxLength="30" Nullable="false" />
   </EntityType>
   <EntityType Name="NgonNgu">
     <Key>
       <PropertyRef Name="MaNgonNgu" />
     </Key>
-    <Property Name="MaNgonNgu" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaNgonNgu" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="TenNgonNgu" Type="nvarchar" MaxLength="30" Nullable="false" />
   </EntityType>
   <EntityType Name="NguoiDung">
     <Key>
       <PropertyRef Name="ID" />
     </Key>
-    <Property Name="ID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Username" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="Password" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="HoTen" Type="nvarchar" MaxLength="40" Nullable="false" />
     <Property Name="NgaySinh" Type="date" />
     <Property Name="GioiTinh" Type="bit" />
-    <Property Name="ChucDanh" Type="nvarchar" MaxLength="50" />
     <Property Name="DienThoai" Type="char" MaxLength="10" />
     <Property Name="Email" Type="varchar" MaxLength="100" />
-    <Property Name="ID_QuyenHan" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ID_QuyenHan" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="NhaXuatBan">
     <Key>
       <PropertyRef Name="MaNXB" />
     </Key>
-    <Property Name="MaNXB" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaNXB" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="TenNXB" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="PhieuMuon">
     <Key>
       <PropertyRef Name="MaPhieuMuon" />
     </Key>
-    <Property Name="MaPhieuMuon" Type="varchar" MaxLength="20" Nullable="false" />
-    <Property Name="ID" Type="varchar" MaxLength="20" Nullable="false" />
-    <Property Name="MaDocGia" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaPhieuMuon" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="MaDocGia" Type="int" Nullable="false" />
     <Property Name="NgayMuon" Type="date" Nullable="false" />
     <Property Name="HanTra" Type="date" Nullable="false" />
     <Property Name="NgayTra" Type="date" />
@@ -78,7 +77,7 @@
     <Key>
       <PropertyRef Name="ID_QuyenHan" />
     </Key>
-    <Property Name="ID_QuyenHan" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ID_QuyenHan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="TenQuyenHan" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="TaiLieu">
@@ -87,22 +86,20 @@
     </Key>
     <Property Name="MaTL" Type="varchar" MaxLength="20" Nullable="false" />
     <Property Name="TenTL" Type="nvarchar" MaxLength="100" Nullable="false" />
-    <Property Name="MaLTL" Type="varchar" MaxLength="20" Nullable="false" />
-    <Property Name="MaNgonNgu" Type="varchar" MaxLength="20" Nullable="false" />
-    <Property Name="MaNXB" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaLTL" Type="int" Nullable="false" />
+    <Property Name="MaNgonNgu" Type="int" Nullable="false" />
+    <Property Name="MaNXB" Type="int" Nullable="false" />
     <Property Name="NamXuatBan" Type="date" Nullable="false" />
     <Property Name="SoLuong" Type="int" />
     <Property Name="TacGia" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="NgayCN" Type="date" Nullable="false" />
   </EntityType>
   <EntityType Name="TaiLieuCT">
     <Key>
       <PropertyRef Name="MaPhieuMuon" />
       <PropertyRef Name="MaVach" />
     </Key>
-    <Property Name="MaPhieuMuon" Type="varchar" MaxLength="20" Nullable="false" />
-    <Property Name="MaVach" Type="varchar" MaxLength="20" Nullable="false" />
-    <Property Name="NgayCN" Type="date" />
+    <Property Name="MaPhieuMuon" Type="int" Nullable="false" />
+    <Property Name="MaVach" Type="int" Nullable="false" />
     <Property Name="TinhTrang" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <Association Name="fk_cuontl_matl">
@@ -225,7 +222,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="DHP_07ModelStoreContainer">
+  <EntityContainer Name="ModelStoreContainer">
     <EntitySet Name="CuonTaiLieu" EntityType="Self.CuonTaiLieu" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DocGia" EntityType="Self.DocGia" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="LoaiTaiLieu" EntityType="Self.LoaiTaiLieu" Schema="dbo" store:Type="Tables" />

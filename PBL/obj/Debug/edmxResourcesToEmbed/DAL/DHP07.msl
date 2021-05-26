@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="DHP_07ModelStoreContainer" CdmEntityContainer="DHP07Entities">
+  <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="DHP_07Entities">
     <EntitySetMapping Name="CuonTaiLieux">
-      <EntityTypeMapping TypeName="DHP_07Model.CuonTaiLieu">
+      <EntityTypeMapping TypeName="Model.CuonTaiLieu">
         <MappingFragment StoreEntitySet="CuonTaiLieu">
           <ScalarProperty Name="MaVach" ColumnName="MaVach" />
           <ScalarProperty Name="MaTL" ColumnName="MaTL" />
@@ -10,7 +10,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="DocGias">
-      <EntityTypeMapping TypeName="DHP_07Model.DocGia">
+      <EntityTypeMapping TypeName="Model.DocGia">
         <MappingFragment StoreEntitySet="DocGia">
           <ScalarProperty Name="MaDocGia" ColumnName="MaDocGia" />
           <ScalarProperty Name="MSSV" ColumnName="MSSV" />
@@ -23,7 +23,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="LoaiTaiLieux">
-      <EntityTypeMapping TypeName="DHP_07Model.LoaiTaiLieu">
+      <EntityTypeMapping TypeName="Model.LoaiTaiLieu">
         <MappingFragment StoreEntitySet="LoaiTaiLieu">
           <ScalarProperty Name="MaLTL" ColumnName="MaLTL" />
           <ScalarProperty Name="TenLoai" ColumnName="TenLoai" />
@@ -31,7 +31,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Lops">
-      <EntityTypeMapping TypeName="DHP_07Model.Lop">
+      <EntityTypeMapping TypeName="Model.Lop">
         <MappingFragment StoreEntitySet="Lop">
           <ScalarProperty Name="MaLop" ColumnName="MaLop" />
           <ScalarProperty Name="TenLop" ColumnName="TenLop" />
@@ -39,7 +39,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="NgonNgus">
-      <EntityTypeMapping TypeName="DHP_07Model.NgonNgu">
+      <EntityTypeMapping TypeName="Model.NgonNgu">
         <MappingFragment StoreEntitySet="NgonNgu">
           <ScalarProperty Name="MaNgonNgu" ColumnName="MaNgonNgu" />
           <ScalarProperty Name="TenNgonNgu" ColumnName="TenNgonNgu" />
@@ -47,7 +47,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="NguoiDungs">
-      <EntityTypeMapping TypeName="DHP_07Model.NguoiDung">
+      <EntityTypeMapping TypeName="Model.NguoiDung">
         <MappingFragment StoreEntitySet="NguoiDung">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Username" ColumnName="Username" />
@@ -55,7 +55,6 @@
           <ScalarProperty Name="HoTen" ColumnName="HoTen" />
           <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
           <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
-          <ScalarProperty Name="ChucDanh" ColumnName="ChucDanh" />
           <ScalarProperty Name="DienThoai" ColumnName="DienThoai" />
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="ID_QuyenHan" ColumnName="ID_QuyenHan" />
@@ -63,7 +62,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="NhaXuatBans">
-      <EntityTypeMapping TypeName="DHP_07Model.NhaXuatBan">
+      <EntityTypeMapping TypeName="Model.NhaXuatBan">
         <MappingFragment StoreEntitySet="NhaXuatBan">
           <ScalarProperty Name="MaNXB" ColumnName="MaNXB" />
           <ScalarProperty Name="TenNXB" ColumnName="TenNXB" />
@@ -71,7 +70,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PhieuMuons">
-      <EntityTypeMapping TypeName="DHP_07Model.PhieuMuon">
+      <EntityTypeMapping TypeName="Model.PhieuMuon">
         <MappingFragment StoreEntitySet="PhieuMuon">
           <ScalarProperty Name="MaPhieuMuon" ColumnName="MaPhieuMuon" />
           <ScalarProperty Name="ID" ColumnName="ID" />
@@ -84,7 +83,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="QuyenHans">
-      <EntityTypeMapping TypeName="DHP_07Model.QuyenHan">
+      <EntityTypeMapping TypeName="Model.QuyenHan">
         <MappingFragment StoreEntitySet="QuyenHan">
           <ScalarProperty Name="ID_QuyenHan" ColumnName="ID_QuyenHan" />
           <ScalarProperty Name="TenQuyenHan" ColumnName="TenQuyenHan" />
@@ -92,7 +91,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TaiLieux">
-      <EntityTypeMapping TypeName="DHP_07Model.TaiLieu">
+      <EntityTypeMapping TypeName="Model.TaiLieu">
         <MappingFragment StoreEntitySet="TaiLieu">
           <ScalarProperty Name="MaTL" ColumnName="MaTL" />
           <ScalarProperty Name="TenTL" ColumnName="TenTL" />
@@ -102,16 +101,14 @@
           <ScalarProperty Name="NamXuatBan" ColumnName="NamXuatBan" />
           <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
           <ScalarProperty Name="TacGia" ColumnName="TacGia" />
-          <ScalarProperty Name="NgayCN" ColumnName="NgayCN" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="TaiLieuCTs">
-      <EntityTypeMapping TypeName="DHP_07Model.TaiLieuCT">
+      <EntityTypeMapping TypeName="Model.TaiLieuCT">
         <MappingFragment StoreEntitySet="TaiLieuCT">
           <ScalarProperty Name="MaPhieuMuon" ColumnName="MaPhieuMuon" />
           <ScalarProperty Name="MaVach" ColumnName="MaVach" />
-          <ScalarProperty Name="NgayCN" ColumnName="NgayCN" />
           <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
         </MappingFragment>
       </EntityTypeMapping>
