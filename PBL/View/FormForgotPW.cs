@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PBL.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,8 +20,25 @@ namespace PBL.View
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormForgotPW2 f = new FormForgotPW2();
-            f.ShowDialog();
+            DHP_07Entities db = new DHP_07Entities();
+            var l1 = db.NguoiDungs
+                .Where(p => p.Username == txtUser.Text)
+                .Select(p => p).ToList();
+            if (l1.Count != 0)
+            {
+                FormForgotPW2 f = new FormForgotPW2(l1[0]);
+                f.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Unknown user");
+            }
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

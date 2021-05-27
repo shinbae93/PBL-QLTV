@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PBL.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,20 +13,28 @@ namespace PBL.View
 {
     public partial class FormForgotPW2 : Form
     {
-        public FormForgotPW2()
+        public NguoiDung nd { get; set; } 
+        public FormForgotPW2(NguoiDung nd_PW)
         {
+            nd = nd_PW;
             InitializeComponent();
         }
 
-        private void FormForgotPW2_Load(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnOK_Click(object sender, EventArgs e)
         {
-            FormForgotPW3 f = new FormForgotPW3();
-            f.ShowDialog();
+            if (txtEmail.Text == nd.Email && txtSDT.Text == nd.DienThoai)
+            {
+                FormForgotPW3 f = new FormForgotPW3(nd);
+                f.ShowDialog();
+            }
+            else {
+                MessageBox.Show("Unknown email or phone number");
+            }
         }
     }
 }

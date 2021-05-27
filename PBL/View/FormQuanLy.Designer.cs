@@ -480,6 +480,7 @@ namespace PBL.View
             this.btnDelDG.TabIndex = 10;
             this.btnDelDG.Text = "Del";
             this.btnDelDG.UseVisualStyleBackColor = false;
+            this.btnDelDG.Click += new System.EventHandler(this.btnDelDG_Click);
             // 
             // btnExitDG
             // 
@@ -511,6 +512,7 @@ namespace PBL.View
             this.btnSortDG.TabIndex = 7;
             this.btnSortDG.Text = "Sort";
             this.btnSortDG.UseVisualStyleBackColor = false;
+            this.btnSortDG.Click += new System.EventHandler(this.btnSortDG_Click);
             // 
             // btnEditDG
             // 
@@ -522,7 +524,7 @@ namespace PBL.View
             this.btnEditDG.TabIndex = 7;
             this.btnEditDG.Text = "Edit";
             this.btnEditDG.UseVisualStyleBackColor = false;
-            this.btnEditDG.Click += new System.EventHandler(this.btnAddDocGia_Click);
+            this.btnEditDG.Click += new System.EventHandler(this.btnEditDocGia_Click);
             // 
             // btnAddDG
             // 
@@ -546,6 +548,7 @@ namespace PBL.View
             this.btnShowDG.TabIndex = 7;
             this.btnShowDG.Text = "Show";
             this.btnShowDG.UseVisualStyleBackColor = false;
+            this.btnShowDG.Click += new System.EventHandler(this.btnShowDG_Click);
             // 
             // dataGridViewDocGia
             // 
@@ -586,6 +589,7 @@ namespace PBL.View
             this.btnSearchDG.TabIndex = 6;
             this.btnSearchDG.Text = "Search";
             this.btnSearchDG.UseVisualStyleBackColor = false;
+            this.btnSearchDG.Click += new System.EventHandler(this.btnSearchDG_Click);
             // 
             // txtHoTenDG
             // 
@@ -614,9 +618,9 @@ namespace PBL.View
             this.lbSoTheDG.ForeColor = System.Drawing.Color.DarkRed;
             this.lbSoTheDG.Location = new System.Drawing.Point(44, 97);
             this.lbSoTheDG.Name = "lbSoTheDG";
-            this.lbSoTheDG.Size = new System.Drawing.Size(68, 22);
+            this.lbSoTheDG.Size = new System.Drawing.Size(58, 22);
             this.lbSoTheDG.TabIndex = 2;
-            this.lbSoTheDG.Text = "Số Thẻ";
+            this.lbSoTheDG.Text = "MSSV";
             // 
             // label9
             // 
