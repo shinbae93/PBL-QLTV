@@ -29,6 +29,7 @@ namespace PBL.View
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbForgotPassword = new System.Windows.Forms.Label();
@@ -39,7 +40,9 @@ namespace PBL.View
             this.txtUser = new System.Windows.Forms.TextBox();
             this.lbWelcome = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -110,6 +113,7 @@ namespace PBL.View
             this.txtPassword.Size = new System.Drawing.Size(172, 20);
             this.txtPassword.TabIndex = 2;
             this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.Validating += new System.ComponentModel.CancelEventHandler(this.txtPassword_Validating);
             // 
             // txtUser
             // 
@@ -117,6 +121,7 @@ namespace PBL.View
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(172, 20);
             this.txtUser.TabIndex = 1;
+            this.txtUser.Validating += new System.ComponentModel.CancelEventHandler(this.txtUser_Validating);
             // 
             // lbWelcome
             // 
@@ -142,6 +147,10 @@ namespace PBL.View
             this.label5.TabIndex = 2;
             this.label5.Text = "LIBRARY MANAGEMENT SYSTEM";
             // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -157,6 +166,7 @@ namespace PBL.View
             this.Text = "FormLogin";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,5 +183,6 @@ namespace PBL.View
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label lbWelcome;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }

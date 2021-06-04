@@ -21,22 +21,26 @@ namespace PBL.View
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (Login_BLL.Instance.CheckNguoiDung(txtUser.Text, txtPassword.Text) == true)
+            if (ValidateChildren(ValidationConstraints.Enabled))
             {
-                if(Login_BLL.Instance.GetNguoiDungByUserAndPW(txtUser.Text, txtPassword.Text).ID_QuyenHan == 1)
+                if (Login_BLL.Instance.CheckNguoiDung(txtUser.Text, txtPassword.Text) == true)
                 {
-                    FormQuanLy f = new FormQuanLy();
-                    f.ShowDialog();
+                    if (Login_BLL.Instance.GetNguoiDungByUserAndPW(txtUser.Text, txtPassword.Text).ID_QuyenHan == 1)
+                    {
+                        FormQuanLy f = new FormQuanLy();
+                        f.ShowDialog();
+                    }
+                    else if (Login_BLL.Instance.GetNguoiDungByUserAndPW(txtUser.Text, txtPassword.Text).ID_QuyenHan == 2)
+                    {
+                        FormNhanVien f = new FormNhanVien();
+                        f.ShowDialog();
+                    }
                 }
-                else if(Login_BLL.Instance.GetNguoiDungByUserAndPW(txtUser.Text, txtPassword.Text).ID_QuyenHan == 2)
+                else
                 {
-                    FormNhanVien f = new FormNhanVien();
-                    f.ShowDialog();
+                    MessageBox.Show("Sai thong tin");
+
                 }
-            }
-            else
-            {
-                MessageBox.Show("Sai thong tin");
             }
             //int checkql = 0;
             //int checknv = 0;
@@ -76,6 +80,36 @@ namespace PBL.View
         {
             FormForgotPW f = new FormForgotPW();
             f.ShowDialog();
+        }
+
+        private void txtUser_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtUser.Text))
+            {
+                e.Cancel = false;
+                //txtUser.Focus();
+                errorProvider.SetError(txtUser, "Please enter your user name");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider.SetError(txtUser, null);
+            }
+        }
+
+        private void txtPassword_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtPassword.Text))
+            {
+                e.Cancel = false;
+                //txtPassword.Focus();
+                errorProvider.SetError(txtPassword, "Please enter your password");
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider.SetError(txtPassword, null);
+            }
         }
     }
 }

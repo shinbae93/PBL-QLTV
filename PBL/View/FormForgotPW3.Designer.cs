@@ -65,7 +65,7 @@ namespace PBL.View
             this.txtMatKhauMoi.Location = new System.Drawing.Point(287, 52);
             this.txtMatKhauMoi.Name = "txtMatKhauMoi";
             this.txtMatKhauMoi.Size = new System.Drawing.Size(192, 20);
-            this.txtMatKhauMoi.TabIndex = 2;
+            this.txtMatKhauMoi.TabIndex = 1;
             this.txtMatKhauMoi.UseSystemPasswordChar = true;
             // 
             // txtXacNhanLaiMatKhau
@@ -95,7 +95,7 @@ namespace PBL.View
             this.btnCancel.Location = new System.Drawing.Point(309, 137);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(88, 30);
-            this.btnCancel.TabIndex = 3;
+            this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "CANCEL";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);

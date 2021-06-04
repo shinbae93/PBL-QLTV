@@ -30,7 +30,9 @@ namespace PBL.View
             if (txtEmail.Text == nd.Email && txtSDT.Text == nd.DienThoai)
             {
                 FormForgotPW3 f = new FormForgotPW3(nd);
+                this.Visible = false;
                 f.ShowDialog();
+                this.Visible = true;
             }
             else {
                 MessageBox.Show("Unknown email or phone number");

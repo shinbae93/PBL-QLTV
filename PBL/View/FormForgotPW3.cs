@@ -30,6 +30,8 @@ namespace PBL.View
                         .Single(p => p.ID == nd.ID);
                     l1.Password = txtXacNhanLaiMatKhau.Text;
                     db.SaveChanges();
+                    MessageBox.Show("Your password has been reset successfully");
+                    this.Close();
                 } 
             }
             else
@@ -40,7 +42,7 @@ namespace PBL.View
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

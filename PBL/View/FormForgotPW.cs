@@ -27,7 +27,9 @@ namespace PBL.View
             if (l1.Count != 0)
             {
                 FormForgotPW2 f = new FormForgotPW2(l1[0]);
+                this.Visible = false;
                 f.ShowDialog();
+                this.Visible = true;
             }
             else
             {

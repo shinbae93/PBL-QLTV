@@ -72,7 +72,7 @@ namespace PBL.View
             this.txtSDT.Location = new System.Drawing.Point(138, 89);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(233, 20);
-            this.txtSDT.TabIndex = 1;
+            this.txtSDT.TabIndex = 2;
             // 
             // btnOK
             // 
@@ -81,7 +81,7 @@ namespace PBL.View
             this.btnOK.Location = new System.Drawing.Point(125, 140);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(83, 28);
-            this.btnOK.TabIndex = 2;
+            this.btnOK.TabIndex = 3;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = false;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
@@ -93,7 +93,7 @@ namespace PBL.View
             this.btnBack.Location = new System.Drawing.Point(282, 140);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(75, 28);
-            this.btnBack.TabIndex = 3;
+            this.btnBack.TabIndex = 4;
             this.btnBack.Text = "BACK";
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
