@@ -55,7 +55,7 @@ namespace PBL.View
 
         private void ShowDG(string sothe, string name)
         {
-            dataGridViewDocGia.DataSource = QLDG_BLL.Instance.GetListDG(sothe, name);
+            dataGridViewDocGia.DataSource = QLDG_BLL.Instance.GetListDGSelect(sothe, name);
         }
 
         private void btnAddSach_Click(object sender, EventArgs e)

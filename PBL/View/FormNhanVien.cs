@@ -69,7 +69,7 @@ namespace PBL
         }
         private void ShowDG(string sothe, string name)
         {
-            dataGridViewDG.DataSource = QLDG_BLL.Instance.GetListDG(sothe, name);
+            dataGridViewDG.DataSource = QLDG_BLL.Instance.GetListDGSelect(sothe, name);
         }
         private void btnSearchDG_Click(object sender, EventArgs e)
         {

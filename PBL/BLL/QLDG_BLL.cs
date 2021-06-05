@@ -37,6 +37,16 @@ namespace PBL.BLL
                 .Select(p => p).ToList();
             return l1;
         }
+        public List<QLDG_DTO> GetListDGSelect(string MaSo, string Name)
+        {
+            DHP_07Entities db = new DHP_07Entities();
+            var l1 = db.DocGias
+                .Where(p => p.MSSV.Contains(MaSo) && p.HoTen.Contains(Name))
+                .Select(p => new QLDG_DTO {MSSV = p.MSSV, HoTen = p.HoTen, NgaySinh = p.NgaySinh, GioiTinh = p.GioiTinh, TenLop = p.Lop.TenLop, NgayDK = p.NgayDK }).ToList();
+            return l1;
+
+                
+        }
         public DocGia GetDGByMSSV(string mssv)
         {
             DHP_07Entities db = new DHP_07Entities();
@@ -77,7 +87,7 @@ namespace PBL.BLL
                 db.SaveChanges();
             }
         }
-        public List<DocGia> SortDG(string m, string tg)
+        public List<QLDG_DTO> SortDG(string m, string tg)
         {
             DHP_07Entities db = new DHP_07Entities();
             if(m == "MaDocGia")
@@ -86,14 +96,14 @@ namespace PBL.BLL
                 {
                     var l1 = from p in db.DocGias
                              orderby p.MaDocGia descending
-                             select p;
+                             select new QLDG_DTO { MSSV = p.MSSV, HoTen = p.HoTen, NgaySinh = p.NgaySinh, GioiTinh = p.GioiTinh, TenLop = p.Lop.TenLop, NgayDK = p.NgayDK };
                     return l1.ToList();
                 }
                 else
                 {
                     var l1 = from p in db.DocGias
                              orderby p.MaDocGia ascending
-                             select p;
+                             select new QLDG_DTO { MSSV = p.MSSV, HoTen = p.HoTen, NgaySinh = p.NgaySinh, GioiTinh = p.GioiTinh, TenLop = p.Lop.TenLop, NgayDK = p.NgayDK };
                     return l1.ToList();
                 }
             }
@@ -103,14 +113,14 @@ namespace PBL.BLL
                 {
                     var l1 = from p in db.DocGias
                              orderby p.MSSV descending
-                             select p;
+                             select new QLDG_DTO { MSSV = p.MSSV, HoTen = p.HoTen, NgaySinh = p.NgaySinh, GioiTinh = p.GioiTinh, TenLop = p.Lop.TenLop, NgayDK = p.NgayDK };
                     return l1.ToList();
                 }
                 else
                 {
                     var l1 = from p in db.DocGias
                              orderby p.MSSV ascending
-                             select p;
+                             select new QLDG_DTO { MSSV = p.MSSV, HoTen = p.HoTen, NgaySinh = p.NgaySinh, GioiTinh = p.GioiTinh, TenLop = p.Lop.TenLop, NgayDK = p.NgayDK };
                     return l1.ToList();
                 }
             }
@@ -120,14 +130,14 @@ namespace PBL.BLL
                 {
                     var l1 = from p in db.DocGias
                              orderby p.HoTen descending
-                             select p;
+                             select new QLDG_DTO { MSSV = p.MSSV, HoTen = p.HoTen, NgaySinh = p.NgaySinh, GioiTinh = p.GioiTinh, TenLop = p.Lop.TenLop, NgayDK = p.NgayDK };
                     return l1.ToList();
                 }
                 else
                 {
                     var l1 = from p in db.DocGias
                              orderby p.HoTen ascending
-                             select p;
+                             select new QLDG_DTO { MSSV = p.MSSV, HoTen = p.HoTen, NgaySinh = p.NgaySinh, GioiTinh = p.GioiTinh, TenLop = p.Lop.TenLop, NgayDK = p.NgayDK };
                     return l1.ToList();
                 }
             }
@@ -137,14 +147,14 @@ namespace PBL.BLL
                 {
                     var l1 = from p in db.DocGias
                              orderby p.NgaySinh descending
-                             select p;
+                             select new QLDG_DTO { MSSV = p.MSSV, HoTen = p.HoTen, NgaySinh = p.NgaySinh, GioiTinh = p.GioiTinh, TenLop = p.Lop.TenLop, NgayDK = p.NgayDK };
                     return l1.ToList();
                 }
                 else
                 {
                     var l1 = from p in db.DocGias
                              orderby p.NgaySinh ascending
-                             select p;
+                             select new QLDG_DTO { MSSV = p.MSSV, HoTen = p.HoTen, NgaySinh = p.NgaySinh, GioiTinh = p.GioiTinh, TenLop = p.Lop.TenLop, NgayDK = p.NgayDK };
                     return l1.ToList();
                 }
             }
@@ -154,14 +164,14 @@ namespace PBL.BLL
                 {
                     var l1 = from p in db.DocGias
                              orderby p.MaLop descending
-                             select p;
+                             select new QLDG_DTO { MSSV = p.MSSV, HoTen = p.HoTen, NgaySinh = p.NgaySinh, GioiTinh = p.GioiTinh, TenLop = p.Lop.TenLop, NgayDK = p.NgayDK };
                     return l1.ToList();
                 }
                 else
                 {
                     var l1 = from p in db.DocGias
                              orderby p.MaLop ascending
-                             select p;
+                             select new QLDG_DTO { MSSV = p.MSSV, HoTen = p.HoTen, NgaySinh = p.NgaySinh, GioiTinh = p.GioiTinh, TenLop = p.Lop.TenLop, NgayDK = p.NgayDK };
                     return l1.ToList();
                 }
             }
@@ -171,14 +181,14 @@ namespace PBL.BLL
                 {
                     var l1 = from p in db.DocGias
                              orderby p.NgayDK descending
-                             select p;
+                             select new QLDG_DTO { MSSV = p.MSSV, HoTen = p.HoTen, NgaySinh = p.NgaySinh, GioiTinh = p.GioiTinh, TenLop = p.Lop.TenLop, NgayDK = p.NgayDK };
                     return l1.ToList();
                 }
                 else
                 {
                     var l1 = from p in db.DocGias
                              orderby p.NgayDK ascending
-                             select p;
+                             select new QLDG_DTO { MSSV = p.MSSV, HoTen = p.HoTen, NgaySinh = p.NgaySinh, GioiTinh = p.GioiTinh, TenLop = p.Lop.TenLop, NgayDK = p.NgayDK };
                     return l1.ToList();
                 }
             }
