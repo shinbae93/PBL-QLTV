@@ -85,6 +85,8 @@ namespace PBL.View
                 QLDG_BLL.Instance.EditDG(tmp);
             }
             d("", "");
+            MessageBox.Show("Your information has been successfully saved");
+            this.Close();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
