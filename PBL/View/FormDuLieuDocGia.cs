@@ -21,8 +21,19 @@ namespace PBL.View
         {
             InitializeComponent();
             mssv = m;
+            SetCBB();
             SetEnable();
             SetGUI();
+        }
+        private void SetCBB()
+        {
+            DHP_07Entities db = new DHP_07Entities();
+            cbbMaLop.Items.Add(new CBBItem { Value = 0, Text = "Null" });
+            cbbMaLop.Text = "Null";
+            foreach (Lop i in db.Lops)
+            {
+                cbbMaLop.Items.Add(new CBBItem { Value = i.MaLop, Text = i.TenLop });
+            }
         }
         public void SetEnable()
         {
@@ -39,7 +50,7 @@ namespace PBL.View
                 DocGia tmp = new DocGia();
                 tmp = QLDG_BLL.Instance.GetDGByMSSV(mssv);
                 txtHoTen.Text = tmp.HoTen;
-                txtMaLop.Text = Convert.ToString(tmp.MaLop);
+                cbbMaLop.Text = ((CBBItem)cbbMaLop.Items[tmp.MaLop]).Text;
                 dtpNgaySinh.Value = Convert.ToDateTime(tmp.NgaySinh);
                 dtpNgayDK.Value = Convert.ToDateTime(tmp.NgayDK);
                 if(tmp.GioiTinh == true)
@@ -61,9 +72,10 @@ namespace PBL.View
                 HoTen = txtHoTen.Text,
                 NgaySinh = dtpNgaySinh.Value,
                 GioiTinh = rbtnNam.Checked,
-                MaLop = Convert.ToInt32(txtMaLop.Text),
+                MaLop = cbbMaLop.SelectedIndex,
                 NgayDK = dtpNgayDK.Value
             };
+            //MessageBox.Show(cbbMaLop.SelectedIndex.ToString());
             if (mssv == null)
             {
                 QLDG_BLL.Instance.AddDG(tmp);

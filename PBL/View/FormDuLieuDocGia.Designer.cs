@@ -40,12 +40,12 @@ namespace PBL.View
             this.btnCancel = new System.Windows.Forms.Button();
             this.txtMSSV = new System.Windows.Forms.TextBox();
             this.txtHoTen = new System.Windows.Forms.TextBox();
-            this.txtMaLop = new System.Windows.Forms.TextBox();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.rbtnNu = new System.Windows.Forms.RadioButton();
             this.rbtnNam = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cbbMaLop = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.dtpNgayDK = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
@@ -103,9 +103,9 @@ namespace PBL.View
             this.lbMaLop.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMaLop.Location = new System.Drawing.Point(422, 86);
             this.lbMaLop.Name = "lbMaLop";
-            this.lbMaLop.Size = new System.Drawing.Size(74, 22);
+            this.lbMaLop.Size = new System.Drawing.Size(44, 22);
             this.lbMaLop.TabIndex = 0;
-            this.lbMaLop.Text = "Mã Lớp";
+            this.lbMaLop.Text = "Lớp";
             // 
             // lbNgayDK
             // 
@@ -156,13 +156,6 @@ namespace PBL.View
             this.txtHoTen.Size = new System.Drawing.Size(200, 20);
             this.txtHoTen.TabIndex = 24;
             // 
-            // txtMaLop
-            // 
-            this.txtMaLop.Location = new System.Drawing.Point(550, 86);
-            this.txtMaLop.Name = "txtMaLop";
-            this.txtMaLop.Size = new System.Drawing.Size(200, 20);
-            this.txtMaLop.TabIndex = 27;
-            // 
             // dtpNgaySinh
             // 
             this.dtpNgaySinh.Location = new System.Drawing.Point(130, 159);
@@ -206,11 +199,11 @@ namespace PBL.View
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.Controls.Add(this.cbbMaLop);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.dtpNgayDK);
             this.panel1.Controls.Add(this.dtpNgaySinh);
-            this.panel1.Controls.Add(this.txtMaLop);
             this.panel1.Controls.Add(this.txtHoTen);
             this.panel1.Controls.Add(this.txtMSSV);
             this.panel1.Controls.Add(this.lbGioiTinh);
@@ -224,6 +217,14 @@ namespace PBL.View
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(796, 279);
             this.panel1.TabIndex = 33;
+            // 
+            // cbbMaLop
+            // 
+            this.cbbMaLop.FormattingEnabled = true;
+            this.cbbMaLop.Location = new System.Drawing.Point(550, 86);
+            this.cbbMaLop.Name = "cbbMaLop";
+            this.cbbMaLop.Size = new System.Drawing.Size(200, 21);
+            this.cbbMaLop.TabIndex = 34;
             // 
             // label10
             // 
@@ -277,7 +278,6 @@ namespace PBL.View
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.TextBox txtMSSV;
         private System.Windows.Forms.TextBox txtHoTen;
-        private System.Windows.Forms.TextBox txtMaLop;
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
         private System.Windows.Forms.RadioButton rbtnNu;
         private System.Windows.Forms.RadioButton rbtnNam;
@@ -285,5 +285,6 @@ namespace PBL.View
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DateTimePicker dtpNgayDK;
+        private System.Windows.Forms.ComboBox cbbMaLop;
     }
 }
