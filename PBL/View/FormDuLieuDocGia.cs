@@ -14,9 +14,11 @@ namespace PBL.View
 {
     public partial class FormDuLieuDocGia : Form
     {
-        public delegate void Mydel (string sothe, string name);
+        public delegate void Mydel(string sothe, string name);
+
         public Mydel d { get; set; }
         public string mssv;
+
         public FormDuLieuDocGia(string m)
         {
             InitializeComponent();
@@ -43,9 +45,10 @@ namespace PBL.View
                 txtMSSV.Enabled = false;
             }
         }
+
         public void SetGUI()
         {
-            if(mssv != null)
+            if (mssv != null)
             {
                 DocGia tmp = new DocGia();
                 tmp = QLDG_BLL.Instance.GetDGByMSSV(mssv);
@@ -53,7 +56,7 @@ namespace PBL.View
                 cbbMaLop.Text = ((CBBItem)cbbMaLop.Items[tmp.MaLop]).Text;
                 dtpNgaySinh.Value = Convert.ToDateTime(tmp.NgaySinh);
                 dtpNgayDK.Value = Convert.ToDateTime(tmp.NgayDK);
-                if(tmp.GioiTinh == true)
+                if (tmp.GioiTinh == true)
                 {
                     rbtnNam.Checked = true;
                 }
@@ -61,9 +64,9 @@ namespace PBL.View
                 {
                     rbtnNu.Checked = true;
                 }
-
             }
         }
+
         private void btnOK_Click(object sender, EventArgs e)
         {
             DocGia tmp = new DocGia
@@ -91,7 +94,7 @@ namespace PBL.View
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Dispose();
         }
     }
 }

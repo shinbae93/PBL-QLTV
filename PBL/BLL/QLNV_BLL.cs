@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PBL.DAL;
+using PBL.BLL.DTO;
 
 namespace PBL.BLL
 {
@@ -27,23 +28,55 @@ namespace PBL.BLL
         private QLNV_BLL()
         {
         }
-        
-        public List<NguoiDung> GetListNV(string Name, string Email, string SDT, int ID_QuyenHan)
+
+        public List<NhanVien_DTO> GetListNV(string Name, string Email, string SDT, int ID_QuyenHan)
         {
             DHP_07Entities db = new DHP_07Entities();
+            List<NhanVien_DTO> data = new List<NhanVien_DTO>();
             if (ID_QuyenHan == 0)
             {
-                var weary = db.NguoiDungs
-                .Where(p => p.HoTen.Contains(Name) && p.Email.Contains(Email) && p.DienThoai.Contains(SDT));
-                return weary.ToList();
+                data = db.NguoiDungs.Where(p => p.HoTen.Contains(Name) && p.Email.Contains(Email) && p.DienThoai.Contains(SDT))
+                .Select(p => new NhanVien_DTO
+                {
+                    ID = p.ID,
+                    Username = p.Username,
+                    Password = p.Password,
+                    HoTen = p.HoTen,
+                    NgaySinh = p.NgaySinh,
+                    GioiTinh = p.GioiTinh,
+                    DienThoai = p.DienThoai,
+                    Email = p.Email,
+                    QuyenHan = p.QuyenHan.TenQuyenHan
+                }).ToList();
             }
             else
             {
-                var weary = db.NguoiDungs
-                .Where(p => p.HoTen.Contains(Name) && p.Email.Contains(Email) && p.DienThoai.Contains(SDT) && p.ID_QuyenHan == ID_QuyenHan);
-                return weary.ToList();
+                data = db.NguoiDungs.Where(p => p.HoTen.Contains(Name) && p.Email.Contains(Email) && p.DienThoai.Contains(SDT) && p.ID_QuyenHan == ID_QuyenHan)
+                .Select(p => new NhanVien_DTO
+                {
+                    ID = p.ID,
+                    Username = p.Username,
+                    Password = p.Password,
+                    HoTen = p.HoTen,
+                    NgaySinh = p.NgaySinh,
+                    GioiTinh = p.GioiTinh,
+                    DienThoai = p.DienThoai,
+                    Email = p.Email,
+                    QuyenHan = p.QuyenHan.TenQuyenHan
+                }).ToList();
+            }
+            return data;
+        }
+
+        public NguoiDung GetUserByUsername(string Username)
+        {
+            using (DHP_07Entities db = new DHP_07Entities())
+            {
+                NguoiDung data = db.NguoiDungs.Where(p => p.Username.Equals(Username)).FirstOrDefault();
+                return data;
             }
         }
+
         public void AddNV(NguoiDung s)
         {
             using (DHP_07Entities db = new DHP_07Entities())
@@ -52,6 +85,7 @@ namespace PBL.BLL
                 db.SaveChanges();
             }
         }
+
         public void EditNV(NguoiDung s, int ID_NguoiDung)
         {
             using (DHP_07Entities db = new DHP_07Entities())
@@ -68,6 +102,7 @@ namespace PBL.BLL
                 db.SaveChanges();
             }
         }
+
         public void DeleteNV(int ID_NguoiDung)
         {
             using (DHP_07Entities db = new DHP_07Entities())
@@ -75,6 +110,74 @@ namespace PBL.BLL
                 NguoiDung s = db.NguoiDungs.Find(ID_NguoiDung);
                 db.NguoiDungs.Remove(s);
                 db.SaveChanges();
+            }
+        }
+
+        public List<NhanVien_DTO> SortNV(string TC)
+        {
+            using (DHP_07Entities db = new DHP_07Entities())
+            {
+                List<NhanVien_DTO> data = db.NguoiDungs.Select(p => new NhanVien_DTO
+                {
+                    ID = p.ID,
+                    Username = p.Username,
+                    Password = p.Password,
+                    HoTen = p.HoTen,
+                    NgaySinh = p.NgaySinh,
+                    GioiTinh = p.GioiTinh,
+                    DienThoai = p.DienThoai,
+                    Email = p.Email,
+                    QuyenHan = p.QuyenHan.TenQuyenHan
+                }).ToList();
+                if (TC == "ID (Tang)")
+                {
+                    return data.OrderBy(p => p.ID).ToList();
+                }
+                else if (TC == "ID (Giam)")
+                {
+                    return data.OrderByDescending(p => p.ID).ToList();
+                }
+                else if (TC == "Username (Tang)")
+                {
+                    return data.OrderBy(p => p.Username).ToList();
+                }
+                else if (TC == "Username (Giam)")
+                {
+                    return data.OrderByDescending(p => p.Username).ToList();
+                }
+                else if (TC == "HoTen (Tang)")
+                {
+                    return data.OrderBy(p => p.HoTen).ToList();
+                }
+                else if (TC == "HoTen (Giam)")
+                {
+                    return data.OrderByDescending(p => p.HoTen).ToList();
+                }
+                else if (TC == "NgaySinh (Tang)")
+                {
+                    return data.OrderBy(p => p.NgaySinh).ToList();
+                }
+                else if (TC == "NgaySinh (Giam)")
+                {
+                    return data.OrderByDescending(p => p.NgaySinh).ToList();
+                }
+                else if (TC == "GioiTinh (Tang)")
+                {
+                    return data.OrderBy(p => p.GioiTinh).ToList();
+                }
+                else if (TC == "GioiTinh (Giam)")
+                {
+                    return data.OrderByDescending(p => p.GioiTinh).ToList();
+                }
+                else if (TC == "QuyenHan (Tang)")
+                {
+                    return data.OrderBy(p => p.QuyenHan).ToList();
+                }
+                else if (TC == "QuyenHan (Giam)")
+                {
+                    return data.OrderByDescending(p => p.QuyenHan).ToList();
+                }
+                return data;
             }
         }
     }

@@ -9,20 +9,162 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PBL.BLL;
 using PBL.DAL;
+using PBL.BLL.DTO;
 
 namespace PBL.View
 {
     public partial class FormQuanLy : Form
     {
-        public FormQuanLy()
+        public string Username { get; set; }
+
+        public FormQuanLy(string Username)
         {
             InitializeComponent();
-            ShowNV("", "", "", 0);
-            SetCBB();
+            SetCBBSach();
             SetCBBSortDG();
+            SetCBBNV();
+            this.Username = Username;
         }
 
-        private void SetCBB()
+        #region Logout
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            FormLogOut f = new FormLogOut();
+            f.ShowDialog();
+        }
+
+        #endregion Logout
+
+        #region Sach
+
+        private void SetCBBSach()
+        {
+            using (DHP_07Entities db = new DHP_07Entities())
+            {
+                cbbLoaiTL.Items.Add(new CBBItem { Value = 0, Text = "ALL" });
+                cbbLoaiTL.Text = "ALL";
+                foreach (LoaiTaiLieu i in db.LoaiTaiLieux)
+                {
+                    cbbLoaiTL.Items.Add(new CBBItem { Value = i.MaLTL, Text = i.TenLoai });
+                }
+            }
+        }
+
+        private void ShowSach(string TenTL, int MaLTL)
+        {
+            dataGridViewQLSach.DataSource = QLTL_BLL.Instance.GetListTL(TenTL, MaLTL);
+        }
+
+        private void btnAddSach_Click(object sender, EventArgs e)
+        {
+            FormDuLieuSach f = new FormDuLieuSach(null);
+            f.ShowDialog();
+            f.d = new FormDuLieuSach.MyDel(this.ShowSach);
+        }
+
+        private void btnEditS_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewQLSach.SelectedRows.Count == 1)
+            {
+                FormDuLieuSach f = new FormDuLieuSach(dataGridViewQLSach.SelectedRows[0].Cells["MaTL"].Value.ToString());
+                f.ShowDialog();
+                f.d = new FormDuLieuSach.MyDel(this.ShowSach);
+            }
+        }
+
+        private void btnSearchS_Click(object sender, EventArgs e)
+        {
+            ShowSach(txtTenTaiLieuS.Text, ((CBBItem)cbbLoaiTL.SelectedItem).Value);
+        }
+
+        private void btnShowS_Click(object sender, EventArgs e)
+        {
+            ShowSach("", 0);
+        }
+
+        private void btnDelS_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow i in dataGridViewQLSach.SelectedRows)
+            {
+                QLTL_BLL.Instance.DeleteTL(i.Cells["MaTL"].Value.ToString());
+            }
+            ShowSach(txtTenTaiLieuS.Text, ((CBBItem)cbbLoaiTL.SelectedItem).Value);
+        }
+
+        private void btnSortS_Click(object sender, EventArgs e)
+        {
+            dataGridViewQLSach.DataSource = QLTL_BLL.Instance.SortTL(cbbSortS.Text);
+        }
+
+        private void btnViTri_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewQLSach.SelectedRows.Count == 1)
+            {
+                string s = dataGridViewQLSach.SelectedRows[0].Cells["MaTL"].Value.ToString();
+                MessageBox.Show("Ke Sach : " + s[0]
+                    + "\nTang : " + s.Substring(1, 2)
+                    + "\nHang : " + s.Substring(3, 2)
+                    + "\nCot : " + s.Substring(5, 2));
+            }
+        }
+
+        #endregion Sach
+
+        #region PhieuMuon
+
+        private void ShowPM(string TenDG, string MSSV)
+        {
+            dataGridViewQLSach.DataSource = QLPM_BLL.Instance.GetListPM(TenDG, MSSV);
+        }
+
+        private void btnAddPhieuMuon_Click(object sender, EventArgs e)
+        {
+            FormAddDuLieuPhieuMuon f = new FormAddDuLieuPhieuMuon(Username);
+            f.d = new FormAddDuLieuPhieuMuon.MyDel(this.ShowPM);
+            f.ShowDialog();
+        }
+
+        private void btnReturnPM_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewPhieuMuon.SelectedRows.Count == 1)
+            {
+                FormTraDuLieuPhieuMuon f = new FormTraDuLieuPhieuMuon(Convert.ToInt32(dataGridViewPhieuMuon.SelectedRows[0].Cells[0].Value));
+                f.ShowDialog();
+            }
+        }
+
+        private void btnSearchPM_Click(object sender, EventArgs e)
+        {
+            ShowPM(txtTenDocGiaPM.Text, txtMSSVPM.Text);
+        }
+
+        private void btnShowPM_Click(object sender, EventArgs e)
+        {
+            ShowPM("", "");
+        }
+
+        private void btnDelPM_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow i in dataGridViewPhieuMuon.SelectedRows)
+            {
+                QLPM_BLL.Instance.DeletePM(Convert.ToInt32(i.Cells["MaPhieuMuon"].Value));
+            }
+            ShowPM(txtTenDocGiaPM.Text, txtMSSVPM.Text);
+        }
+
+        private void btnSortPM_Click(object sender, EventArgs e)
+        {
+            dataGridViewPhieuMuon.DataSource = QLPM_BLL.Instance.SortPM(cbbSortPM.Text);
+        }
+
+        #endregion PhieuMuon
+
+        #region NhanVien
+
+        #region MethodNV
+
+        private void SetCBBNV()
         {
             DHP_07Entities db = new DHP_07Entities();
             cbbLoaiTL.Items.Add(new CBBItem { Value = 0, Text = "ALL" });
@@ -31,116 +173,20 @@ namespace PBL.View
             {
                 cbbLoaiTL.Items.Add(new CBBItem { Value = i.MaLTL, Text = i.TenLoai });
             }
-        }
-        #region 
-        private void ShowSach()
-        {
-        }
-        private void SetCBBSortDG()
-        {
-            cbbSortDG.Items.Add(new CBBItem { Value = 0, Text = "MaDocGia Tang" });
-            cbbSortDG.Text = "MaDocGia Tang";
-            cbbSortDG.Items.Add(new CBBItem { Value = 1, Text = "MaDocGia Giam" });
-            cbbSortDG.Items.Add(new CBBItem { Value = 2, Text = "MSSV Tang" });
-            cbbSortDG.Items.Add(new CBBItem { Value = 3, Text = "MSSV Giam" });
-            cbbSortDG.Items.Add(new CBBItem { Value = 4, Text = "HoTen Tang" });
-            cbbSortDG.Items.Add(new CBBItem { Value = 5, Text = "HoTen Giam" });
-            cbbSortDG.Items.Add(new CBBItem { Value = 6, Text = "NgaySinh Tang" });
-            cbbSortDG.Items.Add(new CBBItem { Value = 7, Text = "NgaySinh Giam" });
-            cbbSortDG.Items.Add(new CBBItem { Value = 8, Text = "MaLop Tang" });
-            cbbSortDG.Items.Add(new CBBItem { Value = 9, Text = "MaLop Giam" });
-            cbbSortDG.Items.Add(new CBBItem { Value = 10, Text = "NgayDK Tang" });
-            cbbSortDG.Items.Add(new CBBItem { Value = 11, Text = "NgayDK Giam" });
+
+            cbbQuyenHan.Items.Add(new CBBItem { Value = 0, Text = "ALL" });
+            cbbQuyenHan.SelectedIndex = 0;
+            foreach (QuyenHan i in db.QuyenHans)
+            {
+                cbbQuyenHan.Items.Add(new CBBItem { Value = i.ID_QuyenHan, Text = i.TenQuyenHan });
+            }
         }
 
-        private void ShowDG(string sothe, string name)
-        {
-            dataGridViewDocGia.DataSource = QLDG_BLL.Instance.GetListDGSelect(sothe, name);
-        }
-
-        private void btnAddSach_Click(object sender, EventArgs e)
-        {
-            FormDuLieuSach f = new FormDuLieuSach(null);
-            //f.d = new Form2.MyDel(this.Show);
-            f.ShowDialog();
-        }
-
-        private void btnAddPhieuMuon_Click(object sender, EventArgs e)
-        {
-            FormAddDuLieuPhieuMuon f = new FormAddDuLieuPhieuMuon();
-            //f.d = new Form2.MyDel(this.Show);
-            f.ShowDialog();
-        }
-
-        private void btnEditPhieuMuon_Click(object sender, EventArgs e)
-        {
-            FormDuLieuPhieuMuon f = new FormDuLieuPhieuMuon(null);
-            //f.d = new Form2.MyDel(this.Show);
-            f.ShowDialog();
-        }
-
-        private void btnSearchTKVP_Click(object sender, EventArgs e)
-        {
-            FormViPham f = new FormViPham();
-            f.ShowDialog();
-        }
-
-
-        private void btnTKVP_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btnLogOut_Click(object sender, EventArgs e)
-        {
-            FormLogOut f = new FormLogOut();
-            f.ShowDialog();
-        }
-
-        private void btnReturnPM_Click(object sender, EventArgs e)
-        {
-            FormTraDuLieuPhieuMuon f = new FormTraDuLieuPhieuMuon();
-            f.ShowDialog();
-        }
-
-        private void btnSearchS_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btnShowS_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btnDelS_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btnSortS_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btnSearchPM_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btnShowPM_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btnDelPM_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void btnSortPM_Click(object sender, EventArgs e)
-        {
-        }
-        #endregion
-        #region MethodNV
         public void ShowNV(string HoTen, string Email, string SDT, int ID_QuyenHan)
         {
-            DHP_07Entities db = new DHP_07Entities();
             dataGridViewNhanVien.DataSource = QLNV_BLL.Instance.GetListNV(HoTen, Email, SDT, ID_QuyenHan);
-            
         }
+
         public void DeleteNV()
         {
             if (dataGridViewNhanVien.SelectedRows.Count > 0)
@@ -149,27 +195,32 @@ namespace PBL.View
                 QLNV_BLL.Instance.DeleteNV(ID_NguoiDung);
             }
         }
+
         public void SortNV()
         {
-
         }
-        #endregion
+
+        #endregion MethodNV
 
         #region EventNV
+
         private void btnShowNV_Click(object sender, EventArgs e)
         {
             ShowNV("", "", "", 0);
         }
+
         private void btnSearchNV_Click(object sender, EventArgs e)
         {
             ShowNV(txtHoTenNV.Text, txtEmailNV.Text, txtDienThoaiNV.Text, cbbQuyenHan.SelectedIndex);
         }
+
         private void btnAddNV_Click(object sender, EventArgs e)
         {
             FormDuLieuNhanVien f = new FormDuLieuNhanVien(0);
             f.d += new FormDuLieuNhanVien.MyDel(ShowNV);
             f.Show();
         }
+
         private void btnEditNV_Click(object sender, EventArgs e)
         {
             if (dataGridViewNhanVien.SelectedRows.Count == 1)
@@ -193,25 +244,54 @@ namespace PBL.View
 
         private void btnSortNV_Click(object sender, EventArgs e)
         {
-
+            dataGridViewNhanVien.DataSource = QLNV_BLL.Instance.SortNV(cbbSortNV.Text);
         }
-        #endregion
+
+        #endregion EventNV
+
+        #endregion NhanVien
+
+        #region DocGia
+
+        private void SetCBBSortDG()
+        {
+            cbbSortDG.Items.Add(new CBBItem { Value = 0, Text = "MaDocGia Tang" });
+            cbbSortDG.Text = "MaDocGia Tang";
+            cbbSortDG.Items.Add(new CBBItem { Value = 1, Text = "MaDocGia Giam" });
+            cbbSortDG.Items.Add(new CBBItem { Value = 2, Text = "MSSV Tang" });
+            cbbSortDG.Items.Add(new CBBItem { Value = 3, Text = "MSSV Giam" });
+            cbbSortDG.Items.Add(new CBBItem { Value = 4, Text = "HoTen Tang" });
+            cbbSortDG.Items.Add(new CBBItem { Value = 5, Text = "HoTen Giam" });
+            cbbSortDG.Items.Add(new CBBItem { Value = 6, Text = "NgaySinh Tang" });
+            cbbSortDG.Items.Add(new CBBItem { Value = 7, Text = "NgaySinh Giam" });
+            cbbSortDG.Items.Add(new CBBItem { Value = 8, Text = "MaLop Tang" });
+            cbbSortDG.Items.Add(new CBBItem { Value = 9, Text = "MaLop Giam" });
+            cbbSortDG.Items.Add(new CBBItem { Value = 10, Text = "NgayDK Tang" });
+            cbbSortDG.Items.Add(new CBBItem { Value = 11, Text = "NgayDK Giam" });
+        }
+
+        private void ShowDG(string sothe, string name)
+        {
+            dataGridViewDocGia.DataSource = QLDG_BLL.Instance.GetListDG(sothe, name);
+        }
 
         private void btnSearchDG_Click(object sender, EventArgs e)
         {
-            ShowDG(txtSoTheDG.Text,txtHoTenDG.Text);
+            ShowDG(txtSoTheDG.Text, txtHoTenDG.Text);
         }
 
         private void btnShowDG_Click(object sender, EventArgs e)
         {
-            ShowDG("","");
+            ShowDG("", "");
         }
+
         private void btnAddDocGia_Click(object sender, EventArgs e)
         {
             FormDuLieuDocGia f = new FormDuLieuDocGia(null);
             f.d = new FormDuLieuDocGia.Mydel(this.ShowDG);
             f.ShowDialog();
         }
+
         private void btnEditDocGia_Click(object sender, EventArgs e)
         {
             if (dataGridViewDocGia.SelectedRows.Count == 1)
@@ -221,14 +301,15 @@ namespace PBL.View
                 f.ShowDialog();
             }
         }
+
         private void btnDelDG_Click(object sender, EventArgs e)
         {
-            if(dataGridViewDocGia.SelectedRows.Count == 1)
+            if (dataGridViewDocGia.SelectedRows.Count == 1)
             {
                 string m = dataGridViewDocGia.SelectedRows[0].Cells["MSSV"].Value.ToString();
                 QLDG_BLL.Instance.DelDG(QLDG_BLL.Instance.GetDGByMSSV(m));
             }
-            ShowDG("","");
+            ShowDG("", "");
         }
 
         private void btnSortDG_Click(object sender, EventArgs e)
@@ -237,7 +318,29 @@ namespace PBL.View
             string m1 = arrListStr[0];
             string m2 = arrListStr[1];
             dataGridViewDocGia.DataSource = QLDG_BLL.Instance.SortDG(m1, m2);
-            
         }
+
+        #endregion DocGia
+
+        #region Thong Ke
+
+        private void btnSearchTKVP_Click(object sender, EventArgs e)
+        {
+            FormViPham f = new FormViPham();
+            f.ShowDialog();
+        }
+
+        private void btnTKVP_Click(object sender, EventArgs e)
+        {
+            dataGridViewTKVP.DataSource = QLTK_BLL.Instance.GetTKVP(Convert.ToInt32(cbbThangTK.SelectedItem), Convert.ToInt32(cbbNamTK.SelectedItem));
+        }
+
+        private void btnShowTKMS_Click(object sender, EventArgs e)
+        {
+            dataGridViewTKMS.DataSource = QLTK_BLL.Instance.GetTKMS(Convert.ToInt32(cbbThangTK.SelectedItem), Convert.ToInt32(cbbNamTK.SelectedItem));
+            txtTongSoLuongTK.Text = QLTK_BLL.Instance.GetTKMS(Convert.ToInt32(cbbThangTK.SelectedItem), Convert.ToInt32(cbbNamTK.SelectedItem)).Count.ToString();
+        }
+
+        #endregion Thong Ke
     }
 }
