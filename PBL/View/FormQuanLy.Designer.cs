@@ -326,7 +326,7 @@ namespace PBL.View
             this.cbbLoaiTL.Location = new System.Drawing.Point(775, 132);
             this.cbbLoaiTL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbbLoaiTL.Name = "cbbLoaiTL";
-            this.cbbLoaiTL.Size = new System.Drawing.Size(156, 31);
+            this.cbbLoaiTL.Size = new System.Drawing.Size(203, 31);
             this.cbbLoaiTL.TabIndex = 7;
             // 
             // btnSearchS

@@ -60,7 +60,7 @@
     <Compile Include="BLL\DTO\TaiLieu_DTO.cs" />
     <Compile Include="BLL\Login_BLL.cs" />
     <Compile Include="BLL\QLDG_BLL.cs" />
-    <Compile Include="BLL\QLDG_DTO.cs" />
+    <Compile Include="BLL\DTO\DocGia_DTO.cs" />
     <Compile Include="BLL\QLNV_BLL.cs" />
     <Compile Include="BLL\QLPM_BLL.cs" />
     <Compile Include="BLL\QLTL_BLL.cs" />

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PBL.BLL
+namespace PBL.BLL.DTO
 {
-    class QLDG_DTO
+    internal class DocGia_DTO
     {
         public string MSSV { get; set; }
         public string HoTen { get; set; }

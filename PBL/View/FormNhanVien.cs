@@ -17,10 +17,11 @@ namespace PBL
     {
         public string Username { get; set; }
 
-        public FormNhanVien()
+        public FormNhanVien(string Username)
         {
             InitializeComponent();
             SetCBBSortDG();
+            this.Username = Username;
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)

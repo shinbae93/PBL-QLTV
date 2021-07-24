@@ -27,24 +27,19 @@ namespace PBL.View
                 {
                     if (Login_BLL.Instance.GetNguoiDungByUserAndPW(txtUser.Text, txtPassword.Text).ID_QuyenHan == 1)
                     {
-                        FormQuanLy f = new FormQuanLy();
+                        FormQuanLy f = new FormQuanLy(txtUser.Text);
                         f.ShowDialog();
                     }
                     else if (Login_BLL.Instance.GetNguoiDungByUserAndPW(txtUser.Text, txtPassword.Text).ID_QuyenHan == 2)
                     {
-                        FormNhanVien f = new FormNhanVien();
+                        FormNhanVien f = new FormNhanVien(txtUser.Text);
                         f.ShowDialog();
                     }
                 }
                 else
                 {
                     MessageBox.Show("Sai thong tin");
-
                 }
-            }
-            else
-            {
-                MessageBox.Show("Sai thong tin");
             }
         }
 
