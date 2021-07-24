@@ -28,8 +28,8 @@ namespace PBL.BLL
         private QLDG_BLL()
         {
         }
-        
-        public List<DocGia> GetListDG (string MaSo, string Name)
+
+        public List<DocGia> GetListDG(string MaSo, string Name)
         {
             DHP_07Entities db = new DHP_07Entities();
             var l1 = db.DocGias
@@ -37,14 +37,23 @@ namespace PBL.BLL
                 .Select(p => p).ToList();
             return l1;
         }
+
         public DocGia GetDGByMSSV(string mssv)
         {
             DHP_07Entities db = new DHP_07Entities();
             var l1 = db.DocGias
                 .Single(p => p.MSSV == mssv);
-            
             return l1;
         }
+
+        public DocGia GetDGByMaDG(int MaDG)
+        {
+            DHP_07Entities db = new DHP_07Entities();
+            var l1 = db.DocGias
+                .Single(p => p.MaDocGia == MaDG);
+            return l1;
+        }
+
         public void AddDG(DocGia d)
         {
             using (DHP_07Entities db = new DHP_07Entities())
@@ -53,6 +62,7 @@ namespace PBL.BLL
                 db.SaveChanges();
             }
         }
+
         public void EditDG(DocGia d)
         {
             using (DHP_07Entities db = new DHP_07Entities())
@@ -67,6 +77,7 @@ namespace PBL.BLL
                 db.SaveChanges();
             }
         }
+
         public void DelDG(DocGia d)
         {
             using (DHP_07Entities db = new DHP_07Entities())
@@ -77,10 +88,11 @@ namespace PBL.BLL
                 db.SaveChanges();
             }
         }
+
         public List<DocGia> SortDG(string m, string tg)
         {
             DHP_07Entities db = new DHP_07Entities();
-            if(m == "MaDocGia")
+            if (m == "MaDocGia")
             {
                 if (tg == "Giam")
                 {
@@ -97,7 +109,7 @@ namespace PBL.BLL
                     return l1.ToList();
                 }
             }
-            else if(m == "MSSV")
+            else if (m == "MSSV")
             {
                 if (tg == "Giam")
                 {
@@ -114,7 +126,7 @@ namespace PBL.BLL
                     return l1.ToList();
                 }
             }
-            else if(m == "HoTen")
+            else if (m == "HoTen")
             {
                 if (tg == "Giam")
                 {
@@ -131,7 +143,7 @@ namespace PBL.BLL
                     return l1.ToList();
                 }
             }
-            else if(m == "NgaySinh")
+            else if (m == "NgaySinh")
             {
                 if (tg == "Giam")
                 {
@@ -148,7 +160,7 @@ namespace PBL.BLL
                     return l1.ToList();
                 }
             }
-            else if( m == "MaLop")
+            else if (m == "MaLop")
             {
                 if (tg == "Giam")
                 {

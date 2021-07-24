@@ -35,13 +35,13 @@ namespace PBL.View
             this.btnCancel = new System.Windows.Forms.Button();
             this.lbViPham = new System.Windows.Forms.Label();
             this.lbNgayTra = new System.Windows.Forms.Label();
-            this.lbHanTra = new System.Windows.Forms.Label();
             this.txtMaPhieuMuon = new System.Windows.Forms.TextBox();
             this.txtViPham = new System.Windows.Forms.TextBox();
-            this.dtpNgayMuon = new System.Windows.Forms.DateTimePicker();
             this.dtpHanTra = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
+            this.dtpNgayTra = new System.Windows.Forms.DateTimePicker();
+            this.lbHanTra = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,9 +50,10 @@ namespace PBL.View
             this.lbMaPhieuMuon.AutoSize = true;
             this.lbMaPhieuMuon.BackColor = System.Drawing.Color.Transparent;
             this.lbMaPhieuMuon.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMaPhieuMuon.Location = new System.Drawing.Point(40, 91);
+            this.lbMaPhieuMuon.Location = new System.Drawing.Point(53, 112);
+            this.lbMaPhieuMuon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMaPhieuMuon.Name = "lbMaPhieuMuon";
-            this.lbMaPhieuMuon.Size = new System.Drawing.Size(147, 22);
+            this.lbMaPhieuMuon.Size = new System.Drawing.Size(186, 28);
             this.lbMaPhieuMuon.TabIndex = 1;
             this.lbMaPhieuMuon.Text = "Mã Phiếu Mượn";
             // 
@@ -60,32 +61,37 @@ namespace PBL.View
             // 
             this.btnOK.BackColor = System.Drawing.Color.Gainsboro;
             this.btnOK.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(166, 321);
+            this.btnOK.Location = new System.Drawing.Point(294, 241);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 26);
+            this.btnOK.Size = new System.Drawing.Size(100, 32);
             this.btnOK.TabIndex = 22;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = false;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel
             // 
             this.btnCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.btnCancel.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(546, 321);
+            this.btnCancel.Location = new System.Drawing.Point(749, 241);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 26);
+            this.btnCancel.Size = new System.Drawing.Size(100, 32);
             this.btnCancel.TabIndex = 23;
             this.btnCancel.Text = "CANCEL";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // lbViPham
             // 
             this.lbViPham.AutoSize = true;
             this.lbViPham.BackColor = System.Drawing.Color.Transparent;
             this.lbViPham.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbViPham.Location = new System.Drawing.Point(40, 131);
+            this.lbViPham.Location = new System.Drawing.Point(53, 161);
+            this.lbViPham.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbViPham.Name = "lbViPham";
-            this.lbViPham.Size = new System.Drawing.Size(82, 22);
+            this.lbViPham.Size = new System.Drawing.Size(103, 28);
             this.lbViPham.TabIndex = 1;
             this.lbViPham.Text = "Vi Phạm";
             // 
@@ -94,66 +100,55 @@ namespace PBL.View
             this.lbNgayTra.AutoSize = true;
             this.lbNgayTra.BackColor = System.Drawing.Color.Transparent;
             this.lbNgayTra.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNgayTra.Location = new System.Drawing.Point(405, 91);
+            this.lbNgayTra.Location = new System.Drawing.Point(540, 164);
+            this.lbNgayTra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNgayTra.Name = "lbNgayTra";
-            this.lbNgayTra.Size = new System.Drawing.Size(86, 22);
+            this.lbNgayTra.Size = new System.Drawing.Size(108, 28);
             this.lbNgayTra.TabIndex = 1;
             this.lbNgayTra.Text = "Ngày Trả";
             // 
-            // lbHanTra
-            // 
-            this.lbHanTra.AutoSize = true;
-            this.lbHanTra.BackColor = System.Drawing.Color.Transparent;
-            this.lbHanTra.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHanTra.Location = new System.Drawing.Point(405, 135);
-            this.lbHanTra.Name = "lbHanTra";
-            this.lbHanTra.Size = new System.Drawing.Size(79, 22);
-            this.lbHanTra.TabIndex = 1;
-            this.lbHanTra.Text = "Hạn Trả";
-            // 
             // txtMaPhieuMuon
             // 
-            this.txtMaPhieuMuon.Location = new System.Drawing.Point(204, 95);
+            this.txtMaPhieuMuon.Location = new System.Drawing.Point(272, 117);
+            this.txtMaPhieuMuon.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaPhieuMuon.Name = "txtMaPhieuMuon";
-            this.txtMaPhieuMuon.Size = new System.Drawing.Size(142, 20);
+            this.txtMaPhieuMuon.Size = new System.Drawing.Size(188, 22);
             this.txtMaPhieuMuon.TabIndex = 24;
             // 
             // txtViPham
             // 
-            this.txtViPham.Location = new System.Drawing.Point(204, 135);
+            this.txtViPham.Location = new System.Drawing.Point(272, 166);
+            this.txtViPham.Margin = new System.Windows.Forms.Padding(4);
             this.txtViPham.Name = "txtViPham";
-            this.txtViPham.Size = new System.Drawing.Size(142, 20);
+            this.txtViPham.Size = new System.Drawing.Size(188, 22);
             this.txtViPham.TabIndex = 24;
-            // 
-            // dtpNgayMuon
-            // 
-            this.dtpNgayMuon.Location = new System.Drawing.Point(525, 91);
-            this.dtpNgayMuon.Name = "dtpNgayMuon";
-            this.dtpNgayMuon.Size = new System.Drawing.Size(200, 20);
-            this.dtpNgayMuon.TabIndex = 25;
             // 
             // dtpHanTra
             // 
-            this.dtpHanTra.Location = new System.Drawing.Point(525, 137);
+            this.dtpHanTra.Location = new System.Drawing.Point(700, 112);
+            this.dtpHanTra.Margin = new System.Windows.Forms.Padding(4);
             this.dtpHanTra.Name = "dtpHanTra";
-            this.dtpHanTra.Size = new System.Drawing.Size(200, 20);
+            this.dtpHanTra.Size = new System.Drawing.Size(265, 22);
             this.dtpHanTra.TabIndex = 25;
             // 
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.btnCancel);
+            this.panel1.Controls.Add(this.btnOK);
+            this.panel1.Controls.Add(this.dtpNgayTra);
             this.panel1.Controls.Add(this.dtpHanTra);
-            this.panel1.Controls.Add(this.dtpNgayMuon);
             this.panel1.Controls.Add(this.txtViPham);
             this.panel1.Controls.Add(this.txtMaPhieuMuon);
             this.panel1.Controls.Add(this.lbHanTra);
             this.panel1.Controls.Add(this.lbNgayTra);
             this.panel1.Controls.Add(this.lbViPham);
             this.panel1.Controls.Add(this.lbMaPhieuMuon);
-            this.panel1.Location = new System.Drawing.Point(21, 24);
+            this.panel1.Location = new System.Drawing.Point(0, -1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(796, 279);
+            this.panel1.Size = new System.Drawing.Size(1072, 320);
             this.panel1.TabIndex = 26;
             // 
             // label10
@@ -162,23 +157,43 @@ namespace PBL.View
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Cambria", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(41, 14);
+            this.label10.Location = new System.Drawing.Point(55, 17);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(222, 43);
+            this.label10.Size = new System.Drawing.Size(282, 55);
             this.label10.TabIndex = 34;
             this.label10.Text = "Phiếu Mượn";
             // 
+            // dtpNgayTra
+            // 
+            this.dtpNgayTra.Location = new System.Drawing.Point(700, 169);
+            this.dtpNgayTra.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpNgayTra.Name = "dtpNgayTra";
+            this.dtpNgayTra.Size = new System.Drawing.Size(265, 22);
+            this.dtpNgayTra.TabIndex = 25;
+            // 
+            // lbHanTra
+            // 
+            this.lbHanTra.AutoSize = true;
+            this.lbHanTra.BackColor = System.Drawing.Color.Transparent;
+            this.lbHanTra.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHanTra.Location = new System.Drawing.Point(549, 112);
+            this.lbHanTra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbHanTra.Name = "lbHanTra";
+            this.lbHanTra.Size = new System.Drawing.Size(99, 28);
+            this.lbHanTra.TabIndex = 1;
+            this.lbHanTra.Text = "Hạn Trả";
+            // 
             // FormTraDuLieuPhieuMuon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(829, 371);
+            this.ClientSize = new System.Drawing.Size(1069, 315);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnOK);
-            this.Controls.Add(this.btnCancel);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormTraDuLieuPhieuMuon";
             this.Text = "DuLieuPhieuMuon";
             this.panel1.ResumeLayout(false);
@@ -194,12 +209,12 @@ namespace PBL.View
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label lbViPham;
         private System.Windows.Forms.Label lbNgayTra;
-        private System.Windows.Forms.Label lbHanTra;
         private System.Windows.Forms.TextBox txtMaPhieuMuon;
         private System.Windows.Forms.TextBox txtViPham;
-        private System.Windows.Forms.DateTimePicker dtpNgayMuon;
         private System.Windows.Forms.DateTimePicker dtpHanTra;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DateTimePicker dtpNgayTra;
+        private System.Windows.Forms.Label lbHanTra;
     }
 }

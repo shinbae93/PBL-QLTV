@@ -55,13 +55,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\DTO\NhanVien_DTO.cs" />
+    <Compile Include="BLL\DTO\PhieuMuon_DTO.cs" />
+    <Compile Include="BLL\DTO\TaiLieu_DTO.cs" />
     <Compile Include="BLL\Login_BLL.cs" />
     <Compile Include="BLL\QLDG_BLL.cs" />
     <Compile Include="BLL\QLNV_BLL.cs" />
     <Compile Include="BLL\QLPM_BLL.cs" />
     <Compile Include="BLL\QLTL_BLL.cs" />
-    <Compile Include="BLL\QLVP_BLL.cs" />
+    <Compile Include="BLL\QLTK_BLL.cs" />
     <Compile Include="DAL\CBBItem.cs" />
+    <Compile Include="DAL\CBBItem_TL.cs" />
     <Compile Include="DAL\CuonTaiLieu.cs">
       <DependentUpon>DHP07.tt</DependentUpon>
     </Compile>
@@ -127,12 +131,6 @@
     </Compile>
     <Compile Include="View\FormDuLieuNhanVien.Designer.cs">
       <DependentUpon>FormDuLieuNhanVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\FormDuLieuPhieuMuon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\FormDuLieuPhieuMuon.Designer.cs">
-      <DependentUpon>FormDuLieuPhieuMuon.cs</DependentUpon>
     </Compile>
     <Compile Include="View\FormDuLieuSach.cs">
       <SubType>Form</SubType>
@@ -204,9 +202,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormDuLieuNhanVien.resx">
       <DependentUpon>FormDuLieuNhanVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\FormDuLieuPhieuMuon.resx">
-      <DependentUpon>FormDuLieuPhieuMuon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormDuLieuSach.resx">
       <DependentUpon>FormDuLieuSach.cs</DependentUpon>

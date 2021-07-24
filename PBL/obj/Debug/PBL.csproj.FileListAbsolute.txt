@@ -49,7 +49,6 @@ D:\PBL\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuNhanVien.resources
 D:\PBL\PBL-QLTV\PBL\obj\Debug\PBL.View.FormViPham.resources
 C:\Users\nguoi\OneDrive\Desktop\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuDocGia.resources
 C:\Users\nguoi\OneDrive\Desktop\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuNhanVien.resources
-C:\Users\nguoi\OneDrive\Desktop\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuPhieuMuon.resources
 C:\Users\nguoi\OneDrive\Desktop\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuSach.resources
 C:\Users\nguoi\OneDrive\Desktop\PBL-QLTV\PBL\obj\Debug\PBL.View.FormLogin.resources
 C:\Users\nguoi\OneDrive\Desktop\PBL-QLTV\PBL\obj\Debug\PBL.FormNhanVien.resources

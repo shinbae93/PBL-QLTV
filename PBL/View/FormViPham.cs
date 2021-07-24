@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PBL.BLL;
 
 namespace PBL.View
 {
@@ -16,9 +17,10 @@ namespace PBL.View
         {
             InitializeComponent();
         }
-        private void button1_Click(object sender, EventArgs e)
+
+        private void btnSearch_Click(object sender, EventArgs e)
         {
-            Show();
+            dataGridViewVP.DataSource = QLTK_BLL.Instance.GetListVP(txtMSSV.Text, txtHoTen.Text);
         }
     }
 }
