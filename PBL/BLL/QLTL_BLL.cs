@@ -143,8 +143,8 @@ namespace PBL.BLL
             using (DHP_07Entities db = new DHP_07Entities())
             {
                 db.TaiLieux.Add(s);
-                Instance.AddCTL(s.MaTL, (int)s.SoLuong);
                 db.SaveChanges();
+                Instance.AddCTL(s.MaTL, (int)s.SoLuong);
             }
         }
 

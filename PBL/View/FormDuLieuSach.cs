@@ -14,7 +14,7 @@ namespace PBL.View
 {
     public partial class FormDuLieuSach : Form
     {
-        public delegate void MyDel(string MaTL, int MaLTL);
+        public delegate void MyDel(string TenTL, int MaLTL);
 
         public MyDel d { get; set; }
         public string MaTL { get; set; }
@@ -73,7 +73,7 @@ namespace PBL.View
             };
             if (MaTL == null) QLTL_BLL.Instance.AddTL(s);
             else QLTL_BLL.Instance.EditTL(s);
-            d(s.MaTL, s.MaLTL);
+            d("", 0);
             this.Dispose();
         }
 
