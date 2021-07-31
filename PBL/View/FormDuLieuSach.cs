@@ -60,21 +60,28 @@ namespace PBL.View
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            TaiLieu s = new TaiLieu()
+            if (txtMaTaiLieu.Text == "" || txtTenTacGia.Text == "" || txtTenTaiLieu.Text == "" || cbbLTL.SelectedIndex == -1 || cbbNgonNgu.SelectedIndex == -1 || cbbNhaXuatBan.SelectedIndex == -1 || numSLSach.Value == 0)
             {
-                MaTL = txtMaTaiLieu.Text.ToString(),
-                TenTL = txtTenTaiLieu.Text.ToString(),
-                TacGia = txtTenTacGia.Text.ToString(),
-                MaNgonNgu = ((CBBItem)cbbNgonNgu.SelectedItem).Value,
-                MaNXB = ((CBBItem)cbbNhaXuatBan.SelectedItem).Value,
-                MaLTL = ((CBBItem)cbbLTL.SelectedItem).Value,
-                SoLuong = (int)numSLSach.Value,
-                NamXuatBan = dtpNamXB.Value
-            };
-            if (MaTL == null) QLTL_BLL.Instance.AddTL(s);
-            else QLTL_BLL.Instance.EditTL(s);
-            d("", 0);
-            this.Dispose();
+                MessageBox.Show("Vui long dien du thong tin !");
+            }
+            else
+            {
+                TaiLieu s = new TaiLieu()
+                {
+                    MaTL = txtMaTaiLieu.Text.ToString(),
+                    TenTL = txtTenTaiLieu.Text.ToString(),
+                    TacGia = txtTenTacGia.Text.ToString(),
+                    MaNgonNgu = ((CBBItem)cbbNgonNgu.SelectedItem).Value,
+                    MaNXB = ((CBBItem)cbbNhaXuatBan.SelectedItem).Value,
+                    MaLTL = ((CBBItem)cbbLTL.SelectedItem).Value,
+                    SoLuong = (int)numSLSach.Value,
+                    NamXuatBan = dtpNamXB.Value
+                };
+                if (MaTL == null) QLTL_BLL.Instance.AddTL(s);
+                else QLTL_BLL.Instance.EditTL(s);
+                d("", 0);
+                this.Dispose();
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

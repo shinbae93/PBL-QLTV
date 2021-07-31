@@ -8,12 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PBL.BLL;
 
 namespace PBL.View
 {
     public partial class FormForgotPW3 : Form
     {
         public NguoiDung nd { get; set; }
+
         public FormForgotPW3(NguoiDung nd_PW2)
         {
             InitializeComponent();
@@ -22,17 +24,11 @@ namespace PBL.View
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            
-            if (txtMatKhauMoi.Text == txtXacNhanLaiMatKhau.Text) {                
-                using (DHP_07Entities db = new DHP_07Entities())
-                {
-                    var l1 = db.NguoiDungs
-                        .Single(p => p.ID == nd.ID);
-                    l1.Password = txtXacNhanLaiMatKhau.Text;
-                    db.SaveChanges();
-                    MessageBox.Show("Your password has been reset successfully");
-                    this.Close();
-                } 
+            if (txtMatKhauMoi.Text == txtXacNhanLaiMatKhau.Text)
+            {
+                QLNV_BLL.Instance.ChangePass(nd, txtXacNhanLaiMatKhau.Text);
+                MessageBox.Show("Your password has been change successfully !");
+                this.Close();
             }
             else
             {

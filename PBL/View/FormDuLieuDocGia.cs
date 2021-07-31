@@ -27,6 +27,7 @@ namespace PBL.View
             SetEnable();
             SetGUI();
         }
+
         private void SetCBB()
         {
             DHP_07Entities db = new DHP_07Entities();
@@ -37,6 +38,7 @@ namespace PBL.View
                 cbbMaLop.Items.Add(new CBBItem { Value = i.MaLop, Text = i.TenLop });
             }
         }
+
         public void SetEnable()
         {
             if (mssv != null)
@@ -69,27 +71,32 @@ namespace PBL.View
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            DocGia tmp = new DocGia
+            if (txtHoTen.Text == "" || txtMSSV.Text == "" || cbbMaLop.SelectedItem == null || rbtnNam.Checked == rbtnNu.Checked)
             {
-                MSSV = txtMSSV.Text,
-                HoTen = txtHoTen.Text,
-                NgaySinh = dtpNgaySinh.Value,
-                GioiTinh = rbtnNam.Checked,
-                MaLop = cbbMaLop.SelectedIndex,
-                NgayDK = dtpNgayDK.Value
-            };
-            //MessageBox.Show(cbbMaLop.SelectedIndex.ToString());
-            if (mssv == null)
-            {
-                QLDG_BLL.Instance.AddDG(tmp);
+                MessageBox.Show("Vui long dien du thong tin !");
             }
             else
             {
-                QLDG_BLL.Instance.EditDG(tmp);
+                DocGia tmp = new DocGia
+                {
+                    MSSV = txtMSSV.Text,
+                    HoTen = txtHoTen.Text,
+                    NgaySinh = dtpNgaySinh.Value,
+                    GioiTinh = rbtnNam.Checked,
+                    MaLop = cbbMaLop.SelectedIndex,
+                    NgayDK = dtpNgayDK.Value
+                };
+                if (mssv == null)
+                {
+                    QLDG_BLL.Instance.AddDG(tmp);
+                }
+                else
+                {
+                    QLDG_BLL.Instance.EditDG(tmp);
+                }
+                d("", "");
+                this.Close();
             }
-            d("", "");
-            MessageBox.Show("Your information has been successfully saved");
-            this.Close();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

@@ -13,6 +13,9 @@ namespace PBL.View
 {
     public partial class FormTraDuLieuPhieuMuon : Form
     {
+        public delegate void MyDel(string TenDG, string MSSV);
+
+        public MyDel d { get; set; }
         public int MaPM { get; set; }
 
         public FormTraDuLieuPhieuMuon(int MaPM)
@@ -26,6 +29,8 @@ namespace PBL.View
         private void btnOK_Click(object sender, EventArgs e)
         {
             QLPM_BLL.Instance.TraPM(MaPM, txtViPham.Text, dtpNgayTra.Value);
+            d("", "");
+            this.Dispose();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

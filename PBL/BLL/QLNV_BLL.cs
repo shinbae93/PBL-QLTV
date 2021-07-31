@@ -77,6 +77,17 @@ namespace PBL.BLL
             }
         }
 
+        public void ChangePass(NguoiDung nd, string Pass)
+        {
+            using (DHP_07Entities db = new DHP_07Entities())
+            {
+                var l1 = db.NguoiDungs
+                    .Single(p => p.ID == nd.ID);
+                l1.Password = Pass;
+                db.SaveChanges();
+            }
+        }
+
         public void AddNV(NguoiDung s)
         {
             using (DHP_07Entities db = new DHP_07Entities())

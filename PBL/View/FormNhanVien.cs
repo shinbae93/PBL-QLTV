@@ -53,8 +53,8 @@ namespace PBL
         private void btnAddSach_Click(object sender, EventArgs e)
         {
             FormDuLieuSach f = new FormDuLieuSach(null);
-            f.ShowDialog();
             f.d = new FormDuLieuSach.MyDel(this.ShowSach);
+            f.ShowDialog();
         }
 
         private void btnEditS_Click(object sender, EventArgs e)
@@ -62,8 +62,8 @@ namespace PBL
             if (dataGridViewQLSach.SelectedRows.Count == 1)
             {
                 FormDuLieuSach f = new FormDuLieuSach(dataGridViewQLSach.SelectedRows[0].Cells["MaTL"].Value.ToString());
-                f.ShowDialog();
                 f.d = new FormDuLieuSach.MyDel(this.ShowSach);
+                f.ShowDialog();
             }
         }
 
@@ -195,6 +195,7 @@ namespace PBL
             if (dataGridViewPhieuMuon.SelectedRows.Count == 1)
             {
                 FormTraDuLieuPhieuMuon f = new FormTraDuLieuPhieuMuon(Convert.ToInt32(dataGridViewPhieuMuon.SelectedRows[0].Cells[0].Value));
+                f.d = new FormTraDuLieuPhieuMuon.MyDel(this.ShowPM);
                 f.ShowDialog();
             }
         }

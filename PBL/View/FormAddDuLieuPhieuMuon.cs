@@ -21,6 +21,7 @@ namespace PBL.View
         public string Username { get; set; }
         public List<TaiLieu_DTO> data { get; set; }
         public List<int> ListMaCTL { get; set; }
+        private bool check { get; set; }
 
         public FormAddDuLieuPhieuMuon(string Username)
         {
@@ -28,6 +29,7 @@ namespace PBL.View
             InitializeComponent();
             SetCBB();
             this.Username = Username;
+            check = false;
         }
 
         private void SetCBB()
@@ -48,21 +50,29 @@ namespace PBL.View
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            PhieuMuon s = new PhieuMuon()
+            if (txtSoThe.Text == "" || check == false)
             {
-                ID = QLNV_BLL.Instance.GetUserByUsername(Username).ID,
-                MaDocGia = QLDG_BLL.Instance.GetDGByMSSV(txtSoThe.Text).MaDocGia,
-                NgayMuon = dtpNgayMuon.Value,
-                HanTra = dtpHanTra.Value
-            };
-            QLPM_BLL.Instance.AddPM(s);
-            QLTL_BLL.Instance.AddTLCT(ListMaCTL, s.MaPhieuMuon);
-            d(s.DocGia.HoTen, s.DocGia.MSSV);
-            this.Dispose();
+                MessageBox.Show("Vui long dien du thong tin !");
+            }
+            else
+            {
+                PhieuMuon s = new PhieuMuon()
+                {
+                    ID = QLNV_BLL.Instance.GetUserByUsername(Username).ID,
+                    MaDocGia = QLDG_BLL.Instance.GetDGByMSSV(txtSoThe.Text).MaDocGia,
+                    NgayMuon = dtpNgayMuon.Value,
+                    HanTra = dtpHanTra.Value
+                };
+                QLPM_BLL.Instance.AddPM(s);
+                QLTL_BLL.Instance.AddTLCT(ListMaCTL, s.MaPhieuMuon);
+                d("", "");
+                this.Dispose();
+            }
         }
 
         private void btnAddTL_Click(object sender, EventArgs e)
         {
+            check = true;
             TaiLieu s = QLTL_BLL.Instance.GetTLByMaTL(((CBBItem_TL)cbbTL.SelectedItem).Value);
             if ((int)numSLTL.Value >= s.SoLuong) MessageBox.Show("Vượt quá số lượng cho phép !");
             else

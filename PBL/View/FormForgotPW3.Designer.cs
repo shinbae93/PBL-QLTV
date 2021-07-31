@@ -43,9 +43,10 @@ namespace PBL.View
             this.lbMatKhauMoi.AutoSize = true;
             this.lbMatKhauMoi.BackColor = System.Drawing.Color.Transparent;
             this.lbMatKhauMoi.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMatKhauMoi.Location = new System.Drawing.Point(52, 52);
+            this.lbMatKhauMoi.Location = new System.Drawing.Point(69, 64);
+            this.lbMatKhauMoi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMatKhauMoi.Name = "lbMatKhauMoi";
-            this.lbMatKhauMoi.Size = new System.Drawing.Size(130, 22);
+            this.lbMatKhauMoi.Size = new System.Drawing.Size(164, 28);
             this.lbMatKhauMoi.TabIndex = 0;
             this.lbMatKhauMoi.Text = "Mật khẩu mới";
             // 
@@ -54,25 +55,28 @@ namespace PBL.View
             this.lbXacNhanLaiMatKhau.AutoSize = true;
             this.lbXacNhanLaiMatKhau.BackColor = System.Drawing.Color.Transparent;
             this.lbXacNhanLaiMatKhau.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbXacNhanLaiMatKhau.Location = new System.Drawing.Point(52, 88);
+            this.lbXacNhanLaiMatKhau.Location = new System.Drawing.Point(69, 108);
+            this.lbXacNhanLaiMatKhau.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbXacNhanLaiMatKhau.Name = "lbXacNhanLaiMatKhau";
-            this.lbXacNhanLaiMatKhau.Size = new System.Drawing.Size(199, 22);
+            this.lbXacNhanLaiMatKhau.Size = new System.Drawing.Size(252, 28);
             this.lbXacNhanLaiMatKhau.TabIndex = 1;
             this.lbXacNhanLaiMatKhau.Text = "Xác nhận lại mật khẩu";
             // 
             // txtMatKhauMoi
             // 
-            this.txtMatKhauMoi.Location = new System.Drawing.Point(287, 52);
+            this.txtMatKhauMoi.Location = new System.Drawing.Point(383, 64);
+            this.txtMatKhauMoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMatKhauMoi.Name = "txtMatKhauMoi";
-            this.txtMatKhauMoi.Size = new System.Drawing.Size(192, 20);
+            this.txtMatKhauMoi.Size = new System.Drawing.Size(255, 22);
             this.txtMatKhauMoi.TabIndex = 1;
             this.txtMatKhauMoi.UseSystemPasswordChar = true;
             // 
             // txtXacNhanLaiMatKhau
             // 
-            this.txtXacNhanLaiMatKhau.Location = new System.Drawing.Point(287, 88);
+            this.txtXacNhanLaiMatKhau.Location = new System.Drawing.Point(383, 108);
+            this.txtXacNhanLaiMatKhau.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtXacNhanLaiMatKhau.Name = "txtXacNhanLaiMatKhau";
-            this.txtXacNhanLaiMatKhau.Size = new System.Drawing.Size(192, 20);
+            this.txtXacNhanLaiMatKhau.Size = new System.Drawing.Size(255, 22);
             this.txtXacNhanLaiMatKhau.TabIndex = 2;
             this.txtXacNhanLaiMatKhau.UseSystemPasswordChar = true;
             // 
@@ -80,9 +84,10 @@ namespace PBL.View
             // 
             this.btnOK.BackColor = System.Drawing.Color.White;
             this.btnOK.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(97, 137);
+            this.btnOK.Location = new System.Drawing.Point(192, 169);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 30);
+            this.btnOK.Size = new System.Drawing.Size(100, 37);
             this.btnOK.TabIndex = 3;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = false;
@@ -92,9 +97,10 @@ namespace PBL.View
             // 
             this.btnCancel.BackColor = System.Drawing.Color.White;
             this.btnCancel.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(309, 137);
+            this.btnCancel.Location = new System.Drawing.Point(434, 169);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(88, 30);
+            this.btnCancel.Size = new System.Drawing.Size(117, 37);
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "CANCEL";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -102,17 +108,18 @@ namespace PBL.View
             // 
             // FormForgotPW3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(548, 230);
+            this.ClientSize = new System.Drawing.Size(731, 233);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.txtXacNhanLaiMatKhau);
             this.Controls.Add(this.txtMatKhauMoi);
             this.Controls.Add(this.lbXacNhanLaiMatKhau);
             this.Controls.Add(this.lbMatKhauMoi);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormForgotPW3";
             this.Text = "FormForgotPW3";
             this.ResumeLayout(false);
