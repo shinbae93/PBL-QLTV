@@ -58,7 +58,7 @@ namespace PBL.BLL
         {
             DHP_07Entities db = new DHP_07Entities();
             List<int> data = new List<int>();
-            CuonTaiLieu tmp = db.CuonTaiLieux.Find(MaTL);
+            CuonTaiLieu tmp = db.CuonTaiLieux.Where(p => p.MaTL == MaTL).FirstOrDefault();
             for (int i = 0; i < Num; ++i)
             {
                 data.Add(tmp.MaVach + i);
