@@ -33,7 +33,7 @@ namespace PBL.BLL
         {
             using (DHP_07Entities db = new DHP_07Entities())
             {
-                List<PhieuMuon_DTO> data = db.PhieuMuons.Where(p => p.DocGia.HoTen.Contains(HoTen) && p.DocGia.MSSV.Contains(MSSV)).Select(p => new PhieuMuon_DTO
+                List<PhieuMuon_DTO> data = db.PhieuMuons.Where(p => p.DocGia.HoTen.Contains(HoTen) && p.DocGia.MSSV.Contains(MSSV) && p.ViPham != null).Select(p => new PhieuMuon_DTO
                 {
                     MaPhieuMuon = p.MaPhieuMuon,
                     DocGia = p.DocGia.HoTen,
@@ -51,7 +51,8 @@ namespace PBL.BLL
         {
             using (DHP_07Entities db = new DHP_07Entities())
             {
-                List<PhieuMuon_DTO> data = db.PhieuMuons.Where(p => (p.NgayMuon.Month == Month) && (p.NgayMuon.Month == Month)).Select(p => new PhieuMuon_DTO
+                List<PhieuMuon_DTO> data = new List<PhieuMuon_DTO>();
+                data = db.PhieuMuons.Where(p => (p.NgayMuon.Month == Month || Month == 0) && (p.NgayMuon.Year == Year || Year == 0)).Select(p => new PhieuMuon_DTO
                 {
                     MaPhieuMuon = p.MaPhieuMuon,
                     DocGia = p.DocGia.HoTen,
@@ -69,7 +70,8 @@ namespace PBL.BLL
         {
             using (DHP_07Entities db = new DHP_07Entities())
             {
-                List<PhieuMuon_DTO> data = db.PhieuMuons.Where(p => (p.NgayMuon.Month == Month) && (p.NgayMuon.Month == Month) && (p.ViPham != "" || p.ViPham != null)).Select(p => new PhieuMuon_DTO
+                List<PhieuMuon_DTO> data = new List<PhieuMuon_DTO>();
+                data = db.PhieuMuons.Where(p => (p.NgayMuon.Month == Month || Month == 0) && (p.NgayMuon.Year == Year || Year == 0) && p.ViPham != null && p.ViPham != "").Select(p => new PhieuMuon_DTO
                 {
                     MaPhieuMuon = p.MaPhieuMuon,
                     DocGia = p.DocGia.HoTen,

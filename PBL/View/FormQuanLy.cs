@@ -333,13 +333,13 @@ namespace PBL.View
 
         private void btnTKVP_Click(object sender, EventArgs e)
         {
-            dataGridViewTKVP.DataSource = QLTK_BLL.Instance.GetTKVP(Convert.ToInt32(cbbThangTK.SelectedItem), Convert.ToInt32(cbbNamTK.SelectedItem));
+            dataGridViewTKVP.DataSource = QLTK_BLL.Instance.GetTKVP((cbbThangTK.SelectedIndex == -1) ? 0 : Convert.ToInt32(cbbThangTK.SelectedItem), (cbbNamTK.SelectedIndex == -1) ? 0 : Convert.ToInt32(cbbNamTK.SelectedItem));
         }
 
         private void btnShowTKMS_Click(object sender, EventArgs e)
         {
-            dataGridViewTKMS.DataSource = QLTK_BLL.Instance.GetTKMS(Convert.ToInt32(cbbThangTK.SelectedItem), Convert.ToInt32(cbbNamTK.SelectedItem));
-            txtTongSoLuongTK.Text = QLTK_BLL.Instance.GetTKMS(Convert.ToInt32(cbbThangTK.SelectedItem), Convert.ToInt32(cbbNamTK.SelectedItem)).Count.ToString();
+            dataGridViewTKMS.DataSource = QLTK_BLL.Instance.GetTKMS((cbbThangTK.SelectedIndex == -1) ? 0 : Convert.ToInt32(cbbThangTK.SelectedItem), (cbbNamTK.SelectedIndex == -1) ? 0 : Convert.ToInt32(cbbNamTK.SelectedItem));
+            txtTongSoLuongTK.Text = dataGridViewTKMS.Rows.Count.ToString();
         }
 
         #endregion Thong Ke

@@ -1266,9 +1266,11 @@ namespace PBL.View
             // 
             // txtTongSoLuongTK
             // 
-            this.txtTongSoLuongTK.Location = new System.Drawing.Point(289, 700);
+            this.txtTongSoLuongTK.Enabled = false;
+            this.txtTongSoLuongTK.Location = new System.Drawing.Point(286, 699);
             this.txtTongSoLuongTK.Margin = new System.Windows.Forms.Padding(4);
             this.txtTongSoLuongTK.Name = "txtTongSoLuongTK";
+            this.txtTongSoLuongTK.ReadOnly = true;
             this.txtTongSoLuongTK.Size = new System.Drawing.Size(91, 27);
             this.txtTongSoLuongTK.TabIndex = 10;
             // 
@@ -1276,7 +1278,7 @@ namespace PBL.View
             // 
             this.lbTongSoLuongTK.AutoSize = true;
             this.lbTongSoLuongTK.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTongSoLuongTK.Location = new System.Drawing.Point(109, 700);
+            this.lbTongSoLuongTK.Location = new System.Drawing.Point(106, 695);
             this.lbTongSoLuongTK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTongSoLuongTK.Name = "lbTongSoLuongTK";
             this.lbTongSoLuongTK.Size = new System.Drawing.Size(172, 28);
