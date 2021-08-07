@@ -15,8 +15,10 @@ namespace PBL.View
     public partial class FormDuLieuNhanVien : Form
     {
         public delegate void MyDel(string HoTen, string Email, string SDT, int ID_QuyenHan);
+
         public MyDel d { get; set; }
         public int ID_NguoiDung { get; set; }
+
         public FormDuLieuNhanVien(int ID)
         {
             InitializeComponent();
@@ -24,7 +26,9 @@ namespace PBL.View
             SetCBB();
             SetGUI();
         }
+
         #region Method
+
         public void SetCBB()
         {
             DHP_07Entities db = new DHP_07Entities();
@@ -33,6 +37,7 @@ namespace PBL.View
                 cbbQuyenHan.Items.Add(new CBBItem { Value = i.ID_QuyenHan, Text = i.TenQuyenHan });
             }
         }
+
         public void SetGUI()
         {
             DHP_07Entities db = new DHP_07Entities();
@@ -45,7 +50,7 @@ namespace PBL.View
                 txtDienThoai.Text = s.DienThoai;
                 txtEmail.Text = s.Email;
                 dateTimePicker1.Value = s.NgaySinh.Value;
-                if(s.GioiTinh == true)
+                if (s.GioiTinh == true)
                 {
                     rbtnNam.Checked = true;
                 }
@@ -55,12 +60,11 @@ namespace PBL.View
                 }
                 cbbQuyenHan.SelectedIndex = s.ID_QuyenHan - 1;
             }
-
         }
+
         public void ExecuteDB()
         {
-            #region CheckBlankTextBox
-            if(txtUser.Text == "")
+            if (txtUser.Text == "")
             {
                 MessageBox.Show("Ban chua nhap Username!!");
             }
@@ -84,30 +88,34 @@ namespace PBL.View
             {
                 MessageBox.Show("Ban chua phan Quyen han!!");
             }
-            #endregion
-            NguoiDung s = new NguoiDung
-            {
-                Username = txtUser.Text,
-                Password = txtPassword.Text,
-                HoTen = txtHoTen.Text,
-                NgaySinh = dateTimePicker1.Value,
-                DienThoai = txtDienThoai.Text,
-                Email = txtEmail.Text,
-                GioiTinh = rbtnNam.Checked,
-                ID_QuyenHan = ((CBBItem)cbbQuyenHan.SelectedItem).Value
-            };
-            if (ID_NguoiDung == 0)
-            {
-                QLNV_BLL.Instance.AddNV(s);
-            }
             else
             {
-                QLNV_BLL.Instance.EditNV(s, ID_NguoiDung);
+                NguoiDung s = new NguoiDung
+                {
+                    Username = txtUser.Text,
+                    Password = txtPassword.Text,
+                    HoTen = txtHoTen.Text,
+                    NgaySinh = dateTimePicker1.Value,
+                    DienThoai = txtDienThoai.Text,
+                    Email = txtEmail.Text,
+                    GioiTinh = rbtnNam.Checked,
+                    ID_QuyenHan = ((CBBItem)cbbQuyenHan.SelectedItem).Value
+                };
+                if (ID_NguoiDung == 0)
+                {
+                    QLNV_BLL.Instance.AddNV(s);
+                }
+                else
+                {
+                    QLNV_BLL.Instance.EditNV(s, ID_NguoiDung);
+                }
             }
         }
-        #endregion
+
+        #endregion Method
 
         #region Event
+
         private void btnOK_Click(object sender, EventArgs e)
         {
             ExecuteDB();
@@ -119,8 +127,7 @@ namespace PBL.View
         {
             this.Dispose();
         }
-        #endregion
 
-
+        #endregion Event
     }
 }

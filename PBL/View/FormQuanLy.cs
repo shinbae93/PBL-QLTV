@@ -23,6 +23,7 @@ namespace PBL.View
             SetCBBSach();
             SetCBBSortDG();
             SetCBBNV();
+            SetCBBTK();
             this.Username = Username;
         }
 
@@ -325,6 +326,12 @@ namespace PBL.View
 
         #region Thong Ke
 
+        private void SetCBBTK()
+        {
+            cbbThangTK.Items.Add(new CBBItem { Value = 0, Text = "All" });
+            cbbNamTK.Items.Add(new CBBItem { Value = 0, Text = "All" });
+        }
+
         private void btnSearchTKVP_Click(object sender, EventArgs e)
         {
             FormViPham f = new FormViPham();
@@ -333,12 +340,12 @@ namespace PBL.View
 
         private void btnTKVP_Click(object sender, EventArgs e)
         {
-            dataGridViewTKVP.DataSource = QLTK_BLL.Instance.GetTKVP((cbbThangTK.SelectedIndex == -1) ? 0 : Convert.ToInt32(cbbThangTK.SelectedItem), (cbbNamTK.SelectedIndex == -1) ? 0 : Convert.ToInt32(cbbNamTK.SelectedItem));
+            dataGridViewTKVP.DataSource = QLTK_BLL.Instance.GetTKVP((cbbThangTK.SelectedIndex == -1 || cbbThangTK.SelectedItem.ToString() == "All") ? 0 : Convert.ToInt32(cbbThangTK.SelectedItem), (cbbNamTK.SelectedIndex == -1 || cbbNamTK.SelectedItem.ToString() == "All") ? 0 : Convert.ToInt32(cbbNamTK.SelectedItem));
         }
 
         private void btnShowTKMS_Click(object sender, EventArgs e)
         {
-            dataGridViewTKMS.DataSource = QLTK_BLL.Instance.GetTKMS((cbbThangTK.SelectedIndex == -1) ? 0 : Convert.ToInt32(cbbThangTK.SelectedItem), (cbbNamTK.SelectedIndex == -1) ? 0 : Convert.ToInt32(cbbNamTK.SelectedItem));
+            dataGridViewTKMS.DataSource = QLTK_BLL.Instance.GetTKMS((cbbThangTK.SelectedIndex == -1 || cbbThangTK.SelectedItem.ToString() == "All") ? 0 : Convert.ToInt32(cbbThangTK.SelectedItem), (cbbNamTK.SelectedIndex == -1 || cbbNamTK.SelectedItem.ToString() == "All") ? 0 : Convert.ToInt32(cbbNamTK.SelectedItem));
             txtTongSoLuongTK.Text = dataGridViewTKMS.Rows.Count.ToString();
         }
 
