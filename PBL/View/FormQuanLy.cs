@@ -27,10 +27,14 @@ namespace PBL.View
         }
 
         #region Logout
-
+        public void Out()
+        {
+            this.Dispose();
+        }
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             FormLogOut f = new FormLogOut();
+            f.d = new FormLogOut.Mydel(Out);
             f.ShowDialog();
         }
 

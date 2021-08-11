@@ -12,6 +12,8 @@ namespace PBL.View
 {
     public partial class FormLogOut : Form
     {
+        public delegate void Mydel();
+        public Mydel d { get; set; }
         public FormLogOut()
         {
             InitializeComponent();
@@ -19,7 +21,8 @@ namespace PBL.View
 
         private void button1_Click(object sender, EventArgs e)
         {
-            System.Windows.Forms.Application.ExitThread();
+            //System.Windows.Forms.Application.ExitThread();
+            d();
         }
 
         private void button2_Click(object sender, EventArgs e)
