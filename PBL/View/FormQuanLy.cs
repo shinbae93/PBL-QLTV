@@ -28,16 +28,20 @@ namespace PBL.View
         }
 
         #region Logout
-        public void Out()
-        {
-            this.Dispose();
-        }
+        
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             UserClosing = true;
-            FormLogOut f = new FormLogOut();
-            f.d = new FormLogOut.Mydel(Out);
-            f.ShowDialog();
+            DialogResult dr;
+            dr = MessageBox.Show("Bạn có muốn đăng xuất khỏi chương trình không ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+            {
+                this.Dispose();
+            }
+            else
+            {
+                
+            }
         }
         private void FormQuanLy_FormClosing(object sender, FormClosingEventArgs e)
         {

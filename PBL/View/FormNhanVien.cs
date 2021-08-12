@@ -16,7 +16,7 @@ namespace PBL
     public partial class FormNhanVien : Form
     {
         public string Username { get; set; }
-
+        public Boolean UserClosing = false;
         public FormNhanVien(string Username)
         {
             InitializeComponent();
@@ -24,11 +24,56 @@ namespace PBL
             this.Username = Username;
         }
 
+        #region Logout
+
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            FormLogOut f = new FormLogOut();
-            f.ShowDialog();
+            UserClosing = true;
+            DialogResult dr;
+            dr = MessageBox.Show("Bạn có muốn đăng xuất khỏi chương trình không ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+            {
+                this.Dispose();
+            }
+            else
+            {
+
+            }
         }
+
+        private void FormNhanVien_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            switch (e.CloseReason)
+            {
+                case CloseReason.ApplicationExitCall:
+                    break;
+                case CloseReason.FormOwnerClosing:
+                    break;
+                case CloseReason.MdiFormClosing:
+                    break;
+                case CloseReason.None:
+                    break;
+                case CloseReason.TaskManagerClosing:
+                    break;
+                case CloseReason.UserClosing:
+                    if (!UserClosing)
+                    {
+                        DialogResult TL;
+                        TL = MessageBox.Show("Bạn Có Muốn Thoát không", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (TL == DialogResult.No)
+                        {
+                            e.Cancel = true;
+                        }
+                    }
+                    break;
+                case CloseReason.WindowsShutDown:
+                    break;
+                default:
+                    break;
+            }
+            UserClosing = false;
+        }
+        #endregion Logout
 
         #region Sach
 
@@ -225,5 +270,7 @@ namespace PBL
         }
 
         #endregion PhieuMuon
+
+        
     }
 }

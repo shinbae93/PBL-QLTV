@@ -171,7 +171,7 @@ namespace PBL.View
             this.tabPage1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(26, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(893, 643);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Quản lý sách";
@@ -312,7 +312,7 @@ namespace PBL.View
             // 
             this.cbbLoaiTL.FormattingEnabled = true;
             this.cbbLoaiTL.Location = new System.Drawing.Point(581, 107);
-            this.cbbLoaiTL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbbLoaiTL.Margin = new System.Windows.Forms.Padding(2);
             this.cbbLoaiTL.Name = "cbbLoaiTL";
             this.cbbLoaiTL.Size = new System.Drawing.Size(153, 27);
             this.cbbLoaiTL.TabIndex = 7;
@@ -392,7 +392,7 @@ namespace PBL.View
             this.tabPage2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage2.Location = new System.Drawing.Point(26, 4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(893, 643);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Quản lý Độc Giả";
@@ -640,6 +640,7 @@ namespace PBL.View
             this.btnExitPM.TabIndex = 11;
             this.btnExitPM.Text = "LOG OUT";
             this.btnExitPM.UseVisualStyleBackColor = false;
+            this.btnExitPM.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnReturnPM
             // 
