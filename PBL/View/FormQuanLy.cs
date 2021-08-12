@@ -16,6 +16,7 @@ namespace PBL.View
     public partial class FormQuanLy : Form
     {
         public string Username { get; set; }
+        public Boolean UserClosing = false;
 
         public FormQuanLy(string Username)
         {
@@ -33,9 +34,42 @@ namespace PBL.View
         }
         private void btnLogOut_Click(object sender, EventArgs e)
         {
+            UserClosing = true;
             FormLogOut f = new FormLogOut();
             f.d = new FormLogOut.Mydel(Out);
             f.ShowDialog();
+        }
+        private void FormQuanLy_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            switch (e.CloseReason)
+            {
+                case CloseReason.ApplicationExitCall:
+                    break;
+                case CloseReason.FormOwnerClosing:
+                    break;
+                case CloseReason.MdiFormClosing:
+                    break;
+                case CloseReason.None:
+                    break;
+                case CloseReason.TaskManagerClosing:
+                    break;
+                case CloseReason.UserClosing:
+                    if (!UserClosing)
+                    {
+                        DialogResult TL;
+                        TL = MessageBox.Show("Bạn Có Muốn Thoát không", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        if (TL == DialogResult.No)
+                        {
+                            e.Cancel = true;
+                        }
+                    }
+                    break;
+                case CloseReason.WindowsShutDown:
+                    break;
+                default:
+                    break;
+            }
+            UserClosing = false;
         }
 
         #endregion Logout
@@ -347,5 +381,10 @@ namespace PBL.View
         }
 
         #endregion Thong Ke
+
+        private void FormQuanLy_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
