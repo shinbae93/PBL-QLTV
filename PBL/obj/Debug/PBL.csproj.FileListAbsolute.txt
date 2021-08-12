@@ -99,7 +99,6 @@ D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.csprojAssemblyReference.cache
 D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormAddDuLieuPhieuMuon.resources
 D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuDocGia.resources
 D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuNhanVien.resources
-D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuPhieuMuon.resources
 D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuSach.resources
 D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormForgotPW.resources
 D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormForgotPW2.resources

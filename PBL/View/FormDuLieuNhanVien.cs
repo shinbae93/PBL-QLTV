@@ -60,7 +60,7 @@ namespace PBL.View
         public void ExecuteDB()
         {
             #region CheckBlankTextBox
-            if(txtUser.Text == "")
+            /*if(txtUser.Text == "")
             {
                 MessageBox.Show("Ban chua nhap Username!!");
             }
@@ -83,7 +83,7 @@ namespace PBL.View
             if (cbbQuyenHan.Text == "")
             {
                 MessageBox.Show("Ban chua phan Quyen han!!");
-            }
+            }*/
             #endregion
             NguoiDung s = new NguoiDung
             {
@@ -110,9 +110,17 @@ namespace PBL.View
         #region Event
         private void btnOK_Click(object sender, EventArgs e)
         {
-            ExecuteDB();
-            d("", "", "", 0);
-            this.Dispose();
+            if(txtUser.Text == "" || txtEmail.Text == "" || txtDienThoai.Text == "" || txtPassword.Text == "" || txtHoTen.Text == "" || cbbQuyenHan.Text == "")
+            {
+                MessageBox.Show("Ban chua nhap du thong tin!");
+            }
+            else
+            {
+                ExecuteDB();
+                d("", "", "", 0);
+                this.Dispose();
+            }
+            
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
