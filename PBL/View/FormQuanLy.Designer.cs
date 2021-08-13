@@ -110,11 +110,13 @@ namespace PBL.View
             this.lbThangTK = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.btnSearchTKVP = new System.Windows.Forms.Button();
-            this.txtTongSoLuongTK = new System.Windows.Forms.TextBox();
-            this.lbTongSoLuongTK = new System.Windows.Forms.Label();
+            this.txtTongSoLuongTKVP = new System.Windows.Forms.TextBox();
+            this.txtTongSoLuongTKMS = new System.Windows.Forms.TextBox();
+            this.lbTongSoLuongTKVP = new System.Windows.Forms.Label();
+            this.lbTongSoLuongTKMS = new System.Windows.Forms.Label();
             this.dataGridViewTKVP = new System.Windows.Forms.DataGridView();
             this.dataGridViewTKMS = new System.Windows.Forms.DataGridView();
+            this.btnSearchTKVP = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQLSach)).BeginInit();
@@ -397,6 +399,7 @@ namespace PBL.View
             // 
             this.tabPage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage2.BackgroundImage")));
             this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage2.Controls.Add(this.btnSearchTKVP);
             this.tabPage2.Controls.Add(this.btnDelDG);
             this.tabPage2.Controls.Add(this.btnExitDG);
             this.tabPage2.Controls.Add(this.cbbSortDG);
@@ -445,7 +448,7 @@ namespace PBL.View
             // cbbSortDG
             // 
             this.cbbSortDG.FormattingEnabled = true;
-            this.cbbSortDG.Location = new System.Drawing.Point(680, 713);
+            this.cbbSortDG.Location = new System.Drawing.Point(844, 713);
             this.cbbSortDG.Margin = new System.Windows.Forms.Padding(4);
             this.cbbSortDG.Name = "cbbSortDG";
             this.cbbSortDG.Size = new System.Drawing.Size(160, 31);
@@ -455,7 +458,7 @@ namespace PBL.View
             // 
             this.btnSortDG.BackColor = System.Drawing.Color.Gainsboro;
             this.btnSortDG.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSortDG.Location = new System.Drawing.Point(572, 713);
+            this.btnSortDG.Location = new System.Drawing.Point(721, 713);
             this.btnSortDG.Margin = new System.Windows.Forms.Padding(4);
             this.btnSortDG.Name = "btnSortDG";
             this.btnSortDG.Size = new System.Drawing.Size(100, 32);
@@ -660,7 +663,7 @@ namespace PBL.View
             "HanTra (Giam)",
             "NgayTra (Tang)",
             "NgayTra (Giam)"});
-            this.cbbSortPM.Location = new System.Drawing.Point(713, 713);
+            this.cbbSortPM.Location = new System.Drawing.Point(709, 715);
             this.cbbSortPM.Margin = new System.Windows.Forms.Padding(4);
             this.cbbSortPM.Name = "cbbSortPM";
             this.cbbSortPM.Size = new System.Drawing.Size(160, 31);
@@ -670,7 +673,7 @@ namespace PBL.View
             // 
             this.btnExitPM.BackColor = System.Drawing.Color.Gainsboro;
             this.btnExitPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExitPM.Location = new System.Drawing.Point(1036, 713);
+            this.btnExitPM.Location = new System.Drawing.Point(1043, 712);
             this.btnExitPM.Margin = new System.Windows.Forms.Padding(4);
             this.btnExitPM.Name = "btnExitPM";
             this.btnExitPM.Size = new System.Drawing.Size(123, 32);
@@ -695,7 +698,7 @@ namespace PBL.View
             // 
             this.btnSortPM.BackColor = System.Drawing.Color.Gainsboro;
             this.btnSortPM.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSortPM.Location = new System.Drawing.Point(572, 713);
+            this.btnSortPM.Location = new System.Drawing.Point(581, 713);
             this.btnSortPM.Margin = new System.Windows.Forms.Padding(4);
             this.btnSortPM.Name = "btnSortPM";
             this.btnSortPM.Size = new System.Drawing.Size(100, 32);
@@ -1102,9 +1105,10 @@ namespace PBL.View
             this.tabPage5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage5.BackgroundImage")));
             this.tabPage5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage5.Controls.Add(this.panel5);
-            this.tabPage5.Controls.Add(this.btnSearchTKVP);
-            this.tabPage5.Controls.Add(this.txtTongSoLuongTK);
-            this.tabPage5.Controls.Add(this.lbTongSoLuongTK);
+            this.tabPage5.Controls.Add(this.txtTongSoLuongTKVP);
+            this.tabPage5.Controls.Add(this.txtTongSoLuongTKMS);
+            this.tabPage5.Controls.Add(this.lbTongSoLuongTKVP);
+            this.tabPage5.Controls.Add(this.lbTongSoLuongTKMS);
             this.tabPage5.Controls.Add(this.dataGridViewTKVP);
             this.tabPage5.Controls.Add(this.dataGridViewTKMS);
             this.tabPage5.Location = new System.Drawing.Point(29, 4);
@@ -1251,39 +1255,47 @@ namespace PBL.View
             this.label14.TabIndex = 2;
             this.label14.Text = "Thống kê mượn sách";
             // 
-            // btnSearchTKVP
+            // txtTongSoLuongTKVP
             // 
-            this.btnSearchTKVP.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSearchTKVP.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchTKVP.Location = new System.Drawing.Point(872, 694);
-            this.btnSearchTKVP.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSearchTKVP.Name = "btnSearchTKVP";
-            this.btnSearchTKVP.Size = new System.Drawing.Size(100, 32);
-            this.btnSearchTKVP.TabIndex = 11;
-            this.btnSearchTKVP.Text = "Search";
-            this.btnSearchTKVP.UseVisualStyleBackColor = false;
-            this.btnSearchTKVP.Click += new System.EventHandler(this.btnSearchTKVP_Click);
+            this.txtTongSoLuongTKVP.Enabled = false;
+            this.txtTongSoLuongTKVP.Location = new System.Drawing.Point(931, 696);
+            this.txtTongSoLuongTKVP.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTongSoLuongTKVP.Name = "txtTongSoLuongTKVP";
+            this.txtTongSoLuongTKVP.ReadOnly = true;
+            this.txtTongSoLuongTKVP.Size = new System.Drawing.Size(91, 27);
+            this.txtTongSoLuongTKVP.TabIndex = 10;
             // 
-            // txtTongSoLuongTK
+            // txtTongSoLuongTKMS
             // 
-            this.txtTongSoLuongTK.Enabled = false;
-            this.txtTongSoLuongTK.Location = new System.Drawing.Point(286, 699);
-            this.txtTongSoLuongTK.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTongSoLuongTK.Name = "txtTongSoLuongTK";
-            this.txtTongSoLuongTK.ReadOnly = true;
-            this.txtTongSoLuongTK.Size = new System.Drawing.Size(91, 27);
-            this.txtTongSoLuongTK.TabIndex = 10;
+            this.txtTongSoLuongTKMS.Enabled = false;
+            this.txtTongSoLuongTKMS.Location = new System.Drawing.Point(292, 696);
+            this.txtTongSoLuongTKMS.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTongSoLuongTKMS.Name = "txtTongSoLuongTKMS";
+            this.txtTongSoLuongTKMS.ReadOnly = true;
+            this.txtTongSoLuongTKMS.Size = new System.Drawing.Size(91, 27);
+            this.txtTongSoLuongTKMS.TabIndex = 10;
             // 
-            // lbTongSoLuongTK
+            // lbTongSoLuongTKVP
             // 
-            this.lbTongSoLuongTK.AutoSize = true;
-            this.lbTongSoLuongTK.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTongSoLuongTK.Location = new System.Drawing.Point(106, 695);
-            this.lbTongSoLuongTK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbTongSoLuongTK.Name = "lbTongSoLuongTK";
-            this.lbTongSoLuongTK.Size = new System.Drawing.Size(172, 28);
-            this.lbTongSoLuongTK.TabIndex = 9;
-            this.lbTongSoLuongTK.Text = "Tổng số lượng ";
+            this.lbTongSoLuongTKVP.AutoSize = true;
+            this.lbTongSoLuongTKVP.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTongSoLuongTKVP.Location = new System.Drawing.Point(751, 695);
+            this.lbTongSoLuongTKVP.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTongSoLuongTKVP.Name = "lbTongSoLuongTKVP";
+            this.lbTongSoLuongTKVP.Size = new System.Drawing.Size(172, 28);
+            this.lbTongSoLuongTKVP.TabIndex = 9;
+            this.lbTongSoLuongTKVP.Text = "Tổng số lượng ";
+            // 
+            // lbTongSoLuongTKMS
+            // 
+            this.lbTongSoLuongTKMS.AutoSize = true;
+            this.lbTongSoLuongTKMS.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTongSoLuongTKMS.Location = new System.Drawing.Point(112, 695);
+            this.lbTongSoLuongTKMS.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTongSoLuongTKMS.Name = "lbTongSoLuongTKMS";
+            this.lbTongSoLuongTKMS.Size = new System.Drawing.Size(172, 28);
+            this.lbTongSoLuongTKMS.TabIndex = 9;
+            this.lbTongSoLuongTKMS.Text = "Tổng số lượng ";
             // 
             // dataGridViewTKVP
             // 
@@ -1306,6 +1318,19 @@ namespace PBL.View
             this.dataGridViewTKMS.RowHeadersWidth = 51;
             this.dataGridViewTKMS.Size = new System.Drawing.Size(520, 428);
             this.dataGridViewTKMS.TabIndex = 0;
+            // 
+            // btnSearchTKVP
+            // 
+            this.btnSearchTKVP.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSearchTKVP.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchTKVP.Location = new System.Drawing.Point(567, 713);
+            this.btnSearchTKVP.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSearchTKVP.Name = "btnSearchTKVP";
+            this.btnSearchTKVP.Size = new System.Drawing.Size(129, 32);
+            this.btnSearchTKVP.TabIndex = 14;
+            this.btnSearchTKVP.Text = "Search VP";
+            this.btnSearchTKVP.UseVisualStyleBackColor = false;
+            this.btnSearchTKVP.Click += new System.EventHandler(this.btnSearchTKVP_Click);
             // 
             // FormQuanLy
             // 
@@ -1419,9 +1444,8 @@ namespace PBL.View
         private System.Windows.Forms.Label lbNamTK;
         private System.Windows.Forms.Button btnShowTKMS;
         private System.Windows.Forms.Button btnShowTKVP;
-        private System.Windows.Forms.Button btnSearchTKVP;
-        private System.Windows.Forms.TextBox txtTongSoLuongTK;
-        private System.Windows.Forms.Label lbTongSoLuongTK;
+        private System.Windows.Forms.TextBox txtTongSoLuongTKMS;
+        private System.Windows.Forms.Label lbTongSoLuongTKMS;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtTenDocGiaPM;
@@ -1432,6 +1456,9 @@ namespace PBL.View
         private System.Windows.Forms.ComboBox cbbQuyenHan;
         private System.Windows.Forms.Label labelQuyenHan;
         private System.Windows.Forms.Button btnViTri;
+        private System.Windows.Forms.TextBox txtTongSoLuongTKVP;
+        private System.Windows.Forms.Label lbTongSoLuongTKVP;
+        private System.Windows.Forms.Button btnSearchTKVP;
     }
 }
 

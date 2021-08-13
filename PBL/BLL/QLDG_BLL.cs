@@ -46,12 +46,12 @@ namespace PBL.BLL
             return l1;
         }
 
-        public DocGia GetDGByMaDG(int MaDG)
+        public bool CheckMSSV(string MSSV)
         {
-            DHP_07Entities db = new DHP_07Entities();
-            var l1 = db.DocGias
-                .Single(p => p.MaDocGia == MaDG);
-            return l1;
+            using (DHP_07Entities db = new DHP_07Entities())
+            {
+                return db.DocGias.Any(p => p.MSSV == MSSV);
+            }
         }
 
         public void AddDG(DocGia d)

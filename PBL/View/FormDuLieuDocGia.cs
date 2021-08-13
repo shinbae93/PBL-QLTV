@@ -31,8 +31,6 @@ namespace PBL.View
         private void SetCBB()
         {
             DHP_07Entities db = new DHP_07Entities();
-            cbbMaLop.Items.Add(new CBBItem { Value = 0, Text = "Null" });
-            cbbMaLop.Text = "Null";
             foreach (Lop i in db.Lops)
             {
                 cbbMaLop.Items.Add(new CBBItem { Value = i.MaLop, Text = i.TenLop });
@@ -71,9 +69,21 @@ namespace PBL.View
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            if (txtHoTen.Text == "" || txtMSSV.Text == "" || cbbMaLop.SelectedItem == null || rbtnNam.Checked == rbtnNu.Checked)
+            if (txtHoTen.Text == "" || txtMSSV.Text == "" || cbbMaLop.SelectedIndex == -1 || rbtnNam.Checked == rbtnNu.Checked)
             {
                 MessageBox.Show("Vui long dien du thong tin !");
+            }
+            else if (!txtMSSV.Text.All(Char.IsDigit))
+            {
+                MessageBox.Show("MSSV khong hop le !");
+            }
+            else if (dtpNgayDK.Value > DateTime.Now)
+            {
+                MessageBox.Show("Ngay DK khong hop le !");
+            }
+            else if (dtpNgaySinh.Value > DateTime.Now)
+            {
+                MessageBox.Show("Ngay sinh khong hop le !");
             }
             else
             {

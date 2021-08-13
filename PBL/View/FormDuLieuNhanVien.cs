@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PBL.BLL;
 using PBL.DAL;
+using System.Text.RegularExpressions;
 
 namespace PBL.View
 {
@@ -62,31 +63,28 @@ namespace PBL.View
             }
         }
 
-        public void ExecuteDB()
+        #endregion Method
+
+        #region Event
+
+        private void btnOK_Click(object sender, EventArgs e)
         {
-            if (txtUser.Text == "")
+            if (txtUser.Text == "" || txtEmail.Text == "" || txtDienThoai.Text == "" || txtPassword.Text == "" || txtHoTen.Text == "" || cbbQuyenHan.SelectedIndex == -1 || rbtnNam.Checked == rbtnNu.Checked)
             {
-                MessageBox.Show("Ban chua nhap Username!!");
+                MessageBox.Show("Vui long dien du thong tin !");
             }
-            if (txtEmail.Text == "")
+            else if (QLNV_BLL.Instance.CheckUsername(txtUser.Text))
             {
-                MessageBox.Show("Ban chua nhap Email!!");
+                MessageBox.Show("Username da ton tai !");
             }
-            if (txtDienThoai.Text == "")
+            else if (!Regex.Match(txtDienThoai.Text, @"^([0][0-9]{9})$").Success)
             {
-                MessageBox.Show("Ban chua nhap SDT!!");
+                MessageBox.Show("So dien thoai khong hop le !");
             }
-            if (txtPassword.Text == "")
+            else if (!Regex.Match(txtEmail.Text, @"^[\w!#$%&'*+\-/=?\^_`{|}~]+(\.[\w!#$%&'*+\-/=?\^_`{|}~]+)*" + "@"
+                                               + @"((([\-\w]+\.)+[a-zA-Z]{2,4}))\z").Success)
             {
-                MessageBox.Show("Ban chua nhap Password!!");
-            }
-            if (txtHoTen.Text == "")
-            {
-                MessageBox.Show("Ban chua nhap Ho Ten!!");
-            }
-            if (cbbQuyenHan.Text == "")
-            {
-                MessageBox.Show("Ban chua phan Quyen han!!");
+                MessageBox.Show("Email khong hop le !");
             }
             else
             {
@@ -109,18 +107,9 @@ namespace PBL.View
                 {
                     QLNV_BLL.Instance.EditNV(s, ID_NguoiDung);
                 }
+                d("", "", "", 0);
+                this.Dispose();
             }
-        }
-
-        #endregion Method
-
-        #region Event
-
-        private void btnOK_Click(object sender, EventArgs e)
-        {
-            ExecuteDB();
-            d("", "", "", 0);
-            this.Dispose();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

@@ -99,6 +99,19 @@ namespace PBL.BLL
             }
         }
 
+        public void TraSLTL(List<TaiLieu_DTO> data)
+        {
+            using (DHP_07Entities db = new DHP_07Entities())
+            {
+                foreach (TaiLieu_DTO i in data)
+                {
+                    TaiLieu s = db.TaiLieux.Find(i.MaTL);
+                    s.SoLuong++;
+                }
+                db.SaveChanges();
+            }
+        }
+
         public List<PhieuMuon_DTO> SortPM(string TC)
         {
             using (DHP_07Entities db = new DHP_07Entities())

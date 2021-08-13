@@ -45,6 +45,7 @@ namespace PBL.View
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
+            QLPM_BLL.Instance.TraSLTL(data);
             this.Dispose();
         }
 
@@ -53,6 +54,14 @@ namespace PBL.View
             if (txtSoThe.Text == "" || check == false)
             {
                 MessageBox.Show("Vui long dien du thong tin !");
+            }
+            else if (QLDG_BLL.Instance.CheckMSSV(txtSoThe.Text) == false)
+            {
+                MessageBox.Show("Doc Gia khong ton tai !");
+            }
+            else if (dtpNgayMuon.Value > dtpHanTra.Value || dtpNgayMuon.Value > DateTime.Now)
+            {
+                MessageBox.Show("Ngay muon khong hop le !");
             }
             else
             {
@@ -96,6 +105,12 @@ namespace PBL.View
                 dgvTL.DataSource = null;
                 dgvTL.DataSource = data;
             }
+        }
+
+        private void FormAddDuLieuPhieuMuon_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            QLPM_BLL.Instance.TraSLTL(data);
+            this.Dispose();
         }
     }
 }

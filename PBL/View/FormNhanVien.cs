@@ -110,7 +110,6 @@ namespace PBL
         private void SetCBBSortDG()
         {
             cbbSortDG.Items.Add(new CBBItem { Value = 0, Text = "MaDocGia Tang" });
-            cbbSortDG.Text = "MaDocGia Tang";
             cbbSortDG.Items.Add(new CBBItem { Value = 1, Text = "MaDocGia Giam" });
             cbbSortDG.Items.Add(new CBBItem { Value = 2, Text = "MSSV Tang" });
             cbbSortDG.Items.Add(new CBBItem { Value = 3, Text = "MSSV Giam" });
@@ -164,6 +163,12 @@ namespace PBL
                 QLDG_BLL.Instance.DelDG(QLDG_BLL.Instance.GetDGByMSSV(m));
             }
             ShowDG("", "");
+        }
+
+        private void btnSearchTKVP_Click(object sender, EventArgs e)
+        {
+            FormViPham f = new FormViPham();
+            f.ShowDialog();
         }
 
         private void btnSortDG_Click(object sender, EventArgs e)

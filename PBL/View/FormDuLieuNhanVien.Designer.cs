@@ -77,24 +77,27 @@ namespace PBL.View
             this.panel1.Controls.Add(this.lbHoTen);
             this.panel1.Controls.Add(this.lbPassword);
             this.panel1.Controls.Add(this.lbUser);
-            this.panel1.Location = new System.Drawing.Point(21, 24);
+            this.panel1.Location = new System.Drawing.Point(28, 30);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(796, 279);
+            this.panel1.Size = new System.Drawing.Size(1061, 343);
             this.panel1.TabIndex = 23;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(520, 176);
+            this.dateTimePicker1.Location = new System.Drawing.Point(693, 217);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(196, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(260, 22);
             this.dateTimePicker1.TabIndex = 35;
             // 
             // cbbQuyenHan
             // 
             this.cbbQuyenHan.FormattingEnabled = true;
-            this.cbbQuyenHan.Location = new System.Drawing.Point(521, 142);
+            this.cbbQuyenHan.Location = new System.Drawing.Point(695, 175);
+            this.cbbQuyenHan.Margin = new System.Windows.Forms.Padding(4);
             this.cbbQuyenHan.Name = "cbbQuyenHan";
-            this.cbbQuyenHan.Size = new System.Drawing.Size(166, 21);
+            this.cbbQuyenHan.Size = new System.Drawing.Size(220, 24);
             this.cbbQuyenHan.TabIndex = 34;
             // 
             // groupBox1
@@ -102,18 +105,21 @@ namespace PBL.View
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.rbtnNam);
             this.groupBox1.Controls.Add(this.rbtnNu);
-            this.groupBox1.Location = new System.Drawing.Point(152, 176);
+            this.groupBox1.Location = new System.Drawing.Point(203, 217);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(149, 40);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(199, 49);
             this.groupBox1.TabIndex = 33;
             this.groupBox1.TabStop = false;
             // 
             // rbtnNam
             // 
             this.rbtnNam.AutoSize = true;
-            this.rbtnNam.Location = new System.Drawing.Point(18, 5);
+            this.rbtnNam.Location = new System.Drawing.Point(24, 6);
+            this.rbtnNam.Margin = new System.Windows.Forms.Padding(4);
             this.rbtnNam.Name = "rbtnNam";
-            this.rbtnNam.Size = new System.Drawing.Size(47, 17);
+            this.rbtnNam.Size = new System.Drawing.Size(58, 21);
             this.rbtnNam.TabIndex = 31;
             this.rbtnNam.TabStop = true;
             this.rbtnNam.Text = "Nam";
@@ -122,9 +128,10 @@ namespace PBL.View
             // rbtnNu
             // 
             this.rbtnNu.AutoSize = true;
-            this.rbtnNu.Location = new System.Drawing.Point(85, 5);
+            this.rbtnNu.Location = new System.Drawing.Point(113, 6);
+            this.rbtnNu.Margin = new System.Windows.Forms.Padding(4);
             this.rbtnNu.Name = "rbtnNu";
-            this.rbtnNu.Size = new System.Drawing.Size(39, 17);
+            this.rbtnNu.Size = new System.Drawing.Size(47, 21);
             this.rbtnNu.TabIndex = 30;
             this.rbtnNu.TabStop = true;
             this.rbtnNu.Text = "Nữ";
@@ -136,50 +143,56 @@ namespace PBL.View
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Cambria", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(41, 23);
+            this.label11.Location = new System.Drawing.Point(55, 28);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(188, 43);
+            this.label11.Size = new System.Drawing.Size(240, 55);
             this.label11.TabIndex = 20;
             this.label11.Text = "Nhân Viên";
             // 
             // txtEmail
             // 
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtEmail.Location = new System.Drawing.Point(520, 109);
+            this.txtEmail.Location = new System.Drawing.Point(693, 134);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(167, 20);
+            this.txtEmail.Size = new System.Drawing.Size(221, 22);
             this.txtEmail.TabIndex = 18;
             // 
             // txtDienThoai
             // 
             this.txtDienThoai.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDienThoai.Location = new System.Drawing.Point(520, 77);
+            this.txtDienThoai.Location = new System.Drawing.Point(693, 95);
+            this.txtDienThoai.Margin = new System.Windows.Forms.Padding(4);
             this.txtDienThoai.Name = "txtDienThoai";
-            this.txtDienThoai.Size = new System.Drawing.Size(167, 20);
+            this.txtDienThoai.Size = new System.Drawing.Size(221, 22);
             this.txtDienThoai.TabIndex = 17;
             // 
             // txtPassword
             // 
             this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtPassword.Location = new System.Drawing.Point(152, 109);
+            this.txtPassword.Location = new System.Drawing.Point(203, 134);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(134, 20);
+            this.txtPassword.Size = new System.Drawing.Size(177, 22);
             this.txtPassword.TabIndex = 13;
             // 
             // txtHoTen
             // 
             this.txtHoTen.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtHoTen.Location = new System.Drawing.Point(152, 144);
+            this.txtHoTen.Location = new System.Drawing.Point(203, 177);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(4);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(134, 20);
+            this.txtHoTen.Size = new System.Drawing.Size(177, 22);
             this.txtHoTen.TabIndex = 11;
             // 
             // txtUser
             // 
             this.txtUser.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtUser.Location = new System.Drawing.Point(152, 82);
+            this.txtUser.Location = new System.Drawing.Point(203, 101);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(4);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(134, 20);
+            this.txtUser.Size = new System.Drawing.Size(177, 22);
             this.txtUser.TabIndex = 10;
             // 
             // lbQuyenHan
@@ -189,9 +202,10 @@ namespace PBL.View
             this.lbQuyenHan.BackColor = System.Drawing.Color.Transparent;
             this.lbQuyenHan.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbQuyenHan.ForeColor = System.Drawing.Color.Maroon;
-            this.lbQuyenHan.Location = new System.Drawing.Point(385, 142);
+            this.lbQuyenHan.Location = new System.Drawing.Point(513, 175);
+            this.lbQuyenHan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbQuyenHan.Name = "lbQuyenHan";
-            this.lbQuyenHan.Size = new System.Drawing.Size(102, 22);
+            this.lbQuyenHan.Size = new System.Drawing.Size(130, 28);
             this.lbQuyenHan.TabIndex = 8;
             this.lbQuyenHan.Text = "Quyền Hạn";
             // 
@@ -202,9 +216,10 @@ namespace PBL.View
             this.lbEmail.BackColor = System.Drawing.Color.Transparent;
             this.lbEmail.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbEmail.ForeColor = System.Drawing.Color.Maroon;
-            this.lbEmail.Location = new System.Drawing.Point(385, 109);
+            this.lbEmail.Location = new System.Drawing.Point(513, 134);
+            this.lbEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(60, 22);
+            this.lbEmail.Size = new System.Drawing.Size(75, 28);
             this.lbEmail.TabIndex = 7;
             this.lbEmail.Text = "Email";
             // 
@@ -215,9 +230,10 @@ namespace PBL.View
             this.lbDienThoai.BackColor = System.Drawing.Color.Transparent;
             this.lbDienThoai.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDienThoai.ForeColor = System.Drawing.Color.Maroon;
-            this.lbDienThoai.Location = new System.Drawing.Point(385, 77);
+            this.lbDienThoai.Location = new System.Drawing.Point(513, 95);
+            this.lbDienThoai.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDienThoai.Name = "lbDienThoai";
-            this.lbDienThoai.Size = new System.Drawing.Size(104, 22);
+            this.lbDienThoai.Size = new System.Drawing.Size(133, 28);
             this.lbDienThoai.TabIndex = 6;
             this.lbDienThoai.Text = "Điện Thoại";
             // 
@@ -228,9 +244,10 @@ namespace PBL.View
             this.lbGioiTinh.BackColor = System.Drawing.Color.Transparent;
             this.lbGioiTinh.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbGioiTinh.ForeColor = System.Drawing.Color.Maroon;
-            this.lbGioiTinh.Location = new System.Drawing.Point(15, 176);
+            this.lbGioiTinh.Location = new System.Drawing.Point(20, 217);
+            this.lbGioiTinh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbGioiTinh.Name = "lbGioiTinh";
-            this.lbGioiTinh.Size = new System.Drawing.Size(91, 22);
+            this.lbGioiTinh.Size = new System.Drawing.Size(116, 28);
             this.lbGioiTinh.TabIndex = 4;
             this.lbGioiTinh.Text = "Giới Tính";
             // 
@@ -241,9 +258,10 @@ namespace PBL.View
             this.lbNgaySinh.BackColor = System.Drawing.Color.Transparent;
             this.lbNgaySinh.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNgaySinh.ForeColor = System.Drawing.Color.Maroon;
-            this.lbNgaySinh.Location = new System.Drawing.Point(385, 175);
+            this.lbNgaySinh.Location = new System.Drawing.Point(513, 215);
+            this.lbNgaySinh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNgaySinh.Name = "lbNgaySinh";
-            this.lbNgaySinh.Size = new System.Drawing.Size(92, 22);
+            this.lbNgaySinh.Size = new System.Drawing.Size(115, 28);
             this.lbNgaySinh.TabIndex = 3;
             this.lbNgaySinh.Text = "Năm Sinh";
             // 
@@ -254,9 +272,10 @@ namespace PBL.View
             this.lbHoTen.BackColor = System.Drawing.Color.Transparent;
             this.lbHoTen.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHoTen.ForeColor = System.Drawing.Color.Maroon;
-            this.lbHoTen.Location = new System.Drawing.Point(15, 142);
+            this.lbHoTen.Location = new System.Drawing.Point(20, 175);
+            this.lbHoTen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbHoTen.Name = "lbHoTen";
-            this.lbHoTen.Size = new System.Drawing.Size(71, 22);
+            this.lbHoTen.Size = new System.Drawing.Size(89, 28);
             this.lbHoTen.TabIndex = 2;
             this.lbHoTen.Text = "Họ Tên";
             // 
@@ -267,9 +286,10 @@ namespace PBL.View
             this.lbPassword.BackColor = System.Drawing.Color.Transparent;
             this.lbPassword.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPassword.ForeColor = System.Drawing.Color.Maroon;
-            this.lbPassword.Location = new System.Drawing.Point(15, 109);
+            this.lbPassword.Location = new System.Drawing.Point(20, 134);
+            this.lbPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(96, 22);
+            this.lbPassword.Size = new System.Drawing.Size(118, 28);
             this.lbPassword.TabIndex = 1;
             this.lbPassword.Text = "Password";
             // 
@@ -280,19 +300,21 @@ namespace PBL.View
             this.lbUser.BackColor = System.Drawing.Color.Transparent;
             this.lbUser.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUser.ForeColor = System.Drawing.Color.Maroon;
-            this.lbUser.Location = new System.Drawing.Point(15, 82);
+            this.lbUser.Location = new System.Drawing.Point(20, 94);
+            this.lbUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbUser.Name = "lbUser";
-            this.lbUser.Size = new System.Drawing.Size(51, 22);
+            this.lbUser.Size = new System.Drawing.Size(124, 28);
             this.lbUser.TabIndex = 0;
-            this.lbUser.Text = "User";
+            this.lbUser.Text = "Username";
             // 
             // btnOK
             // 
             this.btnOK.BackColor = System.Drawing.Color.Gainsboro;
             this.btnOK.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOK.Location = new System.Drawing.Point(163, 322);
+            this.btnOK.Location = new System.Drawing.Point(217, 396);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(75, 26);
+            this.btnOK.Size = new System.Drawing.Size(100, 32);
             this.btnOK.TabIndex = 24;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = false;
@@ -302,9 +324,10 @@ namespace PBL.View
             // 
             this.btnCancel.BackColor = System.Drawing.Color.Gainsboro;
             this.btnCancel.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(516, 322);
+            this.btnCancel.Location = new System.Drawing.Point(688, 396);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 26);
+            this.btnCancel.Size = new System.Drawing.Size(100, 32);
             this.btnCancel.TabIndex = 25;
             this.btnCancel.Text = "CANCEL";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -312,13 +335,14 @@ namespace PBL.View
             // 
             // FormDuLieuNhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(829, 371);
+            this.ClientSize = new System.Drawing.Size(1105, 457);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormDuLieuNhanVien";
             this.Text = "FormDuLieuNhanVien";
             this.panel1.ResumeLayout(false);

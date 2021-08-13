@@ -95,7 +95,10 @@ namespace PBL.View
 
         private void btnSortS_Click(object sender, EventArgs e)
         {
-            dataGridViewQLSach.DataSource = QLTL_BLL.Instance.SortTL(cbbSortS.Text);
+            if (cbbSortS.SelectedIndex != -1)
+                dataGridViewQLSach.DataSource = QLTL_BLL.Instance.SortTL(cbbSortS.Text);
+            else
+                MessageBox.Show("Vui long chon tieu chi sap xep !");
         }
 
         private void btnViTri_Click(object sender, EventArgs e)
@@ -157,7 +160,10 @@ namespace PBL.View
 
         private void btnSortPM_Click(object sender, EventArgs e)
         {
-            dataGridViewPhieuMuon.DataSource = QLPM_BLL.Instance.SortPM(cbbSortPM.Text);
+            if (cbbSortPM.SelectedIndex != -1)
+                dataGridViewPhieuMuon.DataSource = QLPM_BLL.Instance.SortPM(cbbSortPM.Text);
+            else
+                MessageBox.Show("Vui long chon tieu chi sap xep !");
         }
 
         #endregion PhieuMuon
@@ -246,7 +252,10 @@ namespace PBL.View
 
         private void btnSortNV_Click(object sender, EventArgs e)
         {
-            dataGridViewNhanVien.DataSource = QLNV_BLL.Instance.SortNV(cbbSortNV.Text);
+            if (cbbSortNV.SelectedIndex != -1)
+                dataGridViewNhanVien.DataSource = QLNV_BLL.Instance.SortNV(cbbSortNV.Text);
+            else
+                MessageBox.Show("Vui long chon tieu chi sap xep !");
         }
 
         #endregion EventNV
@@ -258,7 +267,6 @@ namespace PBL.View
         private void SetCBBSortDG()
         {
             cbbSortDG.Items.Add(new CBBItem { Value = 0, Text = "MaDocGia Tang" });
-            cbbSortDG.Text = "MaDocGia Tang";
             cbbSortDG.Items.Add(new CBBItem { Value = 1, Text = "MaDocGia Giam" });
             cbbSortDG.Items.Add(new CBBItem { Value = 2, Text = "MSSV Tang" });
             cbbSortDG.Items.Add(new CBBItem { Value = 3, Text = "MSSV Giam" });
@@ -314,12 +322,23 @@ namespace PBL.View
             ShowDG("", "");
         }
 
+        private void btnSearchTKVP_Click(object sender, EventArgs e)
+        {
+            FormViPham f = new FormViPham();
+            f.ShowDialog();
+        }
+
         private void btnSortDG_Click(object sender, EventArgs e)
         {
-            string[] arrListStr = cbbSortDG.Text.Split(' ');
-            string m1 = arrListStr[0];
-            string m2 = arrListStr[1];
-            dataGridViewDocGia.DataSource = QLDG_BLL.Instance.SortDG(m1, m2);
+            if (cbbSortDG.SelectedIndex != -1)
+            {
+                string[] arrListStr = cbbSortDG.Text.Split(' ');
+                string m1 = arrListStr[0];
+                string m2 = arrListStr[1];
+                dataGridViewDocGia.DataSource = QLDG_BLL.Instance.SortDG(m1, m2);
+            }
+            else
+                MessageBox.Show("Vui long chon tieu chi sap xep !");
         }
 
         #endregion DocGia
@@ -332,21 +351,16 @@ namespace PBL.View
             cbbNamTK.Items.Add(new CBBItem { Value = 0, Text = "All" });
         }
 
-        private void btnSearchTKVP_Click(object sender, EventArgs e)
-        {
-            FormViPham f = new FormViPham();
-            f.ShowDialog();
-        }
-
         private void btnTKVP_Click(object sender, EventArgs e)
         {
             dataGridViewTKVP.DataSource = QLTK_BLL.Instance.GetTKVP((cbbThangTK.SelectedIndex == -1 || cbbThangTK.SelectedItem.ToString() == "All") ? 0 : Convert.ToInt32(cbbThangTK.SelectedItem), (cbbNamTK.SelectedIndex == -1 || cbbNamTK.SelectedItem.ToString() == "All") ? 0 : Convert.ToInt32(cbbNamTK.SelectedItem));
+            txtTongSoLuongTKVP.Text = dataGridViewTKVP.Rows.Count.ToString();
         }
 
         private void btnShowTKMS_Click(object sender, EventArgs e)
         {
             dataGridViewTKMS.DataSource = QLTK_BLL.Instance.GetTKMS((cbbThangTK.SelectedIndex == -1 || cbbThangTK.SelectedItem.ToString() == "All") ? 0 : Convert.ToInt32(cbbThangTK.SelectedItem), (cbbNamTK.SelectedIndex == -1 || cbbNamTK.SelectedItem.ToString() == "All") ? 0 : Convert.ToInt32(cbbNamTK.SelectedItem));
-            txtTongSoLuongTK.Text = dataGridViewTKMS.Rows.Count.ToString();
+            txtTongSoLuongTKMS.Text = dataGridViewTKMS.Rows.Count.ToString();
         }
 
         #endregion Thong Ke

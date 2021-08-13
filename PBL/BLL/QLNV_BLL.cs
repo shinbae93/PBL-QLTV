@@ -77,6 +77,14 @@ namespace PBL.BLL
             }
         }
 
+        public bool CheckUsername(string Username)
+        {
+            using (DHP_07Entities db = new DHP_07Entities())
+            {
+                return db.NguoiDungs.Any(p => p.Username == Username);
+            }
+        }
+
         public void ChangePass(NguoiDung nd, string Pass)
         {
             using (DHP_07Entities db = new DHP_07Entities())

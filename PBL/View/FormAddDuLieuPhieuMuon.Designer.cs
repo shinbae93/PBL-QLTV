@@ -235,6 +235,7 @@ namespace PBL.View
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormAddDuLieuPhieuMuon";
             this.Text = "DuLieuPhieuMuon";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormAddDuLieuPhieuMuon_FormClosed);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numSLTL)).EndInit();
