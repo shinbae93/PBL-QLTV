@@ -39,6 +39,7 @@ namespace PBL
             }
             else
             {
+                UserClosing = false;
             }
         }
 
@@ -377,6 +378,9 @@ namespace PBL
             lbOldPW.Hide();
             lbNewPW.Hide();
             lbConfirmPW.Hide();
+            txtOldPW.Text = "";
+            txtNewPW.Text = "";
+            txtConfirmPW.Text = "";
         }
 
         private void btnSavePassword_Click(object sender, EventArgs e)

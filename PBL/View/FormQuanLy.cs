@@ -41,6 +41,7 @@ namespace PBL.View
             }
             else
             {
+                UserClosing = false;
             }
         }
 

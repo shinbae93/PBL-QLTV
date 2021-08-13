@@ -31,6 +31,8 @@ namespace PBL.View
                         this.Visible = false;
                         f.ShowDialog();
                         this.Visible = true;
+                        txtUser.Text = "";
+                        txtPassword.Text = "";
                     }
                     else if (Login_BLL.Instance.GetNguoiDungByUserAndPW(txtUser.Text, txtPassword.Text).ID_QuyenHan == 2)
                     {
@@ -38,6 +40,8 @@ namespace PBL.View
                         this.Visible = false;
                         f.ShowDialog();
                         this.Visible = true;
+                        txtUser.Text = "";
+                        txtPassword.Text = "";
                     }
                 }
                 else
