@@ -67,7 +67,6 @@ C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuNhanVien.re
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuSach.resources
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormForgotPW.resources
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormForgotPW2.resources
-C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormForgotPW3.resources
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormLogin.resources
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.FormNhanVien.resources
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.Properties.Resources.resources
@@ -113,3 +112,4 @@ D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.csproj.CoreCompileInputs.cache
 D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.csproj.CopyComplete
 D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.exe
 D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.pdb
+C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.ChangePassword.resources

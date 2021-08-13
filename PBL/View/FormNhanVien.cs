@@ -22,6 +22,7 @@ namespace PBL
             InitializeComponent();
             SetCBBSortDG();
             this.Username = Username;
+            SetHoSo();
         }
 
         #region Logout
@@ -271,6 +272,122 @@ namespace PBL
 
         #endregion PhieuMuon
 
-        
+        #region HoSo
+        public void SetHoSo()
+        {
+            txtTenNguoiDung.Text = QLNV_BLL.Instance.GetUserByUsername(Username).HoTen;
+            txtTenNguoiDung.Enabled = false;
+            dtpNgaySinhNV.Value = Convert.ToDateTime(QLNV_BLL.Instance.GetUserByUsername(Username).NgaySinh);
+            dtpNgaySinhNV.Enabled = false;
+            txtEmail.Text = QLNV_BLL.Instance.GetUserByUsername(Username).Email;
+            txtEmail.Enabled = false;
+            txtSDT.Text = QLNV_BLL.Instance.GetUserByUsername(Username).DienThoai;
+            txtSDT.Enabled = false;
+            txtUsername.Text = QLNV_BLL.Instance.GetUserByUsername(Username).Username;
+            txtUsername.Enabled = false;
+            txtOldPW.Hide();
+            txtNewPW.Hide();
+            txtConfirmPW.Hide();
+            btnSavePassword.Hide();
+            lbOldPW.Hide();
+            lbNewPW.Hide();
+            lbConfirmPW.Hide();
+        }
+        private void btnEditTenNguoiDung_Click(object sender, EventArgs e)
+        {
+            txtTenNguoiDung.Enabled = true;
+        }
+        private void btnSaveTenNguoiDung_Click(object sender, EventArgs e)
+        {
+            QLNV_BLL.Instance.EditHoTenNV(QLNV_BLL.Instance.GetUserByUsername(Username), QLNV_BLL.Instance.GetUserByUsername(Username).ID, txtTenNguoiDung.Text);
+            MessageBox.Show("Thông tin đã được cập nhật");
+            txtTenNguoiDung.Enabled = false;
+        }
+        private void btnEditNgaySinh_Click(object sender, EventArgs e)
+        {
+            dtpNgaySinhNV.Enabled = true;
+        }
+        private void btnSaveNgaySinh_Click(object sender, EventArgs e)
+        {
+            QLNV_BLL.Instance.EditNgaySinhNV(QLNV_BLL.Instance.GetUserByUsername(Username), QLNV_BLL.Instance.GetUserByUsername(Username).ID, dtpNgaySinhNV.Value);
+            MessageBox.Show("Thông tin đã được cập nhật");
+            dtpNgaySinhNV.Enabled = false;
+        }
+        private void btnEditEmail_Click(object sender, EventArgs e)
+        {
+            txtEmail.Enabled = true;
+        }
+
+        private void btnSaveEmail_Click(object sender, EventArgs e)
+        {
+            QLNV_BLL.Instance.EditEmailNV(QLNV_BLL.Instance.GetUserByUsername(Username), QLNV_BLL.Instance.GetUserByUsername(Username).ID, txtEmail.Text);
+            MessageBox.Show("Thông tin đã được cập nhật");
+            txtEmail.Enabled = false;
+        }
+        private void btnEditSDT_Click(object sender, EventArgs e)
+        {
+            txtSDT.Enabled = true;
+            txtSDT.MaxLength = 10;
+        }
+
+        private void btnSaveSDT_Click(object sender, EventArgs e)
+        {
+            QLNV_BLL.Instance.EditSDTNV(QLNV_BLL.Instance.GetUserByUsername(Username), QLNV_BLL.Instance.GetUserByUsername(Username).ID, txtSDT.Text);
+            MessageBox.Show("Thông tin đã được cập nhật");
+            txtSDT.Enabled = false;
+        }
+        private void btnEditPassword_Click(object sender, EventArgs e)
+        {
+            txtOldPW.Show();
+            txtNewPW.Show();
+            txtConfirmPW.Show();
+            btnSavePassword.Show();
+            lbOldPW.Show();
+            lbNewPW.Show();
+            lbConfirmPW.Show();
+        }
+        private void btnCancelEditPW_Click(object sender, EventArgs e)
+        {
+            txtOldPW.Hide();
+            txtNewPW.Hide();
+            txtConfirmPW.Hide();
+            btnSavePassword.Hide();
+            lbOldPW.Hide();
+            lbNewPW.Hide();
+            lbConfirmPW.Hide();
+        }
+        private void btnSavePassword_Click(object sender, EventArgs e)
+        {
+            if (QLNV_BLL.Instance.GetUserByUsername(Username).Password == txtOldPW.Text)
+            {
+                if(txtNewPW.Text == txtConfirmPW.Text)
+                {
+                    QLNV_BLL.Instance.ChangePass(QLNV_BLL.Instance.GetUserByUsername(Username), txtConfirmPW.Text);
+                    MessageBox.Show("Đổi mật khẩu thành công !");
+                    txtOldPW.Text = "";
+                    txtNewPW.Text = "";
+                    txtConfirmPW.Text = "";
+                    txtOldPW.Hide();
+                    txtNewPW.Hide();
+                    txtConfirmPW.Hide();
+                    btnSavePassword.Hide();
+                    lbOldPW.Hide();
+                    lbNewPW.Hide();
+                    lbConfirmPW.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Nhập sai mật khẩu mới");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Nhập sai mật khẩu cũ");
+            }
+        }
+
+        #endregion HoSo
+
+
     }
 }

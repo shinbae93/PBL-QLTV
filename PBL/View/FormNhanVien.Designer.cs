@@ -80,6 +80,36 @@ namespace PBL
             this.lbTenDocGiaPM = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.lbSoThePM = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbTenNguoiDung = new System.Windows.Forms.Label();
+            this.lbNgaySinh = new System.Windows.Forms.Label();
+            this.lbEmail = new System.Windows.Forms.Label();
+            this.lbSDT = new System.Windows.Forms.Label();
+            this.lbUsername = new System.Windows.Forms.Label();
+            this.lbChangePW = new System.Windows.Forms.Label();
+            this.txtTenNguoiDung = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.dtpNgaySinhNV = new System.Windows.Forms.DateTimePicker();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtOldPW = new System.Windows.Forms.TextBox();
+            this.btnEditTenNguoiDung = new System.Windows.Forms.Button();
+            this.btnSaveTenNguoiDung = new System.Windows.Forms.Button();
+            this.btnEditNgaySinh = new System.Windows.Forms.Button();
+            this.btnEditEmail = new System.Windows.Forms.Button();
+            this.btnEditSDT = new System.Windows.Forms.Button();
+            this.btnEditPassword = new System.Windows.Forms.Button();
+            this.btnSaveNgaySinh = new System.Windows.Forms.Button();
+            this.btnSaveEmail = new System.Windows.Forms.Button();
+            this.btnSaveSDT = new System.Windows.Forms.Button();
+            this.btnSavePassword = new System.Windows.Forms.Button();
+            this.txtNewPW = new System.Windows.Forms.TextBox();
+            this.txtConfirmPW = new System.Windows.Forms.TextBox();
+            this.btnCancelEditPW = new System.Windows.Forms.Button();
+            this.lbOldPW = new System.Windows.Forms.Label();
+            this.lbNewPW = new System.Windows.Forms.Label();
+            this.lbConfirmPW = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQLSach)).BeginInit();
@@ -90,6 +120,7 @@ namespace PBL
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhieuMuon)).BeginInit();
             this.panel3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -101,6 +132,7 @@ namespace PBL
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Multiline = true;
@@ -126,7 +158,7 @@ namespace PBL
             this.tabPage1.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(29, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(890, 637);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Quản lý sách";
@@ -255,7 +287,7 @@ namespace PBL
             // 
             this.cbbLoaiTL.FormattingEnabled = true;
             this.cbbLoaiTL.Location = new System.Drawing.Point(538, 95);
-            this.cbbLoaiTL.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbbLoaiTL.Margin = new System.Windows.Forms.Padding(2);
             this.cbbLoaiTL.Name = "cbbLoaiTL";
             this.cbbLoaiTL.Size = new System.Drawing.Size(147, 27);
             this.cbbLoaiTL.TabIndex = 7;
@@ -334,7 +366,7 @@ namespace PBL
             this.tabPage2.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage2.Location = new System.Drawing.Point(29, 4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(890, 637);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Quản lý Độc Giả";
@@ -714,6 +746,323 @@ namespace PBL
             this.lbSoThePM.TabIndex = 2;
             this.lbSoThePM.Text = "MSSV";
             // 
+            // tabPage4
+            // 
+            this.tabPage4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage4.BackgroundImage")));
+            this.tabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage4.Controls.Add(this.lbConfirmPW);
+            this.tabPage4.Controls.Add(this.lbNewPW);
+            this.tabPage4.Controls.Add(this.lbOldPW);
+            this.tabPage4.Controls.Add(this.btnCancelEditPW);
+            this.tabPage4.Controls.Add(this.txtConfirmPW);
+            this.tabPage4.Controls.Add(this.txtNewPW);
+            this.tabPage4.Controls.Add(this.btnSavePassword);
+            this.tabPage4.Controls.Add(this.btnSaveSDT);
+            this.tabPage4.Controls.Add(this.btnSaveEmail);
+            this.tabPage4.Controls.Add(this.btnSaveNgaySinh);
+            this.tabPage4.Controls.Add(this.btnEditPassword);
+            this.tabPage4.Controls.Add(this.btnEditSDT);
+            this.tabPage4.Controls.Add(this.btnEditEmail);
+            this.tabPage4.Controls.Add(this.btnEditNgaySinh);
+            this.tabPage4.Controls.Add(this.btnSaveTenNguoiDung);
+            this.tabPage4.Controls.Add(this.btnEditTenNguoiDung);
+            this.tabPage4.Controls.Add(this.txtOldPW);
+            this.tabPage4.Controls.Add(this.txtUsername);
+            this.tabPage4.Controls.Add(this.dtpNgaySinhNV);
+            this.tabPage4.Controls.Add(this.txtSDT);
+            this.tabPage4.Controls.Add(this.txtEmail);
+            this.tabPage4.Controls.Add(this.txtTenNguoiDung);
+            this.tabPage4.Controls.Add(this.lbChangePW);
+            this.tabPage4.Controls.Add(this.lbUsername);
+            this.tabPage4.Controls.Add(this.lbSDT);
+            this.tabPage4.Controls.Add(this.lbEmail);
+            this.tabPage4.Controls.Add(this.lbNgaySinh);
+            this.tabPage4.Controls.Add(this.lbTenNguoiDung);
+            this.tabPage4.Controls.Add(this.label2);
+            this.tabPage4.Location = new System.Drawing.Point(29, 4);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(890, 637);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Hồ sơ nhân viên";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Cambria", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Maroon;
+            this.label2.Location = new System.Drawing.Point(37, 27);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(647, 84);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Hồ sơ nhân viên";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbTenNguoiDung
+            // 
+            this.lbTenNguoiDung.AutoSize = true;
+            this.lbTenNguoiDung.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTenNguoiDung.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbTenNguoiDung.Location = new System.Drawing.Point(63, 139);
+            this.lbTenNguoiDung.Name = "lbTenNguoiDung";
+            this.lbTenNguoiDung.Size = new System.Drawing.Size(150, 22);
+            this.lbTenNguoiDung.TabIndex = 3;
+            this.lbTenNguoiDung.Text = "Tên Người Dùng";
+            // 
+            // lbNgaySinh
+            // 
+            this.lbNgaySinh.AutoSize = true;
+            this.lbNgaySinh.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNgaySinh.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbNgaySinh.Location = new System.Drawing.Point(63, 190);
+            this.lbNgaySinh.Name = "lbNgaySinh";
+            this.lbNgaySinh.Size = new System.Drawing.Size(94, 22);
+            this.lbNgaySinh.TabIndex = 4;
+            this.lbNgaySinh.Text = "Ngày Sinh";
+            // 
+            // lbEmail
+            // 
+            this.lbEmail.AutoSize = true;
+            this.lbEmail.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEmail.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbEmail.Location = new System.Drawing.Point(63, 236);
+            this.lbEmail.Name = "lbEmail";
+            this.lbEmail.Size = new System.Drawing.Size(60, 22);
+            this.lbEmail.TabIndex = 5;
+            this.lbEmail.Text = "Email";
+            // 
+            // lbSDT
+            // 
+            this.lbSDT.AutoSize = true;
+            this.lbSDT.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSDT.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbSDT.Location = new System.Drawing.Point(63, 282);
+            this.lbSDT.Name = "lbSDT";
+            this.lbSDT.Size = new System.Drawing.Size(45, 22);
+            this.lbSDT.TabIndex = 6;
+            this.lbSDT.Text = "SĐT";
+            // 
+            // lbUsername
+            // 
+            this.lbUsername.AutoSize = true;
+            this.lbUsername.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUsername.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbUsername.Location = new System.Drawing.Point(63, 329);
+            this.lbUsername.Name = "lbUsername";
+            this.lbUsername.Size = new System.Drawing.Size(139, 22);
+            this.lbUsername.TabIndex = 7;
+            this.lbUsername.Text = "Tên Đăng Nhập";
+            // 
+            // lbChangePW
+            // 
+            this.lbChangePW.AutoSize = true;
+            this.lbChangePW.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbChangePW.ForeColor = System.Drawing.Color.DarkRed;
+            this.lbChangePW.Location = new System.Drawing.Point(63, 375);
+            this.lbChangePW.Name = "lbChangePW";
+            this.lbChangePW.Size = new System.Drawing.Size(126, 22);
+            this.lbChangePW.TabIndex = 8;
+            this.lbChangePW.Text = "Đổi Mật Khẩu";
+            // 
+            // txtTenNguoiDung
+            // 
+            this.txtTenNguoiDung.Location = new System.Drawing.Point(274, 139);
+            this.txtTenNguoiDung.Name = "txtTenNguoiDung";
+            this.txtTenNguoiDung.Size = new System.Drawing.Size(341, 26);
+            this.txtTenNguoiDung.TabIndex = 9;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(274, 236);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(341, 26);
+            this.txtEmail.TabIndex = 10;
+            // 
+            // txtSDT
+            // 
+            this.txtSDT.Location = new System.Drawing.Point(274, 282);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(341, 26);
+            this.txtSDT.TabIndex = 11;
+            // 
+            // dtpNgaySinhNV
+            // 
+            this.dtpNgaySinhNV.Location = new System.Drawing.Point(274, 187);
+            this.dtpNgaySinhNV.Name = "dtpNgaySinhNV";
+            this.dtpNgaySinhNV.Size = new System.Drawing.Size(341, 26);
+            this.dtpNgaySinhNV.TabIndex = 12;
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Location = new System.Drawing.Point(274, 329);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(341, 26);
+            this.txtUsername.TabIndex = 13;
+            // 
+            // txtOldPW
+            // 
+            this.txtOldPW.Location = new System.Drawing.Point(298, 420);
+            this.txtOldPW.Name = "txtOldPW";
+            this.txtOldPW.PasswordChar = '*';
+            this.txtOldPW.Size = new System.Drawing.Size(285, 26);
+            this.txtOldPW.TabIndex = 14;
+            // 
+            // btnEditTenNguoiDung
+            // 
+            this.btnEditTenNguoiDung.Location = new System.Drawing.Point(660, 140);
+            this.btnEditTenNguoiDung.Name = "btnEditTenNguoiDung";
+            this.btnEditTenNguoiDung.Size = new System.Drawing.Size(97, 23);
+            this.btnEditTenNguoiDung.TabIndex = 15;
+            this.btnEditTenNguoiDung.Text = "Chỉnh sửa";
+            this.btnEditTenNguoiDung.UseVisualStyleBackColor = true;
+            this.btnEditTenNguoiDung.Click += new System.EventHandler(this.btnEditTenNguoiDung_Click);
+            // 
+            // btnSaveTenNguoiDung
+            // 
+            this.btnSaveTenNguoiDung.Location = new System.Drawing.Point(780, 140);
+            this.btnSaveTenNguoiDung.Name = "btnSaveTenNguoiDung";
+            this.btnSaveTenNguoiDung.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveTenNguoiDung.TabIndex = 16;
+            this.btnSaveTenNguoiDung.Text = "Lưu";
+            this.btnSaveTenNguoiDung.UseVisualStyleBackColor = true;
+            this.btnSaveTenNguoiDung.Click += new System.EventHandler(this.btnSaveTenNguoiDung_Click);
+            // 
+            // btnEditNgaySinh
+            // 
+            this.btnEditNgaySinh.Location = new System.Drawing.Point(660, 191);
+            this.btnEditNgaySinh.Name = "btnEditNgaySinh";
+            this.btnEditNgaySinh.Size = new System.Drawing.Size(97, 23);
+            this.btnEditNgaySinh.TabIndex = 17;
+            this.btnEditNgaySinh.Text = "Chỉnh sửa";
+            this.btnEditNgaySinh.UseVisualStyleBackColor = true;
+            this.btnEditNgaySinh.Click += new System.EventHandler(this.btnEditNgaySinh_Click);
+            // 
+            // btnEditEmail
+            // 
+            this.btnEditEmail.Location = new System.Drawing.Point(660, 237);
+            this.btnEditEmail.Name = "btnEditEmail";
+            this.btnEditEmail.Size = new System.Drawing.Size(97, 23);
+            this.btnEditEmail.TabIndex = 18;
+            this.btnEditEmail.Text = "Chỉnh sửa";
+            this.btnEditEmail.UseVisualStyleBackColor = true;
+            this.btnEditEmail.Click += new System.EventHandler(this.btnEditEmail_Click);
+            // 
+            // btnEditSDT
+            // 
+            this.btnEditSDT.Location = new System.Drawing.Point(660, 283);
+            this.btnEditSDT.Name = "btnEditSDT";
+            this.btnEditSDT.Size = new System.Drawing.Size(97, 23);
+            this.btnEditSDT.TabIndex = 19;
+            this.btnEditSDT.Text = "Chỉnh sửa";
+            this.btnEditSDT.UseVisualStyleBackColor = true;
+            this.btnEditSDT.Click += new System.EventHandler(this.btnEditSDT_Click);
+            // 
+            // btnEditPassword
+            // 
+            this.btnEditPassword.Location = new System.Drawing.Point(298, 376);
+            this.btnEditPassword.Name = "btnEditPassword";
+            this.btnEditPassword.Size = new System.Drawing.Size(97, 23);
+            this.btnEditPassword.TabIndex = 21;
+            this.btnEditPassword.Text = "Chỉnh sửa";
+            this.btnEditPassword.UseVisualStyleBackColor = true;
+            this.btnEditPassword.Click += new System.EventHandler(this.btnEditPassword_Click);
+            // 
+            // btnSaveNgaySinh
+            // 
+            this.btnSaveNgaySinh.Location = new System.Drawing.Point(780, 191);
+            this.btnSaveNgaySinh.Name = "btnSaveNgaySinh";
+            this.btnSaveNgaySinh.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveNgaySinh.TabIndex = 22;
+            this.btnSaveNgaySinh.Text = "Lưu";
+            this.btnSaveNgaySinh.UseVisualStyleBackColor = true;
+            this.btnSaveNgaySinh.Click += new System.EventHandler(this.btnSaveNgaySinh_Click);
+            // 
+            // btnSaveEmail
+            // 
+            this.btnSaveEmail.Location = new System.Drawing.Point(780, 237);
+            this.btnSaveEmail.Name = "btnSaveEmail";
+            this.btnSaveEmail.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveEmail.TabIndex = 23;
+            this.btnSaveEmail.Text = "Lưu";
+            this.btnSaveEmail.UseVisualStyleBackColor = true;
+            this.btnSaveEmail.Click += new System.EventHandler(this.btnSaveEmail_Click);
+            // 
+            // btnSaveSDT
+            // 
+            this.btnSaveSDT.Location = new System.Drawing.Point(780, 283);
+            this.btnSaveSDT.Name = "btnSaveSDT";
+            this.btnSaveSDT.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveSDT.TabIndex = 24;
+            this.btnSaveSDT.Text = "Lưu";
+            this.btnSaveSDT.UseVisualStyleBackColor = true;
+            this.btnSaveSDT.Click += new System.EventHandler(this.btnSaveSDT_Click);
+            // 
+            // btnSavePassword
+            // 
+            this.btnSavePassword.Location = new System.Drawing.Point(401, 531);
+            this.btnSavePassword.Name = "btnSavePassword";
+            this.btnSavePassword.Size = new System.Drawing.Size(75, 23);
+            this.btnSavePassword.TabIndex = 26;
+            this.btnSavePassword.Text = "Lưu";
+            this.btnSavePassword.UseVisualStyleBackColor = true;
+            this.btnSavePassword.Click += new System.EventHandler(this.btnSavePassword_Click);
+            // 
+            // txtNewPW
+            // 
+            this.txtNewPW.Location = new System.Drawing.Point(298, 455);
+            this.txtNewPW.Name = "txtNewPW";
+            this.txtNewPW.PasswordChar = '*';
+            this.txtNewPW.Size = new System.Drawing.Size(285, 26);
+            this.txtNewPW.TabIndex = 27;
+            // 
+            // txtConfirmPW
+            // 
+            this.txtConfirmPW.Location = new System.Drawing.Point(298, 490);
+            this.txtConfirmPW.Name = "txtConfirmPW";
+            this.txtConfirmPW.PasswordChar = '*';
+            this.txtConfirmPW.Size = new System.Drawing.Size(285, 26);
+            this.txtConfirmPW.TabIndex = 28;
+            // 
+            // btnCancelEditPW
+            // 
+            this.btnCancelEditPW.Location = new System.Drawing.Point(480, 376);
+            this.btnCancelEditPW.Name = "btnCancelEditPW";
+            this.btnCancelEditPW.Size = new System.Drawing.Size(75, 25);
+            this.btnCancelEditPW.TabIndex = 29;
+            this.btnCancelEditPW.Text = "Hủy";
+            this.btnCancelEditPW.UseVisualStyleBackColor = true;
+            this.btnCancelEditPW.Click += new System.EventHandler(this.btnCancelEditPW_Click);
+            // 
+            // lbOldPW
+            // 
+            this.lbOldPW.AutoSize = true;
+            this.lbOldPW.Location = new System.Drawing.Point(111, 423);
+            this.lbOldPW.Name = "lbOldPW";
+            this.lbOldPW.Size = new System.Drawing.Size(102, 19);
+            this.lbOldPW.TabIndex = 30;
+            this.lbOldPW.Text = "Mật khẩu cũ";
+            // 
+            // lbNewPW
+            // 
+            this.lbNewPW.AutoSize = true;
+            this.lbNewPW.Location = new System.Drawing.Point(111, 455);
+            this.lbNewPW.Name = "lbNewPW";
+            this.lbNewPW.Size = new System.Drawing.Size(114, 19);
+            this.lbNewPW.TabIndex = 31;
+            this.lbNewPW.Text = "Mật khẩu mới";
+            // 
+            // lbConfirmPW
+            // 
+            this.lbConfirmPW.AutoSize = true;
+            this.lbConfirmPW.Location = new System.Drawing.Point(111, 493);
+            this.lbConfirmPW.Name = "lbConfirmPW";
+            this.lbConfirmPW.Size = new System.Drawing.Size(181, 19);
+            this.lbConfirmPW.TabIndex = 32;
+            this.lbConfirmPW.Text = "Nhập lại mật khẩu mới";
+            // 
             // FormNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -738,6 +1087,8 @@ namespace PBL
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPhieuMuon)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -794,6 +1145,36 @@ namespace PBL
         private System.Windows.Forms.ComboBox cbbLoaiTL;
         private System.Windows.Forms.Label lbLoaiTLS;
         private System.Windows.Forms.Button btnViTri;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbChangePW;
+        private System.Windows.Forms.Label lbUsername;
+        private System.Windows.Forms.Label lbSDT;
+        private System.Windows.Forms.Label lbEmail;
+        private System.Windows.Forms.Label lbNgaySinh;
+        private System.Windows.Forms.Label lbTenNguoiDung;
+        private System.Windows.Forms.TextBox txtTenNguoiDung;
+        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.DateTimePicker dtpNgaySinhNV;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtOldPW;
+        private System.Windows.Forms.Button btnSaveTenNguoiDung;
+        private System.Windows.Forms.Button btnEditTenNguoiDung;
+        private System.Windows.Forms.Button btnEditPassword;
+        private System.Windows.Forms.Button btnEditSDT;
+        private System.Windows.Forms.Button btnEditEmail;
+        private System.Windows.Forms.Button btnEditNgaySinh;
+        private System.Windows.Forms.Button btnSavePassword;
+        private System.Windows.Forms.Button btnSaveSDT;
+        private System.Windows.Forms.Button btnSaveEmail;
+        private System.Windows.Forms.Button btnSaveNgaySinh;
+        private System.Windows.Forms.TextBox txtNewPW;
+        private System.Windows.Forms.TextBox txtConfirmPW;
+        private System.Windows.Forms.Button btnCancelEditPW;
+        private System.Windows.Forms.Label lbOldPW;
+        private System.Windows.Forms.Label lbConfirmPW;
+        private System.Windows.Forms.Label lbNewPW;
     }
 }
 

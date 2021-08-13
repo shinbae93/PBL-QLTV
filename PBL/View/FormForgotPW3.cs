@@ -12,11 +12,11 @@ using PBL.BLL;
 
 namespace PBL.View
 {
-    public partial class FormForgotPW3 : Form
+    public partial class ChangePassword : Form
     {
         public NguoiDung nd { get; set; }
 
-        public FormForgotPW3(NguoiDung nd_PW2)
+        public ChangePassword(NguoiDung nd_PW2)
         {
             InitializeComponent();
             nd = nd_PW2;
