@@ -17,6 +17,7 @@ namespace PBL
     {
         public string Username { get; set; }
         public Boolean UserClosing = false;
+
         public FormNhanVien(string Username)
         {
             InitializeComponent();
@@ -38,7 +39,6 @@ namespace PBL
             }
             else
             {
-
             }
         }
 
@@ -48,14 +48,19 @@ namespace PBL
             {
                 case CloseReason.ApplicationExitCall:
                     break;
+
                 case CloseReason.FormOwnerClosing:
                     break;
+
                 case CloseReason.MdiFormClosing:
                     break;
+
                 case CloseReason.None:
                     break;
+
                 case CloseReason.TaskManagerClosing:
                     break;
+
                 case CloseReason.UserClosing:
                     if (!UserClosing)
                     {
@@ -67,13 +72,16 @@ namespace PBL
                         }
                     }
                     break;
+
                 case CloseReason.WindowsShutDown:
                     break;
+
                 default:
                     break;
             }
             UserClosing = false;
         }
+
         #endregion Logout
 
         #region Sach
@@ -231,7 +239,7 @@ namespace PBL
 
         private void ShowPM(string TenDG, string MSSV)
         {
-            dataGridViewQLSach.DataSource = QLPM_BLL.Instance.GetListPM(TenDG, MSSV);
+            dataGridViewPhieuMuon.DataSource = QLPM_BLL.Instance.GetListPM(TenDG, MSSV);
         }
 
         private void btnAddPhieuMuon_Click(object sender, EventArgs e)
@@ -278,6 +286,7 @@ namespace PBL
         #endregion PhieuMuon
 
         #region HoSo
+
         public void SetHoSo()
         {
             txtTenNguoiDung.Text = QLNV_BLL.Instance.GetUserByUsername(Username).HoTen;
@@ -298,26 +307,31 @@ namespace PBL
             lbNewPW.Hide();
             lbConfirmPW.Hide();
         }
+
         private void btnEditTenNguoiDung_Click(object sender, EventArgs e)
         {
             txtTenNguoiDung.Enabled = true;
         }
+
         private void btnSaveTenNguoiDung_Click(object sender, EventArgs e)
         {
             QLNV_BLL.Instance.EditHoTenNV(QLNV_BLL.Instance.GetUserByUsername(Username), QLNV_BLL.Instance.GetUserByUsername(Username).ID, txtTenNguoiDung.Text);
             MessageBox.Show("Thông tin đã được cập nhật");
             txtTenNguoiDung.Enabled = false;
         }
+
         private void btnEditNgaySinh_Click(object sender, EventArgs e)
         {
             dtpNgaySinhNV.Enabled = true;
         }
+
         private void btnSaveNgaySinh_Click(object sender, EventArgs e)
         {
             QLNV_BLL.Instance.EditNgaySinhNV(QLNV_BLL.Instance.GetUserByUsername(Username), QLNV_BLL.Instance.GetUserByUsername(Username).ID, dtpNgaySinhNV.Value);
             MessageBox.Show("Thông tin đã được cập nhật");
             dtpNgaySinhNV.Enabled = false;
         }
+
         private void btnEditEmail_Click(object sender, EventArgs e)
         {
             txtEmail.Enabled = true;
@@ -329,6 +343,7 @@ namespace PBL
             MessageBox.Show("Thông tin đã được cập nhật");
             txtEmail.Enabled = false;
         }
+
         private void btnEditSDT_Click(object sender, EventArgs e)
         {
             txtSDT.Enabled = true;
@@ -341,6 +356,7 @@ namespace PBL
             MessageBox.Show("Thông tin đã được cập nhật");
             txtSDT.Enabled = false;
         }
+
         private void btnEditPassword_Click(object sender, EventArgs e)
         {
             txtOldPW.Show();
@@ -351,6 +367,7 @@ namespace PBL
             lbNewPW.Show();
             lbConfirmPW.Show();
         }
+
         private void btnCancelEditPW_Click(object sender, EventArgs e)
         {
             txtOldPW.Hide();
@@ -361,11 +378,12 @@ namespace PBL
             lbNewPW.Hide();
             lbConfirmPW.Hide();
         }
+
         private void btnSavePassword_Click(object sender, EventArgs e)
         {
             if (QLNV_BLL.Instance.GetUserByUsername(Username).Password == txtOldPW.Text)
             {
-                if(txtNewPW.Text == txtConfirmPW.Text)
+                if (txtNewPW.Text == txtConfirmPW.Text)
                 {
                     QLNV_BLL.Instance.ChangePass(QLNV_BLL.Instance.GetUserByUsername(Username), txtConfirmPW.Text);
                     MessageBox.Show("Đổi mật khẩu thành công !");
@@ -392,7 +410,5 @@ namespace PBL
         }
 
         #endregion HoSo
-
-
     }
 }

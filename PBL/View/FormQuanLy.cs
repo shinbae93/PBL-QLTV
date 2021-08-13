@@ -29,7 +29,7 @@ namespace PBL.View
         }
 
         #region Logout
-        
+
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             UserClosing = true;
@@ -41,23 +41,28 @@ namespace PBL.View
             }
             else
             {
-                
             }
         }
+
         private void FormQuanLy_FormClosing(object sender, FormClosingEventArgs e)
         {
             switch (e.CloseReason)
             {
                 case CloseReason.ApplicationExitCall:
                     break;
+
                 case CloseReason.FormOwnerClosing:
                     break;
+
                 case CloseReason.MdiFormClosing:
                     break;
+
                 case CloseReason.None:
                     break;
+
                 case CloseReason.TaskManagerClosing:
                     break;
+
                 case CloseReason.UserClosing:
                     if (!UserClosing)
                     {
@@ -69,8 +74,10 @@ namespace PBL.View
                         }
                     }
                     break;
+
                 case CloseReason.WindowsShutDown:
                     break;
+
                 default:
                     break;
             }
@@ -406,10 +413,5 @@ namespace PBL.View
         }
 
         #endregion Thong Ke
-
-        private void FormQuanLy_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
