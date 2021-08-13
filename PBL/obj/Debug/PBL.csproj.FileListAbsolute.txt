@@ -64,11 +64,9 @@ C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.csprojAssemblyReference.cache
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuDocGia.resources
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuNhanVien.resources
-C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuPhieuMuon.resources
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuSach.resources
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormForgotPW.resources
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormForgotPW2.resources
-C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormForgotPW3.resources
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormLogin.resources
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.FormNhanVien.resources
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.Properties.Resources.resources
@@ -81,7 +79,6 @@ C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.exe
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.pdb
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormAddDuLieuPhieuMuon.resources
 C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormTraDuLieuPhieuMuon.resources
-C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.FormLogOut.resources
 C:\Users\nguoi\OneDrive\Desktop\PBL-QLTV\PBL\obj\Debug\PBL.View.FormAddDuLieuPhieuMuon.resources
 C:\Users\nguoi\OneDrive\Desktop\PBL-QLTV\PBL\obj\Debug\PBL.View.FormForgotPW.resources
 C:\Users\nguoi\OneDrive\Desktop\PBL-QLTV\PBL\obj\Debug\PBL.View.FormForgotPW2.resources
@@ -99,7 +96,6 @@ D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.csprojAssemblyReference.cache
 D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormAddDuLieuPhieuMuon.resources
 D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuDocGia.resources
 D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuNhanVien.resources
-D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuPhieuMuon.resources
 D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormDuLieuSach.resources
 D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormForgotPW.resources
 D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.View.FormForgotPW2.resources
@@ -116,3 +112,4 @@ D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.csproj.CoreCompileInputs.cache
 D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.csproj.CopyComplete
 D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.exe
 D:\Bai tap\PBL3\PBL-QLTV\PBL\obj\Debug\PBL.pdb
+C:\Users\Admin\Desktop\123\PBL-QLTV\PBL\obj\Debug\PBL.View.ChangePassword.resources

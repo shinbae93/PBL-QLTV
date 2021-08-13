@@ -121,7 +121,42 @@ namespace PBL.BLL
                 db.SaveChanges();
             }
         }
-
+        public void EditHoTenNV(NguoiDung s, int ID_NguoiDung, string ten)
+        {
+            using (DHP_07Entities db = new DHP_07Entities())
+            {
+                NguoiDung s1 = db.NguoiDungs.Find(ID_NguoiDung);
+                s1.HoTen = ten;
+                db.SaveChanges();
+            }
+        }
+        public void EditNgaySinhNV(NguoiDung s, int ID_NguoiDung, DateTime ngay)
+        {
+            using (DHP_07Entities db = new DHP_07Entities())
+            {
+                NguoiDung s1 = db.NguoiDungs.Find(ID_NguoiDung);
+                s1.NgaySinh = ngay;
+                db.SaveChanges();
+            }
+        }
+        public void EditEmailNV(NguoiDung s, int ID_NguoiDung, string email)
+        {
+            using (DHP_07Entities db = new DHP_07Entities())
+            {
+                NguoiDung s1 = db.NguoiDungs.Find(ID_NguoiDung);
+                s1.Email = email;
+                db.SaveChanges();
+            }
+        }
+        public void EditSDTNV(NguoiDung s, int ID_NguoiDung, string sdt)
+        {
+            using (DHP_07Entities db = new DHP_07Entities())
+            {
+                NguoiDung s1 = db.NguoiDungs.Find(ID_NguoiDung);
+                s1.DienThoai = sdt;
+                db.SaveChanges();
+            }
+        }
         public void DeleteNV(int ID_NguoiDung)
         {
             using (DHP_07Entities db = new DHP_07Entities())

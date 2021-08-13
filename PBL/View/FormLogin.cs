@@ -28,12 +28,16 @@ namespace PBL.View
                     if (Login_BLL.Instance.GetNguoiDungByUserAndPW(txtUser.Text, txtPassword.Text).ID_QuyenHan == 1)
                     {
                         FormQuanLy f = new FormQuanLy(txtUser.Text);
+                        this.Visible = false;
                         f.ShowDialog();
+                        this.Visible = true;
                     }
                     else if (Login_BLL.Instance.GetNguoiDungByUserAndPW(txtUser.Text, txtPassword.Text).ID_QuyenHan == 2)
                     {
                         FormNhanVien f = new FormNhanVien(txtUser.Text);
+                        this.Visible = false;
                         f.ShowDialog();
+                        this.Visible = true;
                     }
                 }
                 else
