@@ -55,7 +55,7 @@ namespace PBL.View
             {
                 MessageBox.Show("Vui long dien du thong tin !");
             }
-            else if (QLDG_BLL.Instance.CheckMSSV(txtSoThe.Text) == false)
+            else if (!QLDG_BLL.Instance.CheckMSSV(txtSoThe.Text))
             {
                 MessageBox.Show("Doc Gia khong ton tai !");
             }

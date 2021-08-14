@@ -883,7 +883,7 @@ namespace PBL
             // 
             // btnCancelEditPW
             // 
-            this.btnCancelEditPW.Location = new System.Drawing.Point(640, 463);
+            this.btnCancelEditPW.Location = new System.Drawing.Point(622, 662);
             this.btnCancelEditPW.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelEditPW.Name = "btnCancelEditPW";
             this.btnCancelEditPW.Size = new System.Drawing.Size(100, 31);
@@ -912,7 +912,7 @@ namespace PBL
             // 
             // btnSavePassword
             // 
-            this.btnSavePassword.Location = new System.Drawing.Point(535, 654);
+            this.btnSavePassword.Location = new System.Drawing.Point(443, 665);
             this.btnSavePassword.Margin = new System.Windows.Forms.Padding(4);
             this.btnSavePassword.Name = "btnSavePassword";
             this.btnSavePassword.Size = new System.Drawing.Size(100, 28);
@@ -956,7 +956,7 @@ namespace PBL
             // 
             // btnEditPassword
             // 
-            this.btnEditPassword.Location = new System.Drawing.Point(397, 463);
+            this.btnEditPassword.Location = new System.Drawing.Point(501, 463);
             this.btnEditPassword.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditPassword.Name = "btnEditPassword";
             this.btnEditPassword.Size = new System.Drawing.Size(129, 28);

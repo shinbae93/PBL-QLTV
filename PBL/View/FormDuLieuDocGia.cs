@@ -77,6 +77,10 @@ namespace PBL.View
             {
                 MessageBox.Show("MSSV khong hop le !");
             }
+            else if (QLDG_BLL.Instance.CheckMSSV(txtMSSV.Text) && mssv == null)
+            {
+                MessageBox.Show("MSSV da ton tai !");
+            }
             else if (dtpNgayDK.Value > DateTime.Now)
             {
                 MessageBox.Show("Ngay DK khong hop le !");

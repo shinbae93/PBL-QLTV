@@ -29,6 +29,14 @@ namespace PBL.BLL
         {
         }
 
+        public bool CheckReturned(int MaPM)
+        {
+            using (DHP_07Entities db = new DHP_07Entities())
+            {
+                return (db.PhieuMuons.Find(MaPM).NgayTra != null);
+            }
+        }
+
         public List<PhieuMuon_DTO> GetListPM(string TenDG, string MSSV)
         {
             using (DHP_07Entities db = new DHP_07Entities())

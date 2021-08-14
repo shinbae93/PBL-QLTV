@@ -73,6 +73,10 @@ namespace PBL.View
                         {
                             e.Cancel = true;
                         }
+                        else
+                        {
+                            Application.Exit();
+                        }
                     }
                     break;
 
@@ -183,9 +187,13 @@ namespace PBL.View
         {
             if (dataGridViewPhieuMuon.SelectedRows.Count == 1)
             {
-                FormTraDuLieuPhieuMuon f = new FormTraDuLieuPhieuMuon(Convert.ToInt32(dataGridViewPhieuMuon.SelectedRows[0].Cells[0].Value));
-                f.d = new FormTraDuLieuPhieuMuon.MyDel(this.ShowPM);
-                f.ShowDialog();
+                if (QLPM_BLL.Instance.CheckReturned(Convert.ToInt32(dataGridViewPhieuMuon.SelectedRows[0].Cells[0].Value))) MessageBox.Show("Phieu muon da tra roi !");
+                else
+                {
+                    FormTraDuLieuPhieuMuon f = new FormTraDuLieuPhieuMuon(Convert.ToInt32(dataGridViewPhieuMuon.SelectedRows[0].Cells[0].Value));
+                    f.d = new FormTraDuLieuPhieuMuon.MyDel(this.ShowPM);
+                    f.ShowDialog();
+                }
             }
         }
 

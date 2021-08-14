@@ -38,6 +38,7 @@ namespace PBL.View
             cbbLTL.Text = QLTL_BLL.Instance.GetTLByMaTL(MaTL).LoaiTaiLieu.TenLoai;
             dtpNamXB.Value = QLTL_BLL.Instance.GetTLByMaTL(MaTL).NamXuatBan;
             numSLSach.Value = (decimal)QLTL_BLL.Instance.GetTLByMaTL(MaTL).SoLuong;
+            txtMaTaiLieu.Enabled = false;
         }
 
         private void SetCBB()
@@ -68,6 +69,10 @@ namespace PBL.View
             else if (!Regex.Match(txtMaTaiLieu.Text, @"^([A-Z]([0-9][1-9]){3})$").Success)
             {
                 MessageBox.Show("Ma tai lieu khong hop le !");
+            }
+            else if (QLTL_BLL.Instance.GetTLByMaTL(txtMaTaiLieu.Text) != null)
+            {
+                MessageBox.Show("Ma tai lieu da ton tai !");
             }
             else if (numSLSach.Value == 0)
             {

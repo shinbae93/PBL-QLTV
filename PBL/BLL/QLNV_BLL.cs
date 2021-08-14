@@ -85,6 +85,22 @@ namespace PBL.BLL
             }
         }
 
+        public bool CheckEmail(string email)
+        {
+            using (DHP_07Entities db = new DHP_07Entities())
+            {
+                return db.NguoiDungs.Any(p => p.Email == email);
+            }
+        }
+
+        public bool CheckPhoneNumber(string num)
+        {
+            using (DHP_07Entities db = new DHP_07Entities())
+            {
+                return db.NguoiDungs.Any(p => p.DienThoai == num);
+            }
+        }
+
         public void ChangePass(NguoiDung nd, string Pass)
         {
             using (DHP_07Entities db = new DHP_07Entities())
@@ -121,6 +137,7 @@ namespace PBL.BLL
                 db.SaveChanges();
             }
         }
+
         public void EditHoTenNV(NguoiDung s, int ID_NguoiDung, string ten)
         {
             using (DHP_07Entities db = new DHP_07Entities())
@@ -130,6 +147,7 @@ namespace PBL.BLL
                 db.SaveChanges();
             }
         }
+
         public void EditNgaySinhNV(NguoiDung s, int ID_NguoiDung, DateTime ngay)
         {
             using (DHP_07Entities db = new DHP_07Entities())
@@ -139,6 +157,7 @@ namespace PBL.BLL
                 db.SaveChanges();
             }
         }
+
         public void EditEmailNV(NguoiDung s, int ID_NguoiDung, string email)
         {
             using (DHP_07Entities db = new DHP_07Entities())
@@ -148,6 +167,7 @@ namespace PBL.BLL
                 db.SaveChanges();
             }
         }
+
         public void EditSDTNV(NguoiDung s, int ID_NguoiDung, string sdt)
         {
             using (DHP_07Entities db = new DHP_07Entities())
@@ -157,6 +177,7 @@ namespace PBL.BLL
                 db.SaveChanges();
             }
         }
+
         public void DeleteNV(int ID_NguoiDung)
         {
             using (DHP_07Entities db = new DHP_07Entities())

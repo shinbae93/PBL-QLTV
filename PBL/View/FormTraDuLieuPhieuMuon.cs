@@ -23,14 +23,22 @@ namespace PBL.View
             InitializeComponent();
             txtMaPhieuMuon.Enabled = false;
             this.MaPM = MaPM;
+            txtMaPhieuMuon.Text = MaPM.ToString();
             dtpHanTra.Value = QLPM_BLL.Instance.GetPMByMaPM(MaPM).HanTra;
         }
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            QLPM_BLL.Instance.TraPM(MaPM, txtViPham.Text, dtpNgayTra.Value);
-            d("", "");
-            this.Dispose();
+            if (dtpNgayTra.Value > DateTime.Now)
+            {
+                MessageBox.Show("Ngay tra khong hop le !");
+            }
+            else
+            {
+                QLPM_BLL.Instance.TraPM(MaPM, txtViPham.Text, dtpNgayTra.Value);
+                d("", "");
+                this.Dispose();
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

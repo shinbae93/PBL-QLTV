@@ -60,6 +60,7 @@ namespace PBL.View
                     rbtnNu.Checked = true;
                 }
                 cbbQuyenHan.SelectedIndex = s.ID_QuyenHan - 1;
+                txtUser.Enabled = false;
             }
         }
 
@@ -73,7 +74,7 @@ namespace PBL.View
             {
                 MessageBox.Show("Vui long dien du thong tin !");
             }
-            else if (QLNV_BLL.Instance.CheckUsername(txtUser.Text))
+            else if (QLNV_BLL.Instance.CheckUsername(txtUser.Text) && ID_NguoiDung == 0)
             {
                 MessageBox.Show("Username da ton tai !");
             }
@@ -81,10 +82,18 @@ namespace PBL.View
             {
                 MessageBox.Show("So dien thoai khong hop le !");
             }
+            else if (QLNV_BLL.Instance.CheckPhoneNumber(txtDienThoai.Text) && ID_NguoiDung == 0)
+            {
+                MessageBox.Show("So dien thoai da ton tai !");
+            }
             else if (!Regex.Match(txtEmail.Text, @"^[\w!#$%&'*+\-/=?\^_`{|}~]+(\.[\w!#$%&'*+\-/=?\^_`{|}~]+)*" + "@"
                                                + @"((([\-\w]+\.)+[a-zA-Z]{2,4}))\z").Success)
             {
                 MessageBox.Show("Email khong hop le !");
+            }
+            else if (QLNV_BLL.Instance.CheckEmail(txtEmail.Text) && ID_NguoiDung == 0)
+            {
+                MessageBox.Show("Email da ton tai !");
             }
             else
             {

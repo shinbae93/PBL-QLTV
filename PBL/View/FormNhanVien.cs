@@ -71,6 +71,10 @@ namespace PBL
                         {
                             e.Cancel = true;
                         }
+                        else
+                        {
+                            Application.Exit();
+                        }
                     }
                     break;
 
@@ -254,9 +258,13 @@ namespace PBL
         {
             if (dataGridViewPhieuMuon.SelectedRows.Count == 1)
             {
-                FormTraDuLieuPhieuMuon f = new FormTraDuLieuPhieuMuon(Convert.ToInt32(dataGridViewPhieuMuon.SelectedRows[0].Cells[0].Value));
-                f.d = new FormTraDuLieuPhieuMuon.MyDel(this.ShowPM);
-                f.ShowDialog();
+                if (QLPM_BLL.Instance.CheckReturned(Convert.ToInt32(dataGridViewPhieuMuon.SelectedRows[0].Cells[0].Value))) MessageBox.Show("Phieu muon da tra roi !");
+                else
+                {
+                    FormTraDuLieuPhieuMuon f = new FormTraDuLieuPhieuMuon(Convert.ToInt32(dataGridViewPhieuMuon.SelectedRows[0].Cells[0].Value));
+                    f.d = new FormTraDuLieuPhieuMuon.MyDel(this.ShowPM);
+                    f.ShowDialog();
+                }
             }
         }
 
@@ -307,6 +315,7 @@ namespace PBL
             lbOldPW.Hide();
             lbNewPW.Hide();
             lbConfirmPW.Hide();
+            btnCancelEditPW.Hide();
         }
 
         private void btnEditTenNguoiDung_Click(object sender, EventArgs e)
@@ -367,6 +376,7 @@ namespace PBL
             lbOldPW.Show();
             lbNewPW.Show();
             lbConfirmPW.Show();
+            btnCancelEditPW.Show();
         }
 
         private void btnCancelEditPW_Click(object sender, EventArgs e)
@@ -381,6 +391,7 @@ namespace PBL
             txtOldPW.Text = "";
             txtNewPW.Text = "";
             txtConfirmPW.Text = "";
+            btnCancelEditPW.Hide();
         }
 
         private void btnSavePassword_Click(object sender, EventArgs e)
@@ -401,6 +412,7 @@ namespace PBL
                     lbOldPW.Hide();
                     lbNewPW.Hide();
                     lbConfirmPW.Hide();
+                    btnCancelEditPW.Hide();
                 }
                 else
                 {
