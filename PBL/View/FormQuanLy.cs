@@ -233,13 +233,6 @@ namespace PBL.View
         private void SetCBBNV()
         {
             DHP_07Entities db = new DHP_07Entities();
-            cbbLoaiTL.Items.Add(new CBBItem { Value = 0, Text = "ALL" });
-            cbbLoaiTL.Text = "ALL";
-            foreach (LoaiTaiLieu i in db.LoaiTaiLieux)
-            {
-                cbbLoaiTL.Items.Add(new CBBItem { Value = i.MaLTL, Text = i.TenLoai });
-            }
-
             cbbQuyenHan.Items.Add(new CBBItem { Value = 0, Text = "ALL" });
             cbbQuyenHan.SelectedIndex = 0;
             foreach (QuyenHan i in db.QuyenHans)

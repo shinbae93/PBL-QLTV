@@ -260,6 +260,19 @@ namespace PBL
             // cbbSortS
             // 
             this.cbbSortS.FormattingEnabled = true;
+            this.cbbSortS.Items.AddRange(new object[] {
+            "MaTL (Tang)",
+            "MaTL (Giam)",
+            "TenTL (Tang)",
+            "TenTL (Giam)",
+            "LoaiTL (Tang)",
+            "LoaiTL (Giam)",
+            "Tac Gia (Tang)",
+            "Tac Gia (Giam)",
+            "NXB (Tang) ",
+            "NXB (Giam)",
+            "Ngon Ngu (Tang)",
+            "Ngon Ngu (Giam)"});
             this.cbbSortS.Location = new System.Drawing.Point(802, 688);
             this.cbbSortS.Margin = new System.Windows.Forms.Padding(4);
             this.cbbSortS.Name = "cbbSortS";
@@ -634,6 +647,19 @@ namespace PBL
             // cbbSortPM
             // 
             this.cbbSortPM.FormattingEnabled = true;
+            this.cbbSortPM.Items.AddRange(new object[] {
+            "MaPM (Tang)",
+            "MaPM (Giam)",
+            "DocGia (Tang)",
+            "DocGia (Giam)",
+            "NguoiDung (Tang)",
+            "NguoiDung (Giam)",
+            "NgayMuon (Tang)",
+            "NgayMuon (Giam)",
+            "HanTra (Tang)",
+            "HanTra (Giam)",
+            "NgayTra (Tang)",
+            "NgayTra (Giam)"});
             this.cbbSortPM.Location = new System.Drawing.Point(751, 689);
             this.cbbSortPM.Margin = new System.Windows.Forms.Padding(5);
             this.cbbSortPM.Name = "cbbSortPM";

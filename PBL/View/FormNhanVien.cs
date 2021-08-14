@@ -22,6 +22,8 @@ namespace PBL
         {
             InitializeComponent();
             SetCBBSortDG();
+            SetCBBSach();
+
             this.Username = Username;
             SetHoSo();
         }
