@@ -70,7 +70,7 @@ namespace PBL.View
             {
                 MessageBox.Show("Ma tai lieu khong hop le !");
             }
-            else if (QLTL_BLL.Instance.GetTLByMaTL(txtMaTaiLieu.Text) != null)
+            else if (QLTL_BLL.Instance.GetTLByMaTL(txtMaTaiLieu.Text) != null && MaTL == null)
             {
                 MessageBox.Show("Ma tai lieu da ton tai !");
             }

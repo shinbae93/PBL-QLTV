@@ -81,36 +81,53 @@ namespace PBL.View
 
         private void btnAddTL_Click(object sender, EventArgs e)
         {
-            check = true;
-            TaiLieu s = QLTL_BLL.Instance.GetTLByMaTL(((CBBItem_TL)cbbTL.SelectedItem).Value);
-            if ((int)numSLTL.Value >= s.SoLuong) MessageBox.Show("Vượt quá số lượng cho phép !");
+            if (cbbTL.SelectedIndex == -1)
+            {
+                MessageBox.Show("Vui long chon tai lieu !");
+            }
+            else if (numSLTL.Value == 0)
+            {
+                MessageBox.Show("Vui long chon so luong tai lieu !");
+            }
             else
             {
-                for (int i = 0; i < (int)numSLTL.Value; ++i)
+                TaiLieu s = QLTL_BLL.Instance.GetTLByMaTL(((CBBItem_TL)cbbTL.SelectedItem).Value);
+                if ((int)numSLTL.Value > s.SoLuong)
                 {
-                    data.Add(new TaiLieu_DTO
-                    {
-                        MaTL = s.MaTL,
-                        TenTL = s.TenTL,
-                        TacGia = s.TacGia,
-                        LoaiTaiLieu = s.LoaiTaiLieu.TenLoai,
-                        NgonNgu = s.NgonNgu.TenNgonNgu,
-                        NhaXuatBan = s.NhaXuatBan.TenNXB,
-                        NamXuatBan = s.NamXuatBan,
-                        SoLuong = s.SoLuong - 1
-                    });
+                    MessageBox.Show("Vượt quá số lượng cho phép !");
                 }
-                ListMaCTL = QLTL_BLL.Instance.GetListMaCTL(s.MaTL, (int)numSLTL.Value);
-                QLTL_BLL.Instance.GiamSL(((CBBItem_TL)cbbTL.SelectedItem).Value, (int)numSLTL.Value);
-                dgvTL.DataSource = null;
-                dgvTL.DataSource = data;
+                else
+                {
+                    check = true;
+                    for (int i = 0; i < (int)numSLTL.Value; ++i)
+                    {
+                        data.Add(new TaiLieu_DTO
+                        {
+                            MaTL = s.MaTL,
+                            TenTL = s.TenTL,
+                            TacGia = s.TacGia,
+                            LoaiTaiLieu = s.LoaiTaiLieu.TenLoai,
+                            NgonNgu = s.NgonNgu.TenNgonNgu,
+                            NhaXuatBan = s.NhaXuatBan.TenNXB,
+                            NamXuatBan = s.NamXuatBan,
+                            SoLuong = s.SoLuong - (int)numSLTL.Value
+                        });
+                    }
+                    ListMaCTL = QLTL_BLL.Instance.GetListMaCTL(s.MaTL, (int)numSLTL.Value);
+                    QLTL_BLL.Instance.GiamSL(((CBBItem_TL)cbbTL.SelectedItem).Value, (int)numSLTL.Value);
+                    dgvTL.DataSource = null;
+                    dgvTL.DataSource = data;
+                }
             }
         }
 
         private void FormAddDuLieuPhieuMuon_FormClosed(object sender, FormClosedEventArgs e)
         {
-            QLPM_BLL.Instance.TraSLTL(data);
-            this.Dispose();
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+                QLPM_BLL.Instance.TraSLTL(data);
+                this.Dispose();
+            }
         }
     }
 }

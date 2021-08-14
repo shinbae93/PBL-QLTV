@@ -103,6 +103,12 @@ namespace PBL.BLL
                 PhieuMuon res = db.PhieuMuons.Find(MaPM);
                 res.ViPham = VP;
                 res.NgayTra = NgayTra;
+                foreach (TaiLieuCT i in res.TaiLieuCTs)
+                {
+                    TaiLieu a = db.TaiLieux.Find(i.CuonTaiLieu.MaTL);
+                    ++a.SoLuong;
+                    QLTL_BLL.Instance.AddCTL(a.MaTL, 1);
+                }
                 db.SaveChanges();
             }
         }

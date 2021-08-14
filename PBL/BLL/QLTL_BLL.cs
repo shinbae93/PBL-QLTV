@@ -48,7 +48,7 @@ namespace PBL.BLL
             {
                 for (int i = 0; i < Num; ++i)
                 {
-                    db.CuonTaiLieux.Remove(db.CuonTaiLieux.Find(MaTL));
+                    db.CuonTaiLieux.Remove(db.CuonTaiLieux.Where(p => p.MaTL == MaTL).FirstOrDefault());
                 }
                 db.SaveChanges();
             }
